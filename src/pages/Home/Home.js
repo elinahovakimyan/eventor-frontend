@@ -2,7 +2,7 @@ import React from 'react';
 
 import Button from 'antd/lib/button';
 
-import { ImageCard } from '../../core/components';
+import { ImageCard } from 'core/components';
 
 import './Home.css';
 

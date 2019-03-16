@@ -13,6 +13,17 @@
     "sourceType": "module"
   },
   "plugins": ["react", "flowtype", "jsx-a11y", "import"],
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [
+          ["core/*", "./src/core"],
+          ["pages/*", "./src/pages"]
+        ],
+        "extensions": [".js"]
+      }
+    }
+  },
   "rules": {
     "indent": ["error", 2, { "SwitchCase": 1 }],
     "linebreak-style": ["error", "unix"],
