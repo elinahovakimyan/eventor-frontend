@@ -2,7 +2,7 @@ import React from 'react';
 
 import Button from 'antd/lib/button';
 
-import './ImageCard.css';
+import './ImageCard.scss';
 
 class ImageCard extends React.PureComponent {
   render() {
