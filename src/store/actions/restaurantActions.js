@@ -1,5 +1,5 @@
-import { restaurantService } from '../services';
-import { restaurantConstants } from '../constants/actionTypes';
+import { restaurantService } from 'services';
+import { restaurantConstants } from 'store/constants/actionTypes';
 
 function update(restaurants) {
   return { type: restaurantConstants.GET_RESTAURANTS, restaurants };

@@ -1,4 +1,4 @@
-import { restaurantConstants } from '../constants/actionTypes';
+import { restaurantConstants } from 'store/constants/actionTypes';
 
 const initialState = {
   restaurants: [],
