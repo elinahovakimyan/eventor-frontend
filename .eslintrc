@@ -18,6 +18,7 @@
       "alias": {
         "map": [
           ["core/*", "./src/core"],
+          ["styles/*", "./src/styles"],
           ["pages/*", "./src/pages"]
         ],
         "extensions": [".js"]
