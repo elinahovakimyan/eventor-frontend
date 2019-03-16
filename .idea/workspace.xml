@@ -5,13 +5,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e3461c6-d88c-4784-96c1-755918053354" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assets/firework.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/balloons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/balloons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/cake.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/cake.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/confetti.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/confetti.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/cutlery.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/cutlery.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/donatello.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/donatello.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/firework.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/flags.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/flags.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/fork.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/fork.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/laugh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/laugh.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/party.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/photo-camera.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/photo-camera.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/present-colorful.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/present-colorful.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/present-delivery.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/present-delivery.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/present.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/present.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/party.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/party.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/components/MainBanner/MainBanner.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/components/MainBanner/MainBanner.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/restaurantActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/restaurantActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/actionTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/constants/actionTypes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/restaurantReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/restaurantReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/components/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/Home.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,11 +51,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.eslintrc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+            <state relative-caret-position="270">
+              <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -34,16 +64,16 @@
         <entry file="file://$PROJECT_DIR$/src/store/reducers/restaurantReducer.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/store/actions/restaurantActions.js">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="35" lean-forward="true" selection-start-column="35" selection-end-column="35" />
+              <caret column="35" selection-start-column="35" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -76,9 +106,9 @@
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/.eslintrc" />
         <option value="$PROJECT_DIR$/src/store/reducers/restaurantReducer.js" />
         <option value="$PROJECT_DIR$/src/store/actions/restaurantActions.js" />
+        <option value="$PROJECT_DIR$/.eslintrc" />
       </list>
     </option>
   </component>
@@ -160,12 +190,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1552718093255</updated>
-      <workItem from="1552718095132" duration="10486000" />
+      <workItem from="1552718095132" duration="11481000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10486000" />
+    <option name="totallyTimeSpent" value="11481000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -178,17 +208,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="npm" side_tool="true" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13890426" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13890426" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="TypeScript" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Messages" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.26349893" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.26349893" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -352,24 +383,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.eslintrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/store/reducers/restaurantReducer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/store/actions/restaurantActions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="35" lean-forward="true" selection-start-column="35" selection-end-column="35" />
+          <caret column="35" selection-start-column="35" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.eslintrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
         </state>
       </provider>
     </entry>

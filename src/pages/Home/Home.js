@@ -1,8 +1,6 @@
 import React from 'react';
 
-import Button from 'antd/lib/button';
-
-import { ImageCard } from 'core/components';
+import { MainBanner, ImageCard } from 'core/components';
 
 import './Home.scss';
 
@@ -10,16 +8,7 @@ class Home extends React.PureComponent {
   render() {
     return (
       <div className="Home">
-        <header className="Home-header">
-          <p>
-            Edit
-            {' '}
-            <code>src/Home.js</code>
-            {' '}
-and save to reload.
-          </p>
-        </header>
-        <Button>Antd button</Button>
+        <MainBanner />
         <ImageCard />
       </div>
     );
