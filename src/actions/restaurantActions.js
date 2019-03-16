@@ -20,5 +20,5 @@ function getRestaurants() {
 }
 
 export const restaurantActions = {
-  getRestaurants
+  getRestaurants,
 };

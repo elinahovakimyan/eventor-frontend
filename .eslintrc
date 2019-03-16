@@ -29,7 +29,6 @@
     "no-nested-ternary": ["off"],
     "no-lonely-if": ["warn"],
     "import/prefer-default-export": ["off"],
-    "import/exports-last": ["warn"],
     "import/no-extraneous-dependencies": [
       "warn",
       {
