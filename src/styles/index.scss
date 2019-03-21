@@ -2,3 +2,17 @@
 
 @import 'variables';
 
+
+.ant-tabs-ink-bar {
+  background-color: orange;
+}
+
+.one-line-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
