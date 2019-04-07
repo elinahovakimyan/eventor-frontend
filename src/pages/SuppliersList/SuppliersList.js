@@ -58,6 +58,7 @@ class SuppliersList extends React.PureComponent {
 
   render() {
     const { category } = this.props.match.params;
+    const { history } = this.props;
     const data = this.getDataByType(category);
 
     return (
@@ -65,7 +66,7 @@ class SuppliersList extends React.PureComponent {
         <Tabs
           defaultActiveKey={RESTAURANT}
           activeKey={category || RESTAURANT}
-          onChange={(key) => this.props.history.push(`/service-providers/${key}`)}
+          onChange={(key) => history.push(`/service-providers/${key}`)}
         >
           {categories.map(serviceCategory => (
             <TabPane

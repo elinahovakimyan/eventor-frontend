@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 
 import './Header.scss';
 
@@ -7,16 +7,17 @@ class Header extends Component {
 
   render() {
     const logoSrc = require('assets/logo.png');
+    const { history } = this.props;
     return (
       <div id="header">
         <div id="logo">
-          <img className="logo-img" src={logoSrc} alt="logo" />
+          <img className="logo-img" src={logoSrc} alt="logo" onClick={() => history.push('/')} />
         </div>
         <div id="menu">
           <Link
             id="home"
             className="menu-item"
-            to="#"
+            to="/"
             activeclassname="active"
           >
               Գլխավոր
@@ -52,4 +53,4 @@ class Header extends Component {
   }
 }
 
-export { Header };
+export default withRouter(Header);
