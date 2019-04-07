@@ -1,7 +1,57 @@
 @import '../../../styles/_variables';
 
 .image-card {
-    .image-card-header {
-        background-color: $primary-color;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0 0 5vh 0;
+    text-align: center;
+    border: 0.6vh #ff0b5a double;
+    background-size: cover;
+    border-radius: 15px;
+    padding: 7vh 5vh 10vh 5vh;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+
+    .tab-icon {
+        width: 50%;
+        height: auto;
+        margin-bottom: 5vh;
+    }
+
+    .image-card-title {
+        font-size: 2vh;
+    }
+}
+
+.image-card:hover, .image-card:active {
+    background-color: #f0f2f5;
+
+    .tab-icon {
+        animation: mirrorflip 3s 0s linear infinite;
+    }
+
+    .image-card-title {
+        font-size: 3vh;
+    }
+}
+
+@keyframes mirrorflip {
+    0% {
+        transform: scale(1, 1);
+        -webkit-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+
+    }
+    50% {
+        transform: scale(-1, 1);
+        -webkit-transform: scale(-1, 1);
+        -moz-transform: scale(-1, 1);
+        -o-transform: scale(-1, 1);
+        -ms-transform: scale(-1, 1);
     }
 }

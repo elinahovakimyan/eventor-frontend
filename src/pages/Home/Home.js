@@ -9,7 +9,14 @@ class Home extends React.PureComponent {
     return (
       <div className="Home">
         <MainBanner />
-        <ImageCard />
+        <div className="card-container">
+          <ImageCard type="restaurant" title="Ժամանցի Վայր" />
+          <ImageCard type="decoration" title="Ձևավորում" />
+          <ImageCard type="cake" title="Թխվածք" />
+          <ImageCard type="cartoon" title="Մուլտհերոս" />
+          <ImageCard type="game" title="Խաղային Շոու" />
+          <ImageCard type="photography" title="Լուսանկարիչ" />
+        </div>
       </div>
     );
   }
