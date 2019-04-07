@@ -19,7 +19,7 @@
         "map": [
           ["assets/*", "./src/assets"],
           ["core/*", "./src/core"],
-          ["data/*", "./src/store/data"],
+          ["data/*", "./src/data"],
           ["pages/*", "./src/pages"],
           ["services/*", "./src/services"],
           ["store/*", "./src/store"],
@@ -44,6 +44,7 @@
     "consistent-return": ["warn"],
     "no-nested-ternary": ["off"],
     "no-lonely-if": ["warn"],
+    "global-require": ["off"],
     "import/no-dynamic-require": ["off"],
     "import/prefer-default-export": ["off"],
     "import/no-extraneous-dependencies": [
@@ -69,7 +70,7 @@
         "ignorePureComponents": true
       }
     ],
-    "react/prop-types": ["warn"],
+    "react/prop-types": ["off"],
     "jsx-a11y/href-no-hash": ["off"],
     "jsx-a11y/img-has-alt": ["off"],
     "jsx-a11y/label-has-for": ["warn"],
@@ -100,6 +101,5 @@
       }
     ],
     "no-bitwise": ["error", { "allow": ["&"] }],
-    "global-require": 0
   }
 }
