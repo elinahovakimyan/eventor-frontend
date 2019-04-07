@@ -17,12 +17,13 @@
     "import/resolver": {
       "alias": {
         "map": [
+          ["assets/*", "./src/assets"],
           ["core/*", "./src/core"],
           ["data/*", "./src/store/data"],
           ["pages/*", "./src/pages"],
           ["services/*", "./src/services"],
           ["store/*", "./src/store"],
-          ["styles/*", "./src/styles"],
+          ["styles/*", "./src/styles"]
         ],
         "extensions": [".js"]
       }
@@ -43,6 +44,7 @@
     "consistent-return": ["warn"],
     "no-nested-ternary": ["off"],
     "no-lonely-if": ["warn"],
+    "import/no-dynamic-require": ["off"],
     "import/prefer-default-export": ["off"],
     "import/no-extraneous-dependencies": [
       "warn",
@@ -52,7 +54,6 @@
     ],
     "jsx-a11y/no-static-element-interactions": ["warn"],
     "react/forbid-prop-types": ["off"],
-    "react/require-default-props": ["off"],
     "react/jsx-indent": ["warn", 2],
     "react/jsx-filename-extension": [
       "warn",
@@ -75,7 +76,7 @@
     "prefer-destructuring": ["off"],
     "function-paren-newline": ["warn"],
     "object-curly-newline": ["warn"],
-    "jsx-a11y/anchor-is-valid": ["warn"],
+    "jsx-a11y/anchor-is-valid": ["off"],
     "react/jsx-curly-brace-presence": ["warn"],
     "jsx-a11y/click-events-have-key-events": ["warn"],
     "react/default-props-match-prop-types": ["off"],
@@ -98,6 +99,7 @@
         "code": 90
       }
     ],
-    "no-bitwise": ["error", { "allow": ["&"] }]
+    "no-bitwise": ["error", { "allow": ["&"] }],
+    "global-require": 0
   }
 }

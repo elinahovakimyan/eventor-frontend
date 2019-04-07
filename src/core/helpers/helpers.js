@@ -10,7 +10,7 @@ export const getIconNameByType = (type) => {
       return 'donatello';
     case 'game':
       return 'laugh';
-    case 'photoghraphy':
+    case 'photography':
       return 'photo-camera';
     default:
       return 'confetti';

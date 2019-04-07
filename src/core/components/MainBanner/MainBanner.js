@@ -7,7 +7,6 @@ class MainBanner extends React.PureComponent {
     return (
       <div className="filter-banner">
         {/* <FilterFields /> */}
-        <h1>Planning events has never been easier and faster</h1>
       </div>
     );
   }
