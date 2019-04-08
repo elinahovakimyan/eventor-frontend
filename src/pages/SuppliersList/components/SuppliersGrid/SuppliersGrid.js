@@ -7,21 +7,22 @@ import './SuppliersGrid.scss';
 
 class SuppliersGrid extends React.PureComponent {
   render() {
-    const { services } = this.props;
+    const { services, category } = this.props;
+
     return (
-      <Row gutter={24} style={{ padding: '0 50px' }}>
+      <Row gutter={24} style={{ padding: '0 20px' }}>
         {services && services.length
           ? services.map(service => (
             <Col
               key={service.id}
               className="service-col"
-              xs={24}
-              sm={12}
-              md={12}
-              lg={8}
               xl={6}
+              lg={8}
+              md={12}
+              sm={12}
+              xs={24}
             >
-              <ServiceCard service={service} />
+              <ServiceCard service={service} category={category} />
             </Col>
           )) : (
             <div className="mt-30">

@@ -1,16 +1,19 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {
   Card, Icon, Tooltip, Rate, Button,
 } from 'antd';
+
+import { ContactModal } from 'core/components';
 
 import './ServiceCard.scss';
 
 const { Meta } = Card;
 
-
 class ServiceCard extends React.PureComponent {
   render() {
-    const { service } = this.props;
+    const { service, category } = this.props;
+
     return (
       <Card
         cover={(
@@ -28,24 +31,27 @@ class ServiceCard extends React.PureComponent {
           </div>
         )}
         actions={[
-          <Tooltip placement="topLeft" title={service.price || service.priceRange}>
-            <Button className="service-price-btn">{service.priceRange}</Button>
+          <Tooltip placement="topLeft" title="Ավելացնել ցանկությունների ցանկում">
+            <Button type="primary" onClick={this.toggleModal}>
+              <Icon type="heart" />
+            </Button>
           </Tooltip>,
-          <Icon type="phone" />,
-          <Icon type="ellipsis" />,
+          <ContactModal contacts={service.contacts} />,
         ]}
       >
-        <Meta
-          title={service.title}
-          description={(
-            <div>
-              <p className="service-description one-line-text">
-                {service.description}
-              </p>
-              <Rate allowHalf defaultValue={2.5} />
-            </div>
-          )}
-        />
+        <Link to={`/service/${category}/${service.id}`}>
+          <Meta
+            title={service.title}
+            description={(
+              <div>
+                <p className="service-description one-line-text">
+                  {service.description}
+                </p>
+                <Rate allowHalf defaultValue={2.5} />
+              </div>
+            )}
+          />
+        </Link>
       </Card>
     );
   }

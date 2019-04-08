@@ -17,14 +17,6 @@ export const cakes = [
     description: 'Էկզոտիկ խմորողեն հատուկ յուրահատուկ խմորեղեններ նախընտրողների համար։',
   },
   {
-    id: '3',
-    title: 'Նառուտո մագնի',
-    serviceImg: 'https://www.fergusonplarre.com.au/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/u/n/unicorn-face-cake-new.jpg',
-    description: 'Գույնզգույն և համեզ տորթ, որը կգեղեցկացնի ցանկացած ծնունդ',
-    priceRange: '֏֏֏',
-    price: '7000AMD',
-  },
-  {
     id: '4',
     title: 'Սուպեր Տորթ',
     description: 'Այս տորթը տարբերվում է իր յուրահատուկ համով և կարմիր խմորով։ Լինում է մրգային, կաթնային կամ շոկոլադե։',

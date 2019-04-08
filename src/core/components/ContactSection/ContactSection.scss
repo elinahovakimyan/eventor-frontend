@@ -1,0 +1,21 @@
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  
+  p {
+    text-align: center;
+  }
+
+  .contact-btn {
+    margin: 8px;
+  }
+
+  .eventor-message {
+    border: 0.5px solid grey;
+    border-radius: 12px;
+    margin: 1% 15%;
+    padding: 5px 5px;
+  }
+}

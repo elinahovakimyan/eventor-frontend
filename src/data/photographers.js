@@ -11,17 +11,9 @@ export const photographers = [
   },
   {
     id: '2',
-    title: 'Արքայական Մանգո',
+    title: 'Լուսանկարիչ Մայքլ',
     priceRange: '֏',
-    serviceImg: 'https://www.fergusonplarre.com.au/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/u/n/unicorn-face-cake-new.jpg',
+    serviceImg: 'https://www.adorama.com/alc/wp-content/uploads/2016/10/shutterstock_479016244_mezz-825x465.jpg',
     description: 'Էկզոտիկ խմորողեն հատուկ յուրահատուկ խմորեղեններ նախընտրողների համար։',
-  },
-  {
-    id: '3',
-    title: 'Նառուտո մագնի',
-    serviceImg: 'https://www.fergusonplarre.com.au/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/u/n/unicorn-face-cake-new.jpg',
-    description: 'Գույնզգույն և համեզ տորթ, որը կգեղեցկացնի ցանկացած ծնունդ',
-    priceRange: '֏֏֏',
-    price: '7000AMD',
   },
 ]

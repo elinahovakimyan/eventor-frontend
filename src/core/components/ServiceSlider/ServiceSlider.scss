@@ -1,0 +1,23 @@
+.service-slider-container {
+  padding-top: 30px;
+  padding-bottom: 40px;
+
+  .slides {
+    position: relative;
+    width: 85%;
+    margin: auto;
+  
+    // .slick-prev {
+    // }
+    // .slick-next {
+    // }
+  
+    .service-card-wrapper {
+      padding: 10px;
+    }
+
+    .slick-prev:before, .slick-next:before {
+      color: #716d6d;
+    }
+  }
+}

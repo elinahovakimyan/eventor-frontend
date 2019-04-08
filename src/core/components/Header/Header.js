@@ -16,7 +16,7 @@ class Header extends Component {
         <div id="menu">
           <Link
             id="home"
-            className="menu-item"
+            className="menu-item menu-item-plain"
             to="/"
             activeclassname="active"
           >
@@ -24,8 +24,16 @@ class Header extends Component {
           </Link>
           <Link
             id="about-us"
+            to="/service-providers"
+            className="menu-item menu-item-plain"
+            activeclassname="active"
+          >
+            Մատակարարների ցանկ
+          </Link>
+          <Link
+            id="about-us"
             to="#"
-            className="menu-item"
+            className="menu-item menu-item-plain"
             activeclassname="active"
           >
             Մեր Մասին
@@ -33,7 +41,7 @@ class Header extends Component {
           <Link
             id="contact-us"
             to="#"
-            className="menu-item"
+            className="menu-item menu-item-plain"
             activeclassname="active"
           >
             Կապ Մեզ Հետ

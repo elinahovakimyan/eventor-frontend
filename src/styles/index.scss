@@ -1,10 +1,18 @@
 @import '~antd/dist/antd.css';
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
 
+@import 'breakpoints';
 @import 'variables';
+@import 'mixins';
 
 
 .ant-tabs-ink-bar {
   background-color: orange;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .one-line-text {
@@ -15,4 +23,69 @@
 
 .mt-30 {
   margin-top: 30px;
+}
+
+.no-style-btn {
+    background: none !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+
+
+
+// suppliers list
+
+.suppliers-list-page {
+
+
+    @include md {
+      .tab-content {
+          display: flex;
+          flex-direction: row;
+      
+          .filters-wrapper {
+              width: 25%;
+          }
+      
+          .data-wrapper {
+              width: 75%;
+          }
+      }
+    }
+
+    @include xl {
+        .tab-content {
+          display: flex;
+          flex-direction: row;
+          flex: 1;
+      
+          .filters-wrapper {
+              width: 20%;
+          }
+      
+          .data-wrapper {
+              width: 80%;
+          }
+      }
+    }
+}
+
+
+// filters section
+
+@include sm {
+  .filters-container {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@include md {
+  .filters-container {
+    display: flex;
+    flex-direction: column;
+  }
 }

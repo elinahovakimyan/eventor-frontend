@@ -18,7 +18,7 @@ class Filters extends React.PureComponent {
 
   render() {
     return (
-      <div className="filters">
+      <div className="filters-container">
         <h3>Choose tags</h3>
 
         <CheckboxGroup

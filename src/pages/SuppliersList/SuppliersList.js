@@ -1,8 +1,8 @@
 import React from 'react';
-import { Tabs } from 'antd';
 import { connect } from 'react-redux';
+import { Tabs } from 'antd';
 
-import { HeaderWithIcon } from 'core/components';
+import { HeaderWithIcon, ServiceSlider } from 'core/components';
 import {
   RESTAURANT,
   CAKE,
@@ -62,7 +62,7 @@ class SuppliersList extends React.PureComponent {
     const data = this.getDataByType(category);
 
     return (
-      <div className="card-container">
+      <div className="suppliers-list-page">
         <Tabs
           defaultActiveKey={RESTAURANT}
           activeKey={category || RESTAURANT}
@@ -83,7 +83,13 @@ class SuppliersList extends React.PureComponent {
                   <Filters />
                 </div>
                 <div className="data-wrapper">
-                  <SuppliersGrid services={data} />
+                  <ServiceSlider
+                    services={data}
+                    category={category}
+                    style={{ borderBottom: '0.3px solid #d8d8d8' }}
+                  />
+
+                  <SuppliersGrid services={data} category={category} />
                 </div>
               </div>
             </TabPane>
