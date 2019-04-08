@@ -1,35 +1,32 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { Layout } from 'antd';
 
 import Home from 'pages/Home/Home';
 import SuppliersList from 'pages/SuppliersList/SuppliersList';
+
+import Header from 'core/components/Header/Header';
+
 import 'styles/index.scss';
+
+const { Content, Footer } = Layout;
 
 class App extends Component {
   render() {
     return (
-      <Router>
+      <BrowserRouter>
         <React.Fragment>
-          {/* TODO: Create a header component */}
-          <nav>
-            <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/service-providers/">List</Link>
-              </li>
-              <li>
-                <Link to="/users/">Users</Link>
-              </li>
-            </ul>
-          </nav>
-
-          <Route path="/" exact component={Home} />
-          <Route path="/service-providers" exact component={SuppliersList} />
-          <Route path="/service-providers/:category" component={SuppliersList} />
+          <Header />
+          <Content>
+            <Switch>
+              <Route path="/" exact component={Home} />
+              <Route path="/service-providers" exact component={SuppliersList} />
+              <Route path="/service-providers/:category" component={SuppliersList} />
+            </Switch>
+          </Content>
+          <Footer>© Eventor.am 2019</Footer>
         </React.Fragment>
-      </Router>
+      </BrowserRouter>
     );
   }
 }

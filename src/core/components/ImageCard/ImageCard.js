@@ -1,19 +1,34 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 
-import Button from 'antd/lib/button';
-
+import { getIconNameByType } from 'core/helpers/helpers';
 import './ImageCard.scss';
 
 class ImageCard extends React.PureComponent {
   render() {
+    const {
+      path, type, title, height, history
+    } = this.props;
+    const iconName = getIconNameByType(type);
+    const iconSrc = require(`assets/icons/${iconName}.svg`);
+
     return (
-      <div className="image-card">
-        <header className="image-card-header">
-          <Button>This is a card button</Button>
-        </header>
+      <div
+        className="image-card"
+        style={{ height }}
+        onClick={() => {
+          history.push(`/service-providers/${path}`);
+        }}
+      >
+        <div>
+          <img src={iconSrc} alt={`eventor-${type}`} className="tab-icon" />
+          <div className="image-card-title">
+            {title}
+          </div>
+        </div>
       </div>
     );
   }
 }
 
-export { ImageCard };
+export default withRouter(ImageCard);

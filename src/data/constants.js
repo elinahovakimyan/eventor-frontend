@@ -4,7 +4,7 @@ export const DECORATION = 'decoration';
 export const CAKE = 'cake';
 export const CARTOON_HERO = 'cartoon_hero';
 export const GAME_SHOW = 'game_show';
-export const PHOTOGRAPHER = 'PHOTOGRAPHER';
+export const PHOTOGRAPHER = 'photographer';
 
 export const categories = [
   {
