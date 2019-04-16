@@ -31,7 +31,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://elinahovakimyan.github.io/eventor-frontend",
+  "homepage": "https://eventor-web.herokuapp.com/",
   "eslintConfig": {
     "extends": "react-app"
   },
