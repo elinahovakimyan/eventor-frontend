@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link, withRouter } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 
 import './Header.scss';
 
@@ -13,7 +13,7 @@ class Header extends Component {
         <div id="logo">
           <img className="logo-img" src={logoSrc} alt="logo" onClick={() => history.push('/')} />
         </div>
-        <div id="menu">
+        {/* <div id="menu">
           <Link
             id="home"
             className="menu-item menu-item-plain"
@@ -54,7 +54,7 @@ class Header extends Component {
           >
             Դարձիր Գործընկեր
           </Link>
-        </div>
+        </div> */}
       </div>
     );
 
