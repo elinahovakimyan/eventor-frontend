@@ -13,12 +13,17 @@ const { TextArea } = Input;
 class CakeOrderForm extends React.PureComponent {
   state = {
     applicationStatus: null,
+    isButtonLoading: false,
   }
 
   handleSubmit = (e) => {
     e.preventDefault();
     this.props.form.validateFields((err, values) => {
       if (!err) {
+
+        this.setState({
+          isButtonLoading: true,
+        });
 
         const templateParams = {
           reply_to: 'reply_to_value',
@@ -30,6 +35,7 @@ class CakeOrderForm extends React.PureComponent {
         const serviceId = 'default_service';
         const templateId = 'template_KWvTDbxq';
         const userId = 'user_KTPrRh8HKGMZ7Uw4U0P8U';
+
         emailjs.send(serviceId, templateId, templateParams, userId)
           .then(() => {
             this.setState({ applicationStatus: 'success' });
@@ -74,7 +80,6 @@ class CakeOrderForm extends React.PureComponent {
             ],
           })(
             <Input
-              type="number"
               style={{ width: 100, textAlign: 'center' }}
               placeholder="Սկսած"
             />,
@@ -177,7 +182,10 @@ class CakeOrderForm extends React.PureComponent {
         >
           {getFieldDecorator('notes', {
             rules: [
-              { required: true, message: 'Եթե ցանկալի դիզայնը կցված է նկարի տեսքով, խնդրում ենք նշել' },
+              {
+                required: true,
+                message: 'Խնդրում ենք նկարագրել ցանկալի դիզայնը, կամ նշեք, եթե այն կցված է։',
+              },
             ],
           })(
             <TextArea placeholder="Նկարագրե՛ք տորթի դիզայնը, եթե կան ալերգիաներ կամ այլ նշումներ" autosize />,
@@ -227,7 +235,14 @@ class CakeOrderForm extends React.PureComponent {
         <Form.Item
           wrapperCol={{ span: 12, offset: 6 }}
         >
-          <Button className="submit-btn" type="primary" htmlType="submit">Ստանալ գնային առաջարկներ</Button>
+          <Button
+            loading={this.state.isButtonLoading}
+            className="submit-btn"
+            type="primary"
+            htmlType="submit"
+          >
+            Ուղարկել հայտը
+          </Button>
         </Form.Item>
 
         {this.state.applicationStatus === 'success' ? (
