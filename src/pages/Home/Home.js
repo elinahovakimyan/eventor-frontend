@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import { OrderForm } from 'core/components';
 
@@ -18,6 +19,14 @@ class Home extends React.PureComponent {
             <h2>1. Լրացրե՛ք ստորև նշված հայտը</h2>
             <h2>2. Ստացե՛ք 5-10 տարբեր գնային և համային առաջարկներ</h2>
             <h2>3. Ընտրե՛ք ամենագեղեցիկ, համեղ և ցանկալի տորթը</h2>
+
+            <br />
+
+            <h2>
+              Ձեր հարցերի պատասխանները՝
+              {' '}
+              <Link to="/faq">Հաճախ Տրվող Հարցեր</Link>
+            </h2>
           </div>
         </div>
 

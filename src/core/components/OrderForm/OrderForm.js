@@ -19,19 +19,6 @@ class CakeOrderForm extends React.PureComponent {
     e.preventDefault();
     this.props.form.validateFields((err, values) => {
       if (!err) {
-        console.log('Received values of form: ', values);
-
-        // const valuesHtml = (
-        //   <div>
-        //     {Object.keys(values).map(key => (
-        //       <p>
-        //         {`${key}: ${values[key]}`}
-        //       </p>
-        //     ))}
-        //   </div>
-        // );
-
-        // console.log('valuesHtml :', valuesHtml);
 
         const templateParams = {
           reply_to: 'reply_to_value',
@@ -56,7 +43,6 @@ class CakeOrderForm extends React.PureComponent {
   }
 
   normFile = (e) => {
-    console.log('Upload event:', e);
     if (Array.isArray(e)) {
       return e;
     }
