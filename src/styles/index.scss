@@ -7,6 +7,18 @@
 @import 'mixins';
 
 
+body {
+  background-color: #f5f5f5;
+}
+
+footer {
+  text-align: center;
+}
+
+#root {
+  overflow-x: hidden;
+}
+
 .ant-tabs-ink-bar {
   background-color: orange;
 }
@@ -39,7 +51,6 @@
 // suppliers list
 
 .suppliers-list-page {
-
 
     @include md {
       .tab-content {
@@ -88,4 +99,5 @@
     display: flex;
     flex-direction: column;
   }
+
 }

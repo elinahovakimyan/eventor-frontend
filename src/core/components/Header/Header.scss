@@ -1,9 +1,10 @@
 #header {
   display: flex;
-  padding: 1vh 1vh 1vh 1vh !important;
-  flex: 1;
-  flex-direction: row;
-  justify-content: space-between;
+  padding: 20px !important;
+  // flex: 1;
+  // flex-direction: row;
+  // justify-content: space-between;
+  background-color: white;
 }
 
 #menu {
@@ -11,7 +12,6 @@
   padding: 1.7vh 1vh 0.5vh 0.5vh;
   text-align: right;
   height: auto;
-  background-color: white;
   z-index: 99;
   flex: 8;
 }

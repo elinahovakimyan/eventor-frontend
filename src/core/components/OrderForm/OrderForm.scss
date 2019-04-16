@@ -1,0 +1,46 @@
+.form-container {
+    // background-image: url('../../../assets/birthday-girl.jpg');
+    // background-attachment: scroll;
+    // background-size: cover;
+    // background-position: center;
+    // min-height: 60vh;
+    // color: white;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+
+    // h1 {
+    //     color: white;
+    //     font-size: 52px;
+    //     text-align: center;
+    // }
+
+    padding: 20px !important;
+
+    h2 {
+        padding: 20px;
+    }
+
+    .ant-slider-rail {
+        background-color: #e2dada;
+    }
+
+    .submit-btn {
+        background-color: #ff644c;
+        border-color: #ff644c;
+        align-self: center;
+    }
+
+    .submit-btn:hover, .submit-btn:focus {
+        background-color: #ff644c;
+        border-color: #ff644c;
+    }
+
+    h4 {
+        padding: 2% 10%;
+    }
+
+    .success {
+        color: green;
+    }
+}

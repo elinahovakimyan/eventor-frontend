@@ -7,7 +7,7 @@ import './ImageCard.scss';
 class ImageCard extends React.PureComponent {
   render() {
     const {
-      path, type, title, height, history
+      path, type, title, height, history,
     } = this.props;
     const iconName = getIconNameByType(type);
     const iconSrc = require(`assets/icons/${iconName}.svg`);
