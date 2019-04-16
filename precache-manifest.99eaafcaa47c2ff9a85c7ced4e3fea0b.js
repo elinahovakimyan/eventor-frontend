@@ -84,12 +84,12 @@ self.__precacheManifest = [
     "url": "/eventor-frontend/static/media/slick.ced611da.eot"
   },
   {
-    "revision": "d41f55a78e6f49a5512878df1737e58a",
-    "url": "/eventor-frontend/static/media/slick.d41f55a7.ttf"
-  },
-  {
     "revision": "b7c9e1e479de3b53f1e4e30ebac2403a",
     "url": "/eventor-frontend/static/media/slick.b7c9e1e4.woff"
+  },
+  {
+    "revision": "d41f55a78e6f49a5512878df1737e58a",
+    "url": "/eventor-frontend/static/media/slick.d41f55a7.ttf"
   },
   {
     "revision": "e672e8d9c4137e8f9da1",
