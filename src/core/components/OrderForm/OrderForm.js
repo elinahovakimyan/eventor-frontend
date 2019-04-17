@@ -2,7 +2,7 @@ import React from 'react';
 import * as emailjs from 'emailjs-com';
 import {
   Form, Select, InputNumber, Switch, Radio,
-  Slider, Button, Upload, Icon, Input,
+  Slider, Button, Input,
 } from 'antd';
 
 import './OrderForm.scss';
@@ -10,6 +10,19 @@ import './OrderForm.scss';
 const { Option } = Select;
 const { TextArea } = Input;
 
+const getImageExtra = () => (
+  <p>
+      Թե ինչպե՞ս ուղարկել հղում, դիտե՛ք
+    {' '}
+    <a
+      href="https://drive.google.com/open?id=1dCxBONnbuSwAyhrzZL6skRB_y64LB9WX"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      այստեղ
+    </a>
+  </p>
+);
 class CakeOrderForm extends React.PureComponent {
   state = {
     applicationStatus: null,
@@ -38,10 +51,16 @@ class CakeOrderForm extends React.PureComponent {
 
         emailjs.send(serviceId, templateId, templateParams, userId)
           .then(() => {
-            this.setState({ applicationStatus: 'success' });
+            this.setState({
+              applicationStatus: 'success',
+              isButtonLoading: false,
+            });
           })
           .catch(() => {
-            this.setState({ applicationStatus: 'error' });
+            this.setState({
+              applicationStatus: 'error',
+              isButtonLoading: false,
+            });
           });
       }
     });
@@ -160,10 +179,10 @@ class CakeOrderForm extends React.PureComponent {
         </Form.Item>
 
         <Form.Item
-          label="Ներբեռնեք նկար(ներ)"
-          extra="Եթե ունեք նախընտրած դիզայն, ներբեռնեք նկարը"
+          label="Հավանած տորթի նկար(ներ)"
+          extra={getImageExtra()}
         >
-          {getFieldDecorator('upload', {
+          {/* {getFieldDecorator('upload', {
             valuePropName: 'fileList',
             getValueFromEvent: this.normFile,
           })(
@@ -174,6 +193,9 @@ class CakeOrderForm extends React.PureComponent {
                 Սեղմե՛ք ներբեռնելու համար
               </Button>
             </Upload>,
+          )} */}
+          {getFieldDecorator('image')(
+            <Input placeholder="Տեղադրեք նկարի հղումը՝ Pinterest, Google, Drive, Dropbox" />,
           )}
         </Form.Item>
 
