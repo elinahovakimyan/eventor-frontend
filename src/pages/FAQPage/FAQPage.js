@@ -1,6 +1,8 @@
 import React from 'react';
 import { Collapse } from 'antd';
 
+import QuestionForm from 'core/components/QuestionForm/QuestionForm';
+
 import './FAQPage.scss';
 
 const Panel = Collapse.Panel;
@@ -39,6 +41,7 @@ const questionsList = [
 ];
 
 class FAQPage extends React.PureComponent {
+
   render() {
     return (
       <div className="faq-container">
@@ -66,6 +69,11 @@ class FAQPage extends React.PureComponent {
             </Panel>
           ))}
         </Collapse>
+
+        <h2 className="text-center question-form-title">
+          Չգտա՞ք Ձեր հարցի պատասխանը։ Գրե՛ք մեզ և մեր թիմը սիրով կպատասխանի։
+        </h2>
+        <QuestionForm />
       </div>
     );
   }

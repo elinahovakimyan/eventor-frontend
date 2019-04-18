@@ -1,5 +1,5 @@
 .faq-container {
-  min-height: 85vh;
+  // min-height: 50vh;
   padding: 5%;
   
 
@@ -10,5 +10,9 @@
   h3 {
     padding: 2% 10%;
     text-align: center;
+  }
+
+  .question-form-title {
+    margin-top: 10%;
   }
 }

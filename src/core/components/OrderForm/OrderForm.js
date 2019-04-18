@@ -64,7 +64,6 @@ class CakeOrderForm extends React.PureComponent {
           });
       }
     });
-
   }
 
   normFile = (e) => {
@@ -118,6 +117,13 @@ class CakeOrderForm extends React.PureComponent {
               <Option value="Կարագով">Կարագով</Option>
               <Option value="Սերուցքով">Սերուցքով</Option>
               <Option value="Եփած կրեմ">Եփած կրեմ</Option>
+              <Option value="Տոֆիտա">Տոֆիտա</Option>
+              <Option value="Պլոմբիր">Պլոմբիր</Option>
+              <Option value="Ֆրանսիական մերինգո">Ֆրանսիական մերինգո</Option>
+              <Option value="Իտալական մերինգո">Իտալական մերինգո</Option>
+              <Option value="Շանպիլեյ">Շանպիլեյ</Option>
+              <Option value="Շոկոլադե գանաշ">Շոկոլադե գանաշ</Option>
+              <Option value="Կաթնաշոռային գանաշ">Կաթնաշոռային գանաշ</Option>
             </Select>,
           )}
         </Form.Item>
@@ -234,7 +240,7 @@ class CakeOrderForm extends React.PureComponent {
               required: true, message: 'Խնդրում ենք նշել Ձեր էլ.հասցեն',
             }],
           })(
-            <Input />,
+            <Input placeholder="Ձեր էլեկտրոնային հասցեն" />,
           )}
         </Form.Item>
 
