@@ -4,7 +4,7 @@ import {
   Card, Icon, Tooltip, Rate, Button,
 } from 'antd';
 
-import { ContactModal } from 'core/components';
+import { ServiceModal } from 'core/components';
 
 import './ServiceCard.scss';
 
@@ -36,7 +36,7 @@ class ServiceCard extends React.PureComponent {
               <Icon type="heart" />
             </Button>
           </Tooltip>,
-          <ContactModal contacts={service.contacts} />,
+          <ServiceModal service={service} />,
         ]}
       >
         <Link to={`/service/${category}/${service.id}`}>

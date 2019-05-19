@@ -13,16 +13,6 @@ export const categories = [
     label: 'Ժամանցի Վայր',
   },
   {
-    key: '2',
-    type: DECORATION,
-    label: 'Ձևավորում',
-  },
-  {
-    key: '3',
-    type: CAKE,
-    label: 'Թխվածք',
-  },
-  {
     key: '4',
     type: CARTOON_HERO,
     label: 'Մուլտհերոս',
@@ -31,6 +21,16 @@ export const categories = [
     key: '5',
     type: GAME_SHOW,
     label: 'Խաղային Շոու',
+  },
+  {
+    key: '2',
+    type: DECORATION,
+    label: 'Ձևավորում',
+  },
+  {
+    key: '3',
+    type: CAKE,
+    label: 'Թխվածք',
   },
   {
     key: '6',

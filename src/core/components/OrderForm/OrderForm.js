@@ -1,7 +1,7 @@
 import React from 'react';
 import * as emailjs from 'emailjs-com';
 import {
-  Form, Select, InputNumber, Switch, Radio,
+  Form, Select, InputNumber,
   Slider, Button, Input,
 } from 'antd';
 
@@ -23,7 +23,7 @@ const getImageExtra = () => (
     </a>
   </p>
 );
-class CakeOrderForm extends React.PureComponent {
+class OrderForm extends React.PureComponent {
   state = {
     applicationStatus: null,
     isButtonLoading: false,
@@ -172,7 +172,7 @@ class CakeOrderForm extends React.PureComponent {
           )}
         </Form.Item>
 
-        <Form.Item
+        {/* <Form.Item
           label="Ու՞մ կողմից պատրաստված"
         >
           {getFieldDecorator('supplier-type')(
@@ -182,10 +182,10 @@ class CakeOrderForm extends React.PureComponent {
               <Radio.Button value="both">Երկուսն էլ</Radio.Button>
             </Radio.Group>,
           )}
-        </Form.Item>
+        </Form.Item> */}
 
         <Form.Item
-          label="Հավանած տորթի նկար(ներ)"
+          label="Հավանած տորթի նկար(ներ) կամ կոդ՝ ներքևում"
           extra={getImageExtra()}
         >
           {/* {getFieldDecorator('upload', {
@@ -201,7 +201,9 @@ class CakeOrderForm extends React.PureComponent {
             </Upload>,
           )} */}
           {getFieldDecorator('image')(
-            <Input placeholder="Տեղադրեք նկարի հղումը՝ Pinterest, Google, Drive, Dropbox" />,
+            <Input placeholder="Տեղադրեք նկարի հղումը՝ Pinterest, Google, Drive,
+            Dropbox, կամ նշեք Ձեր հավանած նկարի կոդը ներքևի ցանկից։"
+            />,
           )}
         </Form.Item>
 
@@ -220,13 +222,13 @@ class CakeOrderForm extends React.PureComponent {
           )}
         </Form.Item>
 
-        <Form.Item
+        {/* <Form.Item
           label="Առաքում"
         >
           {getFieldDecorator('delivery', { valuePropName: 'checked' })(
             <Switch />,
           )}
-        </Form.Item>
+        </Form.Item> */}
 
 
         <h2 className="text-center">Կոնտակտային տվյալներ</h2>
@@ -293,6 +295,6 @@ class CakeOrderForm extends React.PureComponent {
   }
 }
 
-const OrderForm = Form.create({ name: 'cake_order' })(CakeOrderForm);
+const CakeOrderForm = Form.create({ name: 'cake_order' })(OrderForm);
 
-export { OrderForm };
+export { CakeOrderForm };

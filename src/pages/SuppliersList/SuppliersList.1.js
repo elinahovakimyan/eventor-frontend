@@ -1,9 +1,17 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Steps } from 'antd';
+import { Tabs } from 'antd';
 
-import { HeaderWithIcon } from 'core/components';
-import { categories } from 'data/constants';
+import { HeaderWithIcon, ServiceSlider } from 'core/components';
+import {
+  RESTAURANT,
+  CAKE,
+  DECORATION,
+  GAME_SHOW,
+  CARTOON_HERO,
+  PHOTOGRAPHER,
+  categories,
+} from 'data/constants';
 
 import { getRestaurants } from 'store/actions/restaurant';
 import { getCakes } from 'store/actions/cake';
@@ -14,23 +22,12 @@ import { getPhotographers } from 'store/actions/photographer';
 
 import SuppliersGrid from './components/SuppliersGrid/SuppliersGrid';
 import Filters from './components/Filters/Filters';
-import SuppliersFooter from './components/SuppliersFooter';
 
 import './SuppliersList.scss';
 
-const Step = Steps.Step;
-const RESTAURANT = 0;
-const CARTOON_HERO = 1;
-const GAME_SHOW = 2;
-const DECORATION = 3;
-const CAKE = 4;
-const PHOTOGRAPHER = 5;
+const TabPane = Tabs.TabPane;
 
 class SuppliersList extends React.PureComponent {
-  state = {
-    currentStep: 0,
-  }
-
   componentDidMount() {
     this.props.getRestaurants();
     this.props.getCakes();
@@ -40,8 +37,8 @@ class SuppliersList extends React.PureComponent {
     this.props.getPhotographers();
   }
 
-  getDataByStep = (step) => {
-    switch (step) {
+  getDataByType = (type) => {
+    switch (type) {
       case RESTAURANT:
         return this.props.restaurants;
       case DECORATION:
@@ -59,55 +56,45 @@ class SuppliersList extends React.PureComponent {
     }
   }
 
-  handleNext = () => {
-    this.setState((prevState) => ({
-      currentStep: prevState.currentStep + 1,
-    }));
-  }
-
-  handlePrev = () => {
-    this.setState((prevState) => ({
-      currentStep: prevState.currentStep - 1,
-    }));
-  }
-
   render() {
-    const { currentStep } = this.state;
     const { category } = this.props.match.params;
-    const data = this.getDataByStep(currentStep);
+    const { history } = this.props;
+    const data = this.getDataByType(category);
 
     return (
       <div className="suppliers-list-page">
-        <Steps progressDot className="suppliers-steps" current={currentStep}>
+        <Tabs
+          defaultActiveKey={RESTAURANT}
+          activeKey={category || RESTAURANT}
+          onChange={(key) => history.push(`/service-providers/${key}`)}
+        >
           {categories.map(serviceCategory => (
-            <Step
-              title={(
+            <TabPane
+              tab={(
                 <HeaderWithIcon
                   type={serviceCategory.type}
                   title={serviceCategory.label}
                 />
               )}
               key={serviceCategory.type}
-            />
+            >
+              <div className="tab-content">
+                <div className="filters-wrapper mt-30">
+                  <Filters />
+                </div>
+                <div className="data-wrapper">
+                  <ServiceSlider
+                    services={data}
+                    category={category}
+                    style={{ borderBottom: '0.3px solid #d8d8d8' }}
+                  />
+
+                  <SuppliersGrid services={data} category={category} />
+                </div>
+              </div>
+            </TabPane>
           ))}
-        </Steps>
-
-        <div className="tab-content suppliers-content">
-          <div className="filters-wrapper mt-30">
-            <Filters />
-          </div>
-          <div className="data-wrapper">
-            <SuppliersGrid services={data} category={category} />
-          </div>
-        </div>
-
-
-        <SuppliersFooter
-          currentStep={currentStep}
-          onNext={this.handleNext}
-          onPrev={this.handlePrev}
-        />
-
+        </Tabs>
       </div>
     );
   }
