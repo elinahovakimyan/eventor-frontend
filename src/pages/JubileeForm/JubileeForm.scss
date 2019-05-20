@@ -93,7 +93,7 @@ $footer-height: 8vh;
       text-align: center;
 
       .time-select, .guest-select {
-        min-width: 80%;
+        width: 60%;
       }
     }
 
@@ -153,7 +153,7 @@ $footer-height: 8vh;
     }
 
     .time-select, .guest-select {
-      min-width: 70%;
+      min-width: 60%;
     }
 
     // .guest-select {

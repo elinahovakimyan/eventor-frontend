@@ -33,11 +33,11 @@ class VenueCard extends React.PureComponent {
               <p className="service-description one-line-text">
                 {service.description}
               </p>
-              <h4>
+              <h4 className="one-line-text">
                 <Icon type="environment" />
                 {` Հասցե՝ ${service.address}`}
               </h4>
-              <h4>
+              <h4 className="one-line-text">
                 <Icon type="shop" />
                 {` Սրահների քանակը՝ ${service.rooms}`}
               </h4>
