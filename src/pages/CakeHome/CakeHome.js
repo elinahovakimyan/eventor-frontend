@@ -1,11 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { CakeOrderForm } from 'core/components';
+import { CakeOrderForm } from 'shared/components';
+import { cakesPics } from 'shared/data/cakePics';
 
 import './CakeHome.scss';
-import { cakesPics } from '../../data/cakePics';
-// import ImageCard from 'core/components/ImageCard/ImageCard';
 
 class CakeHome extends React.PureComponent {
   render() {
@@ -57,8 +56,8 @@ class CakeHome extends React.PureComponent {
           <div className="blocks-container">
             <div className="block-1">
               <ImageCard
-                path="restaurant"
-                type="restaurant"
+                path="venue"
+                type="venue"
                 title="Ժամանցի Վայր"
                 height="55vh"
               />

@@ -19,7 +19,7 @@
         "map": [
           ["assets/*", "./src/assets"],
           ["core/*", "./src/core"],
-          ["data/*", "./src/data"],
+          ["shared/*", "./src/shared"],
           ["pages/*", "./src/pages"],
           ["services/*", "./src/services"],
           ["store/*", "./src/store"],

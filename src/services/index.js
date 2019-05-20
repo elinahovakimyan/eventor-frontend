@@ -1,4 +1,4 @@
-export * from './restaurant';
+export * from './venue';
 export * from './cake';
 export * from './decoration';
 export * from './gameShow';

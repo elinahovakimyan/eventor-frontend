@@ -1,7 +1,7 @@
 import React from 'react';
 import { Collapse } from 'antd';
 
-import QuestionForm from 'core/components/QuestionForm/QuestionForm';
+import { QuestionForm } from 'shared/components';
 
 import './FAQPage.scss';
 

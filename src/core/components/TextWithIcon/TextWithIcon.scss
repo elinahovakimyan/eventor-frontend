@@ -1,0 +1,25 @@
+.text-with-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+
+  h3 {
+    color: #a1a8a4;
+  }
+
+  .detail-icon {
+    font-size: 30px;
+    color: #a1a8a4;
+  }
+}
+
+.detail-active i {
+  color: #298f98 !important;
+}
+
+.detail-active h3 {
+  color: #298f98;
+}

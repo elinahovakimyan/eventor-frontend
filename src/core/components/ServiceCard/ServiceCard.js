@@ -4,7 +4,7 @@ import {
   Card, Icon, Tooltip, Rate, Button,
 } from 'antd';
 
-import { ServiceModal } from 'core/components';
+import { ServiceModal } from 'shared/components';
 
 import './ServiceCard.scss';
 

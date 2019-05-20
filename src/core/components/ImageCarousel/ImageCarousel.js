@@ -2,19 +2,18 @@ import React from 'react';
 
 import { Carousel } from 'antd';
 
-// import './ImageCarousel.scss';
+import './ImageCarousel.scss';
 
 class ImageCarousel extends React.PureComponent {
 
-  onChange = (a, b, c) => {
-    console.log(a, b, c);
+  onChange = () => {
   }
 
   render() {
   //  const { service } = this.props;
 
     return (
-      <Carousel afterChange={this.onChange}>
+      <Carousel afterChange={this.onChange} dotPosition="top">
         <div>
           <h3>1</h3>
         </div>

@@ -1,0 +1,23 @@
+.service-modal {
+  width: 80% !important;
+
+  .ant-modal-content {
+    .ant-modal-body {
+      padding: 0;
+
+      .service-content {
+        padding: 2%;
+      }
+
+      .basic-info {
+        padding: 3% 8%;
+      }
+    }
+  }
+
+  // .ant-modal-footer {
+  //   .ant-btn-primary {
+  //     display: none;
+  //   }
+  // }
+}

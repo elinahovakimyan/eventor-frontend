@@ -1,7 +1,8 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 
-import { getIconNameByType } from 'core/helpers/helpers';
+import { getIconByType } from 'core/helpers';
+
 import './ImageCard.scss';
 
 class ImageCard extends React.PureComponent {
@@ -9,8 +10,7 @@ class ImageCard extends React.PureComponent {
     const {
       path, type, title, height, history,
     } = this.props;
-    const iconName = getIconNameByType(type);
-    const iconSrc = require(`assets/icons/${iconName}.svg`);
+    const iconSrc = getIconByType(type);
 
     return (
       <div

@@ -1,16 +1,27 @@
 import React from 'react';
-import { Checkbox, Rate, Collapse } from 'antd';
+import {
+  Checkbox, Collapse, Input,
+} from 'antd';
 
 import './Filters.scss';
 
+const Search = Input.Search;
 const Panel = Collapse.Panel;
-
 const CheckboxGroup = Checkbox.Group;
 
-const options = [
-  { label: 'Applic dyne', value: 'Apple' },
-  { label: 'Pear dynamic', value: 'Pear' },
-  { label: 'Orange juice & si', value: 'Orange' },
+const options1 = [
+  { label: 'Բացօթյա', value: 'Apple' },
+  { label: 'Փակօթյա', value: 'Pear' },
+];
+
+const options2 = [
+  { label: 'Քարտով Վճարում', value: 'Apl' },
+  { label: 'Երաժշտություն', value: 'Par' },
+  { label: 'Խաղային ավտոմատներ', value: 'Pasfr' },
+  { label: 'Կայանատեղի', value: 'Pafer' },
+  { label: 'Բուսակերների համար սնունդ', value: 'Pasr' },
+  { label: 'Wi-Fi', value: 'Appl' },
+  { label: 'DJ', value: 'Djsar' },
 ];
 
 class Filters extends React.PureComponent {
@@ -20,8 +31,7 @@ class Filters extends React.PureComponent {
 
   render() {
     return (
-      <Collapse bordered={false}>
-        {/* <Collapse bordered={false} defaultActiveKey={['3']}> */}
+      <Collapse bordered={false} defaultActiveKey={['3']}>
         <Panel header="Հոբելյարի մասին" key="1">
           <h3>Տարիք</h3>
           <h3>Սեռ</h3>
@@ -34,31 +44,32 @@ class Filters extends React.PureComponent {
         </Panel>
         <Panel header="Վայրի մասին" key="3">
           <div className="filters-container">
-            <h3>Choose tags</h3>
+
+            <div>
+              <Search
+                placeholder="Որոնում..."
+                onSearch={value => console.log(value)}
+              />
+            </div>
+
+            <br />
+            <br />
 
             <CheckboxGroup
-              options={options}
-              defaultValue={['Pear']}
+              options={options1}
               onChange={this.onChange}
             />
 
             <br />
             <br />
 
-            <h3>Rating</h3>
-
-            <Rate defaultValue={4} />
-
-            <br />
-            <br />
-
-            <h3>Choose other tags</h3>
+            <h3>Ցանկալի հատկանիշներ</h3>
 
             <CheckboxGroup
-              options={options}
-              defaultValue={['Pear']}
+              options={options2}
               onChange={this.onChange}
             />
+
           </div>
         </Panel>
       </Collapse>

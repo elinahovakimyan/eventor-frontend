@@ -31,10 +31,54 @@ img {
   text-align: center;
 }
 
+.flex-row-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-col-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .one-line-text {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+/* mixin for multiline */
+@mixin multiLineEllipsis($lineHeight: 1.2em, $lineCount: 1, $bgColor: white){
+  overflow: hidden;
+  position: relative;
+  line-height: $lineHeight;
+  max-height: $lineHeight * $lineCount; 
+  text-align: justify;
+  margin-right: -1em;
+  padding-right: 1em;
+  &:before {
+    content: '...';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 1em;
+    height: 1em;
+    margin-top: 0.2em;
+    background: $bgColor;
+  }
+}
+
+.three-line-text {
+  @include multiLineEllipsis($lineHeight: 1.2em, $lineCount: 3, $bgColor: white);  
 }
 
 .mt-30 {
@@ -56,20 +100,20 @@ img {
 
 .suppliers-list-page {
 
-    @include md {
-      .tab-content {
-          display: flex;
-          flex-direction: row;
+    // @include lg {
+    //   .tab-content {
+    //       display: flex;
+    //       flex-direction: row;
       
-          .filters-wrapper {
-              width: 25%;
-          }
+    //       .filters-wrapper {
+    //           width: 20%;
+    //       }
       
-          .data-wrapper {
-              width: 75%;
-          }
-      }
-    }
+    //       .data-wrapper {
+    //           width: 80%;
+    //       }
+    //   }
+    // }
 
     @include xl {
         .tab-content {

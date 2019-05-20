@@ -1,0 +1,55 @@
+.food-info {
+  padding: 15px;
+
+  .food-package-wrap {
+    padding: 10px 20px;
+
+    label {
+      font-size: 20px;
+      align-items: center;
+    }
+  }
+
+  .menu {
+    .menu-item {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 0.1px solid #cbd0d8;
+      
+      .menu-item-text {
+        padding-top: 10px;
+        padding-left: 15px;
+      }
+
+      .menu-item-price {
+        margin: 0;
+        padding-right: 10px;
+      }
+
+      i {
+        font-size: 26px;
+      }
+
+    }
+  }
+}
+
+
+.menu-item-modal {
+  .menu-form-item {
+    margin: 5px;
+  }
+  
+  .menu-item-price {
+    text-align: right;
+    margin-top: 20px;
+  }
+  
+  .menu-item-description {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+}

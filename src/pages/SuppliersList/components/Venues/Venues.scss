@@ -1,0 +1,20 @@
+.venue-card {
+  // border: 1px solid grey;
+  
+  .venue-card-cover {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 180px;
+    display: flex !important;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+
+  .price-range {
+    margin: 0;
+    padding: 0;
+    margin-top: 15px;
+    color: grey;
+  }
+}

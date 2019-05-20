@@ -1,6 +1,6 @@
 import { promisify } from 'core/helpers';
 
-import { cartoonHeroes } from 'data';
+import { cartoonHeroes } from 'shared/data';
 
 const getCartoonHeroes = () => promisify(cartoonHeroes);
 

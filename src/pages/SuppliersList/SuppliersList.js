@@ -2,29 +2,33 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Steps } from 'antd';
 
-import { HeaderWithIcon } from 'core/components';
-import { categories } from 'data/constants';
+import { TextWithImg } from 'core/components';
+import { getIconByType } from 'core/helpers';
+import {
+  categories,
+  VENUE,
+  FOOD,
+  // DECORATION,
+  // CAKE,
+  // CARTOON_HERO,
+  // GAME_SHOW,
+  // PHOTOGRAPHER,
+} from 'shared/data/constants';
 
-import { getRestaurants } from 'store/actions/restaurant';
 import { getCakes } from 'store/actions/cake';
 import { getDecorations } from 'store/actions/decoration';
 import { getCartoonHeroes } from 'store/actions/cartoonHero';
 import { getGameShows } from 'store/actions/gameShow';
 import { getPhotographers } from 'store/actions/photographer';
 
-import SuppliersGrid from './components/SuppliersGrid/SuppliersGrid';
+import Venues from './components/Venues/Venues';
+import Food from './components/Food/Food';
 import Filters from './components/Filters/Filters';
-import SuppliersFooter from './components/SuppliersFooter';
+import SuppliersFooter from './components/SuppliersFooter/SuppliersFooter';
 
 import './SuppliersList.scss';
 
 const Step = Steps.Step;
-const RESTAURANT = 0;
-const CARTOON_HERO = 1;
-const GAME_SHOW = 2;
-const DECORATION = 3;
-const CAKE = 4;
-const PHOTOGRAPHER = 5;
 
 class SuppliersList extends React.PureComponent {
   state = {
@@ -32,7 +36,6 @@ class SuppliersList extends React.PureComponent {
   }
 
   componentDidMount() {
-    this.props.getRestaurants();
     this.props.getCakes();
     this.props.getDecorations();
     this.props.getGameShows();
@@ -40,22 +43,26 @@ class SuppliersList extends React.PureComponent {
     this.props.getPhotographers();
   }
 
-  getDataByStep = (step) => {
-    switch (step) {
-      case RESTAURANT:
-        return this.props.restaurants;
-      case DECORATION:
-        return this.props.decorations;
-      case CAKE:
-        return this.props.cakes;
-      case CARTOON_HERO:
-        return this.props.cartoonHeroes;
-      case GAME_SHOW:
-        return this.props.gameShows;
-      case PHOTOGRAPHER:
-        return this.props.photographers;
+  getGridByStep = (step) => {
+    const currentCategory = categories.find(c => c.key === step);
+
+    switch (currentCategory.type) {
+      case VENUE:
+        return <Venues />;
+      case FOOD:
+        return <Food />;
+      // case DECORATION:
+      //   return this.props.decorations;
+      // case CAKE:
+      //   return this.props.cakes;
+      // case CARTOON_HERO:
+      //   return this.props.cartoonHeroes;
+      // case GAME_SHOW:
+      //   return this.props.gameShows;
+      // case PHOTOGRAPHER:
+      //   return this.props.photographers;
       default:
-        return this.props.restaurants;
+        return <Venues />;
     }
   }
 
@@ -73,8 +80,6 @@ class SuppliersList extends React.PureComponent {
 
   render() {
     const { currentStep } = this.state;
-    const { category } = this.props.match.params;
-    const data = this.getDataByStep(currentStep);
 
     return (
       <div className="suppliers-list-page">
@@ -82,8 +87,8 @@ class SuppliersList extends React.PureComponent {
           {categories.map(serviceCategory => (
             <Step
               title={(
-                <HeaderWithIcon
-                  type={serviceCategory.type}
+                <TextWithImg
+                  imgSrc={getIconByType(serviceCategory.type)}
                   title={serviceCategory.label}
                 />
               )}
@@ -92,12 +97,13 @@ class SuppliersList extends React.PureComponent {
           ))}
         </Steps>
 
+
         <div className="tab-content suppliers-content">
           <div className="filters-wrapper mt-30">
-            <Filters />
+            <Filters type={currentStep} />
           </div>
           <div className="data-wrapper">
-            <SuppliersGrid services={data} category={category} />
+            {this.getGridByStep(currentStep)}
           </div>
         </div>
 
@@ -107,14 +113,12 @@ class SuppliersList extends React.PureComponent {
           onNext={this.handleNext}
           onPrev={this.handlePrev}
         />
-
       </div>
     );
   }
 }
 
 const mapStateToProps = (state) => ({
-  restaurants: state.restaurant.restaurants,
   cakes: state.cake.cakes,
   gameShows: state.gameShow.gameShows,
   cartoonHeroes: state.cartoonHero.cartoonHeroes,
@@ -124,7 +128,6 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = {
   getCakes,
-  getRestaurants,
   getCartoonHeroes,
   getPhotographers,
   getDecorations,

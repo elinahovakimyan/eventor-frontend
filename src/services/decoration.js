@@ -1,6 +1,6 @@
 import { promisify } from 'core/helpers';
 
-import { decorations } from 'data';
+import { decorations } from 'shared/data';
 
 const getDecorations = () => promisify(decorations);
 
