@@ -114,12 +114,7 @@ class JubileeForm extends React.PureComponent {
     return (
       <div className="jubilee-form">
         <h1 className="text-center">
-          Մի փոքր
-          {' '}
-          {subject}
-          {' '}
-          մասին
-          {' '}
+          {`Մի փոքր ${subject} մասին `}
           <Icon type="heart" theme="twoTone" />
         </h1>
         <JubileeFormSteps currentStep={currentStep} />

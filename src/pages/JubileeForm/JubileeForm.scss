@@ -1,11 +1,12 @@
-$footer-height: 8vh;
+$footer-height: 9vh;
 
 .jubilee-form {
   min-height: 90vh;
   margin-bottom: $footer-height;
 
   h1 {
-    padding-top: 40px;
+    padding: 30px 10px 20px 10px;
+    font-size: 20px;
   }
   
   .steps {
@@ -19,12 +20,17 @@ $footer-height: 8vh;
     padding: 4% 6%;
 
 
+    .question-title {
+      font-size: 16px;
+    }
+
     .jubilee-name {
       width: 100%;
       text-align: center;
 
       button {
         margin: 15px;
+        font-size: 13px;
       }
 
       .jubilee-name-input {
@@ -70,9 +76,10 @@ $footer-height: 8vh;
         padding-bottom: 3%;
       }
   
-      button {
-        margin: 10px;
+      .interest-btn {
+        margin: 5px;
       }
+
       .active-btn {
         border-color: #184cca;
         color: #184cca;
@@ -81,38 +88,31 @@ $footer-height: 8vh;
 
     .birthday-info {
       width: 100%;
-      height: 60vh;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
-    }
-    
-    .birthday-date-row {
-      width: 100%;
-      text-align: center;
+      
+      .birthday-date-row {
+        width: 100%;
+        text-align: center;
+  
+        .time-select, .guest-select {
+          width: 60%;
+        }
+      }
+  
+      .space {
+        height: 20px;
+      }
 
-      .time-select, .guest-select {
-        width: 60%;
+      .ready-text {
+        margin-top: 20%;
       }
     }
 
     .jubilee-guests {
       text-align: center;
-
-      // .guests-questions {
-      //   margin-bottom: 60%;
-
-      //   span {
-      //     margin-top: 10%;
-
-      //     .ant-input-number {
-      //       margin-right: 15px;
-      //       margin-left: 15px;
-      //     }
-      //   }
-      // }
-
     }
   }
 
@@ -125,39 +125,79 @@ $footer-height: 8vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 8%;
+    padding: 0 3%;
 
     button {
       margin: 0 8px;
-      min-height: 45px;
-      min-width: 140px;
+      height: 34px;
     }
   }
 }
 
 
 @media only screen and (min-width: 778px) {
-  .birthday-date-row {
-    width: 100%;
+  .jubilee-form {
 
-    .birthday-date-col-1 {
-      text-align: right;
+    h1 {
+      font-size: 28px;
+      padding-top: 40px;
+    }    
+
+    .jubilee-content {
+
+      .question-title {
+        font-size: 20px;
+      }
+
+      .jubilee-name {
+
+        button {
+          margin: 15px;
+          font-size: 13px;
+        }
+
+      }
+    
+      .jubilee-interests {
+        text-align: center;
+
+        .interest-btn {
+          margin: 10px;
+        }
+      }
+
+      .birthday-info {
+        .birthday-date-row {
+          width: 100%;
+    
+          .birthday-date-col-1 {
+            text-align: right;
+          }
+    
+          .birthday-date-col-2 {
+            text-align: left;
+          }
+    
+          .birthday-date-col-1, .birthday-date-col-2 {
+            width: 50%;
+          }
+    
+          .time-select, .guest-select {
+            min-width: 60%;
+          }
+        }
+
+        .space {
+          height: 30px;
+        }
+      }
     }
 
-    .birthday-date-col-2 {
-      text-align: left;
-    }
+    .footer-actions {
 
-    .birthday-date-col-1, .birthday-date-col-2 {
-      width: 50%;
+      button {
+        height: 38px;
+      }
     }
-
-    .time-select, .guest-select {
-      min-width: 60%;
-    }
-
-    // .guest-select {
-    //   width: 120px;
-    // }
   }
 }

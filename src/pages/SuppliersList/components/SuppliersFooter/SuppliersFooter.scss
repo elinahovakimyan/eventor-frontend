@@ -1,6 +1,6 @@
 $footer-height: 8vh;
 
-.footer-actions {
+.service-footer-actions {
   background-color: #f5f5f5;
   position: fixed;
   bottom: 0;
@@ -9,7 +9,12 @@ $footer-height: 8vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 8%;
+  padding: 0 3%;
+
+  button {
+    margin: 0 8px;
+    height: 34px;
+  }
   
   .right-content {
     display: flex;
@@ -23,10 +28,15 @@ $footer-height: 8vh;
       cursor: pointer;
     }
   }
+}
 
-  button {
-    margin: 0 8px;
-    min-height: 45px;
-    min-width: 120px;
+
+
+@media only screen and (min-width: 778px) {
+  .service-footer-actions {
+
+    button {
+      height: 38px;
+    }
   }
 }

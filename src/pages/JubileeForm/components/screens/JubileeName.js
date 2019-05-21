@@ -29,7 +29,7 @@ class JubileeName extends React.PureComponent {
 
     return (
       <div className="jubilee-name">
-        <h2>Նշե՛ք հոբելյարի անունը</h2>
+        <h2 className="question-title">Նշե՛ք հոբելյարի անունը</h2>
 
         {numOfJubilees.map((a, i) => (
           <div key={a} className="jubilee-name-input">

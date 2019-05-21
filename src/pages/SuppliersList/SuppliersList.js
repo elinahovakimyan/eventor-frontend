@@ -5,7 +5,7 @@ import { Steps } from 'antd';
 import { TextWithImg } from 'core/components';
 import { getIconByType } from 'core/helpers';
 import {
-  categories,
+  categorySteps,
   VENUE,
   FOOD,
   // DECORATION,
@@ -44,7 +44,7 @@ class SuppliersList extends React.PureComponent {
   }
 
   getGridByStep = (step) => {
-    const currentCategory = categories.find(c => c.key === step);
+    const currentCategory = categorySteps.find(c => c.key === step);
 
     switch (currentCategory.type) {
       case VENUE:
@@ -84,7 +84,7 @@ class SuppliersList extends React.PureComponent {
     return (
       <div className="suppliers-list-page">
         <Steps progressDot className="suppliers-steps" current={currentStep}>
-          {categories.map(serviceCategory => (
+          {categorySteps.map(serviceCategory => (
             <Step
               title={(
                 <TextWithImg

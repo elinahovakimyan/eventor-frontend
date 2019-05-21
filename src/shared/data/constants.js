@@ -6,6 +6,7 @@ export const CAKE = 'cake';
 export const CARTOON_HERO = 'cartoon_hero';
 export const GAME_SHOW = 'game_show';
 export const PHOTOGRAPHER = 'photographer';
+export const DONE = 'done';
 
 export const categories = [
   {
@@ -33,14 +34,24 @@ export const categories = [
     type: DECORATION,
     label: 'Ձևավորում',
   },
-  {
-    key: 5,
-    type: CAKE,
-    label: 'Թխվածք',
-  },
+  // {
+  //   key: 5,
+  //   type: CAKE,
+  //   label: 'Թխվածք',
+  // },
   // {
   //   key: 6,
   //   type: PHOTOGRAPHER,
   //   label: 'Լուսանկարիչ',
   // },
+];
+
+
+export const categorySteps = [
+  ...categories,
+  {
+    key: 6,
+    type: DONE,
+    label: 'Հաստատել',
+  },
 ];

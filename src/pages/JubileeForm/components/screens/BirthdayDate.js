@@ -6,7 +6,7 @@ import {
 const { Option } = Select;
 
 const Space = () => (
-  <div style={{ height: '35px' }} />
+  <div className="space" />
 );
 
 class BirthdayDate extends React.PureComponent {
@@ -26,7 +26,7 @@ class BirthdayDate extends React.PureComponent {
       <div className="birthday-info">
         <Row gutter={48} className="birthday-date-row">
           <Col md={12} sm={24} className="birthday-date-col-1">
-            <h2>Ծննդյան օրն ու տարեթիվը</h2>
+            <h2 className="question-title">Ծննդյան օրն ու տարեթիվը</h2>
             <p>Մինչ միջոցառումը պետք է լինի առնվազն 7 օր</p>
 
             <DatePicker placeholder="Նշե՛ք օրը" onChange={onBirthdayDateChange} />
@@ -40,7 +40,7 @@ class BirthdayDate extends React.PureComponent {
             {!sameDay
               ? (
                 <React.Fragment>
-                  <h2>Միջոցառման օրը</h2>
+                  <h2 className="question-title">Միջոցառման օրը</h2>
                   <p>Մինչ միջոցառումը պետք է լինի առնվազն 7 օր</p>
                   <DatePicker placeholder="Նշե՛ք օրը" onChange={onPartyDateChange} />
 
@@ -50,7 +50,7 @@ class BirthdayDate extends React.PureComponent {
               ) : null}
           </Col>
           <Col md={12} sm={24} className="birthday-date-col-2">
-            <h2>Նախընտրելի ժամեր</h2>
+            <h2 className="question-title">Նախընտրելի ժամեր</h2>
             <p>Նշե՛ք, թե որ ժամին կցանկանաք սկսել միջոցառումը</p>
 
             <Select className="time-select" mode="multiple" placeholder="Ընտրե՛ք բոլոր նախընտրած ժամերը">
@@ -71,7 +71,7 @@ class BirthdayDate extends React.PureComponent {
 
             <Space />
 
-            <h2>Նշե՛ք հյուրերի քանակը</h2>
+            <h2 className="question-title">Նշե՛ք հյուրերի քանակը</h2>
             <Select className="guest-select">
               <Option value="1-5">1-5</Option>
               <Option value="6-10">6-10</Option>
@@ -88,9 +88,9 @@ class BirthdayDate extends React.PureComponent {
           </Col>
         </Row>
 
-        <h3 className="text-center">
+        <h4 className="ready-text text-center">
           Պատրա՞ստ եք գտնել լավագույն ծառայությունները Ձեր երեխայի տարեդարձի համար
-        </h3>
+        </h4>
       </div>
     );
   }

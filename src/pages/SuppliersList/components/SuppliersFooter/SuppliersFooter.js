@@ -11,7 +11,7 @@ class SuppliersFooter extends React.PureComponent {
     const isPrevDisabled = currentStep === 0;
 
     return (
-      <div className="footer-actions">
+      <div className="service-footer-actions">
         <Button disabled={isPrevDisabled} onClick={onPrev}>
           <Icon type="left" />
           Նախորդը

@@ -8,7 +8,7 @@ class JubileeFormSteps extends React.PureComponent {
     const { currentStep } = this.props;
 
     return (
-      <Steps className="steps" current={currentStep}>
+      <Steps className="steps" current={currentStep} size="small">
         <Step title="Ծանոթանանք 🎉" />
         <Step title="Ի՞նչ ենք սիրում 🧡" />
         <Step title="Ինչպե՞ս նշենք 😇" />

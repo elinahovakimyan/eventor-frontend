@@ -6,6 +6,7 @@ import {
   GAME_SHOW,
   CARTOON_HERO,
   PHOTOGRAPHER,
+  DONE,
 } from 'shared/data/constants';
 
 export const getIconNameByType = (type) => {
@@ -24,6 +25,8 @@ export const getIconNameByType = (type) => {
       return 'laugh';
     case PHOTOGRAPHER:
       return 'photo-camera';
+    case DONE:
+      return 'work-done';
     default:
       return 'confetti';
   }

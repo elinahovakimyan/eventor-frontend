@@ -43,7 +43,7 @@ class JubileeInterests extends React.PureComponent {
 
     return (
       <div className="jubilee-interests">
-        <h2>Նշված թեմաներից որո՞նք են հոբելյարին հարազատ</h2>
+        <h2 className="question-title">Նշված թեմաներից որո՞նք են հոբելյարին հարազատ</h2>
 
         {interests.map(item => {
           const buttonClass = Array.isArray(selectedInterests) && selectedInterests.includes(item)
@@ -51,7 +51,7 @@ class JubileeInterests extends React.PureComponent {
             : '';
 
           return (
-            <Button key={item} className={buttonClass} onClick={() => toggleInterest(item)}>
+            <Button key={item} className={`interest-btn ${buttonClass}`} onClick={() => toggleInterest(item)}>
               {item}
             </Button>
           );
