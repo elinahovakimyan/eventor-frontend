@@ -4,6 +4,7 @@ import { Steps } from 'antd';
 
 import { TextWithImg } from 'core/components';
 import { getIconByType } from 'core/helpers';
+import { Filters } from 'shared/components';
 import {
   categorySteps,
   VENUE,
@@ -23,16 +24,19 @@ import { getPhotographers } from 'store/actions/photographer';
 
 import Venues from './components/Venues/Venues';
 import Food from './components/Food/Food';
-import Filters from './components/Filters/Filters';
 import SuppliersFooter from './components/SuppliersFooter/SuppliersFooter';
 
-import './SuppliersList.scss';
+import './Services.scss';
 
 const Step = Steps.Step;
 
-class SuppliersList extends React.PureComponent {
+class Services extends React.PureComponent {
   state = {
-    currentStep: 0,
+    currentCategory: {
+      key: 0,
+      type: VENUE,
+      label: 'Ժամանցի Վայր',
+    },
   }
 
   componentDidMount() {
@@ -43,9 +47,7 @@ class SuppliersList extends React.PureComponent {
     this.props.getPhotographers();
   }
 
-  getGridByStep = (step) => {
-    const currentCategory = categorySteps.find(c => c.key === step);
-
+  getGridByStep = (currentCategory) => {
     switch (currentCategory.type) {
       case VENUE:
         return <Venues />;
@@ -67,23 +69,31 @@ class SuppliersList extends React.PureComponent {
   }
 
   handleNext = () => {
-    this.setState((prevState) => ({
-      currentStep: prevState.currentStep + 1,
-    }));
+    this.setState((prevState) => {
+      const currentStep = prevState.currentCategory.key + 1;
+
+      return ({
+        currentCategory: categorySteps.find(c => c.key === currentStep),
+      });
+    });
   }
 
   handlePrev = () => {
-    this.setState((prevState) => ({
-      currentStep: prevState.currentStep - 1,
-    }));
+    this.setState((prevState) => {
+      const currentStep = prevState.currentCategory.key - 1;
+
+      return ({
+        currentCategory: categorySteps.find(c => c.key === currentStep),
+      });
+    });
   }
 
   render() {
-    const { currentStep } = this.state;
+    const { currentCategory } = this.state;
 
     return (
       <div className="suppliers-list-page">
-        <Steps progressDot className="suppliers-steps" current={currentStep}>
+        <Steps progressDot className="suppliers-steps" current={currentCategory.key}>
           {categorySteps.map(serviceCategory => (
             <Step
               title={(
@@ -100,16 +110,16 @@ class SuppliersList extends React.PureComponent {
 
         <div className="tab-content suppliers-content">
           <div className="filters-wrapper mt-30">
-            <Filters type={currentStep} />
+            <Filters currentCategory={currentCategory} />
           </div>
           <div className="data-wrapper">
-            {this.getGridByStep(currentStep)}
+            {this.getGridByStep(currentCategory)}
           </div>
         </div>
 
 
         <SuppliersFooter
-          currentStep={currentStep}
+          currentStep={currentCategory.key}
           onNext={this.handleNext}
           onPrev={this.handlePrev}
         />
@@ -134,4 +144,4 @@ const mapDispatchToProps = {
   getGameShows,
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(SuppliersList);
+export default connect(mapStateToProps, mapDispatchToProps)(Services);

@@ -1,36 +1,34 @@
 import React from 'react';
 import { Icon } from 'antd';
+import { connect } from 'react-redux';
+// import * as emailjs from 'emailjs-com';
+
+import { updateJubileeInfo } from 'store/actions/birthday';
 
 import JubileeFormSteps from './components/sections/JubileeFormSteps';
 import JubileeFormFooter from './components/sections/JubileeFormFooter';
 import JubileeName from './components/screens/JubileeName';
-// import JubileeGender from './components/screens/JubileeGender';
-// import JubileeAge from './components/screens/JubileeAge';
 import JubileeInterests from './components/screens/JubileeInterests';
 import BirthdayDate from './components/screens/BirthdayDate';
-// import JubileeGuests from './components/screens/JubileeGuests';
 
 import './JubileeForm.scss';
 
 class JubileeForm extends React.PureComponent {
   state = {
     currentStep: 0,
-    formAnswers: {},
     selectedInterests: [],
+    name: [],
+    birthdayDate: null,
+    partyDate: null,
+    partyTime: null,
+    guestsNumber: null,
+    isButtonLoading: false,
   }
 
   getCurrentContent = (currentStep) => {
     switch (currentStep) {
       case 0:
-        return <JubileeName />;
-      // case 1:
-      //   return (
-      //     <JubileeGender genderSelect={this.answerQuestion} />
-      //   );
-      // case 2:
-      //   return (
-      //     <JubileeAge ageSelect={this.answerQuestion} />
-      //   );
+        return <JubileeName onChange={this.handleNameChange} />;
       case 1:
         return (
           <JubileeInterests
@@ -43,29 +41,37 @@ class JubileeForm extends React.PureComponent {
           <BirthdayDate
             onBirthdayDateChange={this.birthdayDateChange}
             onPartyDateChange={this.partyDateChange}
+            onTimeChange={this.timeChange}
+            onGuestNumberChange={this.guestNumberChange}
           />
         );
-        // case 3:
-        //   return (
-        //     <JubileeGuests />
-        //   );
 
       default:
         return null;
     }
   }
 
-  answerQuestion = (key, value) => {
-    this.setState((prevState) => ({
-      formAnswers: {
-        ...prevState.formAnswers,
-        [key]: value,
-      },
-    }));
+  // answerQuestion = (key, value) => {
+  //   this.setState((prevState) => ({
+  //     formAnswers: {
+  //       ...prevState.formAnswers,
+  //       [key]: value,
+  //     },
+  //   }));
 
-    if (key === 'gender' || key === 'age') {
-      this.nextStep();
-    }
+  //   if (key === 'gender' || key === 'age') {
+  //     this.nextStep();
+  //   }
+  // }
+
+  handleNameChange = (i, e) => {
+    const { name } = this.state;
+    const jubileeName = [...name];
+    jubileeName[i] = e.target.value;
+
+    this.setState({
+      name: jubileeName,
+    });
   }
 
   nextStep = () => {
@@ -95,20 +101,84 @@ class JubileeForm extends React.PureComponent {
     });
   }
 
-  birthdayDateChange = (date) => {
-    console.log('date :', new Date(date));
+  birthdayDateChange = (value, dateString) => {
+    this.setState({
+      birthdayDate: {
+        value,
+        dateString,
+      },
+    });
   }
 
-  partyDateChange = (date) => {
-    console.log('date :', date);
+  partyDateChange = (value, dateString) => {
+    this.setState({
+      partyDate: {
+        value,
+        dateString,
+      },
+    });
+  }
+
+  timeChange = (partyTime) => {
+    this.setState({
+      partyTime,
+    });
+  }
+
+  guestNumberChange = (guestsNumber) => {
+    this.setState({
+      guestsNumber,
+    });
   }
 
   submitJubileeInfo = () => {
-    this.props.history.push('/service-providers');
+    this.setState({
+      isButtonLoading: true,
+    });
+
+    const values = {
+      name: this.state.name,
+      interests: this.state.selectedInterests,
+      birthdayDate: this.state.birthdayDate,
+      partyDate: this.state.partyDate,
+      partyTime: this.state.partyTime,
+      guestsNumber: this.state.guestsNumber,
+    };
+
+    this.props.updateJubileeInfo(values);
+    this.props.history.push('/services');
+
+    // const templateParams = {
+    //   reply_to: 'eventor.llc@gmail.com',
+    //   from_name: 'eventor.llc@gmail.com',
+    //   to_name: 'Eventor team (Jubilee Info)',
+    //   message_html: JSON.stringify(values),
+    // };
+
+    // const serviceId = 'default_service';
+    // const templateId = 'template_KWvTDbxq';
+    // const userId = 'user_KTPrRh8HKGMZ7Uw4U0P8U';
+
+    // emailjs.send(serviceId, templateId, templateParams, userId)
+    //   .then(() => {
+    //     this.setState({
+    //       isButtonLoading: false,
+    //     });
+    //     this.props.history.push('/services');
+    //   })
+    //   .catch(() => {
+    //     this.setState({
+    //       isButtonLoading: false,
+    //     });
+    //   });
+    this.setState({
+      isButtonLoading: false,
+    });
+
   }
 
   render() {
-    const { currentStep } = this.state;
+    const { currentStep, isButtonLoading } = this.state;
     const subject = currentStep < 2 ? 'հոբելյարի' : 'միջոցառման';
 
     return (
@@ -128,10 +198,15 @@ class JubileeForm extends React.PureComponent {
           prevStep={this.prevStep}
           currentStep={currentStep}
           submitJubileeInfo={this.submitJubileeInfo}
+          readyLoading={isButtonLoading}
         />
       </div>
     );
   }
 }
 
-export default JubileeForm;
+const mapDispatchToProps = {
+  updateJubileeInfo,
+};
+
+export default connect(null, mapDispatchToProps)(JubileeForm);

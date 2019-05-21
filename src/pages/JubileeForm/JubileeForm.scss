@@ -98,12 +98,8 @@ $footer-height: 9vh;
         text-align: center;
   
         .time-select, .guest-select {
-          width: 60%;
+          width: 70%;
         }
-      }
-  
-      .space {
-        height: 20px;
       }
 
       .ready-text {
@@ -185,10 +181,6 @@ $footer-height: 9vh;
           .time-select, .guest-select {
             min-width: 60%;
           }
-        }
-
-        .space {
-          height: 30px;
         }
       }
     }

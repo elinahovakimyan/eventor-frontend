@@ -4,7 +4,7 @@ import { Button, Icon } from 'antd';
 class JubileeFormFooter extends React.PureComponent {
   render() {
     const {
-      nextStep, prevStep, currentStep, submitJubileeInfo,
+      nextStep, prevStep, currentStep, submitJubileeInfo, readyLoading,
     } = this.props;
     const isPrevDisabled = currentStep === 0;
 
@@ -22,7 +22,10 @@ class JubileeFormFooter extends React.PureComponent {
         ) : (
           <Button onClick={submitJubileeInfo}>
             Պատրաստ եմ
-            <Icon type="smile" />
+            {readyLoading
+              ? <Icon type="loading" />
+              : <Icon type="smile" />
+            }
           </Button>
         )}
       </div>

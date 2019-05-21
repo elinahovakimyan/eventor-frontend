@@ -18,10 +18,13 @@ class JubileeName extends React.PureComponent {
     });
   }
 
-  removeJubilee = (a) => {
+  removeJubilee = (a, i) => {
     this.setState((prevState) => ({
       numOfJubilees: prevState.numOfJubilees.filter(curItem => curItem !== a),
     }));
+
+    const e = { target: { value: null } };
+    this.props.onChange(i, e);
   }
 
   render() {
@@ -36,9 +39,10 @@ class JubileeName extends React.PureComponent {
             <Input
               prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />}
               placeholder="Մուտքագրե՛ք հոբելյարի անունը"
+              onChange={(e) => this.props.onChange(i, e)}
             />
             {i > 0
-              ? <Icon type="delete" onClick={() => this.removeJubilee(a)} />
+              ? <Icon type="delete" onClick={() => this.removeJubilee(a, i)} />
               : null}
           </div>
         ))}

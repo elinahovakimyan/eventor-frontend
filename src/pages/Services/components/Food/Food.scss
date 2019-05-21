@@ -2,11 +2,12 @@
   padding: 15px;
 
   .food-package-wrap {
-    padding: 10px 20px;
+    padding: 10px 10px 10px 15px;
 
     label {
       font-size: 20px;
       align-items: center;
+      white-space: normal;
     }
   }
 
@@ -26,6 +27,7 @@
       .menu-item-price {
         margin: 0;
         padding-right: 10px;
+        font-size: 14px;
       }
 
       i {

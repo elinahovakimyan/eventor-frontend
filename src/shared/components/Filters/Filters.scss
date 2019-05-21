@@ -1,0 +1,11 @@
+.filters-container {
+  .ant-checkbox-group-item {
+    display: block;
+  }
+
+  .ant-checkbox-group {
+    .ant-checkbox-group-item {
+      display: block !important;
+    }
+  }
+}

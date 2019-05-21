@@ -50,7 +50,7 @@ export const categories = [
 export const categorySteps = [
   ...categories,
   {
-    key: 6,
+    key: 5,
     type: DONE,
     label: 'Հաստատել',
   },

@@ -3,11 +3,9 @@ import {
   Row, Col, DatePicker, Checkbox, Select,
 } from 'antd';
 
-const { Option } = Select;
+import { Space } from 'core/components';
 
-const Space = () => (
-  <div className="space" />
-);
+const { Option } = Select;
 
 class BirthdayDate extends React.PureComponent {
   state = { sameDay: true }
@@ -20,7 +18,9 @@ class BirthdayDate extends React.PureComponent {
 
   render() {
     const { sameDay } = this.state;
-    const { onBirthdayDateChange, onPartyDateChange } = this.props;
+    const {
+      onBirthdayDateChange, onPartyDateChange, onGuestNumberChange, onTimeChange,
+    } = this.props;
 
     return (
       <div className="birthday-info">
@@ -41,7 +41,6 @@ class BirthdayDate extends React.PureComponent {
               ? (
                 <React.Fragment>
                   <h2 className="question-title">Միջոցառման օրը</h2>
-                  <p>Մինչ միջոցառումը պետք է լինի առնվազն 7 օր</p>
                   <DatePicker placeholder="Նշե՛ք օրը" onChange={onPartyDateChange} />
 
                   <Space />
@@ -49,11 +48,17 @@ class BirthdayDate extends React.PureComponent {
                 </React.Fragment>
               ) : null}
           </Col>
+
           <Col md={12} sm={24} className="birthday-date-col-2">
             <h2 className="question-title">Նախընտրելի ժամեր</h2>
-            <p>Նշե՛ք, թե որ ժամին կցանկանաք սկսել միջոցառումը</p>
+            <p>Ո՞ր ժամին կցանկանաք սկսել միջոցառումը</p>
 
-            <Select className="time-select" mode="multiple" placeholder="Ընտրե՛ք բոլոր նախընտրած ժամերը">
+            <Select
+              className="time-select"
+              mode="multiple"
+              placeholder="Ընտրե՛ք բոլոր նախընտրած ժամերը"
+              onChange={onTimeChange}
+            >
               <Option value="10:00">10:00</Option>
               <Option value="11:00">11:00</Option>
               <Option value="12:00">12:00</Option>
@@ -72,7 +77,7 @@ class BirthdayDate extends React.PureComponent {
             <Space />
 
             <h2 className="question-title">Նշե՛ք հյուրերի քանակը</h2>
-            <Select className="guest-select">
+            <Select className="guest-select" onChange={onGuestNumberChange}>
               <Option value="1-5">1-5</Option>
               <Option value="6-10">6-10</Option>
               <Option value="11-15">11-15</Option>
