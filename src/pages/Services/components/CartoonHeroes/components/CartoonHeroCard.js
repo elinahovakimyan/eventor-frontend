@@ -1,9 +1,8 @@
 import React from 'react';
-import { Icon } from 'antd';
 
 import { ServiceCard } from 'shared/wrappers';
 
-import VenueModal from './VenueModal';
+import CartoonHeroModal from './CartoonHeroModal';
 
 
 const CartoonHeroCard = React.memo(({ service, isSelected, toggleService }) => {
@@ -13,23 +12,24 @@ const CartoonHeroCard = React.memo(({ service, isSelected, toggleService }) => {
       <p className="service-description one-line-text">
         {service.description}
       </p>
-      <h4 className="one-line-text">
-        <Icon type="environment" />
-        {` Հասցե՝ ${service.address}`}
-      </h4>
-      <h4 className="one-line-text">
-        <Icon type="shop" />
-        {` Սրահների քանակը՝ ${service.rooms}`}
+
+      <h4 className="provider">
+        {`Մատակարար՝ ${service.provider.name}`}
       </h4>
 
-      <h4 className="text-center price-range">{service.priceRange}</h4>
+      <h4 className="price text-right">
+        Սկսած
+        {' '}
+        {service.price}
+        դր.
+      </h4>
     </React.Fragment>
   );
 
   return (
     <ServiceCard
       service={service}
-      actionComponent={<VenueModal service={service} />}
+      actionComponent={<CartoonHeroModal service={service} />}
       onClick={() => toggleService(service.id)}
       isSelected={isSelected}
     >

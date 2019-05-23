@@ -39,7 +39,7 @@ class ServiceModal extends React.PureComponent {
           cancelText="Փակել"
           className="service-modal"
         >
-          <ImageCarousel img={service.serviceImg} />
+          <ImageCarousel img={service.mainImage} />
 
           <div className="service-content">
 

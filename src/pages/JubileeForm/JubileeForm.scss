@@ -81,8 +81,13 @@ $footer-height: 9vh;
       }
 
       .active-btn {
-        border-color: #184cca;
-        color: #184cca;
+        border-color: #f6884d;
+        color: #f6884d;
+      }
+
+      .add-btn {
+        background: #fff;
+        border-style: dashed;
       }
     }
 

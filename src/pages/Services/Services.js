@@ -9,21 +9,17 @@ import {
   categorySteps,
   VENUE,
   FOOD,
+  CARTOON_HERO,
+  GAME_SHOW,
   // DECORATION,
   // CAKE,
-  // CARTOON_HERO,
-  // GAME_SHOW,
   // PHOTOGRAPHER,
 } from 'shared/data/constants';
 
-import { getCakes } from 'store/actions/cake';
-import { getDecorations } from 'store/actions/decoration';
-import { getCartoonHeroes } from 'store/actions/cartoonHero';
-import { getGameShows } from 'store/actions/gameShow';
-import { getPhotographers } from 'store/actions/photographer';
-
 import Venues from './components/Venues/Venues';
 import Food from './components/Food/Food';
+import CartoonHeroes from './components/CartoonHeroes/CartoonHeroes';
+import GameShows from './components/GameShows/GameShows';
 import SuppliersFooter from './components/SuppliersFooter/SuppliersFooter';
 
 import './Services.scss';
@@ -39,28 +35,20 @@ class Services extends React.PureComponent {
     },
   }
 
-  componentDidMount() {
-    this.props.getCakes();
-    this.props.getDecorations();
-    this.props.getGameShows();
-    this.props.getCartoonHeroes();
-    this.props.getPhotographers();
-  }
-
   getGridByStep = (currentCategory) => {
     switch (currentCategory.type) {
       case VENUE:
         return <Venues />;
       case FOOD:
         return <Food />;
+      case CARTOON_HERO:
+        return <CartoonHeroes />;
+      case GAME_SHOW:
+        return <GameShows />;
       // case DECORATION:
       //   return this.props.decorations;
       // case CAKE:
       //   return this.props.cakes;
-      // case CARTOON_HERO:
-      //   return this.props.cartoonHeroes;
-      // case GAME_SHOW:
-      //   return this.props.gameShows;
       // case PHOTOGRAPHER:
       //   return this.props.photographers;
       default:
@@ -128,20 +116,4 @@ class Services extends React.PureComponent {
   }
 }
 
-const mapStateToProps = (state) => ({
-  cakes: state.cake.cakes,
-  gameShows: state.gameShow.gameShows,
-  cartoonHeroes: state.cartoonHero.cartoonHeroes,
-  decorations: state.decoration.decorations,
-  photographers: state.photographer.photographers,
-});
-
-const mapDispatchToProps = {
-  getCakes,
-  getCartoonHeroes,
-  getPhotographers,
-  getDecorations,
-  getGameShows,
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(Services);
+export default connect(null, null)(Services);

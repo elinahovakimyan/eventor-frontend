@@ -1,0 +1,16 @@
+.service-card-wrapper {
+  // border: 1px solid grey;
+  cursor: pointer;
+  
+  .service-card-cover {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 180px;
+    display: flex !important;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 10px;
+  
+  }
+
+}

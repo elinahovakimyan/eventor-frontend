@@ -1,24 +1,24 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import { getVenues } from 'store/actions/venue';
-
+import { getGameShows } from 'store/actions/gameShow';
 import { ServiceGrid } from 'shared/wrappers';
 
-import VenueCard from './components/VenueCard';
+import GameShowCard from './components/GameShowCard';
 
-import './Venues.scss';
+import './GameShows.scss';
 
-class Venues extends React.PureComponent {
+
+class GameShows extends React.PureComponent {
   componentDidMount() {
-    this.props.getVenues();
+    this.props.getGameShows();
   }
 
   render() {
     return (
-      <ServiceGrid services={this.props.venues}>
+      <ServiceGrid services={this.props.gameShows}>
         {(service, isSelected, toggleService) => (
-          <VenueCard
+          <GameShowCard
             service={service}
             isSelected={isSelected}
             toggleService={toggleService}
@@ -30,11 +30,11 @@ class Venues extends React.PureComponent {
 }
 
 const mapStateToProps = (state) => ({
-  venues: state.venue.venues,
+  gameShows: state.gameShow.gameShows,
 });
 
 const mapDispatchToProps = {
-  getVenues,
+  getGameShows,
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Venues);
+export default connect(mapStateToProps, mapDispatchToProps)(GameShows);

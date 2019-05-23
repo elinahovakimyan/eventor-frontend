@@ -19,14 +19,14 @@ class ServiceCard extends React.PureComponent {
         cover={(
           <div
             style={{
-              backgroundImage: `url(${service.serviceImg})`,
+              backgroundImage: `url(${service.mainImage})`,
             }}
             className="service-card"
           >
             <img
               className="service-provider-logo"
               alt={service.title}
-              src={service.serviceImg}
+              src={service.mainImage}
             />
           </div>
         )}

@@ -15,12 +15,12 @@ class JubileeFormFooter extends React.PureComponent {
           Նախորդը
         </Button>
         {currentStep < 2 ? (
-          <Button onClick={nextStep}>
+          <Button type="primary" onClick={nextStep}>
             Հաջորդը
             <Icon type="right" />
           </Button>
         ) : (
-          <Button onClick={submitJubileeInfo}>
+          <Button type="primary" onClick={submitJubileeInfo}>
             Պատրաստ եմ
             {readyLoading
               ? <Icon type="loading" />
