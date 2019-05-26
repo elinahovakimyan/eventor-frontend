@@ -21,7 +21,7 @@ class Food extends React.PureComponent {
         <h2 className="text-center">Առկա Փաթեթներ</h2>
         <div className="food-package-wrap">
           <Radio className="food-package" value={1}>
-            Փոքր - հավի խորոված, երկու տեսակի աղցան, ջրեղեն - 2,500 AMD
+            Մինի - հավի խորոված, երկու տեսակի աղցան, ջրեղեն - 2,500 AMD
           </Radio>
         </div>
         <div className="food-package-wrap">
@@ -31,7 +31,7 @@ class Food extends React.PureComponent {
         </div>
         <div className="food-package-wrap">
           <Radio className="food-package" value={3}>
-            Մեծ - հավի և խոզի խորոված, երեք տեսակի աղցան, ջրեղեն - 5,000 AMD
+            Մաքսի - հավի և խոզի խորոված, երեք տեսակի աղցան, ջրեղեն - 5,000 AMD
           </Radio>
         </div>
 
@@ -40,7 +40,7 @@ class Food extends React.PureComponent {
         <br />
 
 
-        <h2 className="text-center">...Կամ ընտրե՛ք մենյուով</h2>
+        <h2 className="text-center">...Կամ օգտվե՛ք մենյուից</h2>
         <Collapse className="menu">
           {menu.map(section => (
             <Panel header={section.title} key={section.id}>
