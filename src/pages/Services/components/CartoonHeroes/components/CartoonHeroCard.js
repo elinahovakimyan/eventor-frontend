@@ -29,7 +29,7 @@ const CartoonHeroCard = React.memo(({ service, isSelected, toggleService }) => {
   return (
     <ServiceCard
       service={service}
-      actionComponent={<CartoonHeroModal service={service} />}
+      seeMore={<CartoonHeroModal service={service} />}
       onClick={() => toggleService(service.id)}
       isSelected={isSelected}
     >

@@ -11,18 +11,31 @@ class SuppliersFooter extends React.PureComponent {
     const isPrevDisabled = currentStep === 0;
 
     return (
-      <div className="service-footer-actions">
-        <Button disabled={isPrevDisabled} onClick={onPrev}>
-          <Icon type="left" />
+      <div className="service-footer">
+        <div className="service-footer-actions">
+          <Button disabled={isPrevDisabled} onClick={onPrev}>
+            <Icon type="left" />
           Նախորդը
-        </Button>
-        <div className="right-content">
-          <p onClick={onNext}>Բաց Թողնել</p>
-          <Button type="primary" disabled={currentStep === 5} onClick={onNext}>
-            Հաջորդը
-            <Icon type="right" />
           </Button>
+          {currentStep !== 5
+            ? (
+              <div className="right-content">
+                <p onClick={onNext}>Բաց Թողնել</p>
+                <Button type="primary" onClick={onNext}>
+                Հաջորդը
+                  <Icon type="right" />
+                </Button>
+              </div>
+            )
+            : null}
         </div>
+        <p className="text-center">
+          Հարցերի դեպքում՝
+          {' '}
+          <Icon type="phone" />
+          {' '}
+          055855615, 093661815
+        </p>
       </div>
     );
   }

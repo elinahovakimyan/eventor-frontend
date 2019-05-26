@@ -27,7 +27,7 @@ const DecorationCard = React.memo(({ service, isSelected, toggleService }) => {
   return (
     <ServiceCard
       service={service}
-      actionComponent={<DecorationModal service={service} />}
+      seeMore={<DecorationModal service={service} />}
       onClick={() => toggleService(service.id)}
       isSelected={isSelected}
     >

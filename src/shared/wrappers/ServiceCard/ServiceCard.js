@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Checkbox } from 'antd';
+import { Card, Checkbox, Button } from 'antd';
 
 import './ServiceCard.scss';
 
@@ -7,7 +7,7 @@ const { Meta } = Card;
 
 
 const ServiceCard = React.memo(({
-  service, children, actionComponent, isSelected, onClick,
+  service, children, seeMore, isSelected, onClick,
 }) => {
 
   if (Object.keys(service)) {
@@ -23,7 +23,11 @@ const ServiceCard = React.memo(({
             <Checkbox checked={isSelected} />
           </div>
         )}
-        actions={[actionComponent]}
+        actions={[
+          seeMore,
+          <Button onClick={onClick}>
+            Ընտրել
+          </Button>]}
       >
         <Meta
           title={service.title}

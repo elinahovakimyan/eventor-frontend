@@ -12,15 +12,18 @@ import {
   CARTOON_HERO,
   GAME_SHOW,
   DECORATION,
+  DONE,
   // CAKE,
   // PHOTOGRAPHER,
 } from 'shared/data/constants';
 
+import WelcomeModal from './components/WelcomeModal/WelcomeModal';
 import Venues from './components/Venues/Venues';
 import Food from './components/Food/Food';
 import CartoonHeroes from './components/CartoonHeroes/CartoonHeroes';
 import GameShows from './components/GameShows/GameShows';
 import Decorations from './components/Decorations/Decorations';
+import Confirmation from './components/Confirmation/Confirmation';
 import SuppliersFooter from './components/SuppliersFooter/SuppliersFooter';
 
 import './Services.scss';
@@ -82,6 +85,8 @@ class Services extends React.PureComponent {
 
     return (
       <div className="suppliers-list-page">
+        <WelcomeModal />
+
         <Steps progressDot className="suppliers-steps" current={currentCategory.key}>
           {categorySteps.map(serviceCategory => (
             <Step
@@ -97,14 +102,19 @@ class Services extends React.PureComponent {
         </Steps>
 
 
-        <div className="tab-content suppliers-content">
-          <div className="filters-wrapper mt-30">
-            <Filters currentCategory={currentCategory} />
-          </div>
-          <div className="data-wrapper">
-            {this.getGridByStep(currentCategory)}
-          </div>
-        </div>
+        {currentCategory.type === DONE
+          ? <Confirmation />
+          : (
+            <div className="tab-content suppliers-content">
+              <div className="filters-wrapper mt-30">
+                <Filters currentCategory={currentCategory} />
+              </div>
+              <div className="data-wrapper">
+                <h2 className="text-center">{`Ընտրե՛ք ${currentCategory.label}ը`}</h2>
+                {this.getGridByStep(currentCategory)}
+              </div>
+            </div>
+          )}
 
 
         <SuppliersFooter

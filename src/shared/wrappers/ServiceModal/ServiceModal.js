@@ -22,7 +22,7 @@ class ServiceModal extends React.PureComponent {
     return (
       <React.Fragment>
         <Button onClick={this.toggleModal}>
-          Տեսնել ավելին
+          Ավելին
         </Button>
         <Modal
           centered
