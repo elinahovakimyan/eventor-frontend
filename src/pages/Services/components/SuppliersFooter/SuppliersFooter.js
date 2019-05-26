@@ -16,13 +16,17 @@ class SuppliersFooter extends React.PureComponent {
           <Icon type="left" />
           Նախորդը
         </Button>
-        <div className="right-content">
-          <p onClick={onNext}>Բաց Թողնել</p>
-          <Button type="primary" disabled={currentStep === 5} onClick={onNext}>
-            Հաջորդը
-            <Icon type="right" />
-          </Button>
-        </div>
+        {currentStep !== 5
+          ? (
+            <div className="right-content">
+              <p onClick={onNext}>Բաց Թողնել</p>
+              <Button type="primary" onClick={onNext}>
+                Հաջորդը
+                <Icon type="right" />
+              </Button>
+            </div>
+          )
+          : null}
       </div>
     );
   }

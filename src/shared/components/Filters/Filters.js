@@ -45,23 +45,33 @@ class Filters extends React.PureComponent {
 
   }
 
+  getFiltersTitle = (currentCategory) => {
+    if (currentCategory.type === DECORATION) {
+      return 'Ձևավորման մասին';
+    }
+
+    return `${currentCategory.label}ի մասին`;
+  }
+
   render() {
     const { currentCategory } = this.props;
 
     return (
       <Collapse bordered={false} defaultActiveKey={['3']}>
+
         <Panel header="Հոբելյարի մասին" key="1">
           <h3>Տարիք</h3>
           <h3>Սեռ</h3>
           <h3>Հետաքրքրություններ</h3>
         </Panel>
+
         <Panel header="Միջոցառման մասին" key="2">
           <h3>Օր</h3>
           <h3>Ժամ</h3>
           <h3>Հյուրերի քանակ</h3>
         </Panel>
 
-        <Panel header={`${currentCategory.label}ի մասին`} key="3" className="filters-container">
+        <Panel header={this.getFiltersTitle(currentCategory)} key="3" className="filters-container">
           {this.getMatchingFilters(currentCategory)}
         </Panel>
 
