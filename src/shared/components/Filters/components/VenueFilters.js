@@ -7,23 +7,24 @@ const Search = Input.Search;
 const CheckboxGroup = Checkbox.Group;
 
 const options1 = [
-  { label: 'Բացօթյա', value: 'Apple' },
-  { label: 'Փակօթյա', value: 'Pear' },
+  { label: 'Բացօթյա', value: 'outdoor' },
+  { label: 'Փակօթյա', value: 'indoor' },
 ];
 
 const options2 = [
-  { label: 'Քարտով Վճարում', value: 'Apl' },
-  { label: 'Երաժշտություն', value: 'Par' },
-  { label: 'Խաղային ավտոմատներ', value: 'Pasfr' },
-  { label: 'Կայանատեղի', value: 'Pafer' },
-  { label: 'Բուսակերների համար սնունդ', value: 'Pasr' },
-  { label: 'Wi-Fi', value: 'Appl' },
-  { label: 'DJ', value: 'Djsar' },
+  { label: 'Քարտով Վճարում', value: 'creditCard' },
+  { label: 'Պարային երաժշտություն', value: 'danceMusic' },
+  { label: 'Խաղային ավտոմատներ', value: 'gamingMachines' },
+  { label: 'Կայանատեղի', value: 'parking' },
+  { label: 'VIP սրահ', value: 'VIProom' },
+  { label: 'Բուսակերների համար սնունդ', value: 'vegetarian' },
+  { label: 'Wi-Fi', value: 'wifi' },
+  { label: 'DJ', value: 'DJ' },
 ];
 
 class VenueFilters extends React.PureComponent {
-  onChange = () => {
-
+  onChange = (e) => {
+    console.log('e :', e);
   }
 
   render() {

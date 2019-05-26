@@ -21,17 +21,17 @@ class Food extends React.PureComponent {
         <h2 className="text-center">Առկա Փաթեթներ</h2>
         <div className="food-package-wrap">
           <Radio className="food-package" value={1}>
-            Փոքր - հավի խորոված, երկու տեսակի աղցան, ջրեղեն
+            Փոքր - հավի խորոված, երկու տեսակի աղցան, ջրեղեն - 2,500 AMD
           </Radio>
         </div>
         <div className="food-package-wrap">
           <Radio className="food-package" value={2}>
-            Ստանդարդ - խոզի խորոված, ձուկ, երկու տեսակի աղցան, ջրեղեն
+            Ստանդարդ - խոզի խորոված, ձուկ, երկու տեսակի աղցան, ջրեղեն - 3,500 AMD
           </Radio>
         </div>
         <div className="food-package-wrap">
           <Radio className="food-package" value={3}>
-            Մեծ - հավի և խոզի խորոված, երեք տեսակի աղցան, ջրեղեն
+            Մեծ - հավի և խոզի խորոված, երեք տեսակի աղցան, ջրեղեն - 5,000 AMD
           </Radio>
         </div>
 

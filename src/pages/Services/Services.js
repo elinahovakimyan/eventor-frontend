@@ -11,7 +11,7 @@ import {
   FOOD,
   CARTOON_HERO,
   GAME_SHOW,
-  // DECORATION,
+  DECORATION,
   // CAKE,
   // PHOTOGRAPHER,
 } from 'shared/data/constants';
@@ -20,6 +20,7 @@ import Venues from './components/Venues/Venues';
 import Food from './components/Food/Food';
 import CartoonHeroes from './components/CartoonHeroes/CartoonHeroes';
 import GameShows from './components/GameShows/GameShows';
+import Decorations from './components/Decorations/Decorations';
 import SuppliersFooter from './components/SuppliersFooter/SuppliersFooter';
 
 import './Services.scss';
@@ -45,8 +46,8 @@ class Services extends React.PureComponent {
         return <CartoonHeroes />;
       case GAME_SHOW:
         return <GameShows />;
-      // case DECORATION:
-      //   return this.props.decorations;
+      case DECORATION:
+        return <Decorations />;
       // case CAKE:
       //   return this.props.cakes;
       // case PHOTOGRAPHER:

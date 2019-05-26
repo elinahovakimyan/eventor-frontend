@@ -14,7 +14,7 @@ const CartoonHeroCard = React.memo(({ service, isSelected, toggleService }) => {
       </p>
 
       <h4 className="provider">
-        {`Մատակարար՝ ${service.provider.name}`}
+        {`Մատակարար՝ ${service.providerName}`}
       </h4>
 
       <h4 className="price text-right">

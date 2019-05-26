@@ -54,3 +54,11 @@ export const promisify = (data) => {
 
   return promise;
 };
+
+export const formatPrice = (priceNum) => {
+  // TODO: formatNumber()
+
+  const formattedPrice = `${priceNum} դր.`;
+
+  return formattedPrice;
+};

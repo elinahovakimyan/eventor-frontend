@@ -4,7 +4,7 @@ import { Collapse } from 'antd';
 import {
   VENUE,
   FOOD,
-  // DECORATION,
+  DECORATION,
   // CAKE,
   // CARTOON_HERO,
   // GAME_SHOW,
@@ -13,6 +13,7 @@ import {
 
 import VenueFilters from './components/VenueFilters';
 import FoodFilters from './components/FoodFilters';
+import DecorationFilters from './components/DecorationFilters';
 
 import './Filters.scss';
 
@@ -25,8 +26,8 @@ class Filters extends React.PureComponent {
         return <VenueFilters />;
       case FOOD:
         return <FoodFilters />;
-      // case DECORATION:
-      //   return this.props.decorations;
+      case DECORATION:
+        return <DecorationFilters />;
       // case CAKE:
       //   return this.props.cakes;
       // case CARTOON_HERO:

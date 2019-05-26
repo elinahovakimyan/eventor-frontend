@@ -2,10 +2,10 @@ import React from 'react';
 
 import { ServiceCard } from 'shared/wrappers';
 
-import GameShowModal from './GameShowModal';
+import DecorationModal from './DecorationModal';
 
 
-const GameShowCard = React.memo(({ service, isSelected, toggleService }) => {
+const DecorationCard = React.memo(({ service, isSelected, toggleService }) => {
 
   const getCardContent = () => (
     <React.Fragment>
@@ -18,8 +18,6 @@ const GameShowCard = React.memo(({ service, isSelected, toggleService }) => {
       </h4>
 
       <h4 className="price text-right">
-        Սկսած
-        {' '}
         {service.price}
         դր.
       </h4>
@@ -29,7 +27,7 @@ const GameShowCard = React.memo(({ service, isSelected, toggleService }) => {
   return (
     <ServiceCard
       service={service}
-      actionComponent={<GameShowModal service={service} />}
+      actionComponent={<DecorationModal service={service} />}
       onClick={() => toggleService(service.id)}
       isSelected={isSelected}
     >
@@ -38,4 +36,4 @@ const GameShowCard = React.memo(({ service, isSelected, toggleService }) => {
   );
 });
 
-export default GameShowCard;
+export default DecorationCard;

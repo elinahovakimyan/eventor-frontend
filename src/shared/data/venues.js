@@ -23,8 +23,17 @@ export const venues = [
       DJ: false,
       gamingMachines: false,
       VIProom: false,
+      indoor: true,
+      outdoor: true,
     },
     foodInfo: {
+      packages: [
+        {
+          name: 'mini',
+          includes: 'dwhi dwhi',
+          pricePerPerson: 2000,
+        }
+      ],
       menu: [
         {
           id: 0,
@@ -118,6 +127,8 @@ export const venues = [
       DJ: false,
       gamingMachines: false,
       VIProom: true,
+      indoor: true,
+      outdoor: true,
     }
   },
   {
@@ -142,6 +153,8 @@ export const venues = [
       DJ: false,
       gamingMachines: false,
       VIProom: true,
+      indoor: true,
+      outdoor: true,
     }
   },
   {
@@ -166,6 +179,8 @@ export const venues = [
       DJ: false,
       gamingMachines: false,
       VIProom: true,
+      indoor: true,
+      outdoor: true,
     }
   },
   {
@@ -190,6 +205,8 @@ export const venues = [
       DJ: false,
       gamingMachines: false,
       VIProom: true,
+      indoor: true,
+      outdoor: true,
     }
   },
   {
@@ -214,6 +231,8 @@ export const venues = [
       DJ: false,
       gamingMachines: false,
       VIProom: true,
+      indoor: true,
+      outdoor: true,
     }
   },
 ];
