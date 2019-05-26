@@ -1,9 +1,15 @@
+$img-height: 450px;
+
 .ant-carousel .slick-slide {
-  text-align: center;
-  height: 400px;
-  line-height: 400px;
-  background: #364d79;
-  overflow: hidden;
+  height: $img-height;
+  // line-height: 400px;
+  // background: #364d79;
+  // overflow: hidden;
+  
+  img {
+    margin: auto;
+    height: $img-height;
+  }
 }
 
 .ant-carousel .slick-slide h3 {

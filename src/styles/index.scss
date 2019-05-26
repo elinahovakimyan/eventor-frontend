@@ -17,6 +17,26 @@ img {
   max-width: 100%;
 }
 
+h1, h2, h3, h4 {
+  color: $purple;
+}
+
+i {
+  color: $orange;
+}
+
+.ant-btn {
+  i {
+    color: $purple;
+  }
+}
+
+.ant-btn-primary {
+  i {
+    color: white;
+  }
+}
+
 #root {
   overflow-x: hidden;
 }

@@ -17,7 +17,7 @@ class ServiceModal extends React.PureComponent {
   }
 
   render() {
-    const { title } = this.props;
+    const { title, imgs } = this.props;
 
     return (
       <React.Fragment>
@@ -33,7 +33,7 @@ class ServiceModal extends React.PureComponent {
           cancelText="Փակել"
           className="service-modal"
         >
-          <ImageCarousel />
+          <ImageCarousel imgs={imgs} />
 
           {this.props.children}
         </Modal>

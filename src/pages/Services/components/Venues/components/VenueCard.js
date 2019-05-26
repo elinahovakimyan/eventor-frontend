@@ -22,7 +22,7 @@ const CartoonHeroCard = React.memo(({ service, isSelected, toggleService }) => {
         {` Սրահների քանակը՝ ${service.rooms}`}
       </h4>
 
-      <h4 className="text-center price-range">{service.priceRange}</h4>
+      <h4 className="text-right price-range">{service.priceRange}</h4>
     </React.Fragment>
   );
 

@@ -44,8 +44,21 @@ class ServiceGrid extends React.PureComponent {
     );
   })
 
+  getLastElement = (lastElement) => (
+    <Col
+      className="service-col"
+      xl={6}
+      lg={8}
+      md={12}
+      sm={12}
+      xs={24}
+    >
+      {lastElement}
+    </Col>
+  )
+
   render() {
-    const { services } = this.props;
+    const { services, lastElement } = this.props;
 
     return (
       <Row gutter={24} style={{ padding: '0 20px' }}>
@@ -56,6 +69,10 @@ class ServiceGrid extends React.PureComponent {
               <Empty description="Ոչինչ չի գտնվել :(" />
             </div>
           )}
+
+        {lastElement
+          ? this.getLastElement(lastElement)
+          : null}
       </Row>
     );
   }

@@ -22,7 +22,7 @@ class CartoonHeroModal extends React.PureComponent {
     } = service;
 
     return (
-      <ServiceModal>
+      <ServiceModal imgs={service.carouselImgs}>
         <div className="service-content">
 
           <div className="text-center">

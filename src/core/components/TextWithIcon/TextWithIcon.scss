@@ -1,3 +1,9 @@
+$grey: #c4d1d1;
+$blue: #1b9ea3;
+$yellow: #fedf64;
+$orange: #f6884d;
+$purple: #682465;
+
 .text-with-icon {
   display: flex;
   flex-direction: column;
@@ -7,19 +13,19 @@
   padding: 10px;
 
   h3 {
-    color: #a1a8a4;
+    color: $grey;
   }
 
   .detail-icon {
     font-size: 30px;
-    color: #a1a8a4;
+    color: $grey;
   }
 }
 
 .detail-active i {
-  color: #298f98 !important;
+  color: $blue !important;
 }
 
 .detail-active h3 {
-  color: #298f98;
+  color: $blue;
 }

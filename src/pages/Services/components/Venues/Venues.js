@@ -6,6 +6,7 @@ import { getVenues } from 'store/actions/venue';
 import { ServiceGrid } from 'shared/wrappers';
 
 import VenueCard from './components/VenueCard';
+import VenueRequest from './components/VenueRequest';
 
 import './Venues.scss';
 
@@ -16,7 +17,7 @@ class Venues extends React.PureComponent {
 
   render() {
     return (
-      <ServiceGrid services={this.props.venues}>
+      <ServiceGrid services={this.props.venues} lastElement={<VenueRequest />}>
         {(service, isSelected, toggleService) => (
           <VenueCard
             service={service}

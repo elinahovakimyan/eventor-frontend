@@ -1,5 +1,6 @@
 .service-modal {
-  width: 80% !important;
+  width: 60% !important;
+  top: 10px !important;
 
   .ant-modal-content {
     .ant-modal-body {
@@ -13,5 +14,11 @@
         padding: 3% 8%;
       }
     }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .service-modal {
+    width: 80% !important;
   }
 }

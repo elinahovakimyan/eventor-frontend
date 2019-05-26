@@ -27,12 +27,6 @@ class ServiceDetails extends React.PureComponent {
         <h2 className="text-center">Մանրամասներ</h2>
         <Row>
           <Col md={6} sm={12} xs={12}>
-            <TextWithIcon isActive={details.creditCard} iconType="credit-card" text="Քարտով Վճարում" />
-          </Col>
-          <Col md={6} sm={12} xs={12}>
-            <TextWithIcon isActive={details.danceMusic} iconType="sound" text="Պարային Երաժշտություն" />
-          </Col>
-          <Col md={6} sm={12} xs={12}>
             <TextWithIcon isActive={details.wifi} iconType="wifi" text="Wi-Fi" />
           </Col>
           <Col md={6} sm={12} xs={12}>
@@ -42,13 +36,19 @@ class ServiceDetails extends React.PureComponent {
             <TextWithIcon isActive={details.parking} iconType="car" text="Կայանատեղի" />
           </Col>
           <Col md={6} sm={12} xs={12}>
+            <TextWithIcon isActive={details.DJ} iconType="customer-service" text="Դի-Ջեյ" />
+          </Col>
+          <Col md={6} sm={12} xs={12}>
+            <TextWithIcon isActive={details.creditCard} iconType="credit-card" text="Քարտով Վճարում" />
+          </Col>
+          <Col md={6} sm={12} xs={12}>
             <TextWithIcon isActive={details.gamingMachines} iconType="rocket" text="Խաղային Ավտոմատներ" />
           </Col>
           <Col md={6} sm={12} xs={12}>
             <TextWithIcon isActive={details.vegetarian} iconType="alert" text="Բուսակերների սնունդ" />
           </Col>
           <Col md={6} sm={12} xs={12}>
-            <TextWithIcon isActive={details.DJ} iconType="customer-service" text="Դի-Ջեյ" />
+            <TextWithIcon isActive={details.danceMusic} iconType="sound" text="Պարային Երաժշտություն" />
           </Col>
         </Row>
       </div>

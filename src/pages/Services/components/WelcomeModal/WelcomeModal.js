@@ -5,7 +5,7 @@ import { Modal } from 'antd';
 
 class WelcomeModal extends React.PureComponent {
   state = {
-    isModalVisible: true,
+    isModalVisible: false,
   }
 
   toggleModal = () => {

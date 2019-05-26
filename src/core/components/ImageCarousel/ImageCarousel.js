@@ -10,24 +10,26 @@ class ImageCarousel extends React.PureComponent {
   }
 
   render() {
-  //  const { service } = this.props;
+    const { imgs } = this.props;
 
-    return (
-      <Carousel afterChange={this.onChange} dotPosition="top">
-        <div>
-          <h3>1</h3>
-        </div>
-        <div>
-          <h3>2</h3>
-        </div>
-        <div>
-          <h3>3</h3>
-        </div>
-        <div>
-          <h3>4</h3>
-        </div>
-      </Carousel>
-    );
+    if (imgs && imgs.length) {
+      return (
+        <Carousel
+          autoplay
+          afterChange={this.onChange}
+          dotPosition="top"
+          autoplaySpeed={2000}
+        >
+          {imgs.map((imgSrc, i) => (
+            <div key={imgSrc + i}>
+              <img src={imgSrc} alt="eventor" />
+            </div>
+          ))}
+        </Carousel>
+      );
+    }
+
+    return null;
   }
 }
 
