@@ -68,7 +68,7 @@ export const decorations = [
     description: 'Էկզոտիկ խմորողեն հատուկ յուրահատուկ խմորեղեններ նախընտրողների համար։',
   },
   {
-    id: 6,
+    id: 8,
     title: 'Pokemon սպասքի հավաքածու',
     providerName: 'Tontonik',
     price: 3000,

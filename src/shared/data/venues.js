@@ -44,10 +44,17 @@ export const venues = [
     foodInfo: {
       packages: [
         {
-          name: 'mini',
-          includes: 'dwhi dwhi',
+          name: 'Մինի',
+          foodIncluded: 'Փայտիկի վրա հավի խորոված, մայրաքաղաքային աղցան, այլ աղցան, ջրեղեն',
+          showIncluded: null,
           pricePerPerson: 2000,
-        }
+        },
+        {
+          name: 'Ստանդարդ',
+          foodIncluded: 'Փայտիկի վրա խոզի խորոված, մայրաքաղաքային աղցան, ամառային աղցան, ջրեղեն',
+          showIncluded: '1 ժամանոց ուրախ խաղային ծրագիր',
+          pricePerPerson: 3500,
+        },
       ],
       menu: [
         {

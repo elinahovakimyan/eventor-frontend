@@ -4,3 +4,4 @@ export * from './OrderForm/OrderForm';
 export * from './DrawerHeader/DrawerHeader';
 export * from './QuestionForm/QuestionForm';
 export * from './Filters/Filters';
+export * from './Card/Card';

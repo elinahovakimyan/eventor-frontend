@@ -1,14 +1,62 @@
+
 .food-info {
   padding: 4%;
+  margin-bottom: 110px;
+
+  .text-right  {
+    margin: 15px;
+  }
 
   .food-package-wrap {
     padding: 10px 10px 10px 15px;
 
-    label {
-      font-size: 20px;
-      align-items: center;
-      white-space: normal;
+    
+    .ant-radio-group {
+      width: 100%;
     }
+
+    .food-package {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+      border-bottom: 1px solid #eae7e7;
+      margin-bottom: 7px;
+
+      span {
+        width: 100%;
+      }
+
+      .ant-radio {
+        width: 16.5px;
+      }
+
+      .food-package-content {
+        display: flex;
+        flex-direction: column;
+  
+        .title-line {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          h3 {
+            margin: 0;
+          }
+        }
+
+        p {
+          white-space: normal;
+          margin: 3px;
+        }
+
+        img {
+          width: 23px;
+          padding: 3px;
+        }
+      }
+    }
+
   }
 
   .menu {

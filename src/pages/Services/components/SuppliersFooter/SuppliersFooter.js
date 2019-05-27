@@ -29,7 +29,7 @@ class SuppliersFooter extends React.PureComponent {
             )
             : null}
         </div>
-        <p className="text-center">
+        <p className="text-center contact-p">
           Հարցերի դեպքում՝
           {' '}
           <Icon type="phone" />

@@ -2,6 +2,8 @@ import React from 'react';
 import { Drawer, Icon } from 'antd';
 import { Link } from 'react-router-dom';
 
+import { Card } from 'shared/components';
+
 import './DrawerHeader.scss';
 
 class DrawerHeader extends React.PureComponent {
@@ -28,12 +30,8 @@ class DrawerHeader extends React.PureComponent {
           <img className="logo-img" src={logoSrc} alt="logo" />
         </Link>
         <div>
-          <a href="https://fb.com/eventor.am" target="_blank" rel="noopener noreferrer">
-            <Icon type="facebook" className="header-icon" />
-          </a>
-          <a href="https://instagram.com/eventor.am" target="_blank" rel="noopener noreferrer">
-            <Icon type="instagram" className="header-icon" />
-          </a>
+          <Card />
+
           <Icon
             type="menu"
             className="header-icon"
@@ -45,10 +43,18 @@ class DrawerHeader extends React.PureComponent {
             placement="right"
             onClose={this.onClose}
             visible={this.state.visible}
+            className="drawer-menu"
           >
             <p><Link to="/faq">Հաճախ Տրվող Հարցեր</Link></p>
             <p><Link to="/faq">Կապ Մեզ Հետ</Link></p>
             <p><Link to="/faq">Բաժանորդագրվել</Link></p>
+
+            <a href="https://fb.com/eventor.am" target="_blank" rel="noopener noreferrer">
+              <Icon type="facebook" className="header-icon" />
+            </a>
+            <a href="https://instagram.com/eventor.am" target="_blank" rel="noopener noreferrer">
+              <Icon type="instagram" className="header-icon" />
+            </a>
           </Drawer>
         </div>
       </div>

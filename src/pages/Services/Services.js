@@ -102,22 +102,24 @@ class Services extends React.PureComponent {
         </Steps>
 
 
-        {currentCategory.type === DONE
-          ? <Confirmation />
-          : (currentCategory.type === FOOD
-            ? this.getGridByStep(currentCategory)
-            : (
-              <div className="tab-content suppliers-content">
-                <div className="filters-wrapper mt-30">
-                  <Filters currentCategory={currentCategory} />
+        <div className="service-content">
+          {currentCategory.type === DONE
+            ? <Confirmation />
+            : (currentCategory.type === FOOD
+              ? this.getGridByStep(currentCategory)
+              : (
+                <div className="tab-content suppliers-content">
+                  <div className="filters-wrapper mt-30">
+                    <Filters currentCategory={currentCategory} />
+                  </div>
+                  <div className="data-wrapper">
+                    <h2 className="text-center">{`Ընտրե՛ք ${currentCategory.label}ը`}</h2>
+                    {this.getGridByStep(currentCategory)}
+                  </div>
                 </div>
-                <div className="data-wrapper">
-                  <h2 className="text-center">{`Ընտրե՛ք ${currentCategory.label}ը`}</h2>
-                  {this.getGridByStep(currentCategory)}
-                </div>
-              </div>
-            )
-          )}
+              )
+            )}
+        </div>
 
 
         <SuppliersFooter

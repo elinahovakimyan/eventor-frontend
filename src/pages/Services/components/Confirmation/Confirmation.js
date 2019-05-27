@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 import ConfirmationForm from './components/ConfirmationForm';
+import Invoice from './components/Invoice';
 
 import './Confirmation.scss';
 
@@ -16,6 +17,7 @@ class Confirmation extends React.PureComponent {
         <p>
           Դուք պատվիրել եք ...
         </p>
+        <Invoice />
         <p>
           Ինչ է լինելու հիմա...
         </p>

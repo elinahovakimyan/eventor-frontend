@@ -2,7 +2,7 @@
 
 export const gameShows = [
   {
-    id: 13,
+    id: 0,
     title: 'Գիտական SPA PARTY',
     priceRange: '֏֏֏',
     mainImage: 'https://static.wixstatic.com/media/f7a67a_6489052a76224778bf22f42732a2d6ba~mv2.jpg/v1/fill/w_330,h_227,al_c,q_80,usm_0.66_1.00_0.01/f7a67a_6489052a76224778bf22f42732a2d6ba~mv2.webp',
@@ -148,7 +148,7 @@ export const gameShows = [
     description: 'Ի՞նչը կարող է լինել ավելի հետաքրքիր, քան ծովահենների գաղտնիքների բացահայտումը: Ինչո՞ւ է ծովահենի աչքը կապած, ինչպե՞ս են ծովահենները գտնում գանձերը, ինչպե՞ս պատրաստել ծովահենների "խորոված", ինչպե՞ս հաղթել հակառակորդին ծովային մարտում: Այս ամենը, համեմված բազմաթիվ թեմատիկ գիտափորձերով, կստեղծի իրական զարմանահրաշ միջավայր՝ անմոռանալի տպավորություններով:',
   },
   {
-    id: 13,
+    id: 14,
     title: 'Քիմիական Շոու',
     priceRange: '֏֏֏',
     mainImage: 'https://static.wixstatic.com/media/f7a67a_f076aa619b91458e8be2368d813adc5e~mv2.jpg/v1/fill/w_960,h_640,al_c,q_90/f7a67a_f076aa619b91458e8be2368d813adc5e~mv2.webp',
