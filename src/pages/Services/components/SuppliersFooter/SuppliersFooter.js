@@ -20,9 +20,11 @@ class SuppliersFooter extends React.PureComponent {
           {currentStep !== 5
             ? (
               <div className="right-content">
-                <p onClick={onNext}>Բաց Թողնել</p>
+
+                <p onClick={onNext} className="text-center">Բաց Թողնել</p>
+
                 <Button type="primary" onClick={onNext}>
-                Հաջորդը
+                  Հաջորդը
                   <Icon type="right" />
                 </Button>
               </div>

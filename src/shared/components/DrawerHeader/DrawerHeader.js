@@ -2,7 +2,7 @@ import React from 'react';
 import { Drawer, Icon } from 'antd';
 import { Link } from 'react-router-dom';
 
-import { Card } from 'shared/components';
+import { Cart } from 'shared/components';
 
 import './DrawerHeader.scss';
 
@@ -30,7 +30,7 @@ class DrawerHeader extends React.PureComponent {
           <img className="logo-img" src={logoSrc} alt="logo" />
         </Link>
         <div>
-          <Card />
+          <Cart />
 
           <Icon
             type="menu"

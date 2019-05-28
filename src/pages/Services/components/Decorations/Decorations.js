@@ -1,8 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import { getDecorations } from 'store/actions/decoration';
 import { ServiceGrid } from 'shared/wrappers';
+import { getDecorations } from 'store/actions/decoration';
+import { selectDecoration, deselectDecoration } from 'store/actions/birthday';
+import { getSelectedDecorations } from 'store/getters';
+import { toggleSelection } from 'core/helpers';
 
 import DecorationCard from './components/DecorationCard';
 
@@ -15,13 +18,17 @@ class Decorations extends React.PureComponent {
   }
 
   render() {
+    const { selectedDecorations } = this.props;
+
     return (
       <ServiceGrid services={this.props.decorations}>
-        {(service, isSelected, toggleService) => (
+        {(service) => (
           <DecorationCard
             service={service}
-            isSelected={isSelected}
-            toggleService={toggleService}
+            isSelected={selectedDecorations && selectedDecorations.includes(service.id)}
+            toggleService={() => toggleSelection(
+              service.id, selectedDecorations, this.props.selectDecoration, this.props.deselectDecoration,
+            )}
           />
         )}
       </ServiceGrid>
@@ -31,10 +38,13 @@ class Decorations extends React.PureComponent {
 
 const mapStateToProps = (state) => ({
   decorations: state.decoration.decorations,
+  selectedDecorations: getSelectedDecorations(state),
 });
 
 const mapDispatchToProps = {
   getDecorations,
+  selectDecoration,
+  deselectDecoration,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Decorations);

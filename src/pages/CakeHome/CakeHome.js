@@ -63,7 +63,7 @@ class CakeHome extends React.PureComponent {
               />
               <ImageCard
                 path="game_show"
-                type="game"
+                type="gameShow"
                 title="Խաղային Շոու"
                 height="45vh"
               />

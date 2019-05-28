@@ -2,6 +2,7 @@ import { constants } from 'store/constants/actionTypes';
 
 const initialState = {
   jubilee: {},
+  selectedServices: {},
 };
 
 export function birthdayReducer(state = initialState, action) {
@@ -17,6 +18,48 @@ export function birthdayReducer(state = initialState, action) {
         ...state,
         jubilee: {
           [action.payload.key]: action.payload.info,
+        },
+      };
+    }
+    case constants.SELECT_VENUE: {
+      return {
+        ...state,
+        selectedServices: {
+          ...state.selectedServices,
+          venue: [action.payload],
+        },
+      };
+    }
+    case constants.DESELECT_VENUE: {
+      return {
+        ...state,
+        selectedServices: {
+          ...state.selectedServices,
+          venue: [],
+        },
+      };
+    }
+    case constants.SELECT_SERVICE: {
+      const { serviceType, serviceId } = action.payload;
+      const selectedList = state.selectedServices[serviceType] || [];
+
+      return {
+        ...state,
+        selectedServices: {
+          ...state.selectedServices,
+          [serviceType]: [...selectedList, serviceId],
+        },
+      };
+    }
+    case constants.DESELECT_SERVICE: {
+      const { serviceType, serviceId } = action.payload;
+      const selectedList = state.selectedServices[serviceType] || [];
+
+      return {
+        ...state,
+        selectedServices: {
+          ...state.selectedServices,
+          [serviceType]: selectedList.filter(id => id !== serviceId),
         },
       };
     }

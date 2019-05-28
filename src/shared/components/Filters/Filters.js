@@ -59,7 +59,7 @@ class Filters extends React.PureComponent {
     return (
       <Collapse bordered={false} defaultActiveKey={['3']}>
 
-        <Panel header="Հոբելյարի մասին" key="1">
+        {/* <Panel header="Հոբելյարի մասին" key="1">
           <h3>Տարիք</h3>
           <h3>Սեռ</h3>
           <h3>Հետաքրքրություններ</h3>
@@ -69,7 +69,7 @@ class Filters extends React.PureComponent {
           <h3>Օր</h3>
           <h3>Ժամ</h3>
           <h3>Հյուրերի քանակ</h3>
-        </Panel>
+        </Panel> */}
 
         <Panel header={this.getFiltersTitle(currentCategory)} key="3" className="filters-container">
           {this.getMatchingFilters(currentCategory)}

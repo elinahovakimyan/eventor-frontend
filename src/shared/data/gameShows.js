@@ -2,7 +2,7 @@
 
 export const gameShows = [
   {
-    id: 0,
+    id: 1,
     title: 'Գիտական SPA PARTY',
     priceRange: '֏֏֏',
     mainImage: 'https://static.wixstatic.com/media/f7a67a_6489052a76224778bf22f42732a2d6ba~mv2.jpg/v1/fill/w_330,h_227,al_c,q_80,usm_0.66_1.00_0.01/f7a67a_6489052a76224778bf22f42732a2d6ba~mv2.webp',

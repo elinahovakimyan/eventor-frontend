@@ -2,7 +2,10 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 import { getCartoonHeroes } from 'store/actions/cartoonHero';
+import { selectCartoonHero, deselectCartoonHero } from 'store/actions/birthday';
+import { getSelectedCartoonHeroes } from 'store/getters';
 import { ServiceGrid } from 'shared/wrappers';
+import { toggleSelection } from 'core/helpers';
 
 import CartoonHeroCard from './components/CartoonHeroCard';
 
@@ -15,13 +18,17 @@ class CartoonHeroes extends React.PureComponent {
   }
 
   render() {
+    const { selectedCartoonHeroes } = this.props;
+
     return (
       <ServiceGrid services={this.props.cartoonHeroes}>
-        {(service, isSelected, toggleService) => (
+        {(service) => (
           <CartoonHeroCard
             service={service}
-            isSelected={isSelected}
-            toggleService={toggleService}
+            isSelected={selectedCartoonHeroes && selectedCartoonHeroes.includes(service.id)}
+            toggleService={() => toggleSelection(
+              service.id, selectedCartoonHeroes, this.props.selectCartoonHero, this.props.deselectCartoonHero,
+            )}
           />
         )}
       </ServiceGrid>
@@ -31,10 +38,13 @@ class CartoonHeroes extends React.PureComponent {
 
 const mapStateToProps = (state) => ({
   cartoonHeroes: state.cartoonHero.cartoonHeroes,
+  selectedCartoonHeroes: getSelectedCartoonHeroes(state),
 });
 
 const mapDispatchToProps = {
   getCartoonHeroes,
+  selectCartoonHero,
+  deselectCartoonHero,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(CartoonHeroes);

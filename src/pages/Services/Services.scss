@@ -4,8 +4,8 @@ $footer-height: 9vh;
 
     .suppliers-steps {
         padding: 4% 3%;
-        overflow: scroll;
-    }
+        overflow-x: scroll;
+        overflow-y: hidden;    }
 
     .suppliers-content {
         padding: 1% 3%;

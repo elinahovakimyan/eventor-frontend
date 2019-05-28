@@ -27,7 +27,8 @@ const ServiceCard = React.memo(({
           seeMore,
           <Button onClick={onClick}>
             Ընտրել
-          </Button>]}
+          </Button>,
+        ]}
       >
         <Meta
           title={service.title}

@@ -1,7 +1,8 @@
 $footer-height: 9vh;
 
 .service-footer {
-  background-color: #f5f5f5;
+  background-color: #fbfbfb;
+  box-shadow: 2px 0px 10px #acaab1;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -14,7 +15,7 @@ $footer-height: 9vh;
     
   .service-footer-actions {
     width: 100%;
-    padding-top: 10px; 
+    padding-top: 3px; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,17 +40,20 @@ $footer-height: 9vh;
   }
 
   .contact-p {
-    padding-top: 10px;
+    padding-top: 6px;
   }
 }
 
 
 
 @media only screen and (min-width: 778px) {
+.service-footer {
   .service-footer-actions {
+    padding-top: 10px; 
 
     button {
       height: 38px;
     }
   }
+}
 }

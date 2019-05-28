@@ -76,7 +76,7 @@ class Packages extends React.PureComponent {
                     ? (
                       <p>
                         <img src={require('assets/icons/laugh.svg')} alt="show package" />
-                        {p.showIncluded}
+                        Խաղային ծրագիրը ներառված է
                       </p>
                     )
                     : null

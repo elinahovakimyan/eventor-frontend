@@ -2,8 +2,11 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 import { getVenues } from 'store/actions/venue';
+import { selectVenue, deselectVenue } from 'store/actions/birthday';
+import { getSelectedVenue } from 'store/getters';
 
 import { ServiceGrid } from 'shared/wrappers';
+import { toggleSelection } from 'core/helpers';
 
 import VenueCard from './components/VenueCard';
 import VenueRequest from './components/VenueRequest';
@@ -15,14 +18,19 @@ class Venues extends React.PureComponent {
     this.props.getVenues();
   }
 
+
   render() {
+    const { selectedVenue } = this.props;
+
     return (
       <ServiceGrid services={this.props.venues} lastElement={<VenueRequest />}>
-        {(service, isSelected, toggleService) => (
+        {(service) => (
           <VenueCard
             service={service}
-            isSelected={isSelected}
-            toggleService={toggleService}
+            isSelected={selectedVenue && selectedVenue.includes(service.id)}
+            toggleService={() => toggleSelection(
+              service.id, selectedVenue, this.props.selectVenue, this.props.deselectVenue,
+            )}
           />
         )}
       </ServiceGrid>
@@ -32,10 +40,13 @@ class Venues extends React.PureComponent {
 
 const mapStateToProps = (state) => ({
   venues: state.venue.venues,
+  selectedVenue: getSelectedVenue(state),
 });
 
 const mapDispatchToProps = {
   getVenues,
+  selectVenue,
+  deselectVenue,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Venues);

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Icon } from 'antd';
 
+import { formatPrice } from 'core/helpers';
 import { ServiceModal } from 'shared/wrappers';
 
 class CartoonHeroModal extends React.PureComponent {
@@ -29,7 +30,7 @@ class CartoonHeroModal extends React.PureComponent {
 
           <h3>
             <Icon type="tags" />
-            {` Գինը՝ սկսած ${service.price}`}
+            {` Գինը՝ սկսած ${formatPrice(service.price)}`}
           </h3>
           <h3>
             <Icon type="clock-circle" />

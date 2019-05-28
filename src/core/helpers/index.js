@@ -1,3 +1,5 @@
+import _ from 'lodash';
+
 import {
   VENUE,
   FOOD,
@@ -40,6 +42,15 @@ export const getIconByType = (type) => {
 };
 
 
+export const toggleSelection = (id, list, selectFn, deselectFn) => {
+  if (!list || !list.includes(id)) {
+    selectFn(id);
+  } else {
+    deselectFn(id);
+  }
+};
+
+
 // ======================= COMMON ========================
 
 export const promisify = (data) => {
@@ -58,7 +69,15 @@ export const promisify = (data) => {
 export const formatPrice = (priceNum) => {
   // TODO: formatNumber()
 
-  const formattedPrice = `${priceNum} դր.`;
+  const formattedPrice = `${priceNum.toLocaleString()} դր.`;
 
   return formattedPrice;
+};
+
+
+export const filterByValues = (collection, property, ids) => {
+  _(collection)
+    .keyBy('id')
+    .at(ids)
+    .value();
 };

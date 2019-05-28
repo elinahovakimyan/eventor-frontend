@@ -15,40 +15,69 @@ const Panel = Collapse.Panel;
 
 class Food extends React.PureComponent {
   render() {
-    const { foodInfo } = this.props;
-    const menu = foodInfo ? foodInfo.menu : [];
-    const packages = foodInfo ? foodInfo.packages : [];
+    const { selectedVenue, foodInfo } = this.props;
+    const menu = foodInfo ? foodInfo.menu : null;
+    const packages = foodInfo ? foodInfo.packages : null;
 
     return (
       <div className="food-info">
 
-        <Packages packages={packages} />
+        {packages
+          ? <Packages packages={packages} />
+          : null}
+
 
         <Space />
 
-        <h2 className="text-center">...Կամ օգտվե՛ք մենյուից</h2>
-        <Collapse className="menu">
-          {menu.map(section => (
-            <Panel header={section.title} key={section.id}>
-              {section.items.map(item => (
-                <MenuItem item={item} key={item.name} />
-              ))}
-            </Panel>
-          ))}
-        </Collapse>
 
-        <h2 className="text-right">
-          Կազմեց՝
-          {' '}
-          {formatPrice(0)}
-        </h2>
+        {menu
+          ? (
+            <div>
+              <h2 className="text-center">...Կամ օգտվե՛ք մենյուից</h2>
+              <Collapse className="menu">
+                {menu.map(section => (
+                  <Panel header={section.title} key={section.id}>
+                    {section.items.map(item => (
+                      <MenuItem item={item} key={item.name} />
+                    ))}
+                  </Panel>
+                ))}
+              </Collapse>
+
+              <h2 className="text-right">
+                Կազմեց՝
+                {' '}
+                {formatPrice(0)}
+              </h2>
+            </div>
+          )
+          : null}
+
+
+        {(!packages && !menu)
+          ? (
+            <h2 className="text-center">
+              Օյ, սննդի ցանկ չի գտնվել։
+              {selectedVenue && selectedVenue.length
+                ? ' Ձեր ընտրած ժամանցի վայրի սննդի մանրամասների համար խնդրում ենք զանգահարել։'
+                : ' Խնդրում ենք ընտրել որևէ ժամանցի վայր։'}
+            </h2>
+          )
+          : null}
+
       </div>
     );
   }
 }
 
-const mapStateToProps = (state) => ({
-  foodInfo: getFoodInfo(1, state),
-});
+const mapStateToProps = (state) => {
+  const selectedVenue = state.birthday.selectedServices.venue;
+  const venueId = selectedVenue && selectedVenue.length ? selectedVenue[0] : null;
+
+  return ({
+    selectedVenue,
+    foodInfo: getFoodInfo(venueId, state),
+  });
+};
 
 export default connect(mapStateToProps)(Food);

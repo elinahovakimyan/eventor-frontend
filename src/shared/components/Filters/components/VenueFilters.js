@@ -17,15 +17,15 @@ const options2 = [
   { label: 'Խաղային ավտոմատներ', value: 'gamingMachines' },
   { label: 'Կայանատեղի', value: 'parking' },
   { label: 'VIP սրահ', value: 'VIProom' },
-  { label: 'Բուսակերների համար սնունդ', value: 'vegetarian' },
+  { label: 'Բուսակերների սնունդ', value: 'vegetarian' },
   { label: 'Wi-Fi', value: 'wifi' },
   { label: 'DJ', value: 'DJ' },
 ];
 
 class VenueFilters extends React.PureComponent {
-  onChange = (e) => {
-    console.log('e :', e);
-  }
+  // onChange = (e) => {
+  //   console.log('e :', e);
+  // }
 
   render() {
     return (
@@ -34,7 +34,7 @@ class VenueFilters extends React.PureComponent {
         <div>
           <Search
             placeholder="Որոնում..."
-            onSearch={value => console.log(value)}
+            // onSearch={value => console.log(value)}
           />
         </div>
 

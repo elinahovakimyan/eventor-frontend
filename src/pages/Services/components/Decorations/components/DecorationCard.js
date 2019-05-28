@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { formatPrice } from 'core/helpers';
 import { ServiceCard } from 'shared/wrappers';
 
 import DecorationModal from './DecorationModal';
@@ -18,8 +19,7 @@ const DecorationCard = React.memo(({ service, isSelected, toggleService }) => {
       </h4>
 
       <h4 className="price text-right">
-        {service.price}
-        դր.
+        {formatPrice(service.price)}
       </h4>
     </React.Fragment>
   );

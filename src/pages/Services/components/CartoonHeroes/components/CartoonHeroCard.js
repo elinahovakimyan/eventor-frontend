@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { formatPrice } from 'core/helpers';
 import { ServiceCard } from 'shared/wrappers';
 
 import CartoonHeroModal from './CartoonHeroModal';
@@ -20,8 +21,7 @@ const CartoonHeroCard = React.memo(({ service, isSelected, toggleService }) => {
       <h4 className="price text-right">
         Սկսած
         {' '}
-        {service.price}
-        դր.
+        {formatPrice(service.price)}
       </h4>
     </React.Fragment>
   );
