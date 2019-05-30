@@ -40,26 +40,26 @@ export function birthdayReducer(state = initialState, action) {
       };
     }
     case constants.SELECT_SERVICE: {
-      const { serviceType, serviceId } = action.payload;
+      const { serviceType, service } = action.payload;
       const selectedList = state.selectedServices[serviceType] || [];
 
       return {
         ...state,
         selectedServices: {
           ...state.selectedServices,
-          [serviceType]: [...selectedList, serviceId],
+          [serviceType]: [...selectedList, service],
         },
       };
     }
     case constants.DESELECT_SERVICE: {
-      const { serviceType, serviceId } = action.payload;
+      const { serviceType, service } = action.payload;
       const selectedList = state.selectedServices[serviceType] || [];
 
       return {
         ...state,
         selectedServices: {
           ...state.selectedServices,
-          [serviceType]: selectedList.filter(id => id !== serviceId),
+          [serviceType]: selectedList.filter(s => s.id !== service.id),
         },
       };
     }

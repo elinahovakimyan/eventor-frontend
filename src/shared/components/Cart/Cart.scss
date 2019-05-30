@@ -7,3 +7,25 @@
     margin: 5px 15px;
   }
 }
+
+.cart-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  .service-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 20px;
+  }
+
+  img {
+    width: 30px;
+  }
+
+  h4 {
+    margin: 10px;
+  }
+}

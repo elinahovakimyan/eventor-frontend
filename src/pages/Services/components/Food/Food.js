@@ -26,9 +26,7 @@ class Food extends React.PureComponent {
           ? <Packages packages={packages} />
           : null}
 
-
         <Space />
-
 
         {menu
           ? (

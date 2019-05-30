@@ -1,3 +1,53 @@
 .confirm-invoice {
   margin: 10px 8%;
 }
+
+.order-invoice {
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.order-confirmation {
+  p, h2, h3, h4 {
+    text-align: center;
+  }
+
+  h4 {
+    margin: 20px;
+  }
+
+  .order-table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .ant-menu {
+      border-right: none;
+    }
+
+    .ant-menu-item {
+      height: fit-content;
+    }
+
+    .order-item {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      .service-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-right: 20px;
+      }
+
+      img {
+        width: 30px;
+      }
+
+      h4 {
+        margin: 10px;
+      }
+    }
+  }
+}

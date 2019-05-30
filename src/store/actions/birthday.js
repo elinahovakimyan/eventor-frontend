@@ -13,60 +13,60 @@ export const updateSingleJubileeInfo = (key, jubileeInfo) => ({
   },
 });
 
-export const selectVenue = (id) => ({
+export const selectVenue = (service) => ({
   type: constants.SELECT_VENUE,
-  payload: id,
+  payload: service,
 });
 
-export const deselectVenue = (id) => ({
+export const deselectVenue = (service) => ({
   type: constants.DESELECT_VENUE,
-  payload: id,
+  payload: service,
 });
 
-export const selectCartoonHero = (serviceId) => ({
+export const selectCartoonHero = (service) => ({
   type: constants.SELECT_SERVICE,
   payload: {
     serviceType: 'cartoonHeroes',
-    serviceId,
+    service,
   },
 });
 
-export const deselectCartoonHero = (serviceId) => ({
+export const deselectCartoonHero = (service) => ({
   type: constants.DESELECT_SERVICE,
   payload: {
     serviceType: 'cartoonHeroes',
-    serviceId,
+    service,
   },
 });
 
-export const selectGameShow = (serviceId) => ({
+export const selectGameShow = (service) => ({
   type: constants.SELECT_SERVICE,
   payload: {
     serviceType: 'gameShows',
-    serviceId,
+    service,
   },
 });
 
-export const deselectGameShow = (serviceId) => ({
+export const deselectGameShow = (service) => ({
   type: constants.DESELECT_SERVICE,
   payload: {
     serviceType: 'gameShows',
-    serviceId,
+    service,
   },
 });
 
-export const selectDecoration = (serviceId) => ({
+export const selectDecoration = (service) => ({
   type: constants.SELECT_SERVICE,
   payload: {
     serviceType: 'decorations',
-    serviceId,
+    service,
   },
 });
 
-export const deselectDecoration = (serviceId) => ({
+export const deselectDecoration = (service) => ({
   type: constants.DESELECT_SERVICE,
   payload: {
     serviceType: 'decorations',
-    serviceId,
+    service,
   },
 });

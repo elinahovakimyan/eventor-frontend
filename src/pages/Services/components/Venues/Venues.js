@@ -27,9 +27,9 @@ class Venues extends React.PureComponent {
         {(service) => (
           <VenueCard
             service={service}
-            isSelected={selectedVenue && selectedVenue.includes(service.id)}
+            isSelected={selectedVenue && !!selectedVenue.find(s => s.id === service.id)}
             toggleService={() => toggleSelection(
-              service.id, selectedVenue, this.props.selectVenue, this.props.deselectVenue,
+              service, selectedVenue, this.props.selectVenue, this.props.deselectVenue,
             )}
           />
         )}

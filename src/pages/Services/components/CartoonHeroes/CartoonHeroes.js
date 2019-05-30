@@ -25,9 +25,9 @@ class CartoonHeroes extends React.PureComponent {
         {(service) => (
           <CartoonHeroCard
             service={service}
-            isSelected={selectedCartoonHeroes && selectedCartoonHeroes.includes(service.id)}
+            isSelected={selectedCartoonHeroes && !!selectedCartoonHeroes.find(s => s.id === service.id)}
             toggleService={() => toggleSelection(
-              service.id, selectedCartoonHeroes, this.props.selectCartoonHero, this.props.deselectCartoonHero,
+              service, selectedCartoonHeroes, this.props.selectCartoonHero, this.props.deselectCartoonHero,
             )}
           />
         )}
