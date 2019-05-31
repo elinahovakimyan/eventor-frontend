@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Layout } from 'antd';
+// import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 // import Home from 'pages/Home/Home';
 import JubileeForm from 'pages/JubileeForm/JubileeForm';
@@ -14,6 +15,24 @@ import 'styles/index.scss';
 const { Content } = Layout;
 
 class App extends React.PureComponent {
+  // componentDidMount() {
+  //   window.fbAsyncInit = function () {
+  //     FB.init({
+  //       xfbml: true,
+  //       version: 'v3.3',
+  //     });
+  //   };
+
+  //   (function (d, s, id) {
+  //     let js; const
+  //       fjs = d.getElementsByTagName(s)[0];
+  //     if (d.getElementById(id)) return;
+  //     js = d.createElement(s); js.id = id;
+  //     js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+  //     fjs.parentNode.insertBefore(js, fjs);
+  //   }(document, 'script', 'facebook-jssdk'));
+  // }
+
   render() {
     return (
       <BrowserRouter>
@@ -29,7 +48,20 @@ class App extends React.PureComponent {
               <Route path="/services/:category" component={Services} />
             </Switch>
           </Content>
+          {/* <MessengerCustomerChat
+            pageId="340948546707923>"
+          // appId="<APP_ID>"
+          // htmlRef="<REF_STRING>"
+          /> */}
         </React.Fragment>
+        {/* <div
+          className="fb-customerchat"
+          attribution="setup_tool"
+          page_id="340948546707923"
+          theme_color="#20cef5"
+          logged_in_greeting="Ողջու՜յն։ Ի՞նչով կարող ենք օգնել։"
+          logged_out_greeting="Ողջու՜յն։ Ի՞նչով կարող ենք օգնել։"
+        /> */}
       </BrowserRouter>
     );
   }

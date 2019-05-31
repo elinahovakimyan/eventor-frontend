@@ -29,7 +29,8 @@ class ServiceModal extends React.PureComponent {
           title={title}
           visible={this.state.isModalVisible}
           onCancel={this.toggleModal}
-          okText="Ընտրել"
+          // onOk={handleSelection}
+          // okText="Ընտրել"
           cancelText="Փակել"
           className="service-modal"
         >

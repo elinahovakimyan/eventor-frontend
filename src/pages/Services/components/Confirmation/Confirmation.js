@@ -118,7 +118,7 @@ class Confirmation extends React.PureComponent {
     render() {
       return (
         <div className="order-confirmation">
-          <h2>Հաստատե՛ք պատվերը</h2>
+          <h2>Հաստատե՛ք հայտը</h2>
 
           {this.getContent()}
 

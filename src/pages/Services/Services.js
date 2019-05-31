@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
 import { Steps } from 'antd';
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 import { TextWithImg } from 'core/components';
 import { getIconByType } from 'core/helpers';
@@ -108,7 +109,11 @@ function Services({ match, history }) {
           />
         ))}
       </Steps>
-
+      <MessengerCustomerChat
+        pageId="340948546707923>"
+        appId="eventor.am"
+      // htmlRef="<REF_STRING>"
+      />
 
       <div className="service-content">
         {currentCategory.type === DONE
