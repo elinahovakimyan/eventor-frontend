@@ -26,8 +26,12 @@ class Decorations extends React.PureComponent {
           <DecorationCard
             service={service}
             isSelected={selectedDecorations && !!selectedDecorations.find(s => s.id === service.id)}
-            toggleService={() => toggleSelection(
-              service, selectedDecorations, this.props.selectDecoration, this.props.deselectDecoration,
+            toggleService={(isTrue) => toggleSelection(
+              service,
+              selectedDecorations,
+              this.props.selectDecoration,
+              this.props.deselectDecoration,
+              isTrue,
             )}
           />
         )}

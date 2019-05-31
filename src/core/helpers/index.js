@@ -42,10 +42,10 @@ export const getIconByType = (type) => {
 };
 
 
-export const toggleSelection = (id, list, selectFn, deselectFn) => {
+export const toggleSelection = (id, list, selectFn, deselectFn, isTrue) => {
   if (!list || !list.includes(id)) {
     selectFn(id);
-  } else {
+  } else if (!isTrue) {
     deselectFn(id);
   }
 };
@@ -67,8 +67,6 @@ export const promisify = (data) => {
 };
 
 export const formatPrice = (priceNum) => {
-  // TODO: formatNumber()
-
   const formattedPrice = `${priceNum.toLocaleString()} դր.`;
 
   return formattedPrice;

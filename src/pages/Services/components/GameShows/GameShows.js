@@ -26,8 +26,12 @@ class GameShows extends React.PureComponent {
           <GameShowCard
             service={service}
             isSelected={selectedGameShows && !!selectedGameShows.find(s => s.id === service.id)}
-            toggleService={() => toggleSelection(
-              service, selectedGameShows, this.props.selectGameShow, this.props.deselectGameShow,
+            toggleService={(isTrue) => toggleSelection(
+              service,
+              selectedGameShows,
+              this.props.selectGameShow,
+              this.props.deselectGameShow,
+              isTrue,
             )}
           />
         )}

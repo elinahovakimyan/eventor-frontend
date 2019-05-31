@@ -18,11 +18,14 @@ const GameShowCard = React.memo(({ service, isSelected, toggleService }) => {
         {`Մատակարար՝ ${service.providerName}`}
       </h4>
 
-      <h4 className="price text-right">
-        Սկսած
-        {' '}
-        {formatPrice(service.price)}
-      </h4>
+      {service.price || service.startingPrice
+        ? (
+          <h4 className="price text-right">
+            {service.price ? formatPrice(service.price) : ` Սկսած ${formatPrice(service.startingPrice)}`}
+          </h4>
+        )
+        : null}
+
     </React.Fragment>
   );
 
@@ -31,7 +34,7 @@ const GameShowCard = React.memo(({ service, isSelected, toggleService }) => {
     <ServiceCard
       service={service}
       seeMore={<GameShowModal service={service} />}
-      onClick={() => toggleService(service.id)}
+      onClick={toggleService}
       isSelected={isSelected}
     >
       {service.id ? getCardContent() : null}

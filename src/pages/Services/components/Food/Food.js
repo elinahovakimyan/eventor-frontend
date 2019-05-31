@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Collapse } from 'antd';
+import { Collapse, Empty } from 'antd';
 
 import { formatPrice } from 'core/helpers';
 import { Space } from 'core/components';
@@ -55,7 +55,8 @@ class Food extends React.PureComponent {
         {(!packages && !menu)
           ? (
             <h2 className="text-center">
-              Օյ, սննդի ցանկ չի գտնվել։
+              <Empty description="Օյ, սննդի ցանկ չի գտնվել։" />
+              <br />
               {selectedVenue && selectedVenue.length
                 ? ' Ձեր ընտրած ժամանցի վայրի սննդի մանրամասների համար խնդրում ենք զանգահարել։'
                 : ' Խնդրում ենք ընտրել որևէ ժամանցի վայր։'}
@@ -70,7 +71,7 @@ class Food extends React.PureComponent {
 
 const mapStateToProps = (state) => {
   const selectedVenue = state.birthday.selectedServices.venue;
-  const venueId = selectedVenue && selectedVenue.length ? selectedVenue[0] : null;
+  const venueId = selectedVenue && selectedVenue.length ? selectedVenue[0].id : null;
 
   return ({
     selectedVenue,

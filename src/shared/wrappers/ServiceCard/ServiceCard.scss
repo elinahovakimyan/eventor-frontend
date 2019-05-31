@@ -10,7 +10,15 @@
     align-items: flex-start;
     justify-content: flex-end;
     padding: 10px;
-  
   }
 
+  .ant-checkbox-checked .ant-checkbox-inner {
+    background-color: #ef5e03;
+    border-color: #ef5e03;
+  }
+  
+}
+
+.selected-card {
+  background: #fffdef !important;
 }

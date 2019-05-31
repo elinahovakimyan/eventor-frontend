@@ -4,9 +4,31 @@
 @import 'variables';
 @import 'mixins';
 
+@font-face {
+  font-family: 'GHEA Grapalat';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local('GHEA Grapalat'),
+    url(../assets/fonts/GHEAGrpalatReg.otf) format('otf'),
+}
+
+@font-face {
+  font-family: 'GHEA Grapalat Bold';
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local('GHEA Grapalat Bold'),
+    url(../assets/fonts/GHEAGpalatBld.otf) format('otf'),
+}
 
 body {
   background-color: white;
+  font-family: 'GHEA Grapalat';
+}
+
+h1, h2, h3 {
+  font-family: 'GHEA Grapalat', sans-serif;
 }
 
 footer {

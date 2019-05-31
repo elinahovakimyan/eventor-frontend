@@ -30,7 +30,7 @@ const CartoonHeroCard = React.memo(({ service, isSelected, toggleService }) => {
     <ServiceCard
       service={service}
       seeMore={<VenueModal service={service} />}
-      onClick={() => toggleService(service.id)}
+      onClick={toggleService}
       isSelected={isSelected}
     >
       {service.id ? getCardContent() : null}

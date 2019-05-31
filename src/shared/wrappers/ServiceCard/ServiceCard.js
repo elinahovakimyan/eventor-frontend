@@ -13,11 +13,11 @@ const ServiceCard = React.memo(({
   if (Object.keys(service)) {
     return (
       <Card
-        className="service-card-wrapper"
+        className={`service-card-wrapper ${isSelected ? 'selected-card' : ''}`}
         cover={(
           <div
             className="service-card-cover"
-            onClick={onClick}
+            onClick={() => onClick(false)}
             style={{ backgroundImage: `url(${service.mainImage})` }}
           >
             <Checkbox checked={isSelected} />
@@ -25,7 +25,7 @@ const ServiceCard = React.memo(({
         )}
         actions={[
           seeMore,
-          <Button onClick={onClick}>
+          <Button onClick={() => onClick(true)}>
             Ընտրել
           </Button>,
         ]}

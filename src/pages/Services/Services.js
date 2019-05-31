@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
 import { Steps } from 'antd';
 
@@ -30,16 +30,28 @@ import './Services.scss';
 
 const Step = Steps.Step;
 
-class Services extends React.PureComponent {
-  state = {
-    currentCategory: {
-      key: 0,
-      type: VENUE,
-      label: 'Ժամանցի Վայր',
-    },
-  }
+const initialCategory = {
+  key: 0,
+  type: VENUE,
+  label: 'Ժամանցի Վայր',
+};
 
-  getGridByStep = (currentCategory) => {
+function Services({ match, history }) {
+  const [currentCategory, updateCurrentCategory] = useState(initialCategory);
+
+  useEffect(() => {
+    const { category } = match.params;
+
+    if (category) {
+      const newCategory = categorySteps.find(c => c.type === category);
+      if (newCategory) {
+        updateCurrentCategory(newCategory);
+      }
+    }
+  }, [match]);
+
+
+  const getGridByStep = () => {
     switch (currentCategory.type) {
       case VENUE:
         return <Venues />;
@@ -52,84 +64,80 @@ class Services extends React.PureComponent {
       case DECORATION:
         return <Decorations />;
       // case CAKE:
-      //   return this.props.cakes;
+      //   return props.cakes;
       // case PHOTOGRAPHER:
-      //   return this.props.photographers;
+      //   return props.photographers;
       default:
         return <Venues />;
     }
-  }
+  };
 
-  handleNext = () => {
-    this.setState((prevState) => {
-      const currentStep = prevState.currentCategory.key + 1;
+  const handleNext = () => {
+    const currentStep = currentCategory.key + 1;
 
-      return ({
-        currentCategory: categorySteps.find(c => c.key === currentStep),
-      });
-    });
-  }
+    const newCategory = categorySteps.find(c => c.key === currentStep);
 
-  handlePrev = () => {
-    this.setState((prevState) => {
-      const currentStep = prevState.currentCategory.key - 1;
+    updateCurrentCategory(newCategory);
+    history.push(`/${newCategory.type}`);
+  };
 
-      return ({
-        currentCategory: categorySteps.find(c => c.key === currentStep),
-      });
-    });
-  }
+  const handlePrev = () => {
+    const currentStep = currentCategory.key - 1;
+    const newCategory = categorySteps.find(c => c.key === currentStep);
 
-  render() {
-    const { currentCategory } = this.state;
-
-    return (
-      <div className="suppliers-list-page">
-        <WelcomeModal />
-
-        <Steps progressDot className="suppliers-steps" current={currentCategory.key}>
-          {categorySteps.map(serviceCategory => (
-            <Step
-              title={(
-                <TextWithImg
-                  imgSrc={getIconByType(serviceCategory.type)}
-                  title={serviceCategory.label}
-                />
-              )}
-              key={serviceCategory.type}
-            />
-          ))}
-        </Steps>
+    updateCurrentCategory(newCategory);
+    history.push(`/${newCategory.type}`);
+  };
 
 
-        <div className="service-content">
-          {currentCategory.type === DONE
-            ? <Confirmation />
-            : (currentCategory.type === FOOD
-              ? this.getGridByStep(currentCategory)
-              : (
-                <div className="suppliers-content">
-                  {/* <div className="filters-wrapper mt-30">
+  return (
+    <div className="suppliers-list-page">
+      <WelcomeModal />
+
+      <Steps progressDot className="suppliers-steps" current={currentCategory.key}>
+        {categorySteps.map(serviceCategory => (
+          <Step
+            title={(
+              <TextWithImg
+                imgSrc={getIconByType(serviceCategory.type)}
+                title={serviceCategory.label}
+                onClick={() => history.push(`/${serviceCategory.type}`)}
+              />
+            )}
+            key={serviceCategory.type}
+          />
+        ))}
+      </Steps>
+
+
+      <div className="service-content">
+        {currentCategory.type === DONE
+          ? <Confirmation />
+          : (currentCategory.type === FOOD
+            ? getGridByStep(currentCategory)
+            : (
+              <div className="suppliers-content">
+                {/* <div className="filters-wrapper mt-30">
                     <Filters currentCategory={currentCategory} />
                   </div>
                   <div className="data-wrapper"> */}
-                  <h2 className="text-center">{`Ընտրե՛ք ${currentCategory.label}ը`}</h2>
-                  {this.getGridByStep(currentCategory)}
-                  {/* </div> */}
-                </div>
-              )
-            )}
-        </div>
-
-
-        <SuppliersFooter
-          currentStep={currentCategory.key}
-          onNext={this.handleNext}
-          onPrev={this.handlePrev}
-        />
+                <h2 className="text-center">{`Ընտրե՛ք ${currentCategory.label}ը`}</h2>
+                {getGridByStep(currentCategory)}
+                {/* </div> */}
+              </div>
+            )
+          )}
       </div>
-    );
-  }
+
+
+      <SuppliersFooter
+        currentStep={currentCategory.key}
+        onNext={handleNext}
+        onPrev={handlePrev}
+      />
+    </div>
+  );
+
 }
 
 export default connect(null, null)(Services);

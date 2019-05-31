@@ -20,7 +20,7 @@ class CartoonHeroModal extends React.PureComponent {
     const { title, description } = service;
 
     return (
-      <ServiceModal>
+      <ServiceModal imgs={service.carouselImgs}>
         <div className="service-content">
 
           <div className="text-center">
@@ -28,10 +28,18 @@ class CartoonHeroModal extends React.PureComponent {
             <p>{description}</p>
           </div>
 
-          <h3>
-            <Icon type="tags" />
-            {` Գինը՝ սկսած ${formatPrice(service.price)}`}
-          </h3>
+          {service.price || service.startingPrice
+            ? (
+              <h3>
+                <Icon type="tags" />
+                {' '}
+                Գինը՝
+                {' '}
+                {service.price ? formatPrice(service.price) : ` սկսած ${formatPrice(service.startingPrice)}`}
+              </h3>
+            )
+            : null}
+
           <h3>
             <Icon type="clock-circle" />
             {' '}

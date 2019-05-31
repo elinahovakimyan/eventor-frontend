@@ -57,6 +57,12 @@ class CForm extends React.PureComponent {
     return (
       <div className="faq-container">
         <Form {...formItemLayout} onSubmit={this.handleSubmit}>
+          <Form.Item label="Անուն Ազգանուն">
+            {getFieldDecorator('name')(
+              <Input placeholder="Ձեր անուն ազգանունը" />,
+            )}
+          </Form.Item>
+
           <Form.Item label="Էլ. Հասցե">
             {getFieldDecorator('email', {
               rules: [{
@@ -76,6 +82,30 @@ class CForm extends React.PureComponent {
               }],
             })(
               <Input placeholder="Ձեր հեռախոսահամարը" />,
+            )}
+          </Form.Item>
+
+          <Form.Item label="Հոբելյարի անունը">
+            {getFieldDecorator('jubilee-name')(
+              <Input placeholder="Նշե՛ք հոբելյարի անունը" />,
+            )}
+          </Form.Item>
+
+          <Form.Item label="Հոբելյարի տարիքը">
+            {getFieldDecorator('age')(
+              <Input placeholder="Քանի՞ տարեկան է դառնում" />,
+            )}
+          </Form.Item>
+
+          <Form.Item label="Հյուրերի քանակը">
+            {getFieldDecorator('guests')(
+              <Input placeholder="Նշե՛ք մոտավոր քանի մեծահասակ և քանի երեխա է լինելու։" />,
+            )}
+          </Form.Item>
+
+          <Form.Item label="Պրոմո կոդ">
+            {getFieldDecorator('promo')(
+              <Input />,
             )}
           </Form.Item>
 

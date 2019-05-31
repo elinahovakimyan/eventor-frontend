@@ -13,21 +13,20 @@ class SuppliersFooter extends React.PureComponent {
     return (
       <div className="service-footer">
         <div className="service-footer-actions">
-          <Button disabled={isPrevDisabled} onClick={onPrev}>
+          {/* <Button disabled={isPrevDisabled} onClick={onPrev}>
             <Icon type="left" />
           Նախորդը
+          </Button> */}
+          <Button disabled={isPrevDisabled} onClick={onPrev}>
+            <Icon type="left" />
+            Նախորդը
           </Button>
           {currentStep !== 5
             ? (
-              <div className="right-content">
-
-                <p onClick={onNext} className="text-center">Բաց Թողնել</p>
-
-                <Button type="primary" onClick={onNext}>
+              <Button type="primary" onClick={onNext}>
                   Հաջորդը
-                  <Icon type="right" />
-                </Button>
-              </div>
+                <Icon type="right" />
+              </Button>
             )
             : null}
         </div>

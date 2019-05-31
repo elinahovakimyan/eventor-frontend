@@ -26,7 +26,7 @@ class DrawerHeader extends React.PureComponent {
 
     return (
       <div id="header">
-        <Link to="/">
+        <Link to="/venue">
           <img className="logo-img" src={logoSrc} alt="logo" />
         </Link>
         <div>

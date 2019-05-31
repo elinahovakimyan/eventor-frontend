@@ -47,13 +47,21 @@ $footer-height: 9vh;
 
 
 @media only screen and (min-width: 778px) {
-.service-footer {
-  .service-footer-actions {
-    padding-top: 10px; 
+  .service-footer {
+    .service-footer-actions {
+      padding-top: 10px; 
 
-    button {
-      height: 38px;
+      button {
+        height: 38px;
+      }
     }
   }
 }
+
+@media only screen and (min-width: 400px) {
+  .service-footer {
+    .service-footer-actions {
+      justify-content: flex-end;
+    }
+  }
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Icon, Row, Col } from 'antd';
 
+import { formatPrice } from 'core/helpers';
 import { ServiceDetails } from 'shared/components';
 import { ServiceModal } from 'shared/wrappers';
 
@@ -48,17 +49,17 @@ class CartoonHeroModal extends React.PureComponent {
             <Col md={12} sm={24}>
               <h3>
                 <Icon type="tag" />
-                {` Մուտքավճար՝ ${service.entranceFee || 'չկա'}`}
+                {` Մուտքավճար՝ ${formatPrice(service.entranceFee) || 'չկա'}`}
               </h3>
               <h3>
                 <Icon type="tags" />
-                {` Փաթեթներ՝ սկսած ${service.price}`}
+                {` Փաթեթներ՝ սկսած ${formatPrice(service.price)}`}
               </h3>
-              <h3>
+              {/* <h3>
                 <Icon type="file-text" />
                 {' '}
                 Ծանոթանալ մենյուին
-              </h3>
+              </h3> */}
             </Col>
           </Row>
 

@@ -22,6 +22,7 @@ class App extends React.PureComponent {
           <Content>
             <Switch>
               <Route path="/" exact component={Services} />
+              <Route path="/:category" component={Services} />
               <Route path="/faq" component={FAQPage} />
               <Route path="/jubilee-form" component={JubileeForm} />
               <Route path="/services" exact component={Services} />
