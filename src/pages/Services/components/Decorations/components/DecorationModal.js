@@ -39,17 +39,6 @@ class CartoonHeroModal extends React.PureComponent {
               </h3>
             )
             : null}
-
-          <h3>
-            <Icon type="clock-circle" />
-            {' '}
-            Տևողությունը՝ 1.5 ժամ
-          </h3>
-          <h3>
-            <Icon type="team" />
-            {' '}
-            Մասնակիցների քանակը՝ 5-15
-          </h3>
         </div>
       </ServiceModal>
     );

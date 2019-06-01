@@ -17,7 +17,7 @@ class CartoonHeroModal extends React.PureComponent {
 
   render() {
     const { service } = this.props;
-    const { title, description } = service;
+    const { title, duration } = service;
 
     return (
       <ServiceModal imgs={service.carouselImgs}>
@@ -25,7 +25,6 @@ class CartoonHeroModal extends React.PureComponent {
 
           <div className="text-center">
             <h1>{title}</h1>
-            <p>{description}</p>
           </div>
 
           {service.price || service.startingPrice
@@ -43,12 +42,7 @@ class CartoonHeroModal extends React.PureComponent {
           <h3>
             <Icon type="clock-circle" />
             {' '}
-            Տևողությունը՝ 1.5 ժամ
-          </h3>
-          <h3>
-            <Icon type="team" />
-            {' '}
-            Մասնակիցների քանակը՝ 5-15
+            Տևողությունը՝ {duration} ժամ
           </h3>
         </div>
       </ServiceModal>

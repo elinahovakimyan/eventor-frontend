@@ -18,7 +18,6 @@ class ImageCarousel extends React.PureComponent {
           autoplay
           afterChange={this.onChange}
           dotPosition="top"
-          autoplaySpeed={2000}
         >
           {imgs.map((imgSrc, i) => (
             <div key={imgSrc + i}>
