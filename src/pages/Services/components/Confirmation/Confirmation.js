@@ -110,7 +110,7 @@ class Confirmation extends React.PureComponent {
 
           {/* <h3>Ընդհանուր կազմում է՝ 86,000 դրամ</h3> */ }
 
-          <ConfirmationForm />
+          <ConfirmationForm selectedServices={this.props.selectedServices} />
         </>
       );
     }
@@ -133,6 +133,7 @@ const mapStateToProps = (state) => ({
   selectedCartoonHeroes: getSelectedCartoonHeroes(state),
   selectedGameShows: getSelectedGameShows(state),
   selectedDecorations: getSelectedDecorations(state),
+  selectedServices: state.birthday.selectedServices,
 });
 
 const mapDispatchToProps = {
