@@ -4,6 +4,7 @@ import {
 } from 'antd';
 import { connect } from 'react-redux';
 
+import { formatPrice } from 'core/helpers';
 import {
   deselectVenue, deselectGameShow, deselectCartoonHero, deselectDecoration,
 } from 'store/actions/birthday';
@@ -46,7 +47,14 @@ class CartComp extends React.PureComponent {
                 <img src={require('assets/icons/place.svg')} alt="place" />
                 <h4>{selectedVenue[0].title}</h4>
               </div>
-              <Icon type="delete" onClick={() => this.props.deselectVenue(selectedVenue[0])} />
+              <div className="service-wrapper">
+                <p>
+                  {selectedVenue[0].entranceFee
+                    ? ` Մուտքավճարը՝ ${formatPrice(selectedVenue[0].entranceFee)}`
+                    : ''}
+                </p>
+                <Icon type="delete" onClick={() => this.props.deselectVenue(selectedVenue[0])} />
+              </div>
             </Menu.Item>
           )
           : null}
@@ -58,7 +66,12 @@ class CartComp extends React.PureComponent {
                 <img src={require('assets/icons/donatello.svg')} alt="cartoon hero" />
                 <h4>{service.title}</h4>
               </div>
-              <Icon type="delete" onClick={() => this.props.deselectCartoonHero(service)} />
+              <div className="service-wrapper">
+                <p>
+                  {service.price ? formatPrice(service.price) : `սկսած ${formatPrice(service.startingPrice)}`}
+                </p>
+                <Icon type="delete" onClick={() => this.props.deselectCartoonHero(service)} />
+              </div>
             </Menu.Item>
           ))
           : null}
@@ -70,19 +83,29 @@ class CartComp extends React.PureComponent {
                 <img src={require('assets/icons/laugh.svg')} alt="cartoon hero" />
                 <h4>{service.title}</h4>
               </div>
-              <Icon type="delete" onClick={() => this.props.deselectGameShow(service)} />
+              <div className="service-wrapper">
+                <p>
+                  {service.price ? formatPrice(service.price) : `սկսած ${formatPrice(service.startingPrice)}`}
+                </p>
+                <Icon type="delete" onClick={() => this.props.deselectGameShow(service)} />
+              </div>
             </Menu.Item>
           ))
           : null}
         {selectedDecorations && selectedDecorations.length
           ? selectedDecorations.map(service => (
 
-            <Menu.Item key={`4+${service.id}`} className="cart-row">
+            <Menu.Item kesy={`4+${service.id}`} className="cart-row">
               <div className="service-wrapper">
                 <img src={require('assets/icons/balloons.svg')} alt="cartoon hero" />
                 <h4>{service.title}</h4>
               </div>
-              <Icon type="delete" onClick={() => this.props.deselectDecoration(service)} />
+              <div className="service-wrapper">
+                <p>
+                  {service.price ? formatPrice(service.price) : `սկսած ${formatPrice(service.startingPrice)}`}
+                </p>
+                <Icon type="delete" onClick={() => this.props.deselectDecoration(service)} />
+              </div>
             </Menu.Item>
           ))
           : null}
