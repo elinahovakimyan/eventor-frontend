@@ -20,11 +20,16 @@ class CForm extends React.PureComponent {
           isButtonLoading: true,
         });
 
+        const order = {
+          ...values,
+          ...this.props.selectedServices,
+        };
+
         const templateParams = {
           reply_to: 'reply_to_value',
           from_name: values.email,
           to_name: 'Eventor team (Order confirmation)',
-          message_html: JSON.stringify(values),
+          message_html: JSON.stringify(order),
         };
 
         const serviceId = 'default_service';

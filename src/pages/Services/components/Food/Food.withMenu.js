@@ -1,22 +1,22 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Empty } from 'antd';
+import { Collapse, Empty } from 'antd';
 
-// import { formatPrice } from 'core/helpers';
+import { formatPrice } from 'core/helpers';
 import { Space } from 'core/components';
 import { getFoodInfo } from 'store/getters';
 
-// import MenuItem from './components/MenuItem';
+import MenuItem from './components/MenuItem';
 import Packages from './components/Packages';
 
 import './Food.scss';
 
-// const Panel = Collapse.Panel;
+const Panel = Collapse.Panel;
 
 class Food extends React.PureComponent {
   render() {
     const { selectedVenue, foodInfo } = this.props;
-    // const menu = foodInfo ? foodInfo.menu : null;
+    const menu = foodInfo ? foodInfo.menu : null;
     const packages = foodInfo ? foodInfo.packages : null;
 
     return (
@@ -28,7 +28,7 @@ class Food extends React.PureComponent {
 
         <Space />
 
-        {/* {menu
+        {menu
           ? (
             <div>
               <h2 className="text-center">...Կամ օգտվե՛ք մենյուից</h2>
@@ -49,10 +49,10 @@ class Food extends React.PureComponent {
               </h2>
             </div>
           )
-          : null} */}
+          : null}
 
 
-        {(!packages)
+        {(!packages && !menu)
           ? (
             <h2 className="text-center">
               <Empty description="Օյ, սննդի ցանկ չի գտնվել։" />
