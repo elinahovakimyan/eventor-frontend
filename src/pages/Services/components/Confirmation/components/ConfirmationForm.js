@@ -22,7 +22,7 @@ class CForm extends React.PureComponent {
 
         const order = {
           ...values,
-          ...this.props.selectedServices,
+          services: this.props.selectedServices,
         };
 
         const templateParams = {
