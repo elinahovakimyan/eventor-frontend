@@ -95,7 +95,7 @@ class CartComp extends React.PureComponent {
         {selectedDecorations && selectedDecorations.length
           ? selectedDecorations.map(service => (
 
-            <Menu.Item kesy={`4+${service.id}`} className="cart-row">
+            <Menu.Item key={`4+${service.id}`} className="cart-row">
               <div className="service-wrapper">
                 <img src={require('assets/icons/balloons.svg')} alt="cartoon hero" />
                 <h4>{service.title}</h4>

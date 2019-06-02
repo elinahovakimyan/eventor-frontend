@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
-import { Steps } from 'antd';
+import { Link } from 'react-router-dom';
+import { Steps, Button } from 'antd';
 import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 import { TextWithImg } from 'core/components';
@@ -115,6 +116,10 @@ function Services({ match, history }) {
       // htmlRef="<REF_STRING>"
       />
 
+      {/* <Button>
+        <Link to="/done">Անցնել հաստատման էջ </Link>
+      </Button> */}
+
       <div className="service-content">
         {currentCategory.type === DONE
           ? <Confirmation />
@@ -126,7 +131,12 @@ function Services({ match, history }) {
                     <Filters currentCategory={currentCategory} />
                   </div>
                   <div className="data-wrapper"> */}
-                <h2 className="text-center">{`Ընտրե՛ք ${currentCategory.label}ը`}</h2>
+                <div className="flex-row-space-between" style={{ margin: '10px 20px' }}>
+                  <h2>{`Ընտրե՛ք ${currentCategory.label}`}</h2>
+                  <Button>
+                    <Link to="/done">Անցնել հաստատման էջ </Link>
+                  </Button>
+                </div>
                 {getGridByStep(currentCategory)}
                 {/* </div> */}
               </div>

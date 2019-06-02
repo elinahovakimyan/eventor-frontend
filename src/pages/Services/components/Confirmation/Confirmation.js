@@ -109,7 +109,7 @@ class Confirmation extends React.PureComponent {
               {selectedDecorations && selectedDecorations.length
                 ? selectedDecorations.map(service => (
 
-                  <Menu.Item kesy={`4+${service.id}`} className="order-item">
+                  <Menu.Item key={`4+${service.id}`} className="order-item">
                     <div className="service-wrapper">
                       <img src={require('assets/icons/balloons.svg')} alt="cartoon hero" />
                       <h4>{service.title}</h4>
