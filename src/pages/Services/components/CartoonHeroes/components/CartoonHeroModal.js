@@ -42,7 +42,11 @@ class CartoonHeroModal extends React.PureComponent {
           <h3>
             <Icon type="clock-circle" />
             {' '}
-            Տևողությունը՝ {duration} ժամ
+            Տևողությունը՝
+            {' '}
+            {duration}
+            {' '}
+            ժամ
           </h3>
         </div>
       </ServiceModal>

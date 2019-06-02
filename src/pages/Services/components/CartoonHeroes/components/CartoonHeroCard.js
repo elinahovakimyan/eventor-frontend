@@ -10,8 +10,7 @@ const CartoonHeroCard = React.memo(({ service, isSelected, toggleService }) => {
 
   const getCardContent = () => (
     <React.Fragment>
-      <p className="service-description one-line-text">
-      </p>
+      <p className="service-description one-line-text" />
 
       <h4 className="provider">
         {`Մատակարար՝ ${service.providerName}`}

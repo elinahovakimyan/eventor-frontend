@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactGA from 'react-ga';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Layout } from 'antd';
 // import MessengerCustomerChat from 'react-messenger-customer-chat';
@@ -15,13 +16,19 @@ import 'styles/index.scss';
 const { Content } = Layout;
 
 class App extends React.PureComponent {
-  // componentDidMount() {
+  componentDidMount() {
   //   window.fbAsyncInit = function () {
   //     FB.init({
   //       xfbml: true,
   //       version: 'v3.3',
   //     });
-  //   };
+    this.initializeReactGA();
+  }
+
+  initializeReactGA = () => {
+    ReactGA.initialize('UA-141260233-1');
+    ReactGA.pageview('/mvp');
+  }
 
   //   (function (d, s, id) {
   //     let js; const

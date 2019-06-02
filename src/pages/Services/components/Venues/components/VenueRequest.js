@@ -72,7 +72,7 @@ class VenueRequest extends React.PureComponent {
       <>
         <div className="venue-request" onClick={this.toggleModal}>
           <Icon type="question-circle" />
-          <h3>Իմ փնտրած վայրը այստեղ չկար...</h3>
+          <h3>Չգտա՞ք Ձեր նախընտրած վայրը...</h3>
         </div>
 
         <Modal
