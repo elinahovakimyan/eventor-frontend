@@ -16,7 +16,7 @@ import 'styles/index.scss';
 const { Content } = Layout;
 
 class App extends React.PureComponent {
-  componentDidMount() {
+  componentWillMount() {
   //   window.fbAsyncInit = function () {
   //     FB.init({
   //       xfbml: true,
@@ -27,7 +27,6 @@ class App extends React.PureComponent {
 
   initializeReactGA = () => {
     ReactGA.initialize('UA-141260233-1');
-    ReactGA.pageview('/mvp');
   }
 
   //   (function (d, s, id) {

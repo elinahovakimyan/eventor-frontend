@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import ReactGA from 'react-ga';
 
 import { getGameShows } from 'store/actions/gameShow';
 import { selectGameShow, deselectGameShow } from 'store/actions/birthday';
@@ -15,6 +16,7 @@ import './GameShows.scss';
 class GameShows extends React.PureComponent {
   componentDidMount() {
     this.props.getGameShows();
+    ReactGA.pageview('/game_show');
   }
 
   render() {

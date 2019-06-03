@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import ReactGA from 'react-ga';
 
 import { getVenues } from 'store/actions/venue';
 import { selectVenue, deselectVenue } from 'store/actions/birthday';
@@ -16,6 +17,7 @@ import './Venues.scss';
 class Venues extends React.PureComponent {
   componentDidMount() {
     this.props.getVenues();
+    ReactGA.pageview('/venue');
   }
 
 

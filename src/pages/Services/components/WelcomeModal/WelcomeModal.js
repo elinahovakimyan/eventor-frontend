@@ -29,7 +29,7 @@ class WelcomeModal extends React.PureComponent {
         className="welcome-modal text-center"
       >
         <div className="text-center">
-          <h1>Բարի գալուստ Eventor</h1>
+          <h1>Բարի գալուստ Eventor.am</h1>
           {/* <h2 className="">Կայքը այժմ գտնվում է կառուցման փուլում։</h2> */}
           <img src={require('assets/welcome-cat.gif')} alt="welcome to eventor" style={{ width: 200 }} />
 

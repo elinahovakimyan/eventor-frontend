@@ -131,7 +131,7 @@ function Services({ match, history }) {
                     <Filters currentCategory={currentCategory} />
                   </div>
                   <div className="data-wrapper"> */}
-              <div className="flex-row-space-between" style={{ margin: '10px 20px' }}>
+              <div className="services-header">
                 <h2>{`Ընտրե՛ք ${currentCategory.label}`}</h2>
                 <Button>
                   <Link to="/done">Անցնել հաստատման էջ </Link>

@@ -16,7 +16,26 @@ $footer-height: 9vh;
             }
         }
     }
+
+    .services-header {
+        margin: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+    }
 }
+
+@media only screen and (max-width: 778px) {
+    .suppliers-list-page {
+
+        .services-header {
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}
+
 
 .service-content {
     margin-bottom: 110px;

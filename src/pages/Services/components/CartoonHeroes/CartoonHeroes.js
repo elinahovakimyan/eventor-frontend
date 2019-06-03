@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import ReactGA from 'react-ga';
 
 import { getCartoonHeroes } from 'store/actions/cartoonHero';
 import { selectCartoonHero, deselectCartoonHero } from 'store/actions/birthday';
@@ -15,6 +16,7 @@ import './CartoonHeroes.scss';
 class CartoonHeroes extends React.PureComponent {
   componentDidMount() {
     this.props.getCartoonHeroes();
+    ReactGA.pageview('/cartoon_hero');
   }
 
   render() {

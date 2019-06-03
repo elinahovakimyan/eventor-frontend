@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import ReactGA from 'react-ga';
 
 import { ServiceGrid } from 'shared/wrappers';
 import { getDecorations } from 'store/actions/decoration';
@@ -15,6 +16,7 @@ import './Decorations.scss';
 class Decorations extends React.PureComponent {
   componentDidMount() {
     this.props.getDecorations();
+    ReactGA.pageview('/decorations');
   }
 
   render() {
