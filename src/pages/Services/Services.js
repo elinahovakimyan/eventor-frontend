@@ -10,7 +10,7 @@ import { getIconByType } from 'core/helpers';
 import {
   categorySteps,
   VENUE,
-  FOOD,
+  // FOOD,
   CARTOON_HERO,
   GAME_SHOW,
   DECORATION,
@@ -21,7 +21,7 @@ import {
 
 import WelcomeModal from './components/WelcomeModal/WelcomeModal';
 import Venues from './components/Venues/Venues';
-import Food from './components/Food/Food';
+// import Food from './components/Food/Food';
 import CartoonHeroes from './components/CartoonHeroes/CartoonHeroes';
 import GameShows from './components/GameShows/GameShows';
 import Decorations from './components/Decorations/Decorations';
@@ -57,8 +57,8 @@ function Services({ match, history }) {
     switch (currentCategory.type) {
       case VENUE:
         return <Venues />;
-      case FOOD:
-        return <Food />;
+      // case FOOD:
+      //   return <Food />;
       case CARTOON_HERO:
         return <CartoonHeroes />;
       case GAME_SHOW:
@@ -123,24 +123,23 @@ function Services({ match, history }) {
       <div className="service-content">
         {currentCategory.type === DONE
           ? <Confirmation />
-          : (currentCategory.type === FOOD
-            ? getGridByStep(currentCategory)
-            : (
-              <div className="suppliers-content">
-                {/* <div className="filters-wrapper mt-30">
+          // : (currentCategory.type === FOOD
+          //   ? getGridByStep(currentCategory)
+          : (
+            <div className="suppliers-content">
+              {/* <div className="filters-wrapper mt-30">
                     <Filters currentCategory={currentCategory} />
                   </div>
                   <div className="data-wrapper"> */}
-                <div className="flex-row-space-between" style={{ margin: '10px 20px' }}>
-                  <h2>{`Ընտրե՛ք ${currentCategory.label}`}</h2>
-                  <Button>
-                    <Link to="/done">Անցնել հաստատման էջ </Link>
-                  </Button>
-                </div>
-                {getGridByStep(currentCategory)}
-                {/* </div> */}
+              <div className="flex-row-space-between" style={{ margin: '10px 20px' }}>
+                <h2>{`Ընտրե՛ք ${currentCategory.label}`}</h2>
+                <Button>
+                  <Link to="/done">Անցնել հաստատման էջ </Link>
+                </Button>
               </div>
-            )
+              {getGridByStep(currentCategory)}
+              {/* </div> */}
+            </div>
           )}
       </div>
 

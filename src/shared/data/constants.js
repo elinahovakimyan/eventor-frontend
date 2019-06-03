@@ -14,23 +14,23 @@ export const categories = [
     type: VENUE,
     label: 'Ժամանցի Վայր',
   },
+  // {
+  //   key: 1,
+  //   type: FOOD,
+  //   label: 'Սնունդ',
+  // },
   {
     key: 1,
-    type: FOOD,
-    label: 'Սնունդ',
-  },
-  {
-    key: 2,
     type: CARTOON_HERO,
     label: 'Մուլտհերոս',
   },
   {
-    key: 3,
+    key: 2,
     type: GAME_SHOW,
     label: 'Խաղային Շոու',
   },
   {
-    key: 4,
+    key: 3,
     type: DECORATION,
     label: 'Ձևավորում',
   },
@@ -50,7 +50,7 @@ export const categories = [
 export const categorySteps = [
   ...categories,
   {
-    key: 5,
+    key: 4,
     type: DONE,
     label: 'Հաստատել',
   },

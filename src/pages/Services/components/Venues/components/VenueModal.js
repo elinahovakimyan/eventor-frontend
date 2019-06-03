@@ -51,10 +51,13 @@ class CartoonHeroModal extends React.PureComponent {
                 <Icon type="tag" />
                 {` Մուտքավճար՝ ${formatPrice(service.entranceFee) || 'չկա'}`}
               </h3>
-              <h3>
-                <Icon type="tags" />
-                {` Փաթեթներ՝ սկսած ${formatPrice(service.price)}`}
-              </h3>
+              {service.price
+                ? (
+                  <h3>
+                    <Icon type="tags" />
+                    {` Փաթեթներ՝ սկսած ${formatPrice(service.price)}`}
+                  </h3>
+                ) : null}
               {/* <h3>
                 <Icon type="file-text" />
                 {' '}

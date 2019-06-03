@@ -16,7 +16,7 @@ export const venues = [
         '3. Տորթի արարողություն​\n' +
         '4. Շոու ծրագիր\n',
     priceRange: '֏֏',
-    price: 4000,
+    price: null,
     currency: 'AMD',
     entranceFee: 3000,
     carouselImgs: [
