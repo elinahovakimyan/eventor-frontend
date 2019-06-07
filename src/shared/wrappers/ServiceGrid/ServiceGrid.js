@@ -61,7 +61,7 @@ class ServiceGrid extends React.PureComponent {
     const { services, lastElement } = this.props;
 
     return (
-      <Row gutter={24} style={{ padding: '0 20px' }}>
+      <Row gutter={24}>
         {services && services.length
           ? this.getServiceList(services)
           : (

@@ -21,7 +21,7 @@ class SuppliersFooter extends React.PureComponent {
             <Icon type="left" />
             Նախորդը
           </Button>
-          {currentStep !== 5
+          {currentStep !== 4
             ? (
               <Button type="primary" onClick={onNext}>
                   Հաջորդը

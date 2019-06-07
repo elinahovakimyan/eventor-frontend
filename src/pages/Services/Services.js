@@ -81,6 +81,7 @@ function Services({ match, history }) {
 
     updateCurrentCategory(newCategory);
     history.push(`/${newCategory.type}`);
+    window.scrollTo(0, 0);
   };
 
   const handlePrev = () => {
@@ -89,6 +90,7 @@ function Services({ match, history }) {
 
     updateCurrentCategory(newCategory);
     history.push(`/${newCategory.type}`);
+    window.scrollTo(0, 0);
   };
 
 

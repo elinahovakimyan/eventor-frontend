@@ -10,8 +10,8 @@ const CartoonHeroCard = React.memo(({ service, isSelected, toggleService }) => {
 
   const getCardContent = () => (
     <React.Fragment>
-      <p className="service-description one-line-text">
-        {service.description}
+      <p className="service-description">
+        {`${service.description.substr(0, 75)}...`}
       </p>
       <h4 className="one-line-text">
         <Icon type="environment" />

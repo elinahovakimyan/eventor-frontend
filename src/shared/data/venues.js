@@ -620,7 +620,7 @@ export const venues = [
     title: 'Pioneer Brazilian Restaurant',
     address: 'Բաղրամյան 2',
     mainImage: 'https://scontent.fevn1-4.fna.fbcdn.net/v/t1.0-9/28070_414495201957471_1420722805_n.jpg?_nc_cat=107&_nc_ht=scontent.fevn1-4.fna&oh=84ad55b63d1168cc3bff8e8d0fadad05&oe=5D5A9FCF',
-    description: 'Այս բրազիլական ռեստորանը հիանալի վայր է մի պահ Բրազիլիայի շունչը զգալու և բրազիլական անկրնկնելի ուտելիքները համտեսելու համար՝ այն էլ ինչքան ուզեք',
+    description: 'Այս բրազիլական ռեստորանը հիանալի վայր է մի պահ Բրազիլիայի շունչը զգալու և բրազիլական անկրնկնելի ուտելիքները համտեսելու համար՝ այն էլ ինչքան ուզեք:',
     priceRange: '֏',
     price: 10000,
     currency: 'AMD',
