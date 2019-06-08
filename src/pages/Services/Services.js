@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { Steps, Button } from 'antd';
-import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 import { TextWithImg } from 'core/components';
 import { getIconByType } from 'core/helpers';
@@ -19,7 +18,6 @@ import {
   // PHOTOGRAPHER,
 } from 'shared/data/constants';
 
-import WelcomeModal from './components/WelcomeModal/WelcomeModal';
 import Venues from './components/Venues/Venues';
 // import Food from './components/Food/Food';
 import CartoonHeroes from './components/CartoonHeroes/CartoonHeroes';
@@ -96,8 +94,6 @@ function Services({ match, history }) {
 
   return (
     <div className="suppliers-list-page">
-      <WelcomeModal />
-
       <Steps progressDot className="suppliers-steps" current={currentCategory.key}>
         {categorySteps.map(serviceCategory => (
           <Step
@@ -106,21 +102,13 @@ function Services({ match, history }) {
                 imgSrc={getIconByType(serviceCategory.type)}
                 title={serviceCategory.label}
                 onClick={() => history.push(`/${serviceCategory.type}`)}
+                color={serviceCategory.key === currentCategory.key ? '#631c5f' : null}
               />
             )}
             key={serviceCategory.type}
           />
         ))}
       </Steps>
-      <MessengerCustomerChat
-        pageId="340948546707923>"
-        appId="eventor.am"
-      // htmlRef="<REF_STRING>"
-      />
-
-      {/* <Button>
-        <Link to="/done">Անցնել հաստատման էջ </Link>
-      </Button> */}
 
       <div className="service-content">
         {currentCategory.type === DONE
@@ -134,7 +122,8 @@ function Services({ match, history }) {
                   </div>
                   <div className="data-wrapper"> */}
               <div className="services-header">
-                <h2>{`Ընտրե՛ք ${currentCategory.label}`}</h2>
+                {/* <h2>{`Ընտրե՛ք ${currentCategory.label}`}</h2> */}
+                <span />
                 <Button>
                   <Link to="/done">Անցնել հաստատման էջ </Link>
                 </Button>

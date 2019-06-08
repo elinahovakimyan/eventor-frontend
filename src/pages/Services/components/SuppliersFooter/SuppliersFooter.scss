@@ -17,12 +17,12 @@ $footer-height: 9vh;
     width: 100%;
     padding-top: 3px; 
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
   }
 
   button {
-    margin: 0 8px;
+    margin: 4px 2px;
     height: 34px;
   }
   
@@ -40,7 +40,8 @@ $footer-height: 9vh;
   }
 
   .contact-p {
-    padding-top: 6px;
+    padding-top: 15px;
+    margin-bottom: 0.5em;
   }
 }
 
@@ -53,6 +54,7 @@ $footer-height: 9vh;
 
       button {
         height: 38px;
+        margin: 4px 2%;
       }
     }
   }
@@ -61,7 +63,7 @@ $footer-height: 9vh;
 @media only screen and (min-width: 400px) {
   .service-footer {
     .service-footer-actions {
-      justify-content: flex-end;
+      justify-content: center;
     }
   }
 }

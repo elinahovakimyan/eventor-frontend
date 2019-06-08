@@ -17,10 +17,10 @@ const CartoonHeroCard = React.memo(({ service, isSelected, toggleService }) => {
         <Icon type="environment" />
         {` Հասցե՝ ${service.address}`}
       </h4>
-      <h4 className="one-line-text">
+      {/* <h4 className="one-line-text">
         <Icon type="shop" />
         {` Սրահների քանակը՝ ${service.rooms}`}
-      </h4>
+      </h4> */}
 
       <h4 className="text-right price-range">{service.priceRange}</h4>
     </React.Fragment>

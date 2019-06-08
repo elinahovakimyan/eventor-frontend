@@ -41,34 +41,38 @@ class App extends React.PureComponent {
 
   render() {
     return (
-      <BrowserRouter>
-        <React.Fragment>
-          <DrawerHeader />
-          <Content>
-            <Switch>
-              <Route path="/" exact component={Services} />
-              <Route path="/:category" component={Services} />
-              <Route path="/faq" component={FAQPage} />
-              <Route path="/jubilee-form" component={JubileeForm} />
-              <Route path="/services" exact component={Services} />
-              <Route path="/services/:category" component={Services} />
-            </Switch>
-          </Content>
-          {/* <MessengerCustomerChat
-            pageId="340948546707923>"
-          // appId="<APP_ID>"
-          // htmlRef="<REF_STRING>"
-          /> */}
-        </React.Fragment>
-        {/* <div
+      <div>
+        <div id="fb-root" />
+
+
+        <div
           className="fb-customerchat"
           attribution="setup_tool"
           page_id="340948546707923"
-          theme_color="#20cef5"
-          logged_in_greeting="Ողջու՜յն։ Ի՞նչով կարող ենք օգնել։"
-          logged_out_greeting="Ողջու՜յն։ Ի՞նչով կարող ենք օգնել։"
-        /> */}
-      </BrowserRouter>
+          // theme_color="#f6884d"
+          size="standard"
+          logged_in_greeting="Ողջու՜յն։ Ինչո՞վ կարող ենք օգնել։"
+          logged_out_greeting="Ողջու՜յն։ Ինչո՞վ կարող ենք օգնել։"
+        />
+
+        <BrowserRouter>
+          <React.Fragment>
+            <DrawerHeader />
+            <Content>
+              <Switch>
+                <Route path="/" exact component={Services} />
+                <Route path="/:category" component={Services} />
+                <Route path="/faq" component={FAQPage} />
+                <Route path="/jubilee-form" component={JubileeForm} />
+                <Route path="/services" exact component={Services} />
+                <Route path="/services/:category" component={Services} />
+              </Switch>
+            </Content>
+
+          </React.Fragment>
+        </BrowserRouter>
+
+      </div>
     );
   }
 }

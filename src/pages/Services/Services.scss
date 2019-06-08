@@ -23,6 +23,18 @@ $footer-height: 9vh;
         align-items: center;
         justify-content: space-between;
         flex-direction: row;
+
+        // button {
+        //     float: right;
+        // }
+    }
+
+}
+
+.welcome-modal {
+    h1 {
+        margin: 0;
+        font-size: 20px;
     }
 }
 
