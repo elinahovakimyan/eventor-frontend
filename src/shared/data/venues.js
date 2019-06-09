@@ -517,7 +517,25 @@ export const venues = [
           ]
         },
       ]
-    }
+    },
+    // decorations: [
+    //   {
+    //     id: 1,
+    //     title: 'Քենդի Բար',
+    //     description: 'Էլ ի՜նչ ծնունդ, առանց քենդիբարի։ Մինիոններ, արքայադստրեր, լեգոներ, թե՞ ջունգլիներ։ Ընտրեք Ձեր սիրելի թեմատիկան և պատվիրեք քենդիբարի ձևավորումը Good Time-ում։',
+    //     providerName: 'Good Time',
+    //     startingPrice: 15000,
+    //     mainImage: 'https://live.staticflickr.com/65535/48029881148_cb202777b6_b.jpg',
+    //     priceRange: '֏֏',
+    //     carouselImgs: [
+    //       'https://live.staticflickr.com/65535/48029881148_cb202777b6_b.jpg',
+    //       'https://live.staticflickr.com/65535/48029881208_b22e4f919a_b.jpg',
+    //       'https://live.staticflickr.com/65535/48029945822_6f7b495071_b.jpg',
+    //       'https://live.staticflickr.com/65535/48029881393_2a1c6aa7dc_b.jpg',
+    //       'https://live.staticflickr.com/65535/48029839776_27ef6b1bd3_b.jpg'
+    //     ],
+    //   }
+    // ]
   },
   {
     id: 3,

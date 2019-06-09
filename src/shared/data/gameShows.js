@@ -3,10 +3,58 @@
 export const gameShows = [
   {
     id: 1,
+    title: 'Թղթե Շոու',
+    priceRange: '֏֏֏',
+    price: 35000,
+    duration: 1,
+    providerName: 'Gayluk.am',
+    mainImage: 'https://scontent.fevn1-4.fna.fbcdn.net/v/t1.0-9/33066064_2057728704441487_8586059036850388992_n.jpg?_nc_cat=108&_nc_ht=scontent.fevn1-4.fna&oh=e8f30ff7a3fbc83e5d8c158b6d259b15&oe=5D82D702',
+    carouselImgs: [
+      'https://scontent.fevn1-4.fna.fbcdn.net/v/t1.0-9/33066064_2057728704441487_8586059036850388992_n.jpg?_nc_cat=108&_nc_ht=scontent.fevn1-4.fna&oh=e8f30ff7a3fbc83e5d8c158b6d259b15&oe=5D82D702',
+      'https://scontent.fevn1-2.fna.fbcdn.net/v/t1.0-9/56702317_2263742873840068_8994482105685639168_o.jpg?_nc_cat=100&_nc_ht=scontent.fevn1-2.fna&oh=a95392b6e947dd787b6cb1a12b20b050&oe=5D8298C8',
+      'https://scontent.fevn1-4.fna.fbcdn.net/v/t1.0-9/36861932_2090580021156355_487759292410101760_n.jpg?_nc_cat=101&_nc_ht=scontent.fevn1-4.fna&oh=cd9d2fc382465c2671b0d8e512a68a74&oe=5D96BD28',
+      'https://scontent.fevn1-4.fna.fbcdn.net/v/t1.0-9/33124383_2057728674441490_2304860054408396800_n.jpg?_nc_cat=101&_nc_ht=scontent.fevn1-4.fna&oh=73a50ae48201fdcd21771fa22aacfd66&oe=5D8DF8AC'
+    ],
+    description: 'Այսօր թղթե շոուն ամենահետաքրքիր և ամենավառ թրենդներից է, որը տոն կդարձնի ցանկացած  առիթ կամ միջոցառում։ Թղթե շոուն սիրում են թե՛ մեծերը, թե՛ փոքրերը, որովհետև այն չափազանց ուրախ է։ Մեծերը մի պահ դառնում են երեխաներ և զվարճանում են ինչքան կարող են, իսկ երեխաները հիացմունքով գլորվում են թղթե հսկա զանգվածների մեջ և դրանք վեր ու վար նետում:',
+  },
+  {
+    id: 2,
+    title: 'Քիմիական Շոու',
+    priceRange: '֏֏֏',
+    mainImage: 'https://scontent.fevn1-1.fna.fbcdn.net/v/t31.0-8/27907799_2014909902056701_5659698089935198335_o.jpg?_nc_cat=110&_nc_ht=scontent.fevn1-1.fna&oh=7236d4b5bccb4decde7daeb8f2c5aa7f&oe=5D983B2F',
+    price: 32000,
+    duration: 1,
+    providerName: 'Gayluk.am',
+    carouselImgs: [
+      'https://scontent.fevn1-1.fna.fbcdn.net/v/t31.0-8/27907799_2014909902056701_5659698089935198335_o.jpg?_nc_cat=110&_nc_ht=scontent.fevn1-1.fna&oh=7236d4b5bccb4decde7daeb8f2c5aa7f&oe=5D983B2F',
+      'https://scontent.fevn1-4.fna.fbcdn.net/v/t1.0-9/27332447_2007059726175052_2712869326179836444_n.jpg?_nc_cat=106&_nc_ht=scontent.fevn1-4.fna&oh=d2927582cd51c8c39a886f980db0d4df&oe=5D9191FF',
+      'https://scontent.fevn1-2.fna.fbcdn.net/v/t1.0-9/27337369_2007059949508363_2461084985142297712_n.jpg?_nc_cat=104&_nc_ht=scontent.fevn1-2.fna&oh=eab3bbf45de45bcea29ca7e2599d489f&oe=5D51113B',
+      'https://scontent.fevn1-1.fna.fbcdn.net/v/t1.0-9/26992648_2007059969508361_1609408503795275127_n.jpg?_nc_cat=102&_nc_ht=scontent.fevn1-1.fna&oh=2a3c9aacdc879939a3ce060be57612ad&oe=5D9488ED'
+    ],
+    description: 'Սմայլուկն ու Գայլուկը երեխաների հետ սկսում եմ պարզ խաղերից, այնուհետև տալիս են կախարդական ուժ և բաժանում գոգնոցներ։ Կատարում եմ աճպարարական հնարքներ՝ փոքրերի և մեծերի օգնությամբ։ Ֆոկուսներից հետո անցնում եմ քիմիական նյութերով շոուին՝ * Տարբեր նյութեր խառնելով լուծույթի գույնը փոխել * Պղպջակ ստանալ * Պատրաստել Փղի ատամի մածուկ և ուղարկել Հնդկաստան * Ներքին այրման շարժիչ պատրաստել տնային պայմաններում * Բոլորի ձեռքին չցավեցնող կրակ ստանալ։ Վերջում բոլորով անում ենք ֆլեշմոբ և հրավառություն:'
+  },
+  {
+    id: 3,
+    title: 'Պղպջակներով Շոու',
+    priceRange: '֏֏',
+    price: 15000,
+    duration: 1,
+    providerName: 'Gayluk.am',
+    mainImage: 'https://scontent.fevn1-4.fna.fbcdn.net/v/t1.0-9/42617437_2154849371396086_6390066967352442880_o.jpg?_nc_cat=106&_nc_ht=scontent.fevn1-4.fna&oh=38bcaddb65baab99ead4239cfbf9ddfc&oe=5D9B3C5F',
+    carouselImgs: [
+      'https://scontent.fevn1-4.fna.fbcdn.net/v/t1.0-9/42617437_2154849371396086_6390066967352442880_o.jpg?_nc_cat=106&_nc_ht=scontent.fevn1-4.fna&oh=38bcaddb65baab99ead4239cfbf9ddfc&oe=5D9B3C5F',
+      'https://scontent.fevn1-2.fna.fbcdn.net/v/t1.0-9/42465214_2154051984809158_546804810578395136_n.jpg?_nc_cat=103&_nc_ht=scontent.fevn1-2.fna&oh=73126d81b999b65819edad27d13ec60b&oe=5D903FD5',
+      'https://scontent.fevn1-4.fna.fbcdn.net/v/t1.0-9/41931873_2149921691888854_5459837021667196928_n.jpg?_nc_cat=101&_nc_ht=scontent.fevn1-4.fna&oh=d2e4a83ecebf3e8cf77c1aaba9464b3b&oe=5D8D61FE',
+      'https://scontent.fevn1-2.fna.fbcdn.net/v/t1.0-9/53249620_2234505326763823_5797052169844686848_n.jpg?_nc_cat=103&_nc_ht=scontent.fevn1-2.fna&oh=b275647d2d5720093437e3adcc3d789c&oe=5D8F8FB6'
+    ],
+    description: 'Պղպջակնե՜ր, պղպջակնե՜ր, պղպջակնե՜ր։ Այս շոուի ընթացքում երեխաները շրջապատված կլինեն մեծ ու փոքր պղջակներով, հնարավորություն կունենան լինելու հսկա պղպջակի մեջ, երազանք պահել, նկարվել։ Ինտերակտիվ շոուն և խաղավարի հնարքները պղպջակների հետ, հիանալի լուծում են Ձեր միջոցառմանա ժամանցը հետաքրքիր, ուրախ և յուրահատուկ կազմակերպելու համար։',
+  },
+  {
+    id: 4,
     title: 'Գիտական SPA PARTY',
     priceRange: '֏֏֏',
-    mainImage: 'https://static.wixstatic.com/media/f7a67a_6489052a76224778bf22f42732a2d6ba~mv2.jpg/v1/fill/w_330,h_227,al_c,q_80,usm_0.66_1.00_0.01/f7a67a_6489052a76224778bf22f42732a2d6ba~mv2.webp',
     startingPrice: 20000,
+    duration: 0.5,
     providerName: 'Փոքրիկ Էյնշտեյն',
     mainImage: 'https://live.staticflickr.com/65535/47991079711_0b240f0ecb_h.jpg',
     carouselImgs: [
@@ -21,10 +69,11 @@ export const gameShows = [
         'Ծրագիրը կազմակերպում ենք ինչպես ԱՐՏԱԳՆԱ, ձեր հրավիրած վայրում, այնպես էլ Փոքրիկ Էյնշտեյն գիտության թանգարանում:',
   },
   {
-    id: 2,
+    id: 5,
     title: 'էլեկտրական Տեսլա Շոու',
     priceRange: '֏֏֏',
     startingPrice: 20000,
+    duration: 0.5,
     description: 'Ձեզ ենք ներկայացնում մեր ամենակայծակնային, ամենախելագար Էլեկտրական Տեսլա շոուն: Փոքրիկ Էյնշտեյնի հետ նույնիսկ կայծակի շանթերը կառավարելի են: Ավելին, մեզ հետ կայծակները նույնիսկ վտանգավոր չեն: Եվ այսպես, վերածվում ենք Կայծակների տիրակալների և դիպչում կայծակին ... ՄԵՐԿ ՁԵՌՔԵՐՈՎ: Նշում եք ծննդյան տո՞ն: Երբևէ փորձե՞լ եք այրել հոբելյարի մոմը հենց կայծակից:\n' +
         '\n' +
         'Եթե ո՛չ, ապա մենք գալիս ենք դա իրագործելու։\n' +
@@ -39,10 +88,11 @@ export const gameShows = [
     ],
   },
   {
-    id: 3,
+    id: 6,
     title: 'Կրիո Շոու',
     priceRange: '֏֏֏',
     startingPrice: 20000,
+    duration: 0.5,
     mainImage: 'https://live.staticflickr.com/65535/47990935867_934ef26a9a_k.jpg',
     carouselImgs: [
       'https://live.staticflickr.com/65535/47990935867_934ef26a9a_k.jpg'
@@ -52,7 +102,7 @@ export const gameShows = [
         '\n',
   },
   {
-    id: 4,
+    id: 7,
     title: 'Փուչիկներով Գիտական Շոու',
     priceRange: '֏֏֏',
     mainImage: 'https://live.staticflickr.com/65535/47990986456_c54ef8a769_k.jpg',
@@ -60,15 +110,17 @@ export const gameShows = [
       'https://live.staticflickr.com/65535/47990986456_c54ef8a769_k.jpg'
     ],
     startingPrice: 20000,
+    duration: 0.5,
     providerName: 'Փոքրիկ Էյնշտեյն',
     description: 'Փուչիկները երեխաների ուրախությունն են։ Իսկ դրանցով արված գիտական ֆոկուսներն ու մրցույթները կստիպեն երեխաներին էլ ավելի շատ սիրել փուչիկներ․ լազերային փայթյուն, հրակայուն փուչիկ, հրթիռ - փուչիկ և սա դեռ ամենը չէ։ Կարծում եք գիտությունը տխուր բան է։ Փոքրիկ Էյնշտեյնի Փուչիկներով գիտական շոուն կապացուցի հակառակը։',
   },
   {
-    id: 5,
+    id: 8,
     title: 'Պաղպաղակ Շոու',
     priceRange: '֏֏֏',
     mainImage: 'https://static.wixstatic.com/media/f7a67a_46a709b65f2a40ae8ab42b8a1395a6c5~mv2.jpg/v1/fill/w_527,h_705,al_c,q_90,usm_0.66_1.00_0.01/f7a67a_46a709b65f2a40ae8ab42b8a1395a6c5~mv2.webp',
     startingPrice: 20000,
+    duration: 0.5,
     mainImage: 'https://live.staticflickr.com/65535/47990936233_e743cc396a_b.jpg',
     carouselImgs: [
       'https://live.staticflickr.com/65535/47990936233_e743cc396a_b.jpg'
@@ -81,11 +133,11 @@ export const gameShows = [
         'Պաղպաղակը պատրաստում ենք թարմ ու անարատ կաթից՝ ո՛չ մի արհեստական հավելում։',
   },
   {
-    id: 6,
+    id: 9,
     title: 'Ալքիմիական Շոու',
     priceRange: '֏֏֏',
-    mainImage: 'https://static.wixstatic.com/media/f7a67a_63f178cdbb6641f88323157a640a2df1~mv2_d_1920_1280_s_2.jpg/v1/fill/w_1058,h_705,al_c,q_90,usm_0.66_1.00_0.01/f7a67a_63f178cdbb6641f88323157a640a2df1~mv2_d_1920_1280_s_2.webp',
     startingPrice: 20000,
+    duration: 0.5,
     mainImage: 'https://live.staticflickr.com/65535/47990934257_0ba9bd119c_k.jpg',
     carouselImgs: [
       'https://live.staticflickr.com/65535/47990934257_0ba9bd119c_k.jpg'
@@ -96,11 +148,11 @@ export const gameShows = [
         'Շոու ծրագրի տևողությունն է 45 րոպե:',
   },
   {
-    id: 7,
+    id: 10,
     title: 'Պղպջակագիտություն',
     priceRange: '֏֏֏',
-    mainImage: 'https://static.wixstatic.com/media/f7a67a_a0a2547e99f54cbe9d6390914aee2cc4~mv2.jpg/v1/fill/w_960,h_640,al_c,q_90/f7a67a_a0a2547e99f54cbe9d6390914aee2cc4~mv2.webp',
     startingPrice: 20000,
+    duration: 0.5,
     mainImage: 'https://live.staticflickr.com/65535/47990935333_dfc321652d_h.jpg',
     carouselImgs: [
       'https://live.staticflickr.com/65535/47990935333_dfc321652d_h.jpg'
@@ -109,11 +161,12 @@ export const gameShows = [
     description: 'Անթիվ, անհամար պղպջակներ։',
   },
   {
-    id: 8,
+    id: 11,
     title: 'Մոմերի Պատրաստում',
     priceRange: '֏֏֏',
     mainImage: 'https://static.wixstatic.com/media/f7a67a_95982c42aca0449b9359eef6fc846b62~mv2.jpg/v1/fill/w_705,h_705,al_c,q_90,usm_0.66_1.00_0.01/f7a67a_95982c42aca0449b9359eef6fc846b62~mv2.webp',
     startingPrice: 20000,
+    duration: 0.5,
     mainImage: 'https://live.staticflickr.com/65535/47990935013_86a6eb0444_b.jpg',
     carouselImgs: [
       'https://live.staticflickr.com/65535/47990935013_86a6eb0444_b.jpg'
@@ -124,11 +177,11 @@ export const gameShows = [
         'Իրար հետ կպատրաստենք բուրավետ, երեք գույնանի մոմեր։ Իսկ մինչ յուրաքանչյուր շերտ կհասցնի հովանալ, կանենք գիտական ֆոկուսներ մոմերով։',
   },
   {
-    id: 9,
+    id: 12,
     title: 'Օճառի Պատրաստում',
     priceRange: '֏֏֏',
-    mainImage: 'https://static.wixstatic.com/media/f7a67a_77b0c5aaf58f4509a42608bba3bb490c~mv2.jpg/v1/fill/w_700,h_467,al_c,q_90/f7a67a_77b0c5aaf58f4509a42608bba3bb490c~mv2.webp',
     startingPrice: 20000,
+    duration: 0.5,
     providerName: 'Փոքրիկ Էյնշտեյն',
     mainImage: 'https://live.staticflickr.com/65535/47990933127_481310ef11_b.jpg',
     carouselImgs: [
@@ -142,11 +195,11 @@ export const gameShows = [
         'Պարզվում է կա մի եղանակ, երբ երեխան ինքն է ուզում րոպե առաջ լվացվել։ Դա հնարավոր է այն դեպքում, երբ ինքն իր ձեռքերով պատրաստել է բնական, գունավոր և իր իսկ ընտրած բույրով օճառը։ Փոքրիկ Էյնշտեյնի Օճառների պատրաաստում շոու ծրագիրը դեռ երկար կմնա ձեր փոքրի հյուրերի հիշողության մեջ։',
   },
   {
-    id: 10,
+    id: 13,
     title: 'Տիեզերեական Քիմիական Շոու',
     priceRange: '֏֏֏',
-    mainImage: 'https://static.wixstatic.com/media/f7a67a_7661a27f76fe4391a4a21bc0652267e7~mv2.jpg/v1/fill/w_330,h_227,al_c,q_80,usm_0.66_1.00_0.01/f7a67a_7661a27f76fe4391a4a21bc0652267e7~mv2.webp',
     startingPrice: 20000,
+    duration: 0.5,
     mainImage: 'https://live.staticflickr.com/65535/47991080171_144c5010ce_h.jpg',
     carouselImgs: [
       'https://live.staticflickr.com/65535/47991080171_144c5010ce_h.jpg'
@@ -167,11 +220,11 @@ export const gameShows = [
         'Դարձրեք Ձեր երեխային այս տիեզերական արկածի մասնակից:',
   },
   {
-    id: 11,
+    id: 14,
     title: 'Գիտական Արկած',
     priceRange: '֏֏֏',
-    mainImage: 'https://static.wixstatic.com/media/f7a67a_76b407f359184c799892afb37f38078c~mv2.jpg/v1/fill/w_330,h_227,al_c,q_80,usm_0.66_1.00_0.01/f7a67a_76b407f359184c799892afb37f38078c~mv2.webp',
     startingPrice: 20000,
+    duration: 0.5,
     mainImage: 'https://live.staticflickr.com/65535/47991080516_4bb0a2a826_h.jpg',
     carouselImgs: [
       'https://live.staticflickr.com/65535/47991080516_4bb0a2a826_h.jpg'
@@ -180,11 +233,12 @@ export const gameShows = [
     description: 'Փոքրիկ Էյնշտեյնը կազմակերպում է իսկական գիտական արկած. փոքրիկ գիտնականները տեղափոխվում են գիտության կախարդական աշխարհ, ուր նրանց սպասում են բազում գիտական ֆոկուսներ, խաղեր, զարմանահրաշ գիտափորձեր, որոնց մասնակիցն են դառնում հենց իրենք՝ Փոքրիկ Էյնշտեյնները:',
   },
   {
-    id: 12,
+    id: 15,
     title: '  Ծովահենների Արկածները',
     priceRange: '֏֏֏',
     mainImage: 'https://static.wixstatic.com/media/f7a67a_f2d03dbfb8674dfd9c4d79cd9b706d09~mv2.jpg/v1/fill/w_330,h_227,al_c,q_80,usm_0.66_1.00_0.01/f7a67a_f2d03dbfb8674dfd9c4d79cd9b706d09~mv2.webp',
     startingPrice: 20000,
+    duration: 0.5,
     mainImage: 'https://live.staticflickr.com/65535/47991031158_ea442cc81f_h.jpg',
     carouselImgs: [
       'https://live.staticflickr.com/65535/47991031158_ea442cc81f_h.jpg'
@@ -193,7 +247,7 @@ export const gameShows = [
     description: 'Ի՞նչը կարող է լինել ավելի հետաքրքիր, քան ծովահենների գաղտնիքների բացահայտումը: Ինչո՞ւ է ծովահենի աչքը կապած, ինչպե՞ս են ծովահենները գտնում գանձերը, ինչպե՞ս պատրաստել ծովահենների "խորոված", ինչպե՞ս հաղթել հակառակորդին ծովային մարտում: Այս ամենը, համեմված բազմաթիվ թեմատիկ գիտափորձերով, կստեղծի իրական զարմանահրաշ միջավայր՝ անմոռանալի տպավորություններով:',
   },
   {
-    id: 14,
+    id: 16,
     title: 'Քիմիական Շոու',
     priceRange: '֏֏֏',
     mainImage: 'https://live.staticflickr.com/65535/47990987691_7d76dd07c9_n.jpg',
@@ -201,6 +255,7 @@ export const gameShows = [
       'https://live.staticflickr.com/65535/47990987691_7d76dd07c9_n.jpg'
     ],
     startingPrice: 20000,
+    duration: 0.5,
     description: 'Փոքրիկ Էյնշտեյնի Քիմիական շոուն ներառում է բազմաթիվ քիմիական և ֆիզիկական տպավորիչ, գունեղ գիտափորձեր, գիտական խաղեր ու ֆոկուսներ, ծուխ, կրակ: Շոու ծրագիրն անցկացվում է երեխաների անմիջական մասնակցությամբ, տարիքային խմբին համապատասխան ինտելեկտուալ վիկտորինայով:',
     providerName: 'Փոքրիկ Էյնշտեյն',
   },

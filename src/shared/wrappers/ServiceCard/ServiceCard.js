@@ -18,8 +18,14 @@ const ServiceCard = React.memo(({
           <div
             className="service-card-cover"
             onClick={() => onClick(false)}
-            style={{ backgroundImage: `url(${service.mainImage})` }}
-          >
+            style={
+              service.customBackground ? {
+                backgroundImage: `url(${service.mainImage})`,
+                backgroundSize: service.backgroundSize,
+                backgroundPositionX: service.backgroundPositionX
+              } : {
+                backgroundImage: `url(${service.mainImage})`
+              }}>
             <Checkbox checked={isSelected} />
           </div>
         )}
