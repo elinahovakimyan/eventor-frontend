@@ -5,7 +5,7 @@ import ReactGA from 'react-ga';
 import { ServiceGrid } from 'shared/wrappers';
 import { getDecorations } from 'store/actions/decoration';
 import { selectDecoration, deselectDecoration } from 'store/actions/birthday';
-import { getSelectedDecorations } from 'store/getters';
+import { getSelectedDecorations, getSelectedVenue } from 'store/getters';
 import { toggleSelection } from 'core/helpers';
 
 import DecorationCard from './components/DecorationCard';
@@ -20,10 +20,13 @@ class Decorations extends React.PureComponent {
   }
 
   render() {
-    const { selectedDecorations } = this.props;
+    const { selectedDecorations, decorations, selectedVenue } = this.props;
+    const allDecorations = selectedVenue && selectedVenue[0] && selectedVenue[0].decorations
+      ? [...selectedVenue[0].decorations, ...decorations]
+      : decorations;
 
     return (
-      <ServiceGrid services={this.props.decorations}>
+      <ServiceGrid services={allDecorations}>
         {(service) => (
           <DecorationCard
             service={service}
@@ -45,6 +48,7 @@ class Decorations extends React.PureComponent {
 const mapStateToProps = (state) => ({
   decorations: state.decoration.decorations,
   selectedDecorations: getSelectedDecorations(state),
+  selectedVenue: getSelectedVenue(state),
 });
 
 const mapDispatchToProps = {
