@@ -81,7 +81,7 @@ class VenueRequest extends React.PureComponent {
           onCancel={this.toggleModal}
           onOk={this.handleSubmit}
           okText={this.state.okText}
-          title="Նշե՛ք, թե որ վայրը կցանկանայիք տեսնել մեր հարթակում"
+          title="Նշե՛ք, թե որ վայրում եք ցանկանում նշել, և մենք կօգնենք Ձեզ"
           cancelText="Փակել"
           className="venue-request-modal"
         >
