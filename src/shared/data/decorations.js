@@ -62,6 +62,26 @@ export const decorations = [
     ],
   },
   {
+    id: 10,
+    title: '',
+    description: 'Իսկ ի՞նչն է հիմա երեխաներին ավելի շատ ուրախացնում, եթե ոչ... պինյատա՜ն։ Պինյատան մեքսիկական խոշոր չափերի խաղալիք է, որը մանկական հանդիսությունները դարձնում է յուրահատուկ ու անակնկալներով լի։ Խաղալիքը սովորաբար ունենում է կենդանու կամ երկրաչափական մարմինների ձև և զարդարված է լինում տարբեր իրերով։ Այս խաղալիքները լցվում  են տարբեր անակնկալ իրերով, կոնֆետներով ու խաղալիքներով։ Եվ այն պայթացնելու համար պայքարում են բոլոր երեխաները, որպեսզի ստանան իրենց բաժին անակնկալը։ Տեսքը կարող եք ընտրել նշվածներից կամ պատվիրել Ձեր ցանկացած տեսքով պինյատա։ Գինը որոշվում է ըստ չափի և այսպես՝ 40 սմ - 8000դր., 50 սմ - 10,000դր., 60 սմ - 12,000դր., 70 սմ - 14,000դր., 80 սմ - 16,000դր., 1 մ - 18,000-20,000դր.',
+    providerName: 'Pinata Armenia',
+    startingPrice: 8000,
+    priceRange: '',
+    mainImage: 'https://scontent.fevn1-4.fna.fbcdn.net/v/t1.0-9/16113942_1532956723484216_3640133997485936635_n.jpg?_nc_cat=106&_nc_eui2=AeEd9B3VlJIMknAQH0iL1q7crmGY2AOEgwK-yHQbXZTvc2JwhEp2A13aK5H1KtFwuXTyh3exwU0TTzlBnySW_tY0zvhY7an0bajGMjSNpt_AQA&_nc_ht=scontent.fevn1-4.fna&oh=b964a2caddbd65211715a24603c4a542&oe=5D9A41D7',
+    carouselImgs: [
+      'https://scontent.fevn1-4.fna.fbcdn.net/v/t1.0-9/16113942_1532956723484216_3640133997485936635_n.jpg?_nc_cat=106&_nc_eui2=AeEd9B3VlJIMknAQH0iL1q7crmGY2AOEgwK-yHQbXZTvc2JwhEp2A13aK5H1KtFwuXTyh3exwU0TTzlBnySW_tY0zvhY7an0bajGMjSNpt_AQA&_nc_ht=scontent.fevn1-4.fna&oh=b964a2caddbd65211715a24603c4a542&oe=5D9A41D7',
+      'https://scontent.fevn1-1.fna.fbcdn.net/v/t1.0-9/16195115_1532956186817603_2256110025345943773_n.jpg?_nc_cat=102&_nc_eui2=AeF4TU4V2-dMGhTHyUpJ5eIJnV10RCwGesnbYboLmnerO-oUlfiBRoG4-dWgQk8EUm1lRmsi-C4QtWUVMSko2ZIMUIxXyTSy8BVmb3ZFh-XM2g&_nc_ht=scontent.fevn1-1.fna&oh=8f389ad9292bb47946038c0ce03c3a28&oe=5D97AE03',
+      'https://scontent.fevn1-2.fna.fbcdn.net/v/t1.0-9/61695750_2570431559736722_1227320890908213248_n.jpg?_nc_cat=100&_nc_eui2=AeFuvVfut8zh2_eHbhIvEqu1sX4N3egfg33p6XVk5EEZ5ebA3w5bt2Ol1mR1dkYvL8LlZUReJWmLCrzeHqVPWEcsFWQql-jk3nZekNNBJ49exw&_nc_ht=scontent.fevn1-2.fna&oh=603db1a19520d6bf7831aaa4925990a3&oe=5D8291A7',
+      'https://www.dollargeneral.com/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/0/6/06187902.jpg',
+      'https://images-na.ssl-images-amazon.com/images/I/819bH77Px1L._SX466_.jpg',
+      'https://scontent.fevn1-2.fna.fbcdn.net/v/t1.0-9/19396643_1691043711008849_2794469540736003556_n.jpg?_nc_cat=105&_nc_eui2=AeFIAMO9bi8-QxQunbIc5AGkjVTSGVkzGQoUYMTZ2y-p25o24aHRR0yILY9LA89_f06EwLgjG9YjPi8sxFRKoxby_LDhI2RSSRxfOhToAH-0VA&_nc_ht=scontent.fevn1-2.fna&oh=08f47dd36df19427feb9e9064258f2b0&oe=5D9720B0',
+      'https://www.distribuidoraloscompadres.com/wp-content/uploads/2017/06/1659-pi%C3%B1ata-grande-6-picos.jpg',
+      'https://scontent.fevn1-1.fna.fbcdn.net/v/t1.0-9/22221625_1792071634239389_6267118007788282702_n.jpg?_nc_cat=110&_nc_eui2=AeFf2vEG7g_nw5AJG3s9bgWkPiRhNGtXMHXSng0iQJwmBrB0G6DtxBETgX12YOvhW1w6yUUVHoxshk06E2JZO-ocw9PS51hbWXOBAM3D0x-2bQ&_nc_ht=scontent.fevn1-1.fna&oh=ee251fd0c8c6be08deeb507f061b4de0&oe=5D7E0F94',
+      'https://scontent.fevn1-1.fna.fbcdn.net/v/t1.0-9/18300888_1642924945820726_569655600878950138_n.jpg?_nc_cat=102&_nc_eui2=AeE_kvxautlIDJBSUv3A5yD261WEYlZmvXzhl2r8Cm1KJPjw-CxXV4MBtubptVhdgSMApE2_UxfL7nFwggCDNAGIIu6fpVq3ftDrz17LXL2VSA&_nc_ht=scontent.fevn1-1.fna&oh=b270d2662c22d6a1a5163d56246a9e17&oe=5D80710F'
+    ]
+  },
+  {
     id: 5,
     title: '9" Հելիում գազով փուչիկ',
     description: 'Որակյալ հելիում գազով փուչիկներ Ձեր տոնը գունավոր ու էլ ավելի ուրախ դարձնելու համար։',

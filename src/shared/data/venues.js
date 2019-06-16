@@ -662,4 +662,37 @@ export const venues = [
       outdoor: false,
     }
   },
+  {
+    id: 5,
+    title: 'Baby Club Մանկական սրճարան',
+    address: 'Դավթաշեն, 2-րդ թաղամաս, 45/6 շենք',
+    mainImage: 'https://scontent.fevn1-3.fna.fbcdn.net/v/t1.0-9/61515999_381415845807711_2058947101965942784_o.jpg?_nc_cat=111&_nc_eui2=AeED38N9pKCt5bf70IOUNYMziOGwPbmusJhKe5MCsdkIef9mdY2wwRzmTwF0BN7vRJp9D-QhpQtc4YW_BOya_JSSNp4-1KjRoM3lgOJZVvUZaQ&_nc_ht=scontent.fevn1-3.fna&oh=bb83ed06f8af633f62783dd14ff61b83&oe=5D8097F5',
+    description: '«Բեյբի Քլաբ» մանկական ժամանցի կենտրոնն առանձնանում է իր տարբերվող ինտերիերով, էքստերիերով և դիզայնով: «Բեյբի Քլաբ»-ն ունի երեք առանձնացված սրահներ՝ մեկ ընդհանուր և երկու VIP: Ընդհանուր սրահում յուրաքանչյուր բալիկ կգտնի իր նախասիրություններին հատուկ անկյուն: Ամենաբազմազան ու միանգամայն անվտանգ ատրակցիոնները, ինչպես նաև Ձեր փոքրիկների սիրելի բատուտը, տեղ են գտել սրճարանի ամենատաքուկ անկյունում: Ձեր փոքրիկը ցանկանում է չտարբերվե՞լ մեծահասակներից, ուրեմն հենց իր համար սրճարանում առանձնացված է յուրահատուկ կոկտեյլների ու անզուգական ըմպելիքների անկյունը: Այստեղ գիտեն նաև, թե ինչպես հաճոյանալ ամենաքմահաճ բալիկի քիմքին: Ճաշացանկում տեղ գտած կերակրատեսակները խոստանում են զարմացնել ու բավարարել յուրաքանչյուր փոքրիկ հաճախորդի: VIP սրահներից մեկում իրենց առիթները կարող են նշել նաև 15 - ից բարձր տարիքի աղջիկները, ովքեր սիրում են տարբերվել իրենց ընտրությամբ: Երկրորդ  VIP սրահը նախատեսված է բոլոր նրանց համար, ովքեր կնախընտրեն առանձին վայելել իրենց կարևորագույն օրը` վստահ լինելով, որ այն կվերածվի իսկական հեքիաթի: Անզուգական լուսային ու ձայնային էֆեկտներ, շոու-ներկայացումներ` բեմադրված հատուկ Ձեր փոքրիկի համար՝ իր նախասիրություններին համահունչ: Ըստ ցանկության, Ձեր փոքրիկի օրը իսկական տոնի կվերածեն նաև հատուկ նրա համար հրավիրված հայտնի երգիչ երգչուհինեն ու թատերական խմբերը:',
+    priceRange: '֏֏',
+    currency: 'AMD',
+    carouselImgs: [
+      'https://scontent.fevn1-3.fna.fbcdn.net/v/t1.0-9/61515999_381415845807711_2058947101965942784_o.jpg?_nc_cat=111&_nc_eui2=AeED38N9pKCt5bf70IOUNYMziOGwPbmusJhKe5MCsdkIef9mdY2wwRzmTwF0BN7vRJp9D-QhpQtc4YW_BOya_JSSNp4-1KjRoM3lgOJZVvUZaQ&_nc_ht=scontent.fevn1-3.fna&oh=bb83ed06f8af633f62783dd14ff61b83&oe=5D8097F5',
+      'https://scontent.fevn1-4.fna.fbcdn.net/v/t1.0-9/61563976_381415895807706_4152633613113884672_o.jpg?_nc_cat=108&_nc_eui2=AeG7L2woP5NqIcMdNImjtl9xFFVBzu0RPOZOHWBmh2Z8axnejHwPgYbLNfG3jv0rpAtGlrT8y6swag0SXqfPtteYXoU5Jh4s6UwQtt4zplkmag&_nc_ht=scontent.fevn1-4.fna&oh=4397bcb17596c93a4bd6d6c4f51a246e&oe=5D8C733C',
+      'https://scontent.fevn1-2.fna.fbcdn.net/v/t1.0-9/61121930_381415815807714_9022862528023101440_o.jpg?_nc_cat=103&_nc_eui2=AeEMy3sLfHe0J0XENruKRpna-HSXtI11JDZBDfOOFSjreaquxPfIrgMWT8BgikyPYrOl-VTeEwo3clzWqEPE2KYS5A3ZYQojlh6EKwVTyDuriA&_nc_ht=scontent.fevn1-2.fna&oh=a40f9b20dfe5aad19515a89bb37f30f2&oe=5DC5548A',
+      'https://scontent.fevn1-1.fna.fbcdn.net/v/t1.0-9/61173987_381383912477571_8227497162477404160_o.jpg?_nc_cat=109&_nc_eui2=AeE-OD80ageWOXu58r9rsB2AWrjT8Y4w5x2cPVb4DGHReIDmk0R1QqmxW0U7b6xGGBspb7QrR09eSgG4WePr4Sj6tBzYnzhgJVVRi4rSdy7S2g&_nc_ht=scontent.fevn1-1.fna&oh=11f8681258cfc0b98c6712856f4aa63a&oe=5D9A472C',
+      'https://scontent.fevn1-2.fna.fbcdn.net/v/t1.0-9/61748138_383498028932826_9104577493465038848_o.jpg?_nc_cat=104&_nc_eui2=AeGW8mdOvEWZ3tiHnavrshKGXEA0l5KxqJSWwzJpXJxmFhq-9LzvO5w0bx7MYwDeJo5W6d3qehkMO445O3jzvM0HrK29cShdPNLXKDAIcBZ6Yw&_nc_ht=scontent.fevn1-2.fna&oh=f342050a3618d72fba4ed1f499486a82&oe=5D96464F'
+    ],
+    entranceFee: null,
+    rooms: 3,
+    price: 3500,
+    minPeople: 10,
+    maxPeople: 100,
+    details: {
+      wifi: true,
+      vegetarian: true,
+      parking: true,
+      danceMusic: true,
+      creditCard: true,
+      DJ: false,
+      gamingMachines: false,
+      VIProom: true,
+      indoor: true,
+      outdoor: false,
+    }
+  },
 ];

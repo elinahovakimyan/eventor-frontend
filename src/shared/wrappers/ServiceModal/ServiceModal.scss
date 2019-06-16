@@ -2,6 +2,12 @@
   width: 60% !important;
   top: 10px !important;
 
+  .slick-dots {
+    background: #b1779c;
+    padding: 8px !important;
+    bottom: 6px !important;
+  }
+
   .ant-modal-content {
     .ant-modal-body {
       padding: 0;
@@ -14,6 +20,11 @@
         padding: 3% 8%;
       }
     }
+  }
+
+  .ant-modal-close-x {
+    background: white;
+    border-radius: 50%;
   }
 
   .ant-btn-primary {

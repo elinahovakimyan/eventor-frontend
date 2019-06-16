@@ -5,7 +5,7 @@ import { formatPrice } from 'core/helpers';
 import { ServiceDetails } from 'shared/components';
 import { ServiceModal } from 'shared/wrappers';
 
-class CartoonHeroModal extends React.PureComponent {
+class VenueModal extends React.PureComponent {
   state = {
     isModalVisible: false,
   }
@@ -49,7 +49,7 @@ class CartoonHeroModal extends React.PureComponent {
             <Col md={12} sm={24}>
               <h3>
                 <Icon type="tag" />
-                {` Մուտքավճար՝ ${formatPrice(service.entranceFee) || 'չկա'}`}
+                {` Մուտքավճար՝ ${service.entranceFee ? formatPrice(service.entranceFee) : 'չկա'}`}
               </h3>
               {service.price
                 ? (
@@ -73,4 +73,4 @@ class CartoonHeroModal extends React.PureComponent {
   }
 }
 
-export default CartoonHeroModal;
+export default VenueModal;
