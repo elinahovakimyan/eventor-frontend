@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { formatPrice } from 'core/helpers';
 import { ServiceCard } from 'shared/wrappers';
@@ -7,10 +7,13 @@ import CartoonHeroModal from './CartoonHeroModal';
 
 
 const CartoonHeroCard = React.memo(({ service, isSelected, toggleService }) => {
+  const [isModalVisible, toggleModal] = useState(false);
 
   const getCardContent = () => (
     <React.Fragment>
-      <p className="service-description one-line-text" />
+      <p className="service-description short-text">
+        {service.description}
+      </p>
 
       <h4 className="provider">
         {`Մատակարար՝ ${service.providerName}`}
@@ -27,15 +30,20 @@ const CartoonHeroCard = React.memo(({ service, isSelected, toggleService }) => {
     </React.Fragment>
   );
 
+
   return (
-    <ServiceCard
-      service={service}
-      seeMore={<CartoonHeroModal service={service} />}
-      onClick={toggleService}
-      isSelected={isSelected}
-    >
-      {service.id ? getCardContent() : null}
-    </ServiceCard>
+    <>
+      <ServiceCard
+        service={service}
+        onClick={toggleModal}
+        onActionClick={() => toggleService(!isSelected)}
+        isSelected={isSelected}
+      >
+        {service.id ? getCardContent() : null}
+      </ServiceCard>
+
+      <CartoonHeroModal service={service} isModalVisible={isModalVisible} toggleModal={toggleModal} />
+    </>
   );
 });
 

@@ -4,23 +4,13 @@ import { Icon } from 'antd';
 import { formatPrice } from 'core/helpers';
 import { ServiceModal } from 'shared/wrappers';
 
-class CartoonHeroModal extends React.PureComponent {
-  state = {
-    isModalVisible: false,
-  }
-
-  toggleModal = () => {
-    this.setState((prevState) => ({
-      isModalVisible: !prevState.isModalVisible,
-    }));
-  }
-
+class DecorationModal extends React.PureComponent {
   render() {
-    const { service } = this.props;
+    const { service, isModalVisible, toggleModal } = this.props;
     const { title, description } = service;
 
     return (
-      <ServiceModal imgs={service.carouselImgs}>
+      <ServiceModal imgs={service.carouselImgs} isModalVisible={isModalVisible} toggleModal={toggleModal}>
         <div className="service-content">
 
           <div className="text-center">
@@ -45,4 +35,4 @@ class CartoonHeroModal extends React.PureComponent {
   }
 }
 
-export default CartoonHeroModal;
+export default DecorationModal;

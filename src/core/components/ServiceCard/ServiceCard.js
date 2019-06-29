@@ -44,7 +44,7 @@ class ServiceCard extends React.PureComponent {
             title={service.title}
             description={(
               <div>
-                <p className="service-description one-line-text">
+                <p className="service-description short-text">
                   {service.description}
                 </p>
                 <Rate allowHalf defaultValue={2.5} />

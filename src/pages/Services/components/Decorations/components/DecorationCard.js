@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { formatPrice } from 'core/helpers';
 import { ServiceCard } from 'shared/wrappers';
@@ -7,10 +7,11 @@ import DecorationModal from './DecorationModal';
 
 
 const DecorationCard = React.memo(({ service, isSelected, toggleService }) => {
+  const [isModalVisible, toggleModal] = useState(false);
 
   const getCardContent = () => (
     <React.Fragment>
-      <p className="service-description one-line-text">
+      <p className="service-description short-text">
         {service.description}
       </p>
 
@@ -29,15 +30,20 @@ const DecorationCard = React.memo(({ service, isSelected, toggleService }) => {
     </React.Fragment>
   );
 
+
   return (
-    <ServiceCard
-      service={service}
-      seeMore={<DecorationModal service={service} />}
-      onClick={toggleService}
-      isSelected={isSelected}
-    >
-      {service.id ? getCardContent() : null}
-    </ServiceCard>
+    <>
+      <ServiceCard
+        service={service}
+        onClick={toggleModal}
+        onActionClick={() => toggleService(!isSelected)}
+        isSelected={isSelected}
+      >
+        {service.id ? getCardContent() : null}
+      </ServiceCard>
+
+      <DecorationModal service={service} isModalVisible={isModalVisible} toggleModal={toggleModal} />
+    </>
   );
 });
 

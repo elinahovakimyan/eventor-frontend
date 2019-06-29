@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Checkbox, Button } from 'antd';
+import { Card, Icon } from 'antd';
 
 import './ServiceCard.scss';
 
@@ -7,41 +7,39 @@ const { Meta } = Card;
 
 
 const ServiceCard = React.memo(({
-  service, children, seeMore, isSelected, onClick,
+  service, children, isSelected, onClick, onActionClick,
 }) => {
 
   if (Object.keys(service)) {
     return (
-      <Card
-        className={`service-card-wrapper ${isSelected ? 'selected-card' : ''}`}
-        cover={(
+      <div className={`service-card-wrapper ${isSelected ? 'selected-card' : ''}`}>
+        <div className="service-card-cont" onClick={onClick}>
           <div
             className="service-card-cover"
-            onClick={() => onClick(false)}
             style={
               service.customBackground ? {
                 backgroundImage: `url(${service.mainImage})`,
                 backgroundSize: service.backgroundSize,
-                backgroundPositionX: service.backgroundPositionX
+                backgroundPositionX: service.backgroundPositionX,
               } : {
-                backgroundImage: `url(${service.mainImage})`
-              }}>
-            <Checkbox checked={isSelected} />
+                backgroundImage: `url(${service.mainImage})`,
+              }}
+          />
+          <div className="service-card-content">
+            <Meta
+              title={service.title}
+              description={children}
+              onClick={onClick}
+            />
           </div>
-        )}
-        actions={[
-          seeMore,
-          <Button onClick={() => onClick(true)}>
-            Ընտրել
-          </Button>,
-        ]}
-      >
-        <Meta
-          title={service.title}
-          description={children}
-          onClick={onClick}
-        />
-      </Card>
+        </div>
+        <div className="service-card-footer">
+          <button type="button" className="service-card-btn purple-gradient-btn" onClick={onActionClick}>
+            <Icon type="shopping-cart" />
+            Ավելացնել զամբյուղ
+          </button>
+        </div>
+      </div>
     );
   }
 

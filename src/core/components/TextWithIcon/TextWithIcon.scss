@@ -1,8 +1,8 @@
 $grey: #c4d1d1;
-$blue: #066772;
+$purple: #8e3689;
 $yellow: #fedf64;
 $orange: #f6884d;
-$purple: #631c5f;
+$dark-purple: #631c5f;
 
 .text-with-icon {
   display: flex;
@@ -23,9 +23,9 @@ $purple: #631c5f;
 }
 
 .detail-active i {
-  color: $blue !important;
+  color: $purple !important;
 }
 
 .detail-active h3 {
-  color: $blue;
+  color: $purple;
 }

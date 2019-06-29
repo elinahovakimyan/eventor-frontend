@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Icon } from 'antd';
 
 import { ServiceCard } from 'shared/wrappers';
@@ -6,18 +6,19 @@ import { ServiceCard } from 'shared/wrappers';
 import VenueModal from './VenueModal';
 
 
-const CartoonHeroCard = React.memo(({ service, isSelected, toggleService }) => {
+const VenueCard = React.memo(({ service, isSelected, toggleService }) => {
+  const [isModalVisible, toggleModal] = useState(false);
 
   const getCardContent = () => (
     <React.Fragment>
       <p className="service-description">
         {`${service.description.substr(0, 75)}...`}
       </p>
-      <h4 className="one-line-text">
+      <h4 className="short-text">
         <Icon type="environment" />
         {` Հասցե՝ ${service.address}`}
       </h4>
-      {/* <h4 className="one-line-text">
+      {/* <h4 className="short-text">
         <Icon type="shop" />
         {` Սրահների քանակը՝ ${service.rooms}`}
       </h4> */}
@@ -27,15 +28,18 @@ const CartoonHeroCard = React.memo(({ service, isSelected, toggleService }) => {
   );
 
   return (
-    <ServiceCard
-      service={service}
-      seeMore={<VenueModal service={service} />}
-      onClick={toggleService}
-      isSelected={isSelected}
-    >
-      {service.id ? getCardContent() : null}
-    </ServiceCard>
+    <>
+      <ServiceCard
+        service={service}
+        onClick={toggleModal}
+        isSelected={isSelected}
+        onActionClick={() => toggleService(!isSelected)}
+      >
+        {service.id ? getCardContent() : null}
+      </ServiceCard>
+      <VenueModal service={service} isModalVisible={isModalVisible} toggleModal={toggleModal} />
+    </>
   );
 });
 
-export default CartoonHeroCard;
+export default VenueCard;

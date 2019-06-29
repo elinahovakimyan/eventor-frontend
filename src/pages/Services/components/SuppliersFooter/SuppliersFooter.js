@@ -23,20 +23,20 @@ class SuppliersFooter extends React.PureComponent {
           </Button>
           {currentStep !== 4
             ? (
-              <Button type="primary" onClick={onNext}>
-                  Հաջորդը
+              <button type="button" onClick={onNext} className="orange-gradient-btn">
+                <span>Հաջորդը</span>
                 <Icon type="right" />
-              </Button>
+              </button>
             )
             : null}
         </div>
-        <p className="text-center contact-p">
+        {/* <p className="text-center contact-p">
           Հարցերի դեպքում՝
           {' '}
           <Icon type="phone" />
           {' '}
           055855615, 093661815
-        </p>
+        </p> */}
       </div>
     );
   }

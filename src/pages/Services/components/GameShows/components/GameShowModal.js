@@ -4,23 +4,13 @@ import { Icon } from 'antd';
 import { formatPrice } from 'core/helpers';
 import { ServiceModal } from 'shared/wrappers';
 
-class CartoonHeroModal extends React.PureComponent {
-  state = {
-    isModalVisible: false,
-  }
-
-  toggleModal = () => {
-    this.setState((prevState) => ({
-      isModalVisible: !prevState.isModalVisible,
-    }));
-  }
-
+class GameShowModal extends React.PureComponent {
   render() {
-    const { service } = this.props;
+    const { service, isModalVisible, toggleModal } = this.props;
     const { title, description } = service;
 
     return (
-      <ServiceModal imgs={service.carouselImgs}>
+      <ServiceModal imgs={service.carouselImgs} isModalVisible={isModalVisible} toggleModal={toggleModal}>
         <div className="service-content">
 
           <div className="text-center">
@@ -43,7 +33,11 @@ class CartoonHeroModal extends React.PureComponent {
           <h3>
             <Icon type="clock-circle" />
             {' '}
-            Տևողությունը՝ {service.duration} ժամ
+            Տևողությունը՝
+            {' '}
+            {service.duration}
+            {' '}
+            ժամ
           </h3>
         </div>
       </ServiceModal>
@@ -51,4 +45,4 @@ class CartoonHeroModal extends React.PureComponent {
   }
 }
 
-export default CartoonHeroModal;
+export default GameShowModal;

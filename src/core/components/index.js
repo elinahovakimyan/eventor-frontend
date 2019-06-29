@@ -6,3 +6,4 @@ export * from './TextWithIcon/TextWithIcon';
 export * from './ContactSection/ContactSection';
 export * from './ServiceSlider/ServiceSlider';
 export * from './Space/Space';
+export * from './AnimatedCarousel/AnimatedCarousel';

@@ -5,26 +5,17 @@ import { formatPrice } from 'core/helpers';
 import { ServiceModal } from 'shared/wrappers';
 
 class CartoonHeroModal extends React.PureComponent {
-  state = {
-    isModalVisible: false,
-  }
-
-  toggleModal = () => {
-    this.setState((prevState) => ({
-      isModalVisible: !prevState.isModalVisible,
-    }));
-  }
-
   render() {
-    const { service } = this.props;
-    const { title, duration } = service;
+    const { service, isModalVisible, toggleModal } = this.props;
+    const { title, description } = service;
 
     return (
-      <ServiceModal imgs={service.carouselImgs}>
+      <ServiceModal imgs={service.carouselImgs} isModalVisible={isModalVisible} toggleModal={toggleModal}>
         <div className="service-content">
 
           <div className="text-center">
             <h1>{title}</h1>
+            <p>{description}</p>
           </div>
 
           {service.price || service.startingPrice
@@ -44,7 +35,7 @@ class CartoonHeroModal extends React.PureComponent {
             {' '}
             Տևողությունը՝
             {' '}
-            {duration}
+            {service.duration}
             {' '}
             ժամ
           </h3>

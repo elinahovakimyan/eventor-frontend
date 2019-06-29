@@ -33,7 +33,7 @@ class App extends React.PureComponent {
           className="fb-customerchat"
           attribution="setup_tool"
           page_id="340948546707923"
-          // theme_color="#f6884d"
+          // theme_color="#ff5900""
           size="standard"
           logged_in_greeting="Ողջու՜յն։ Ինչո՞վ կարող ենք օգնել։"
           logged_out_greeting="Ողջու՜յն։ Ինչո՞վ կարող ենք օգնել։"

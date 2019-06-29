@@ -1,4 +1,4 @@
-$footer-height: 9vh;
+$footer-height: 75px;
 
 .service-footer {
   background-color: #fbfbfb;
@@ -6,7 +6,7 @@ $footer-height: 9vh;
   position: fixed;
   bottom: 0;
   width: 100%;
-  min-height: $footer-height;
+  height: $footer-height;
   padding: 0 3%;
   display: flex;
   flex-direction: column;

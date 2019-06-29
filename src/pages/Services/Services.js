@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
-import { Steps, Button } from 'antd';
+// import { Link } from 'react-router-dom';
+import { Steps } from 'antd';
 
 import { TextWithImg } from 'core/components';
 import { getIconByType } from 'core/helpers';
@@ -102,7 +102,7 @@ function Services({ match, history }) {
                 imgSrc={getIconByType(serviceCategory.type)}
                 title={serviceCategory.label}
                 onClick={() => history.push(`/${serviceCategory.type}`)}
-                color={serviceCategory.key === currentCategory.key ? '#631c5f' : null}
+                // color={serviceCategory.key === currentCategory.key ? '#631c5f' : null}
               />
             )}
             key={serviceCategory.type}
@@ -121,13 +121,13 @@ function Services({ match, history }) {
                     <Filters currentCategory={currentCategory} />
                   </div>
                   <div className="data-wrapper"> */}
-              <div className="services-header">
-                {/* <h2>{`Ընտրե՛ք ${currentCategory.label}`}</h2> */}
+              {/* <div className="services-header">
+                <h2>{`Ընտրե՛ք ${currentCategory.label}`}</h2>
                 <span />
                 <Button>
                   <Link to="/done">Անցնել հաստատման էջ </Link>
                 </Button>
-              </div>
+              </div> */}
               {getGridByStep(currentCategory)}
               {/* </div> */}
             </div>

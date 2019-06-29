@@ -6,24 +6,14 @@ import { ServiceDetails } from 'shared/components';
 import { ServiceModal } from 'shared/wrappers';
 
 class VenueModal extends React.PureComponent {
-  state = {
-    isModalVisible: false,
-  }
-
-  toggleModal = () => {
-    this.setState((prevState) => ({
-      isModalVisible: !prevState.isModalVisible,
-    }));
-  }
-
   render() {
-    const { service } = this.props;
+    const { service, isModalVisible, toggleModal } = this.props;
     const {
       title, description, minPeople, maxPeople,
     } = service;
 
     return (
-      <ServiceModal imgs={service.carouselImgs}>
+      <ServiceModal imgs={service.carouselImgs} isModalVisible={isModalVisible} toggleModal={toggleModal}>
         <div className="service-content">
 
           <div className="text-center">
