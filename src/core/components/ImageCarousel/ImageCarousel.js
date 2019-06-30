@@ -1,34 +1,19 @@
 import React from 'react';
-
-import { Carousel } from 'antd';
+import ImageGallery from 'react-image-gallery';
 
 import './ImageCarousel.scss';
 
 class ImageCarousel extends React.PureComponent {
 
-  onChange = () => {
-  }
-
   render() {
     const { imgs } = this.props;
+    const images = imgs && imgs.length ? imgs.map(img => ({ original: img, thumbnail: img })) : [];
 
-    if (imgs && imgs.length) {
-      return (
-        <Carousel
-          autoplay
-          afterChange={this.onChange}
-          dotPosition="top"
-        >
-          {imgs.map((imgSrc, i) => (
-            <div key={imgSrc + i}>
-              <img src={imgSrc} alt="eventor" />
-            </div>
-          ))}
-        </Carousel>
-      );
-    }
-
-    return null;
+    return (
+      <div className="ImageCarousel">
+        <ImageGallery items={images} showPlayButton={false} />
+      </div>
+    );
   }
 }
 

@@ -33,7 +33,6 @@ export const decorations = [
       'https://scontent.fevn1-2.fna.fbcdn.net/v/t1.0-9/19396643_1691043711008849_2794469540736003556_n.jpg?_nc_cat=105&_nc_eui2=AeFIAMO9bi8-QxQunbIc5AGkjVTSGVkzGQoUYMTZ2y-p25o24aHRR0yILY9LA89_f06EwLgjG9YjPi8sxFRKoxby_LDhI2RSSRxfOhToAH-0VA&_nc_ht=scontent.fevn1-2.fna&oh=08f47dd36df19427feb9e9064258f2b0&oe=5D9720B0',
       'https://www.distribuidoraloscompadres.com/wp-content/uploads/2017/06/1659-pi%C3%B1ata-grande-6-picos.jpg',
       'https://scontent.fevn1-1.fna.fbcdn.net/v/t1.0-9/22221625_1792071634239389_6267118007788282702_n.jpg?_nc_cat=110&_nc_eui2=AeFf2vEG7g_nw5AJG3s9bgWkPiRhNGtXMHXSng0iQJwmBrB0G6DtxBETgX12YOvhW1w6yUUVHoxshk06E2JZO-ocw9PS51hbWXOBAM3D0x-2bQ&_nc_ht=scontent.fevn1-1.fna&oh=ee251fd0c8c6be08deeb507f061b4de0&oe=5D7E0F94',
-      'https://scontent.fevn1-1.fna.fbcdn.net/v/t1.0-9/18300888_1642924945820726_569655600878950138_n.jpg?_nc_cat=102&_nc_eui2=AeE_kvxautlIDJBSUv3A5yD261WEYlZmvXzhl2r8Cm1KJPjw-CxXV4MBtubptVhdgSMApE2_UxfL7nFwggCDNAGIIu6fpVq3ftDrz17LXL2VSA&_nc_ht=scontent.fevn1-1.fna&oh=b270d2662c22d6a1a5163d56246a9e17&oe=5D80710F'
     ]
   },
   {

@@ -15,3 +15,14 @@ $img-height: 450px;
 .ant-carousel .slick-slide h3 {
   color: #fff;
 }
+
+.ImageCarousel {
+  .image-gallery-slide img {
+    object-fit: contain;
+    height: 400px;
+  }
+
+  .image-gallery-fullscreen-button::before, .image-gallery-play-button::before, .image-gallery-left-nav::before, .image-gallery-right-nav::before {
+    text-shadow: 1px 1px 9px #221340;
+  }
+}
