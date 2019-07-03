@@ -1,11 +1,16 @@
 #header {
-  display: flex;
   padding: 7px !important;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   border-bottom: 1px solid #e0e4e3;
   box-shadow: 2px 0px 10px #e0e4e3;
+  
+  .header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1340px;
+    margin: 0 auto;
+  }
 
   .logo-img {
     cursor: pointer;

@@ -49,16 +49,16 @@ export const cartoonHeroes = [
     priceRange: '֏֏',
   },
   {
-    id: 5,
-    title: 'Սպիտակաձյունիկ',
+    id: 10,
+    title: 'Սպիտակ Արջ',
     duration: 1,
-    mainImage: 'https://scontent.fevn1-4.fna.fbcdn.net/v/t1.0-9/59064477_2273114792902876_4846146182877020160_n.jpg?_nc_cat=107&_nc_ht=scontent.fevn1-4.fna&oh=202e57d3757f1ab85a4ed5c5cbdd998f&oe=5D634E44',
-    price: 6000,
-    carouselImgs: [
-      'https://scontent.fevn1-4.fna.fbcdn.net/v/t1.0-9/59064477_2273114792902876_4846146182877020160_n.jpg?_nc_cat=107&_nc_ht=scontent.fevn1-4.fna&oh=202e57d3757f1ab85a4ed5c5cbdd998f&oe=5D634E44',
-    ],
+    mainImage: 'https://scontent.fevn1-1.fna.fbcdn.net/v/t1.0-9/51489559_2222965434584479_8287626266534739968_n.jpg?_nc_cat=109&_nc_ht=scontent.fevn1-1.fna&oh=825fb4a5428b4a90de588449279fca82&oe=5D5D9D4E',
+    price: 40000,
     providerName: 'Gayluk.am',
     priceRange: '֏֏',
+    carouselImgs: [
+      'https://scontent.fevn1-1.fna.fbcdn.net/v/t1.0-9/51489559_2222965434584479_8287626266534739968_n.jpg?_nc_cat=109&_nc_ht=scontent.fevn1-1.fna&oh=825fb4a5428b4a90de588449279fca82&oe=5D5D9D4E',
+    ],
   },
   {
     id: 6,
@@ -71,6 +71,18 @@ export const cartoonHeroes = [
       'https://live.staticflickr.com/65535/47978010242_096d580bb6_k.jpg'
     ],
     priceRange: '֏֏',
+  },
+  {
+    id: 16,
+    title: 'Մինիոն',
+    duration: 1,
+    mainImage: 'https://scontent.fevn1-1.fna.fbcdn.net/v/t1.0-9/29594490_2034482650099426_5950582320025073346_n.jpg?_nc_cat=110&_nc_ht=scontent.fevn1-1.fna&oh=cc73b09e5a21ad876d24ddbcd6eda08c&oe=5D8F51F6',
+    price: 6000,
+    providerName: 'Gayluk.am',
+    priceRange: '֏֏',
+    carouselImgs: [
+      'https://scontent.fevn1-1.fna.fbcdn.net/v/t1.0-9/29594490_2034482650099426_5950582320025073346_n.jpg?_nc_cat=110&_nc_ht=scontent.fevn1-1.fna&oh=cc73b09e5a21ad876d24ddbcd6eda08c&oe=5D8F51F6',
+    ],
   },
   {
     id: 7,
@@ -109,16 +121,28 @@ export const cartoonHeroes = [
     ],
   },
   {
-    id: 10,
-    title: 'Սպիտակ Արջ',
+    id: 14,
+    title: 'Դինո',
     duration: 1,
-    mainImage: 'https://scontent.fevn1-1.fna.fbcdn.net/v/t1.0-9/51489559_2222965434584479_8287626266534739968_n.jpg?_nc_cat=109&_nc_ht=scontent.fevn1-1.fna&oh=825fb4a5428b4a90de588449279fca82&oe=5D5D9D4E',
-    price: 40000,
+    mainImage: 'https://scontent.fevn1-4.fna.fbcdn.net/v/t1.0-9/42261190_2152560668291623_8172046377317040128_o.jpg?_nc_cat=108&_nc_ht=scontent.fevn1-4.fna&oh=4ea09e552d48490ec1f2e9b71e78ab87&oe=5D94ADCE',
+    price: 6000,
     providerName: 'Gayluk.am',
     priceRange: '֏֏',
     carouselImgs: [
-      'https://scontent.fevn1-1.fna.fbcdn.net/v/t1.0-9/51489559_2222965434584479_8287626266534739968_n.jpg?_nc_cat=109&_nc_ht=scontent.fevn1-1.fna&oh=825fb4a5428b4a90de588449279fca82&oe=5D5D9D4E',
+      'https://scontent.fevn1-4.fna.fbcdn.net/v/t1.0-9/42261190_2152560668291623_8172046377317040128_o.jpg?_nc_cat=108&_nc_ht=scontent.fevn1-4.fna&oh=4ea09e552d48490ec1f2e9b71e78ab87&oe=5D94ADCE',
     ],
+  },
+  {
+    id: 5,
+    title: 'Սպիտակաձյունիկ',
+    duration: 1,
+    mainImage: 'https://scontent.fevn1-4.fna.fbcdn.net/v/t1.0-9/59064477_2273114792902876_4846146182877020160_n.jpg?_nc_cat=107&_nc_ht=scontent.fevn1-4.fna&oh=202e57d3757f1ab85a4ed5c5cbdd998f&oe=5D634E44',
+    price: 6000,
+    carouselImgs: [
+      'https://scontent.fevn1-4.fna.fbcdn.net/v/t1.0-9/59064477_2273114792902876_4846146182877020160_n.jpg?_nc_cat=107&_nc_ht=scontent.fevn1-4.fna&oh=202e57d3757f1ab85a4ed5c5cbdd998f&oe=5D634E44',
+    ],
+    providerName: 'Gayluk.am',
+    priceRange: '֏֏',
   },
   {
     id: 11,
@@ -157,18 +181,6 @@ export const cartoonHeroes = [
     ],
   },
   {
-    id: 14,
-    title: 'Դինո',
-    duration: 1,
-    mainImage: 'https://scontent.fevn1-4.fna.fbcdn.net/v/t1.0-9/42261190_2152560668291623_8172046377317040128_o.jpg?_nc_cat=108&_nc_ht=scontent.fevn1-4.fna&oh=4ea09e552d48490ec1f2e9b71e78ab87&oe=5D94ADCE',
-    price: 6000,
-    providerName: 'Gayluk.am',
-    priceRange: '֏֏',
-    carouselImgs: [
-      'https://scontent.fevn1-4.fna.fbcdn.net/v/t1.0-9/42261190_2152560668291623_8172046377317040128_o.jpg?_nc_cat=108&_nc_ht=scontent.fevn1-4.fna&oh=4ea09e552d48490ec1f2e9b71e78ab87&oe=5D94ADCE',
-    ],
-  },
-  {
     id: 15,
     title: 'Ատամիկ',
     duration: 1,
@@ -178,18 +190,6 @@ export const cartoonHeroes = [
     priceRange: '֏֏',
     carouselImgs: [
       'https://scontent.fevn1-2.fna.fbcdn.net/v/t1.0-9/48371932_2193580384189651_2883807163279474688_n.jpg?_nc_cat=100&_nc_ht=scontent.fevn1-2.fna&oh=8a8ab648f5cdc8f314e181f8b7d42057&oe=5D9184EF',
-    ],
-  },
-  {
-    id: 16,
-    title: 'Մինիոն',
-    duration: 1,
-    mainImage: 'https://scontent.fevn1-1.fna.fbcdn.net/v/t1.0-9/29594490_2034482650099426_5950582320025073346_n.jpg?_nc_cat=110&_nc_ht=scontent.fevn1-1.fna&oh=cc73b09e5a21ad876d24ddbcd6eda08c&oe=5D8F51F6',
-    price: 6000,
-    providerName: 'Gayluk.am',
-    priceRange: '֏֏',
-    carouselImgs: [
-      'https://scontent.fevn1-1.fna.fbcdn.net/v/t1.0-9/29594490_2034482650099426_5950582320025073346_n.jpg?_nc_cat=110&_nc_ht=scontent.fevn1-1.fna&oh=cc73b09e5a21ad876d24ddbcd6eda08c&oe=5D8F51F6',
     ],
   },
   {

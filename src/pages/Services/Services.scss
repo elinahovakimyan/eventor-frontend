@@ -3,13 +3,15 @@ $footer-height: 9vh;
 .suppliers-list-page {
 
     .suppliers-steps {
-        padding: 40px 20px 20px;
+        padding: 40px 10px 20px;
         overflow-x: scroll;
-        overflow-y: hidden;    
+        overflow-y: hidden;
+        max-width: 1340px;
+        margin: 0 auto;
     }
 
     .suppliers-content {
-        padding: 1% 6%;
+        padding: 20px;
 
         .data-wrapper {
             h2 {
@@ -51,6 +53,8 @@ $footer-height: 9vh;
 
 
 .service-content {
+    max-width: 1340px;
+    margin: 0 auto;
     margin-bottom: 110px;
 }
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Empty } from 'antd';
+import { Empty } from 'antd';
 
 import './ServiceGrid.scss';
 
@@ -30,38 +30,23 @@ class ServiceGrid extends React.PureComponent {
     const isSelected = this.isSelected(service.id);
 
     return (
-      <Col
-        key={service.id}
-        className="service-col"
-        xl={6}
-        lg={8}
-        md={12}
-        sm={12}
-        xs={24}
-      >
+      <div key={service.id}>
         {this.props.children(service, isSelected, this.toggleService)}
-      </Col>
+      </div>
     );
   })
 
   getLastElement = (lastElement) => (
-    <Col
-      className="service-col"
-      xl={6}
-      lg={8}
-      md={12}
-      sm={12}
-      xs={24}
-    >
+    <div className="service-col">
       {lastElement}
-    </Col>
+    </div>
   )
 
   render() {
     const { services, lastElement } = this.props;
 
     return (
-      <Row gutter={24}>
+      <div className="services-grid">
         {services && services.length
           ? this.getServiceList(services)
           : (
@@ -73,7 +58,7 @@ class ServiceGrid extends React.PureComponent {
         {lastElement
           ? this.getLastElement(lastElement)
           : null}
-      </Row>
+      </div>
     );
   }
 }

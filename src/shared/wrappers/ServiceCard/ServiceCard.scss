@@ -4,6 +4,9 @@
   box-shadow: 0 2px 6px rgba(0,0,0,0.1), 0 3px 5px rgba(0,0,0,0.12);
   border-radius: 8px;
   border: 1px solid transparent;
+  width: 300px;
+
+  @media (max-width: 350px) { width: 270px; }
   
   .service-card-cover {
     background-size: cover;

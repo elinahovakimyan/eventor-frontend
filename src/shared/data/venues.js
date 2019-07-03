@@ -1,6 +1,250 @@
 /* eslint-disable */
 export const venues = [
   {
+    id: 3,
+    title: '4teen Cafe and Restaurant',
+    address: 'Սայաթ-Նովա 4',
+    mainImage: 'https://scontent.fevn1-1.fna.fbcdn.net/v/t1.0-9/50663817_249459439286920_3249539446898425856_o.jpg?_nc_cat=109&_nc_ht=scontent.fevn1-1.fna&oh=3d0a884db29ee449f42cf8467657bfb3&oe=5D644761',
+    description: '4TEEN-ը եկել է նոր ու հետաքրքիր ձևաչափով, անչափ համեղ ուտեստներով ու որ ամենակարևորն է՝ եկել է Ձեր յուրաքանչյուր օրը տոն դարձնելու առաքելությամբ։ 4TEEN ռեստորանը հրաշալի վայր է Ձեր տոնակատարությունները անմոռանալի դարձնելու համար։ Ձեր միջոցառումները կլինեն տարբերվող, հետաքրքիր ու զվարճալի՝ համեղ ուտեստների, հրաշալի մթնոլորտի և զվարճալի խաղերի շնորհիվ։',
+    priceRange: '֏֏֏',
+    price: 10000,
+    currency: 'AMD',
+    carouselImgs: [
+      'https://scontent.fevn1-1.fna.fbcdn.net/v/t1.0-9/50663817_249459439286920_3249539446898425856_o.jpg?_nc_cat=109&_nc_ht=scontent.fevn1-1.fna&oh=3d0a884db29ee449f42cf8467657bfb3&oe=5D644761',
+      'https://scontent.fevn1-4.fna.fbcdn.net/v/t1.0-9/50879320_249459449286919_331625385680699392_o.jpg?_nc_cat=108&_nc_ht=scontent.fevn1-4.fna&oh=6d3664af96e1ad0662435c38bd999a1a&oe=5D5C2CAC',
+      'https://scontent.fevn1-2.fna.fbcdn.net/v/t1.0-9/50846490_249459649286899_5754719675095187456_o.jpg?_nc_cat=100&_nc_ht=scontent.fevn1-2.fna&oh=fcf476d3bab1914a0f620c02d4bc2917&oe=5D5E9800',
+      'https://scontent.fevn1-2.fna.fbcdn.net/v/t1.0-9/51730771_260791648153699_2064009090291466240_o.jpg?_nc_cat=100&_nc_ht=scontent.fevn1-2.fna&oh=d550601156d06146b87f9e4f3a96dfb8&oe=5D92175B'
+    ],
+    entranceFee: 5000,
+    rooms: 2,
+    minPeople: 1,
+    maxPeople: 60,
+    details: {
+      wifi: true,
+      vegetarian: true,
+      parking: true,
+      danceMusic: true,
+      creditCard: true,
+      DJ: true,
+      gamingMachines: false,
+      VIProom: true,
+      indoor: true,
+      outdoor: false,
+    }
+  },
+  {
+    id: 5,
+    title: 'Baby Club Մանկական սրճարան',
+    address: 'Դավթաշեն, 2-րդ թաղամաս, 45/6 շենք',
+    mainImage: 'https://scontent.fevn1-3.fna.fbcdn.net/v/t1.0-9/61515999_381415845807711_2058947101965942784_o.jpg?_nc_cat=111&_nc_eui2=AeED38N9pKCt5bf70IOUNYMziOGwPbmusJhKe5MCsdkIef9mdY2wwRzmTwF0BN7vRJp9D-QhpQtc4YW_BOya_JSSNp4-1KjRoM3lgOJZVvUZaQ&_nc_ht=scontent.fevn1-3.fna&oh=bb83ed06f8af633f62783dd14ff61b83&oe=5D8097F5',
+    description: '«Բեյբի Քլաբ» մանկական ժամանցի կենտրոնն առանձնանում է իր տարբերվող ինտերիերով, էքստերիերով և դիզայնով: «Բեյբի Քլաբ»-ն ունի երեք առանձնացված սրահներ՝ մեկ ընդհանուր և երկու VIP: Ընդհանուր սրահում յուրաքանչյուր բալիկ կգտնի իր նախասիրություններին հատուկ անկյուն: Ամենաբազմազան ու միանգամայն անվտանգ ատրակցիոնները, ինչպես նաև Ձեր փոքրիկների սիրելի բատուտը, տեղ են գտել սրճարանի ամենատաքուկ անկյունում: Ձեր փոքրիկը ցանկանում է չտարբերվե՞լ մեծահասակներից, ուրեմն հենց իր համար սրճարանում առանձնացված է յուրահատուկ կոկտեյլների ու անզուգական ըմպելիքների անկյունը: Այստեղ գիտեն նաև, թե ինչպես հաճոյանալ ամենաքմահաճ բալիկի քիմքին: Ճաշացանկում տեղ գտած կերակրատեսակները խոստանում են զարմացնել ու բավարարել յուրաքանչյուր փոքրիկ հաճախորդի: VIP սրահներից մեկում իրենց առիթները կարող են նշել նաև 15 - ից բարձր տարիքի աղջիկները, ովքեր սիրում են տարբերվել իրենց ընտրությամբ: Երկրորդ  VIP սրահը նախատեսված է բոլոր նրանց համար, ովքեր կնախընտրեն առանձին վայելել իրենց կարևորագույն օրը` վստահ լինելով, որ այն կվերածվի իսկական հեքիաթի: Անզուգական լուսային ու ձայնային էֆեկտներ, շոու-ներկայացումներ` բեմադրված հատուկ Ձեր փոքրիկի համար՝ իր նախասիրություններին համահունչ: Ըստ ցանկության, Ձեր փոքրիկի օրը իսկական տոնի կվերածեն նաև հատուկ նրա համար հրավիրված հայտնի երգիչ երգչուհինեն ու թատերական խմբերը:',
+    priceRange: '֏֏',
+    currency: 'AMD',
+    carouselImgs: [
+      'https://scontent.fevn1-3.fna.fbcdn.net/v/t1.0-9/61515999_381415845807711_2058947101965942784_o.jpg?_nc_cat=111&_nc_eui2=AeED38N9pKCt5bf70IOUNYMziOGwPbmusJhKe5MCsdkIef9mdY2wwRzmTwF0BN7vRJp9D-QhpQtc4YW_BOya_JSSNp4-1KjRoM3lgOJZVvUZaQ&_nc_ht=scontent.fevn1-3.fna&oh=bb83ed06f8af633f62783dd14ff61b83&oe=5D8097F5',
+      'https://scontent.fevn1-4.fna.fbcdn.net/v/t1.0-9/61563976_381415895807706_4152633613113884672_o.jpg?_nc_cat=108&_nc_eui2=AeG7L2woP5NqIcMdNImjtl9xFFVBzu0RPOZOHWBmh2Z8axnejHwPgYbLNfG3jv0rpAtGlrT8y6swag0SXqfPtteYXoU5Jh4s6UwQtt4zplkmag&_nc_ht=scontent.fevn1-4.fna&oh=4397bcb17596c93a4bd6d6c4f51a246e&oe=5D8C733C',
+      'https://scontent.fevn1-2.fna.fbcdn.net/v/t1.0-9/61121930_381415815807714_9022862528023101440_o.jpg?_nc_cat=103&_nc_eui2=AeEMy3sLfHe0J0XENruKRpna-HSXtI11JDZBDfOOFSjreaquxPfIrgMWT8BgikyPYrOl-VTeEwo3clzWqEPE2KYS5A3ZYQojlh6EKwVTyDuriA&_nc_ht=scontent.fevn1-2.fna&oh=a40f9b20dfe5aad19515a89bb37f30f2&oe=5DC5548A',
+      'https://scontent.fevn1-1.fna.fbcdn.net/v/t1.0-9/61173987_381383912477571_8227497162477404160_o.jpg?_nc_cat=109&_nc_eui2=AeE-OD80ageWOXu58r9rsB2AWrjT8Y4w5x2cPVb4DGHReIDmk0R1QqmxW0U7b6xGGBspb7QrR09eSgG4WePr4Sj6tBzYnzhgJVVRi4rSdy7S2g&_nc_ht=scontent.fevn1-1.fna&oh=11f8681258cfc0b98c6712856f4aa63a&oe=5D9A472C',
+      'https://scontent.fevn1-2.fna.fbcdn.net/v/t1.0-9/61748138_383498028932826_9104577493465038848_o.jpg?_nc_cat=104&_nc_eui2=AeGW8mdOvEWZ3tiHnavrshKGXEA0l5KxqJSWwzJpXJxmFhq-9LzvO5w0bx7MYwDeJo5W6d3qehkMO445O3jzvM0HrK29cShdPNLXKDAIcBZ6Yw&_nc_ht=scontent.fevn1-2.fna&oh=f342050a3618d72fba4ed1f499486a82&oe=5D96464F'
+    ],
+    entranceFee: null,
+    rooms: 3,
+    price: 3500,
+    minPeople: 10,
+    maxPeople: 100,
+    details: {
+      wifi: true,
+      vegetarian: true,
+      parking: true,
+      danceMusic: true,
+      creditCard: true,
+      DJ: false,
+      gamingMachines: false,
+      VIProom: true,
+      indoor: true,
+      outdoor: false,
+    }
+  },
+  {
+    id: 2,
+    title: 'Good Time Ընտանեկան Ժամանցի Կենտրոն',
+    address: 'Հալաբյան 34/3',
+    mainImage: 'https://live.staticflickr.com/65535/47977172353_ec6d68fd3f_k.jpg',
+    description: 'Good Time ընտանեկան ժամանցի կենտրոնում Ձեր ընտանիքի յուրաքանչյուր անդամ՝ անկախ տարիքից, այնտեղ կգտնի իրեն հետաքրքիր ժամանցի անկյուն: Կենտրոնում գործում է մանկական սրճարան և մինչև 150 անձի համար նախատեսված միջոցառումների սրահ: Սրահում դուք կարող եք անցկացնել Ձեր և Ձեր փոքրիկի ծննդյան տարեդարձը, կնունքը, ատամհատիկը՝ նշել ցանկացած միջոցառում: Սրահի պարահրապարակում կազմակերպվում են շոու-ծրագրեր, որոնց մասնակցում են կրկեսային արտիստներ, ակրոբատներ, ծաղրածուներ, երգ , պար, բազում ինտերակտիվ խաղեր, որոնց մասնակցում են ինչպես փոքրիկները, այնպես էլ նրանց ծնողները: Կենտրոնը բաղկացած է 5 հարկից, որտեղ տեղակայված են բազմաթիվ խաղեր և ատրակցիոններ ',
+    carouselImgs: [
+      'https://live.staticflickr.com/65535/47977212776_718bf82331_k.jpg',
+      'https://live.staticflickr.com/65535/47977214071_378fba9ab4_k.jpg',
+      'https://live.staticflickr.com/65535/47977215426_5a1ff91889_k.jpg',
+      'https://live.staticflickr.com/65535/47977167758_2969f5086c_k.jpg',
+      'https://live.staticflickr.com/65535/47977168253_e090ba4c8a_k.jpg',
+      'https://live.staticflickr.com/65535/47977172353_ec6d68fd3f_k.jpg'
+    ],
+    priceRange: '֏֏',
+    price: 4000,
+    currency: 'AMD',
+    entranceFee: 1000,
+    rooms: 1,
+    minPeople: 1,
+    maxPeople: 150,
+    details: {
+      wifi: true,
+      vegetarian: true,
+      parking: false,
+      danceMusic: true,
+      creditCard: true,
+      DJ: false,
+      gamingMachines: true,
+      VIProom: false,
+      indoor: true,
+      outdoor: false,
+    },
+    foodInfo: {
+      packages: [
+        {
+          name: 'Մինի',
+          foodIncluded: 'Փայտիկի վրա հավի խորոված, մայրաքաղաքային աղցան, այլ աղցան, ջրեղեն',
+          showIncluded: null,
+          pricePerPerson: 2000,
+        },
+        {
+          name: 'Ստանդարդ',
+          foodIncluded: 'Փայտիկի վրա խոզի խորոված, մայրաքաղաքային աղցան, ամառային աղցան, ջրեղեն',
+          showIncluded: '1 ժամանոց ուրախ խաղային ծրագիր',
+          pricePerPerson: 3500,
+        },
+      ],
+      menu: [
+        {
+          id: 0,
+          title: "Տաք ուտեստներ",
+          items: [
+            {
+              name: "Տապակած խոզի միս կարտոֆիլով",
+              price: 1500,
+              description: "170 գ",
+              pieces: 8,
+              intendedFor: 4,
+            },
+            {
+              name: "Ճուտ",
+              price: 2000,
+              description: "1 հատ",
+              pieces: null,
+              intendedFor: 4,
+            },
+            {
+              name: "Հավի լանգետ",
+              price: 850,
+              description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+              pieces: 8,
+              intendedFor: 4,
+            },
+            {
+              name: "Տապակած հավ",
+              price: 2000,
+              description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+              pieces: null,
+              intendedFor: 4,
+            },
+            {
+              name: "Խոզի խորոված (նախնական պատվեր)",
+              price: 2000,
+              description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+              pieces: null,
+              intendedFor: 4,
+            },
+            {
+              name: "Քուֆթա/1 գնդիկ (նախնական պատվեր)",
+              price: 2000,
+              description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+              pieces: null,
+              intendedFor: 4,
+            },
+            {
+              name: "Խոզի մսից ռուլետ (նախնական պատվեր)",
+              price: 2000,
+              description: "Սունկ, գազար, բիբար",
+              pieces: null,
+              intendedFor: 4,
+            },
+            {
+              name: "Հավի ռուլետ (նախնական պատվեր)",
+              price: 2000,
+              description: "Բաստուրմա, ձու, մայոնեզ",
+              pieces: null,
+              intendedFor: 4,
+            },
+            {
+              name: "Խոզի միսը փայտիկների վրա",
+              price: 2000,
+              description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+              pieces: 3,
+              intendedFor: 4,
+            },
+            {
+              name: "Տապակած Հավի կրծքամիս փայտիկների վրա",
+              price: 2000,
+              description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+              pieces: 3,
+              intendedFor: 4,
+            },
+          ]
+        },
+        {
+          id: 1,
+          title: "Աղցաններ",
+          items: [
+            {
+              name: "Մայրաքաղաքային",
+              price: 2000,
+              description: "Բաղադրության մեջ մտնում է խոզի միս, թթու վարունգ, կանաչ ոլոռ, համեմ։",
+              pieces: null,
+              intendedFor: 4,
+            },
+            {
+              name: "Ամառային",
+              price: 1400,
+              description: "Բաղադրության մեջ մտնում է լոլիկ, վարունգ, պանիր։",
+              pieces: null,
+              intendedFor: 4,
+            },
+          ]
+        },
+        {
+          id: 2,
+          title: "Խմիչքներ",
+          items: [
+            {
+              name: "Գինի",
+              price: 2000,
+              description: "Կարասի կիսաչոր գինի",
+              pieces: null,
+              intendedFor: 1,
+            },
+          ]
+        },
+      ]
+    },
+    decorations: [
+      {
+        id: 1,
+        title: 'Քենդի Բար',
+        description: 'Էլ ի՜նչ ծնունդ, առանց քենդիբարի։ Մինիոններ, արքայադստրեր, լեգոներ, թե՞ ջունգլիներ։ Ընտրեք Ձեր սիրելի թեմատիկան և պատվիրեք քենդիբարի ձևավորումը Good Time-ում։',
+        providerName: 'Good Time',
+        startingPrice: 15000,
+        mainImage: 'https://live.staticflickr.com/65535/48029881148_cb202777b6_b.jpg',
+        priceRange: '֏֏',
+        carouselImgs: [
+          'https://live.staticflickr.com/65535/48029881148_cb202777b6_b.jpg',
+          'https://live.staticflickr.com/65535/48029881208_b22e4f919a_b.jpg',
+          'https://live.staticflickr.com/65535/48029945822_6f7b495071_b.jpg',
+          'https://live.staticflickr.com/65535/48029881393_2a1c6aa7dc_b.jpg',
+          'https://live.staticflickr.com/65535/48029839776_27ef6b1bd3_b.jpg'
+        ],
+      }
+    ]
+  },
+  {
     id: 1,
     title: 'Փոքրիկ Էյնշտեյն',
     address: 'Կոմիտաս 40/2',
@@ -358,217 +602,6 @@ export const venues = [
       ]
     }
   },
-  {
-    id: 2,
-    title: 'Good Time Ընտանեկան Ժամանցի Կենտրոն',
-    address: 'Հալաբյան 34/3',
-    mainImage: 'https://live.staticflickr.com/65535/47977212776_718bf82331_k.jpg',
-    description: 'Good Time ընտանեկան ժամանցի կենտրոնում Ձեր ընտանիքի յուրաքանչյուր անդամ՝ անկախ տարիքից, այնտեղ կգտնի իրեն հետաքրքիր ժամանցի անկյուն: Կենտրոնում գործում է մանկական սրճարան և մինչև 150 անձի համար նախատեսված միջոցառումների սրահ: Սրահում դուք կարող եք անցկացնել Ձեր և Ձեր փոքրիկի ծննդյան տարեդարձը, կնունքը, ատամհատիկը՝ նշել ցանկացած միջոցառում: Սրահի պարահրապարակում կազմակերպվում են շոու-ծրագրեր, որոնց մասնակցում են կրկեսային արտիստներ, ակրոբատներ, ծաղրածուներ, երգ , պար, բազում ինտերակտիվ խաղեր, որոնց մասնակցում են ինչպես փոքրիկները, այնպես էլ նրանց ծնողները: Կենտրոնը բաղկացած է 5 հարկից, որտեղ տեղակայված են բազմաթիվ խաղեր և ատրակցիոններ ',
-    carouselImgs: [
-      'https://live.staticflickr.com/65535/47977212776_718bf82331_k.jpg',
-      'https://live.staticflickr.com/65535/47977214071_378fba9ab4_k.jpg',
-      'https://live.staticflickr.com/65535/47977215426_5a1ff91889_k.jpg',
-      'https://live.staticflickr.com/65535/47977167758_2969f5086c_k.jpg',
-      'https://live.staticflickr.com/65535/47977168253_e090ba4c8a_k.jpg',
-      'https://live.staticflickr.com/65535/47977172353_ec6d68fd3f_k.jpg'
-    ],
-    priceRange: '֏֏',
-    price: 4000,
-    currency: 'AMD',
-    entranceFee: 1000,
-    rooms: 1,
-    minPeople: 1,
-    maxPeople: 150,
-    details: {
-      wifi: true,
-      vegetarian: true,
-      parking: false,
-      danceMusic: true,
-      creditCard: true,
-      DJ: false,
-      gamingMachines: true,
-      VIProom: false,
-      indoor: true,
-      outdoor: false,
-    },
-    foodInfo: {
-      packages: [
-        {
-          name: 'Մինի',
-          foodIncluded: 'Փայտիկի վրա հավի խորոված, մայրաքաղաքային աղցան, այլ աղցան, ջրեղեն',
-          showIncluded: null,
-          pricePerPerson: 2000,
-        },
-        {
-          name: 'Ստանդարդ',
-          foodIncluded: 'Փայտիկի վրա խոզի խորոված, մայրաքաղաքային աղցան, ամառային աղցան, ջրեղեն',
-          showIncluded: '1 ժամանոց ուրախ խաղային ծրագիր',
-          pricePerPerson: 3500,
-        },
-      ],
-      menu: [
-        {
-          id: 0,
-          title: "Տաք ուտեստներ",
-          items: [
-            {
-              name: "Տապակած խոզի միս կարտոֆիլով",
-              price: 1500,
-              description: "170 գ",
-              pieces: 8,
-              intendedFor: 4,
-            },
-            {
-              name: "Ճուտ",
-              price: 2000,
-              description: "1 հատ",
-              pieces: null,
-              intendedFor: 4,
-            },
-            {
-              name: "Հավի լանգետ",
-              price: 850,
-              description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-              pieces: 8,
-              intendedFor: 4,
-            },
-            {
-              name: "Տապակած հավ",
-              price: 2000,
-              description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-              pieces: null,
-              intendedFor: 4,
-            },
-            {
-              name: "Խոզի խորոված (նախնական պատվեր)",
-              price: 2000,
-              description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-              pieces: null,
-              intendedFor: 4,
-            },
-            {
-              name: "Քուֆթա/1 գնդիկ (նախնական պատվեր)",
-              price: 2000,
-              description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-              pieces: null,
-              intendedFor: 4,
-            },
-            {
-              name: "Խոզի մսից ռուլետ (նախնական պատվեր)",
-              price: 2000,
-              description: "Սունկ, գազար, բիբար",
-              pieces: null,
-              intendedFor: 4,
-            },
-            {
-              name: "Հավի ռուլետ (նախնական պատվեր)",
-              price: 2000,
-              description: "Բաստուրմա, ձու, մայոնեզ",
-              pieces: null,
-              intendedFor: 4,
-            },
-            {
-              name: "Խոզի միսը փայտիկների վրա",
-              price: 2000,
-              description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-              pieces: 3,
-              intendedFor: 4,
-            },
-            {
-              name: "Տապակած Հավի կրծքամիս փայտիկների վրա",
-              price: 2000,
-              description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-              pieces: 3,
-              intendedFor: 4,
-            },
-          ]
-        },
-        {
-          id: 1,
-          title: "Աղցաններ",
-          items: [
-            {
-              name: "Մայրաքաղաքային",
-              price: 2000,
-              description: "Բաղադրության մեջ մտնում է խոզի միս, թթու վարունգ, կանաչ ոլոռ, համեմ։",
-              pieces: null,
-              intendedFor: 4,
-            },
-            {
-              name: "Ամառային",
-              price: 1400,
-              description: "Բաղադրության մեջ մտնում է լոլիկ, վարունգ, պանիր։",
-              pieces: null,
-              intendedFor: 4,
-            },
-          ]
-        },
-        {
-          id: 2,
-          title: "Խմիչքներ",
-          items: [
-            {
-              name: "Գինի",
-              price: 2000,
-              description: "Կարասի կիսաչոր գինի",
-              pieces: null,
-              intendedFor: 1,
-            },
-          ]
-        },
-      ]
-    },
-    decorations: [
-      {
-        id: 1,
-        title: 'Քենդի Բար',
-        description: 'Էլ ի՜նչ ծնունդ, առանց քենդիբարի։ Մինիոններ, արքայադստրեր, լեգոներ, թե՞ ջունգլիներ։ Ընտրեք Ձեր սիրելի թեմատիկան և պատվիրեք քենդիբարի ձևավորումը Good Time-ում։',
-        providerName: 'Good Time',
-        startingPrice: 15000,
-        mainImage: 'https://live.staticflickr.com/65535/48029881148_cb202777b6_b.jpg',
-        priceRange: '֏֏',
-        carouselImgs: [
-          'https://live.staticflickr.com/65535/48029881148_cb202777b6_b.jpg',
-          'https://live.staticflickr.com/65535/48029881208_b22e4f919a_b.jpg',
-          'https://live.staticflickr.com/65535/48029945822_6f7b495071_b.jpg',
-          'https://live.staticflickr.com/65535/48029881393_2a1c6aa7dc_b.jpg',
-          'https://live.staticflickr.com/65535/48029839776_27ef6b1bd3_b.jpg'
-        ],
-      }
-    ]
-  },
-  {
-    id: 3,
-    title: '4teen Cafe and Restaurant',
-    address: 'Սայաթ-Նովա 4',
-    mainImage: 'https://scontent.fevn1-1.fna.fbcdn.net/v/t1.0-9/50663817_249459439286920_3249539446898425856_o.jpg?_nc_cat=109&_nc_ht=scontent.fevn1-1.fna&oh=3d0a884db29ee449f42cf8467657bfb3&oe=5D644761',
-    description: '4TEEN-ը եկել է նոր ու հետաքրքիր ձևաչափով, անչափ համեղ ուտեստներով ու որ ամենակարևորն է՝ եկել է Ձեր յուրաքանչյուր օրը տոն դարձնելու առաքելությամբ։ 4TEEN ռեստորանը հրաշալի վայր է Ձեր տոնակատարությունները անմոռանալի դարձնելու համար։ Ձեր միջոցառումները կլինեն տարբերվող, հետաքրքիր ու զվարճալի՝ համեղ ուտեստների, հրաշալի մթնոլորտի և զվարճալի խաղերի շնորհիվ։',
-    priceRange: '֏֏֏',
-    price: 10000,
-    currency: 'AMD',
-    carouselImgs: [
-      'https://scontent.fevn1-1.fna.fbcdn.net/v/t1.0-9/50663817_249459439286920_3249539446898425856_o.jpg?_nc_cat=109&_nc_ht=scontent.fevn1-1.fna&oh=3d0a884db29ee449f42cf8467657bfb3&oe=5D644761',
-      'https://scontent.fevn1-4.fna.fbcdn.net/v/t1.0-9/50879320_249459449286919_331625385680699392_o.jpg?_nc_cat=108&_nc_ht=scontent.fevn1-4.fna&oh=6d3664af96e1ad0662435c38bd999a1a&oe=5D5C2CAC',
-      'https://scontent.fevn1-2.fna.fbcdn.net/v/t1.0-9/50846490_249459649286899_5754719675095187456_o.jpg?_nc_cat=100&_nc_ht=scontent.fevn1-2.fna&oh=fcf476d3bab1914a0f620c02d4bc2917&oe=5D5E9800',
-      'https://scontent.fevn1-2.fna.fbcdn.net/v/t1.0-9/51730771_260791648153699_2064009090291466240_o.jpg?_nc_cat=100&_nc_ht=scontent.fevn1-2.fna&oh=d550601156d06146b87f9e4f3a96dfb8&oe=5D92175B'
-    ],
-    entranceFee: 5000,
-    rooms: 2,
-    minPeople: 1,
-    maxPeople: 60,
-    details: {
-      wifi: true,
-      vegetarian: true,
-      parking: true,
-      danceMusic: true,
-      creditCard: true,
-      DJ: true,
-      gamingMachines: false,
-      VIProom: true,
-      indoor: true,
-      outdoor: false,
-    }
-  },
   // {
   //   id: 4,
   //   title: 'Dino Club',
@@ -658,39 +691,6 @@ export const venues = [
       DJ: false,
       gamingMachines: false,
       VIProom: false,
-      indoor: true,
-      outdoor: false,
-    }
-  },
-  {
-    id: 5,
-    title: 'Baby Club Մանկական սրճարան',
-    address: 'Դավթաշեն, 2-րդ թաղամաս, 45/6 շենք',
-    mainImage: 'https://scontent.fevn1-3.fna.fbcdn.net/v/t1.0-9/61515999_381415845807711_2058947101965942784_o.jpg?_nc_cat=111&_nc_eui2=AeED38N9pKCt5bf70IOUNYMziOGwPbmusJhKe5MCsdkIef9mdY2wwRzmTwF0BN7vRJp9D-QhpQtc4YW_BOya_JSSNp4-1KjRoM3lgOJZVvUZaQ&_nc_ht=scontent.fevn1-3.fna&oh=bb83ed06f8af633f62783dd14ff61b83&oe=5D8097F5',
-    description: '«Բեյբի Քլաբ» մանկական ժամանցի կենտրոնն առանձնանում է իր տարբերվող ինտերիերով, էքստերիերով և դիզայնով: «Բեյբի Քլաբ»-ն ունի երեք առանձնացված սրահներ՝ մեկ ընդհանուր և երկու VIP: Ընդհանուր սրահում յուրաքանչյուր բալիկ կգտնի իր նախասիրություններին հատուկ անկյուն: Ամենաբազմազան ու միանգամայն անվտանգ ատրակցիոնները, ինչպես նաև Ձեր փոքրիկների սիրելի բատուտը, տեղ են գտել սրճարանի ամենատաքուկ անկյունում: Ձեր փոքրիկը ցանկանում է չտարբերվե՞լ մեծահասակներից, ուրեմն հենց իր համար սրճարանում առանձնացված է յուրահատուկ կոկտեյլների ու անզուգական ըմպելիքների անկյունը: Այստեղ գիտեն նաև, թե ինչպես հաճոյանալ ամենաքմահաճ բալիկի քիմքին: Ճաշացանկում տեղ գտած կերակրատեսակները խոստանում են զարմացնել ու բավարարել յուրաքանչյուր փոքրիկ հաճախորդի: VIP սրահներից մեկում իրենց առիթները կարող են նշել նաև 15 - ից բարձր տարիքի աղջիկները, ովքեր սիրում են տարբերվել իրենց ընտրությամբ: Երկրորդ  VIP սրահը նախատեսված է բոլոր նրանց համար, ովքեր կնախընտրեն առանձին վայելել իրենց կարևորագույն օրը` վստահ լինելով, որ այն կվերածվի իսկական հեքիաթի: Անզուգական լուսային ու ձայնային էֆեկտներ, շոու-ներկայացումներ` բեմադրված հատուկ Ձեր փոքրիկի համար՝ իր նախասիրություններին համահունչ: Ըստ ցանկության, Ձեր փոքրիկի օրը իսկական տոնի կվերածեն նաև հատուկ նրա համար հրավիրված հայտնի երգիչ երգչուհինեն ու թատերական խմբերը:',
-    priceRange: '֏֏',
-    currency: 'AMD',
-    carouselImgs: [
-      'https://scontent.fevn1-3.fna.fbcdn.net/v/t1.0-9/61515999_381415845807711_2058947101965942784_o.jpg?_nc_cat=111&_nc_eui2=AeED38N9pKCt5bf70IOUNYMziOGwPbmusJhKe5MCsdkIef9mdY2wwRzmTwF0BN7vRJp9D-QhpQtc4YW_BOya_JSSNp4-1KjRoM3lgOJZVvUZaQ&_nc_ht=scontent.fevn1-3.fna&oh=bb83ed06f8af633f62783dd14ff61b83&oe=5D8097F5',
-      'https://scontent.fevn1-4.fna.fbcdn.net/v/t1.0-9/61563976_381415895807706_4152633613113884672_o.jpg?_nc_cat=108&_nc_eui2=AeG7L2woP5NqIcMdNImjtl9xFFVBzu0RPOZOHWBmh2Z8axnejHwPgYbLNfG3jv0rpAtGlrT8y6swag0SXqfPtteYXoU5Jh4s6UwQtt4zplkmag&_nc_ht=scontent.fevn1-4.fna&oh=4397bcb17596c93a4bd6d6c4f51a246e&oe=5D8C733C',
-      'https://scontent.fevn1-2.fna.fbcdn.net/v/t1.0-9/61121930_381415815807714_9022862528023101440_o.jpg?_nc_cat=103&_nc_eui2=AeEMy3sLfHe0J0XENruKRpna-HSXtI11JDZBDfOOFSjreaquxPfIrgMWT8BgikyPYrOl-VTeEwo3clzWqEPE2KYS5A3ZYQojlh6EKwVTyDuriA&_nc_ht=scontent.fevn1-2.fna&oh=a40f9b20dfe5aad19515a89bb37f30f2&oe=5DC5548A',
-      'https://scontent.fevn1-1.fna.fbcdn.net/v/t1.0-9/61173987_381383912477571_8227497162477404160_o.jpg?_nc_cat=109&_nc_eui2=AeE-OD80ageWOXu58r9rsB2AWrjT8Y4w5x2cPVb4DGHReIDmk0R1QqmxW0U7b6xGGBspb7QrR09eSgG4WePr4Sj6tBzYnzhgJVVRi4rSdy7S2g&_nc_ht=scontent.fevn1-1.fna&oh=11f8681258cfc0b98c6712856f4aa63a&oe=5D9A472C',
-      'https://scontent.fevn1-2.fna.fbcdn.net/v/t1.0-9/61748138_383498028932826_9104577493465038848_o.jpg?_nc_cat=104&_nc_eui2=AeGW8mdOvEWZ3tiHnavrshKGXEA0l5KxqJSWwzJpXJxmFhq-9LzvO5w0bx7MYwDeJo5W6d3qehkMO445O3jzvM0HrK29cShdPNLXKDAIcBZ6Yw&_nc_ht=scontent.fevn1-2.fna&oh=f342050a3618d72fba4ed1f499486a82&oe=5D96464F'
-    ],
-    entranceFee: null,
-    rooms: 3,
-    price: 3500,
-    minPeople: 10,
-    maxPeople: 100,
-    details: {
-      wifi: true,
-      vegetarian: true,
-      parking: true,
-      danceMusic: true,
-      creditCard: true,
-      DJ: false,
-      gamingMachines: false,
-      VIProom: true,
       indoor: true,
       outdoor: false,
     }
