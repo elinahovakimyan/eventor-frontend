@@ -32,6 +32,11 @@
 
   .service-card-content {
     padding: 24px 24px 12px;
+
+    .service-description {
+      max-height: 250px;
+      overflow: hidden;
+    }
   }
 
   .service-card-footer {

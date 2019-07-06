@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 // import { Link } from 'react-router-dom';
 import { Steps } from 'antd';
 
-import { TextWithImg } from 'core/components';
+import { StepTitle } from 'core/components';
 import { getIconByType } from 'core/helpers';
 // import { Filters } from 'shared/components';
 import {
@@ -91,18 +91,17 @@ function Services({ match, history }) {
     window.scrollTo(0, 0);
   };
 
-
   return (
     <div className="suppliers-list-page">
-      <Steps progressDot className="suppliers-steps" current={currentCategory.key}>
+      <Steps className="suppliers-steps" current={currentCategory.key}>
         {categorySteps.map(serviceCategory => (
           <Step
-            title={(
-              <TextWithImg
+            icon={(
+              <StepTitle
+                isActive={serviceCategory.type === match.params.category}
                 imgSrc={getIconByType(serviceCategory.type)}
                 title={serviceCategory.label}
                 onClick={() => history.push(`/${serviceCategory.type}`)}
-                // color={serviceCategory.key === currentCategory.key ? '#631c5f' : null}
               />
             )}
             key={serviceCategory.type}

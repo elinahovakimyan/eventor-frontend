@@ -76,7 +76,6 @@ export const venues = [
       'https://live.staticflickr.com/65535/47977214071_378fba9ab4_k.jpg',
       'https://live.staticflickr.com/65535/47977215426_5a1ff91889_k.jpg',
       'https://live.staticflickr.com/65535/47977167758_2969f5086c_k.jpg',
-      'https://live.staticflickr.com/65535/47977168253_e090ba4c8a_k.jpg',
       'https://live.staticflickr.com/65535/47977172353_ec6d68fd3f_k.jpg'
     ],
     priceRange: '֏֏',
