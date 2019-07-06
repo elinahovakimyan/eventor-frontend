@@ -1,0 +1,49 @@
+@import '../../../styles/_variables';
+
+.step-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #808080;
+
+    .step-title-icon-wrapper {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(141deg, #eae3e3 0%, #dedbd5 51%, #e4dede 75%);
+
+        .step-title-icon {
+            color: #868383;
+
+            svg {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+    
+    .tab-header-title {
+        font-size: 16px;
+        margin: 0;
+        color: #808080;
+    }
+}
+
+.active-tab {
+    .step-title-icon-wrapper {
+        background: linear-gradient(141deg, #feab64 0%, #fba71e 51%, #ff8d50 75%);
+
+        .step-title-icon {
+            color: white;
+        }
+    }
+
+    .tab-header-title {
+        color: #ff5900;
+    }
+}

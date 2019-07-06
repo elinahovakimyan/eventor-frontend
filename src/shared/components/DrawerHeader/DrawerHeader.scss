@@ -2,6 +2,7 @@
   padding: 7px !important;
   border-bottom: 1px solid #e0e4e3;
   box-shadow: 2px 0px 10px #e0e4e3;
+  background: #fff;
   
   .header-content {
     display: flex;
@@ -33,6 +34,12 @@
   i {
     font-size: 20px;
     margin: 5px 10px 5px 2px;
+  }
+
+  h4 {
+    i {
+      font-size: 18px;
+    }
   }
 }
 

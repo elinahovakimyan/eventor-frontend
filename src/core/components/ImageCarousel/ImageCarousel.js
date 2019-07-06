@@ -11,7 +11,7 @@ class ImageCarousel extends React.PureComponent {
 
     return (
       <div className="ImageCarousel">
-        <ImageGallery items={images} showPlayButton={false} />
+        <ImageGallery items={images} showPlayButton={false} showFullscreenButton={false} />
       </div>
     );
   }

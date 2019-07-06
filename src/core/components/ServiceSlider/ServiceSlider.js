@@ -1,8 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
 
-import { ServiceCard } from 'core/components';
-
 import './ServiceSlider.scss';
 
 const settings = {
@@ -43,7 +41,7 @@ const settings = {
 
 class ServiceSlider extends React.PureComponent {
   render() {
-    const { services, style, category } = this.props;
+    const { services, style } = this.props;
 
     return (
       <div className="service-slider-container" style={style}>
@@ -53,7 +51,7 @@ class ServiceSlider extends React.PureComponent {
             <Slider {...settings}>
               {services.map(service => (
                 <div key={service.id} className="service-card-wrapper">
-                  <ServiceCard service={service} category={category} />
+                  Service card
                 </div>
               ))}
             </Slider>

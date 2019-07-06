@@ -19327,7 +19327,8 @@ span.ant-typography-ellipsis {
   color: rgba(0, 0, 0, 0.45);
 }
 .ant-steps-item-wait > .ant-steps-item-content > .ant-steps-item-title::after {
-  background-color: #e8e8e8;
+  background-color: #d4d2d2;
+  height: 1.5px;
 }
 .ant-steps-item-wait > .ant-steps-item-content > .ant-steps-item-description {
   color: rgba(0, 0, 0, 0.45);
@@ -19349,7 +19350,9 @@ span.ant-typography-ellipsis {
   color: rgba(0, 0, 0, 0.85);
 }
 .ant-steps-item-process > .ant-steps-item-content > .ant-steps-item-title::after {
-  background-color: #e8e8e8;
+  // background-color: #e8e8e8;
+  background-color: #d4d2d2;
+  height: 1.5px;
 }
 .ant-steps-item-process > .ant-steps-item-content > .ant-steps-item-description {
   color: rgba(0, 0, 0, 0.65);
@@ -19380,7 +19383,8 @@ span.ant-typography-ellipsis {
   color: rgba(0, 0, 0, 0.65);
 }
 .ant-steps-item-finish > .ant-steps-item-content > .ant-steps-item-title::after {
-  background-color: $purple;
+  background: $orange;
+  height: 1.5px;
 }
 .ant-steps-item-finish > .ant-steps-item-content > .ant-steps-item-description {
   color: rgba(0, 0, 0, 0.45);
