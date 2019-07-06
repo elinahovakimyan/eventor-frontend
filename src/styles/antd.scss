@@ -19277,7 +19277,7 @@ span.ant-typography-ellipsis {
 .ant-steps-item-tail {
   position: absolute;
   top: 12px;
-  left: 0;
+  left: -20px;
   width: 100%;
   padding: 0 10px;
 }
@@ -19302,7 +19302,7 @@ span.ant-typography-ellipsis {
 .ant-steps-item-title::after {
   position: absolute;
   top: 16px;
-  left: 100%;
+  left: 0%;
   display: block;
   width: 9999px;
   height: 1px;
@@ -19419,7 +19419,6 @@ span.ant-typography-ellipsis {
   background: #f5222d;
 }
 .ant-steps-horizontal:not(.ant-steps-label-vertical) .ant-steps-item {
-  margin-right: 16px;
   white-space: nowrap;
 }
 .ant-steps-horizontal:not(.ant-steps-label-vertical) .ant-steps-item:last-child {
@@ -19548,9 +19547,9 @@ span.ant-typography-ellipsis {
 .ant-steps-vertical.ant-steps-small .ant-steps-item-title {
   line-height: 24px;
 }
-@media (max-width: 480px) {
+@media (max-width: 630px) {
   .ant-steps-horizontal.ant-steps-label-horizontal {
-    display: block;
+    display: flex;
   }
   .ant-steps-horizontal.ant-steps-label-horizontal .ant-steps-item {
     display: block;
@@ -19563,7 +19562,7 @@ span.ant-typography-ellipsis {
   .ant-steps-horizontal.ant-steps-label-horizontal .ant-steps-item-content {
     display: block;
     min-height: 48px;
-    overflow: hidden;
+    // overflow: hidden;
   }
   .ant-steps-horizontal.ant-steps-label-horizontal .ant-steps-item-title {
     line-height: 32px;
@@ -19571,14 +19570,14 @@ span.ant-typography-ellipsis {
   .ant-steps-horizontal.ant-steps-label-horizontal .ant-steps-item-description {
     padding-bottom: 12px;
   }
-  .ant-steps-horizontal.ant-steps-label-horizontal > .ant-steps-item > .ant-steps-item-tail {
-    position: absolute;
-    top: 0;
-    left: 16px;
-    width: 1px;
-    height: 100%;
-    padding: 38px 0 6px;
-  }
+  // .ant-steps-horizontal.ant-steps-label-horizontal > .ant-steps-item > .ant-steps-item-tail {
+  //   position: absolute;
+  //   top: 0;
+  //   left: 16px;
+  //   width: 1px;
+  //   height: 100%;
+  //   padding: 38px 0 6px;
+  // }
   .ant-steps-horizontal.ant-steps-label-horizontal > .ant-steps-item > .ant-steps-item-tail::after {
     width: 1px;
     height: 100%;
@@ -19707,7 +19706,7 @@ span.ant-typography-ellipsis {
   padding-left: 12px;
 }
 .ant-steps-flex-not-supported.ant-steps-dot .ant-steps-item:last-child {
-  overflow: hidden;
+  // overflow: hidden;
 }
 .ant-steps-flex-not-supported.ant-steps-dot .ant-steps-item:last-child .ant-steps-icon-dot::after {
   right: -200px;

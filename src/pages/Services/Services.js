@@ -93,7 +93,11 @@ function Services({ match, history }) {
 
   return (
     <div className="suppliers-list-page">
-      <Steps className="suppliers-steps" current={currentCategory.key}>
+      <Steps
+        className="suppliers-steps"
+        current={currentCategory.key}
+        // direction={window.innerWidth > 768 ? 'horizontal' : 'vertical'}
+      >
         {categorySteps.map(serviceCategory => (
           <Step
             icon={(
