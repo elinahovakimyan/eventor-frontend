@@ -1,7 +1,7 @@
 import React from 'react';
 import { Modal } from 'antd';
 
-import { ImageCarousel } from 'core/components';
+import { ImageCarousel } from 'shared/components';
 
 import './ServiceModal.scss';
 

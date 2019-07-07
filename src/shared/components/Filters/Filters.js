@@ -5,11 +5,7 @@ import {
   VENUE,
   FOOD,
   DECORATION,
-  // CAKE,
-  // CARTOON_HERO,
-  // GAME_SHOW,
-  // PHOTOGRAPHER,
-} from 'shared/data/constants';
+} from 'shared/constants';
 
 import VenueFilters from './components/VenueFilters';
 import FoodFilters from './components/FoodFilters';
@@ -28,14 +24,6 @@ class Filters extends React.PureComponent {
         return <FoodFilters />;
       case DECORATION:
         return <DecorationFilters />;
-      // case CAKE:
-      //   return this.props.cakes;
-      // case CARTOON_HERO:
-      //   return this.props.cartoonHeroes;
-      // case GAME_SHOW:
-      //   return this.props.gameShows;
-      // case PHOTOGRAPHER:
-      //   return this.props.photographers;
       default:
         return null;
     }

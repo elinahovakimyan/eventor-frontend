@@ -1,7 +1,7 @@
 import React from 'react';
 import { Checkbox, Input } from 'antd';
 
-import { Space } from 'core/components';
+import { Space } from 'shared/components';
 
 const Search = Input.Search;
 const CheckboxGroup = Checkbox.Group;

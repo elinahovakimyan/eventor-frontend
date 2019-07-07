@@ -3,7 +3,7 @@ import {
   Row, Col, DatePicker, Checkbox, Select,
 } from 'antd';
 
-import { Space } from 'core/components';
+import { Space } from 'shared/components';
 
 const { Option } = Select;
 

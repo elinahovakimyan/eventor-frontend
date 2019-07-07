@@ -2,9 +2,7 @@ import React from 'react';
 import ReactGA from 'react-ga';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Layout } from 'antd';
-// import MessengerCustomerChat from 'react-messenger-customer-chat';
 
-// import Home from 'pages/Home/Home';
 import JubileeForm from 'pages/JubileeForm/JubileeForm';
 import Services from 'pages/Services/Services';
 import FAQPage from 'pages/FAQPage/FAQPage';
@@ -47,9 +45,9 @@ class App extends React.PureComponent {
             <Content>
               <Switch>
                 <Route path="/" exact component={Services} />
-                <Route path="/:category" component={Services} />
                 <Route path="/faq" component={FAQPage} />
                 <Route path="/jubilee-form" component={JubileeForm} />
+                <Route path="/:category" component={Services} />
                 <Route path="/services" exact component={Services} />
                 <Route path="/services/:category" component={Services} />
               </Switch>

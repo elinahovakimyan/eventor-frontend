@@ -1,30 +1,24 @@
 import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
-// import { Link } from 'react-router-dom';
 import { Steps } from 'antd';
 
-import { StepTitle } from 'core/components';
-import { getIconByType } from 'core/helpers';
-// import { Filters } from 'shared/components';
+import { StepTitle } from 'shared/components';
+import { getIconByType } from 'shared/helpers';
 import {
   categorySteps,
   VENUE,
-  // FOOD,
   CARTOON_HERO,
   GAME_SHOW,
   DECORATION,
   DONE,
-  // CAKE,
-  // PHOTOGRAPHER,
-} from 'shared/data/constants';
+} from 'shared/constants';
 
-import Venues from './components/Venues/Venues';
-// import Food from './components/Food/Food';
-import CartoonHeroes from './components/CartoonHeroes/CartoonHeroes';
-import GameShows from './components/GameShows/GameShows';
-import Decorations from './components/Decorations/Decorations';
-import Confirmation from './components/Confirmation/Confirmation';
-import SuppliersFooter from './components/SuppliersFooter/SuppliersFooter';
+import Venues from './sections/Venues/Venues';
+import CartoonHeroes from './sections/CartoonHeroes/CartoonHeroes';
+import GameShows from './sections/GameShows/GameShows';
+import Decorations from './sections/Decorations/Decorations';
+import Confirmation from './sections/Confirmation/Confirmation';
+import ServicesFooter from './components/ServicesFooter/ServicesFooter';
 
 import './Services.scss';
 
@@ -55,18 +49,12 @@ function Services({ match, history }) {
     switch (currentCategory.type) {
       case VENUE:
         return <Venues />;
-      // case FOOD:
-      //   return <Food />;
       case CARTOON_HERO:
         return <CartoonHeroes />;
       case GAME_SHOW:
         return <GameShows />;
       case DECORATION:
         return <Decorations />;
-      // case CAKE:
-      //   return props.cakes;
-      // case PHOTOGRAPHER:
-      //   return props.photographers;
       default:
         return <Venues />;
     }
@@ -96,7 +84,6 @@ function Services({ match, history }) {
       <Steps
         className="suppliers-steps"
         current={currentCategory.key}
-        // direction={window.innerWidth > 768 ? 'horizontal' : 'vertical'}
       >
         {categorySteps.map(serviceCategory => (
           <Step
@@ -117,29 +104,15 @@ function Services({ match, history }) {
       <div className="service-content">
         {currentCategory.type === DONE
           ? <Confirmation />
-          // : (currentCategory.type === FOOD
-          //   ? getGridByStep(currentCategory)
           : (
             <div className="suppliers-content">
-              {/* <div className="filters-wrapper mt-30">
-                    <Filters currentCategory={currentCategory} />
-                  </div>
-                  <div className="data-wrapper"> */}
-              {/* <div className="services-header">
-                <h2>{`Ընտրե՛ք ${currentCategory.label}`}</h2>
-                <span />
-                <Button>
-                  <Link to="/done">Անցնել հաստատման էջ </Link>
-                </Button>
-              </div> */}
               {getGridByStep(currentCategory)}
-              {/* </div> */}
             </div>
           )}
       </div>
 
 
-      <SuppliersFooter
+      <ServicesFooter
         currentStep={currentCategory.key}
         onNext={handleNext}
         onPrev={handlePrev}

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import * as emailjs from 'emailjs-com';
 import {
   Form, Button, Input,
@@ -6,19 +6,20 @@ import {
 
 const { TextArea } = Input;
 
-class QForm extends React.PureComponent {
-  state = {
-    isButtonLoading: false,
-  }
+function QForm({ form }) {
+  const [isButtonLoading, toggleButtonLoading] = useState(false);
+  const { getFieldDecorator } = form;
+  const formItemLayout = {
+    labelCol: { span: 6 },
+    wrapperCol: { span: 12 },
+  };
 
-  handleSubmit = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    this.props.form.validateFields((err, values) => {
+    form.validateFields((err, values) => {
       if (!err) {
 
-        this.setState({
-          isButtonLoading: true,
-        });
+        toggleButtonLoading(true);
 
         const templateParams = {
           reply_to: 'reply_to_value',
@@ -33,75 +34,63 @@ class QForm extends React.PureComponent {
 
         emailjs.send(serviceId, templateId, templateParams, userId)
           .then(() => {
-            this.setState({
-              isButtonLoading: false,
-            });
-            this.props.form.resetFields();
+            toggleButtonLoading(false);
+            form.resetFields();
           })
           .catch(() => {
-            this.setState({
-              isButtonLoading: false,
-            });
+            toggleButtonLoading(false);
           });
       }
     });
-  }
+  };
 
-  render() {
-    const { getFieldDecorator } = this.props.form;
-    const formItemLayout = {
-      labelCol: { span: 6 },
-      wrapperCol: { span: 12 },
-    };
+  return (
+    <div className="faq-container">
+      <Form {...formItemLayout} onSubmit={handleSubmit}>
+        <Form.Item label="Էլ. Հասցե">
+          {getFieldDecorator('email', {
+            rules: [{
+              type: 'email', message: 'Խնդրում ենք նշել ճիշտ էլ.հասցե',
+            }, {
+              required: true, message: 'Խնդրում ենք նշել Ձեր էլ.հասցեն',
+            }],
+          })(
+            <Input placeholder="Ձեր էլեկտրոնային հասցեն" />,
+          )}
+        </Form.Item>
 
-    return (
-      <div className="faq-container">
-        <Form {...formItemLayout} onSubmit={this.handleSubmit}>
-          <Form.Item label="Էլ. Հասցե">
-            {getFieldDecorator('email', {
-              rules: [{
-                type: 'email', message: 'Խնդրում ենք նշել ճիշտ էլ.հասցե',
-              }, {
-                required: true, message: 'Խնդրում ենք նշել Ձեր էլ.հասցեն',
-              }],
-            })(
-              <Input placeholder="Ձեր էլեկտրոնային հասցեն" />,
-            )}
-          </Form.Item>
+        <Form.Item
+          label="Ձեր հարցը"
+        >
+          {getFieldDecorator('question', {
+            rules: [
+              {
+                required: true,
+                message: 'Խնդրում ենք գրել Ձեր հարցը նախքան ուղարկելը։',
+              },
+            ],
+          })(
+            <TextArea placeholder="Ի՞նչ հարց ունեք" autosize />,
+          )}
+        </Form.Item>
 
-          <Form.Item
-            label="Ձեր հարցը"
+        <Form.Item
+          wrapperCol={{ span: 12, offset: 6 }}
+        >
+          <Button
+            loading={isButtonLoading}
+            className="submit-btn"
+            type="primary"
+            htmlType="submit"
           >
-            {getFieldDecorator('question', {
-              rules: [
-                {
-                  required: true,
-                  message: 'Խնդրում ենք գրել Ձեր հարցը նախքան ուղարկելը։',
-                },
-              ],
-            })(
-              <TextArea placeholder="Ի՞նչ հարց ունեք" autosize />,
-            )}
-          </Form.Item>
-
-          <Form.Item
-            wrapperCol={{ span: 12, offset: 6 }}
-          >
-            <Button
-              loading={this.state.isButtonLoading}
-              className="submit-btn"
-              type="primary"
-              htmlType="submit"
-            >
               Ուղարկել հարցը
-            </Button>
-          </Form.Item>
-        </Form>
-      </div>
-    );
-  }
+          </Button>
+        </Form.Item>
+      </Form>
+    </div>
+  );
 }
 
-const QuestionForm = Form.create({ name: 'question_form' })(QForm);
+const QuestionForm = React.memo(Form.create({ name: 'question_form' })(QForm));
 
 export { QuestionForm };
