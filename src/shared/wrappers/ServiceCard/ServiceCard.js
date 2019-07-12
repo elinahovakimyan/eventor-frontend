@@ -36,7 +36,9 @@ const ServiceCard = React.memo(({
         <div className="service-card-footer">
           <button type="button" className="service-card-btn purple-gradient-btn" onClick={onActionClick}>
             <Icon type="shopping-cart" />
-            Ավելացնել զամբյուղ
+            {isSelected
+              ? 'Հանել զամբյուղից'
+              : 'Ավելացնել զամբյուղ'}
           </button>
         </div>
       </div>

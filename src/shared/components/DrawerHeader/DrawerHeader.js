@@ -42,11 +42,11 @@ function DrawerHeader() {
             </h3>
             <h4>
               <Icon type="phone" />
-              +37455855615
+              +37477067103
             </h4>
             <h4>
               <Icon type="phone" />
-              +37493661815
+              +37495661815
             </h4>
 
             <a href="https://fb.com/eventor.am" target="_blank" rel="noopener noreferrer">
