@@ -50,6 +50,23 @@ const gameShows = [
     description: 'Պղպջակնե՜ր, պղպջակնե՜ր, պղպջակնե՜ր։ Այս շոուի ընթացքում երեխաները շրջապատված կլինեն մեծ ու փոքր պղջակներով, հնարավորություն կունենան լինելու հսկա պղպջակի մեջ, երազանք պահել, նկարվել։ Ինտերակտիվ շոուն և խաղավարի հնարքները պղպջակների հետ, հիանալի լուծում են Ձեր միջոցառմանա ժամանցը հետաքրքիր, ուրախ և յուրահատուկ կազմակերպելու համար։',
   },
   {
+    id: 17,
+    title: 'Քաղցր Ամպիկ Շոու',
+    priceRange: '֏֏',
+    startingPrice: 15000,
+    duration: 1,
+    providerName: 'Քաղցր Ամպիկ',
+    mainImage: 'https://live.staticflickr.com/65535/48345740477_93aa73ff89_z.jpg',
+    carouselImgs: [
+      'https://live.staticflickr.com/65535/48345740477_93aa73ff89_z.jpg',
+      'https://scontent.fevn1-3.fna.fbcdn.net/v/t1.0-9/61879439_364871437711072_5514271377047158784_n.jpg?_nc_cat=105&_nc_oc=AQnuMV21670Z0vHV2vbPJQvQDl6F1snXl8OHn9GoKBTy136d5rvpePuCTl6QKqDfhow&_nc_ht=scontent.fevn1-3.fna&oh=59ffd7cc9a49263b29cc2eba51916355&oe=5DAA076A',
+      'https://scontent.fevn1-2.fna.fbcdn.net/v/t1.0-9/60882909_361445998053616_2394803580189016064_n.jpg?_nc_cat=103&_nc_oc=AQl6xgGEDVQ77w2pZUQq4F6JTLjTFPCNZi04378pXfMMjx05fhWPtnRCKDlMioCUrbY&_nc_ht=scontent.fevn1-2.fna&oh=af7308085aa6fcfebbfeba1f63bb1fe8&oe=5DB6263D',
+      'https://scontent.fevn1-3.fna.fbcdn.net/v/t1.0-9/60341455_355422921989257_5015699289721012224_n.jpg?_nc_cat=111&_nc_oc=AQnTFXwE9mewygXnS8M6EkRWwE9GO1XIiEfa41nddXDZ068IP6wFPvb9jw84MFU0HzM&_nc_ht=scontent.fevn1-3.fna&oh=d1f57f56915ad0db96e8796e68497c7c&oe=5DA843CBhttps://scontent.fevn1-3.fna.fbcdn.net/v/t1.0-9/60341455_355422921989257_5015699289721012224_n.jpg?_nc_cat=111&_nc_oc=AQnTFXwE9mewygXnS8M6EkRWwE9GO1XIiEfa41nddXDZ068IP6wFPvb9jw84MFU0HzM&_nc_ht=scontent.fevn1-3.fna&oh=d1f57f56915ad0db96e8796e68497c7c&oe=5DA843CB',
+      'https://scontent.fevn1-2.fna.fbcdn.net/v/t1.0-9/61860180_364844134380469_402149607674478592_n.jpg?_nc_cat=104&_nc_oc=AQmPhC4y_a4P5b1GGE774HdH7xXZNuOLJhr4yu1cIx885sA_YFn2MNwvF6-AWbGUROI&_nc_ht=scontent.fevn1-2.fna&oh=d13864cbe616a9621f973669c0e76672&oe=5DE773EF'
+    ],
+    description: 'Այս շոուն իրենից ներկայացնում է ամենատարբեր կերպարների պատրաստում՝ ամենաքաղցր բամբակից։ Քաղցր բամբակով կերպարների պատրաստումը տեղի է ունենում հենց Ձեր աչքի առջև, Ձեր նախընտրած վայրում, Ձեր սիրելի առարկայի կամ կերպարի տեսքով և վերածվում մի հետաքրքիր ու յուրահատուկ տեսարանի։ Այս քաղցր գործընթացին կարող են մասնակցել հենց հոբելյարը և իր հյուրերը և ինքնուրույն, իրենց իսկ ձեռոքերով պատրաստել այդքան սիրելի քաղցր բամբակը։ Մեր մասնագետի հմուտ ձեռքերով քաղցր բամբակի գունավոր շերտերից ստացվում են ծաղիկներ,  տորթեր,  սրտիկներ,  կենդանիների, մուլտհերոսների կերպարներ։ Երեխան ինքը կարող է որոշել թե ինչ տեսքով է ցանկանում ստանալ իր քաղցր բամբակը։ Համե՜ղ, քա՜ղցր և ուրախ։ Իրականցրե՛ք Ձեր երեխայի երազանքը և թույլ տվեք մեծահասակներին մի պահ ետ  գնալ իրենց քաղցր մանկություն։'
+  },
+  {
     id: 4,
     title: 'Գիտական SPA PARTY',
     priceRange: '֏֏֏',
