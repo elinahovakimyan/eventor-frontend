@@ -3,6 +3,7 @@ import { Empty } from 'antd';
 
 import './ServiceGrid.scss';
 
+
 class ServiceGrid extends React.PureComponent {
   state = {
     selectedServiceIds: [],
@@ -10,17 +11,13 @@ class ServiceGrid extends React.PureComponent {
 
   toggleService = (serviceId) => {
     if (!this.isSelected(serviceId)) {
-
       this.setState((prevState) => ({
         selectedServiceIds: [...prevState.selectedServiceIds, serviceId],
       }));
-
     } else {
-
       this.setState((prevState) => ({
         selectedServiceIds: [...prevState.selectedServiceIds.filter(id => id !== serviceId)],
       }));
-
     }
   }
 
@@ -37,7 +34,7 @@ class ServiceGrid extends React.PureComponent {
   })
 
   getLastElement = (lastElement) => (
-    <div className="service-col">
+    <div className="service-grid-col">
       {lastElement}
     </div>
   )

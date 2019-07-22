@@ -26,24 +26,26 @@ const CartoonHeroCard = React.memo(({ service, isSelected, toggleService }) => {
           </h4>
         )
         : null}
-
     </React.Fragment>
   );
 
 
   return (
-    <>
-      <ServiceCard
-        service={service}
-        onClick={toggleModal}
-        onActionClick={() => toggleService(!isSelected)}
-        isSelected={isSelected}
-      >
-        {service.id ? getCardContent() : null}
-      </ServiceCard>
+    <React.Fragment>
+      {service.id
+        ? (
+          <ServiceCard
+            service={service}
+            onClick={toggleModal}
+            onActionClick={() => toggleService(!isSelected)}
+            isSelected={isSelected}
+          >
+            {getCardContent()}
+          </ServiceCard>
+        ) : null}
 
       <CartoonHeroModal service={service} isModalVisible={isModalVisible} toggleModal={toggleModal} />
-    </>
+    </React.Fragment>
   );
 });
 

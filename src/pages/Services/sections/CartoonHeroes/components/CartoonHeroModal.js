@@ -8,6 +8,7 @@ class CartoonHeroModal extends React.PureComponent {
   render() {
     const { service, isModalVisible, toggleModal } = this.props;
     const { title, description } = service;
+    const price = service.price ? formatPrice(service.price) : ` սկսած ${formatPrice(service.startingPrice)}`;
 
     return (
       <ServiceModal imgs={service.carouselImgs} isModalVisible={isModalVisible} toggleModal={toggleModal}>
@@ -22,22 +23,14 @@ class CartoonHeroModal extends React.PureComponent {
             ? (
               <h3>
                 <Icon type="tags" />
-                {' '}
-                Գինը՝
-                {' '}
-                {service.price ? formatPrice(service.price) : ` սկսած ${formatPrice(service.startingPrice)}`}
+                {` Գինը՝ ${price}`}
               </h3>
             )
             : null}
 
           <h3>
             <Icon type="clock-circle" />
-            {' '}
-            Տևողությունը՝
-            {' '}
-            {service.duration}
-            {' '}
-            ժամ
+            {` Տևողությունը՝ ${service.duration} ժամ`}
           </h3>
         </div>
       </ServiceModal>

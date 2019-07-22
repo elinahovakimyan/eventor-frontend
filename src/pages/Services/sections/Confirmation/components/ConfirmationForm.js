@@ -33,8 +33,8 @@ class CForm extends React.PureComponent {
         };
 
         const serviceId = 'default_service';
-        const templateId = 'template_KWvTDbxq';
-        const userId = 'user_KTPrRh8HKGMZ7Uw4U0P8U';
+        const templateId = 'template_HRWWGhiw';
+        const userId = 'user_PWqdeMEakBm4or4HvWUek';
 
         emailjs.send(serviceId, templateId, templateParams, userId)
           .then(() => {
