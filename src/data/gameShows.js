@@ -276,6 +276,22 @@ const gameShows = [
     description: 'Փոքրիկ Էյնշտեյնի Քիմիական շոուն ներառում է բազմաթիվ քիմիական և ֆիզիկական տպավորիչ, գունեղ գիտափորձեր, գիտական խաղեր ու ֆոկուսներ, ծուխ, կրակ: Շոու ծրագիրն անցկացվում է երեխաների անմիջական մասնակցությամբ, տարիքային խմբին համապատասխան ինտելեկտուալ վիկտորինայով:',
     providerName: 'Փոքրիկ Էյնշտեյն',
   },
+  {
+    id: 18,
+    title: 'Խորանարդիկներով Շոու',
+    priceRange: '֏֏',
+    mainImage: 'https://scontent.fevn6-2.fna.fbcdn.net/v/t1.0-9/66785974_1313183095472466_5356914255041921024_n.jpg?_nc_cat=101&_nc_eui2=AeGSEDSd4qjI2kmVMvYtj2_cF-LckVqW0VxVrouyZ4zxux0HKdKrNgdVRgKu6kWa1Mq4RV7ak7mIUpKzzpRdrd8AseEeg73NAx5uwKJtDTqksA&_nc_oc=AQni1Pan9Md1qN17C92eucXG1tfravkXtPPrGrxiIhuVeyYhuWUhqCtsTsNVQ7rq0G8&_nc_ht=scontent.fevn6-2.fna&oh=ac1164a01ad1bf6497e9db72e3c11647&oe=5DD9064E',
+    carouselImgs: [
+      'https://scontent.fevn6-2.fna.fbcdn.net/v/t1.0-9/66785974_1313183095472466_5356914255041921024_n.jpg?_nc_cat=101&_nc_eui2=AeGSEDSd4qjI2kmVMvYtj2_cF-LckVqW0VxVrouyZ4zxux0HKdKrNgdVRgKu6kWa1Mq4RV7ak7mIUpKzzpRdrd8AseEeg73NAx5uwKJtDTqksA&_nc_oc=AQni1Pan9Md1qN17C92eucXG1tfravkXtPPrGrxiIhuVeyYhuWUhqCtsTsNVQ7rq0G8&_nc_ht=scontent.fevn6-2.fna&oh=ac1164a01ad1bf6497e9db72e3c11647&oe=5DD9064E',
+      'https://scontent.fevn6-2.fna.fbcdn.net/v/t1.0-9/67087550_1313183408805768_3061454926266761216_o.jpg?_nc_cat=101&_nc_eui2=AeGyzkG5dG4eehXTQegKK0ERhYprY1Vy6dT_MTH3kYUGpgw4O4T73lfveR0lPSqicOAVCMgpo-PfsONdzNwuV36-5D602D0dO3H3XgwTFs_Ocw&_nc_oc=AQlQ5g9ls3pfH6VLBeeMsNwlaq7rXvrofu8zF8T-i6JC5srD1V5SjPxnmR-yy16XgGQ&_nc_ht=scontent.fevn6-2.fna&oh=eb32e485a16de69ec81e9fefe8363f03&oe=5DADB931',
+      'https://scontent.fevn6-2.fna.fbcdn.net/v/t1.0-9/66733901_1313183728805736_5059874295375724544_o.jpg?_nc_cat=106&_nc_eui2=AeHza9cxs4X5rkpqyCVDc-c00ZDscjfANl3QTWmlbCWoej05DRkSU67fj1HiglirX06Hy83CPloYFTm64AyU91qR7FgSCcyNisuflVEtd2JavA&_nc_oc=AQlarHDHsuHHUq2riH5zmnr2CQN8VIfhjaV_uw_M2S_I9OeTg1LMJAHCar2a1TIKTEI&_nc_ht=scontent.fevn6-2.fna&oh=4505b83cf65c3a2d88c5946e38108df4&oe=5DDB1EFE',
+      'https://scontent.fevn6-1.fna.fbcdn.net/v/t1.0-9/67200508_1313182885472487_781392595686260736_n.jpg?_nc_cat=107&_nc_eui2=AeE4kejlTKrMIP1ymeDY0rkz9ibeIqabl7bcr1wN2xUUCrENYZP24ek9Z9BOv9mLxW_1GWstUSBKJ8vH7BgQFAFmtlHl5mwdyDsGt5fsGvUNRA&_nc_oc=AQnyT0ZdCyQSD8t3wW0q_2MJ7PY8D3AsqZK--D1AwHADvH0xrd0ANqhLFLybHN1bdjw&_nc_ht=scontent.fevn6-1.fna&oh=34bba3bcd86a97c69bcb95b2eae2851e&oe=5DAE34F7'
+    ],
+    price: 20000,
+    duration: 1,
+    description: 'Մեր հմուտ խաղավարներն իրենց զվարճալի և յուրօրինակ ծրագրով, մեր բազմաթիվ, բազմագույն, փափուկ և ուրախ խորանարդիկներն ու պորոլոնե ձնագնդիները ձեր փոքրիկներին կպարգևեն անմոռանալի զգացումներ, գունեղ տրամադրություն և կհաղորդեն անսահման դրական լիցքեր․․',
+    providerName: 'Magic Show',
+  },
 ]
 
 export default gameShows;
