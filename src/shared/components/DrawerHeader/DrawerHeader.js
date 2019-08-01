@@ -17,6 +17,10 @@ function DrawerHeader() {
         <a href="https://eventor.am">
           <img className="logo-img" src={logoSrc} alt="logo" />
         </a>
+        <h4>
+          <Icon type="phone" />
+          +37455855615
+        </h4>
         <div>
           <Cart />
 

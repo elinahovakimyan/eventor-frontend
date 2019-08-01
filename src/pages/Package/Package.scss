@@ -1,0 +1,35 @@
+.package {
+  background: url('../../assets/pirate.png') repeat;
+  height: 100vh;
+
+  h1 {
+    text-align: center;
+  }
+
+  .package-content {
+    display: flex;
+    justify-content: center;
+
+    .package-content-box {
+      background: purple;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 10px;
+      color: white;
+      width: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      h2 {
+        color: white;
+      }
+    }
+
+    h3 {
+      color: white;
+      text-align: right;
+      margin-top: 25px;
+    }
+  }
+}

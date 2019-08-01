@@ -6,6 +6,7 @@ import { Layout } from 'antd';
 import JubileeForm from 'pages/JubileeForm/JubileeForm';
 import Services from 'pages/Services/Services';
 import FAQPage from 'pages/FAQPage/FAQPage';
+import Package from 'pages/Package/Package';
 
 import { DrawerHeader } from 'shared/components';
 
@@ -47,6 +48,7 @@ class App extends React.PureComponent {
                 <Route path="/" exact component={Services} />
                 <Route path="/faq" component={FAQPage} />
                 <Route path="/jubilee-form" component={JubileeForm} />
+                <Route path="/package/:id" exact component={Package} />
                 <Route path="/:category" component={Services} />
                 <Route path="/services" exact component={Services} />
                 <Route path="/services/:category" component={Services} />

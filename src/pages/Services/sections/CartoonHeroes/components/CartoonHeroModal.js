@@ -19,6 +19,10 @@ class CartoonHeroModal extends React.PureComponent {
             <p>{description}</p>
           </div>
 
+          <h3>
+            {`Մատակարար՝ ${service.providerName}`}
+          </h3>
+
           {service.price || service.startingPrice
             ? (
               <h3>
@@ -28,10 +32,6 @@ class CartoonHeroModal extends React.PureComponent {
             )
             : null}
 
-          <h3>
-            <Icon type="clock-circle" />
-            {` Տևողությունը՝ ${service.duration} ժամ`}
-          </h3>
         </div>
       </ServiceModal>
     );

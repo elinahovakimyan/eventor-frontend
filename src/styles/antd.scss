@@ -19385,6 +19385,7 @@ span.ant-typography-ellipsis {
 .ant-steps-item-finish > .ant-steps-item-content > .ant-steps-item-title::after {
   background: $orange;
   height: 1.5px;
+  margin-top: 12px;
 }
 .ant-steps-item-finish > .ant-steps-item-content > .ant-steps-item-description {
   color: rgba(0, 0, 0, 0.45);

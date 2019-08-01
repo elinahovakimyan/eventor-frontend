@@ -158,11 +158,11 @@ class CartComp extends React.PureComponent {
 
     return (
       <Dropdown overlay={this.getContent()}>
-        <span className="card-dropdown-link ant-dropdown-link">
+        <Link to="/done" className="card-dropdown-link ant-dropdown-link">
           <Badge count={serviceN}>
             <Icon type="shopping-cart" />
           </Badge>
-        </span>
+        </Link>
       </Dropdown>
     );
   }

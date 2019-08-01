@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Icon } from 'antd';
 
 import { formatPrice } from 'shared/helpers';
 import { ServiceCard } from 'shared/wrappers';
@@ -16,7 +17,8 @@ const CartoonHeroCard = React.memo(({ service, isSelected, toggleService }) => {
       </p>
 
       <h4 className="provider">
-        {`Մատակարար՝ ${service.providerName}`}
+        <Icon type="clock-circle" />
+        {` Տևողությունը՝ ${service.duration} ժամ`}
       </h4>
 
       {service.price || service.startingPrice
