@@ -18,6 +18,10 @@ class GameShowModal extends React.PureComponent {
             <p>{description}</p>
           </div>
 
+          <h4 className="provider">
+            {`Մատակարար՝ ${service.providerName}`}
+          </h4>
+
           {service.price || service.startingPrice
             ? (
               <h3>

@@ -15,10 +15,6 @@ const GameShowCard = React.memo(({ service, isSelected, toggleService }) => {
         {service.description}
       </p>
 
-      <h4 className="provider">
-        {`Մատակարար՝ ${service.providerName}`}
-      </h4>
-
       {service.price || service.startingPrice
         ? (
           <h4 className="price text-right">
