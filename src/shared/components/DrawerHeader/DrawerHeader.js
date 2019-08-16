@@ -19,7 +19,7 @@ function DrawerHeader() {
         </a>
         <h4>
           <Icon type="phone" />
-          +37455855615
+          +374 95 661815, +374 93 661815
         </h4>
         <div>
           <Cart />
