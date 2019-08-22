@@ -118,7 +118,7 @@ button {
 
 .purple-gradient-btn {
   // background: linear-gradient(141deg, #c563b0 0%, #904b87 51%, $purple 75%);
-  background: linear-gradient(148deg, #d85b9b, #662986);
+  background: linear-gradient(140deg, rgb(230, 159, 225) 0%, rgb(38, 66, 211) 100%);
   padding: 8px 15px;
   border-radius: 8px;
   color: white;
@@ -131,13 +131,13 @@ button {
 
 .orange-gradient-btn {
   // background: linear-gradient(141deg, #c563b0 0%, #904b87 51%, $purple 75%);
-  background: linear-gradient(83deg, #f6ca4d, #f6884d);
+  background: linear-gradient(83deg, #f6ca4d, #ff9a85);
   padding: 8px 15px;
   border-radius: 8px;
   color: white;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 
-  &:hover { background: linear-gradient(153deg, #f6884d 0%, #f6ca4d 90%); }
+  &:hover { background: linear-gradient(153deg, #ff9a85 0%, #f6ca4d 90%); }
 
   i {
     color: white;
