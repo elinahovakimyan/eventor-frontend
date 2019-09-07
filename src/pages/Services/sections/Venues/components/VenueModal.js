@@ -13,7 +13,12 @@ class VenueModal extends React.PureComponent {
     } = service;
 
     return (
-      <ServiceModal imgs={service.carouselImgs} isModalVisible={isModalVisible} toggleModal={toggleModal}>
+      <ServiceModal
+        imgs={service.carouselImgs}
+        isImgLocal={service.imgLocation === 'local'}
+        isModalVisible={isModalVisible}
+        toggleModal={toggleModal}
+      >
         <div className="service-content">
 
           <div className="text-center">

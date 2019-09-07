@@ -6,7 +6,6 @@ import { Layout } from 'antd';
 import JubileeForm from 'pages/JubileeForm/JubileeForm';
 import Services from 'pages/Services/Services';
 import FAQPage from 'pages/FAQPage/FAQPage';
-import Package from 'pages/Package/Package';
 import { DrawerHeader } from 'shared/components';
 import Campaign from './pages/Campaign/Campaign';
 
@@ -25,7 +24,7 @@ class App extends React.PureComponent {
   }
 
   render() {
-    const message = 'Հետաքրքիր ծնու՞նդ է անհրաժեշտ։ Ճիշտ տեղո՜ւմ եք։ Հարցերի դեպքում՝ գրեք այստեղ :)';
+    const message = 'Հետաքրքիր ծնու՞նդ է անհրաժեշտ։ Ճիշտ տեղո՜ւմ եք։ Դիմեք մեզ այստեղ :)';
 
     return (
       <div>
@@ -50,13 +49,10 @@ class App extends React.PureComponent {
                 <Route path="/faq" component={FAQPage} />
                 <Route path="/jubilee-form" component={JubileeForm} />
                 <Route path="/campaign" component={Campaign} />
-                <Route path="/package/:id" exact component={Package} />
+                <Route path="/:category/service/:serviceId" component={Services} />
                 <Route path="/:category" component={Services} />
-                <Route path="/services" exact component={Services} />
-                <Route path="/services/:category" component={Services} />
               </Switch>
             </Content>
-
           </React.Fragment>
         </BrowserRouter>
 

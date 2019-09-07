@@ -111,7 +111,6 @@ function Services({ match, history }) {
           )}
       </div>
 
-
       <ServicesFooter
         currentStep={currentCategory.key}
         onNext={handleNext}

@@ -12,8 +12,10 @@ const gameShows = [
     carouselImgs: [
       'https://scontent.fevn1-4.fna.fbcdn.net/v/t1.0-9/33066064_2057728704441487_8586059036850388992_n.jpg?_nc_cat=108&_nc_ht=scontent.fevn1-4.fna&oh=e8f30ff7a3fbc83e5d8c158b6d259b15&oe=5D82D702',
       'https://scontent.fevn1-2.fna.fbcdn.net/v/t1.0-9/56702317_2263742873840068_8994482105685639168_o.jpg?_nc_cat=100&_nc_ht=scontent.fevn1-2.fna&oh=a95392b6e947dd787b6cb1a12b20b050&oe=5D8298C8',
+      'https://eventor-services.s3.eu-west-2.amazonaws.com/paper_show_3.jpg',      
+      'https://eventor-services.s3.eu-west-2.amazonaws.com/paper_show_2.jpg',      
       'https://scontent.fevn1-4.fna.fbcdn.net/v/t1.0-9/36861932_2090580021156355_487759292410101760_n.jpg?_nc_cat=101&_nc_ht=scontent.fevn1-4.fna&oh=cd9d2fc382465c2671b0d8e512a68a74&oe=5D96BD28',
-      'https://scontent.fevn1-4.fna.fbcdn.net/v/t1.0-9/33124383_2057728674441490_2304860054408396800_n.jpg?_nc_cat=101&_nc_ht=scontent.fevn1-4.fna&oh=73a50ae48201fdcd21771fa22aacfd66&oe=5D8DF8AC'
+      'https://scontent.fevn1-4.fna.fbcdn.net/v/t1.0-9/33124383_2057728674441490_2304860054408396800_n.jpg?_nc_cat=101&_nc_ht=scontent.fevn1-4.fna&oh=73a50ae48201fdcd21771fa22aacfd66&oe=5D8DF8AC',
     ],
     description: 'Այսօր թղթե շոուն ամենահետաքրքիր և ամենավառ թրենդներից է, որը տոն կդարձնի ցանկացած  առիթ կամ միջոցառում։ Թղթե շոուն սիրում են թե՛ մեծերը, թե՛ փոքրերը, որովհետև այն չափազանց ուրախ է։ Մեծերը մի պահ դառնում են երեխաներ և զվարճանում են ինչքան կարող են, իսկ երեխաները հիացմունքով գլորվում են թղթե հսկա զանգվածների մեջ և դրանք վեր ու վար նետում:',
   },

@@ -1,13 +1,27 @@
 import React, { useState } from 'react';
 import { Icon } from 'antd';
+import { withRouter } from 'react-router-dom';
 
 import { ServiceCard } from 'shared/wrappers';
 
 import VenueModal from './VenueModal';
 
 
-const VenueCard = React.memo(({ service, isSelected, toggleService }) => {
-  const [isModalVisible, toggleModal] = useState(false);
+const VenueCard = React.memo(({
+  service, isSelected, toggleService, history, match,
+}) => {
+  const isActiveService = match.params.serviceId ? service.id === Number(match.params.serviceId) : false;
+  const [isModalVisible, toggleModal] = useState(isActiveService);
+
+  const handleModalToggle = () => {
+    if (!isModalVisible) {
+      history.push(`/venue/service/${service.id}`);
+      toggleModal(true);
+    } else {
+      history.push('/venue');
+      toggleModal(false);
+    }
+  };
 
   const getCardContent = () => (
     <React.Fragment>
@@ -31,15 +45,15 @@ const VenueCard = React.memo(({ service, isSelected, toggleService }) => {
     <>
       <ServiceCard
         service={service}
-        onClick={toggleModal}
+        onClick={handleModalToggle}
         isSelected={isSelected}
         onActionClick={() => toggleService(!isSelected)}
       >
         {service.id ? getCardContent() : null}
       </ServiceCard>
-      <VenueModal service={service} isModalVisible={isModalVisible} toggleModal={toggleModal} />
+      <VenueModal service={service} isModalVisible={isModalVisible} toggleModal={handleModalToggle} />
     </>
   );
 });
 
-export default VenueCard;
+export default withRouter(VenueCard);

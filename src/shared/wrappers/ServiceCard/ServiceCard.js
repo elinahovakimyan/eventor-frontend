@@ -10,6 +10,16 @@ const ServiceCard = React.memo(({
   service, children, isSelected, onClick, onActionClick,
 }) => {
 
+  const getImageUrl = () => {
+    if (service.carouselImgs) {
+      return service.carouselImgs[0];
+    } if (service.mainImage) {
+      return service.mainImage;
+    }
+
+    return 'https://eventor-services.s3.eu-west-2.amazonaws.com/no-photo-available.png';
+  };
+
   if (Object.keys(service)) {
     return (
       <div className={`service-card-wrapper ${isSelected ? 'selected-card' : ''}`}>
@@ -22,7 +32,7 @@ const ServiceCard = React.memo(({
                 backgroundSize: service.backgroundSize,
                 backgroundPositionX: service.backgroundPositionX,
               } : {
-                backgroundImage: `url(${service.mainImage})`,
+                backgroundImage: `url(${getImageUrl()})`,
               }}
           />
           <div className="service-card-content">
