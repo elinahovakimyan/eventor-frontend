@@ -52,7 +52,12 @@ const GameShowCard = React.memo(({
         {service.id ? getCardContent() : null}
       </ServiceCard>
 
-      <GameShowModal service={service} isModalVisible={isModalVisible} toggleModal={handleModalToggle} />
+      <GameShowModal
+        service={service}
+        isModalVisible={isModalVisible}
+        toggleModal={handleModalToggle}
+        toggleService={toggleService}
+      />
     </>
   );
 });

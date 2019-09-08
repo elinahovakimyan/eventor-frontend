@@ -56,7 +56,12 @@ const DecorationCard = React.memo(({
         {service.id ? getCardContent() : null}
       </ServiceCard>
 
-      <DecorationModal service={service} isModalVisible={isModalVisible} toggleModal={handleModalToggle} />
+      <DecorationModal
+        service={service}
+        isModalVisible={isModalVisible}
+        toggleModal={handleModalToggle}
+        toggleService={toggleService}
+      />
     </>
   );
 });

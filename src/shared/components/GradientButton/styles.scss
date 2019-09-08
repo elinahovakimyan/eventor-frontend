@@ -1,0 +1,82 @@
+.purple-gradient-btn {
+  background: linear-gradient(140deg, rgb(230, 159, 225) 0%, rgb(38, 66, 211) 100%);
+  padding: 8px 15px;
+  border-radius: 8px;
+  color: white;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+
+  i {
+    color: white;
+  }
+
+
+  span {
+    color: #5d2dbb;
+
+
+    i {
+      color: #a314b4;
+    }
+  }
+}
+
+.orange-gradient-btn {
+  background: linear-gradient(65deg, #ffd676, #ff9a85);
+  padding: 8px 15px;
+  border-radius: 8px;
+  color: white;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+
+  &:hover { background: linear-gradient(153deg, #ff9a85 0%, #ffd676 90%); }
+
+  i {
+    color: white;
+  }
+
+  span {
+    color: #ff925e;
+
+    i {
+      color: #ff925e;
+    }
+  }
+
+  span {
+    padding: 0 5px;
+  }
+}
+
+.GradientButton {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  padding: 2px !important;
+  height: 40px;
+  margin-bottom: 10px;
+
+  span {
+    font-size: 15px;
+    background: white;
+    width: 100%;
+    border-radius: 7px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 !important;
+
+    i {
+      margin-right: 8px;
+      font-size: 20px;
+    }
+
+    &:hover {
+      color: white;
+      background: transparent;
+
+      i {
+        color: white;
+      }
+    }
+  }
+}

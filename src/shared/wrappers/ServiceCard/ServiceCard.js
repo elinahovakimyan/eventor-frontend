@@ -1,5 +1,7 @@
 import React from 'react';
-import { Card, Icon } from 'antd';
+import { Card } from 'antd';
+
+import GradientButton from 'shared/components/GradientButton';
 
 import './ServiceCard.scss';
 
@@ -44,12 +46,14 @@ const ServiceCard = React.memo(({
           </div>
         </div>
         <div className="service-card-footer">
-          <button type="button" className="service-card-btn purple-gradient-btn" onClick={onActionClick}>
-            <Icon type="shopping-cart" />
-            {isSelected
-              ? 'Հանել զամբյուղից'
-              : 'Ավելացնել զամբյուղ'}
-          </button>
+          <GradientButton theme="orange" onClick={onClick} iconType="zoom-in" text="Տեսնել Ավելին" />
+          <GradientButton
+            theme="purple"
+            onClick={onActionClick}
+            iconType="heart"
+            iconTheme={isSelected ? 'filled' : 'outlined'}
+            text="Հետաքրքրված եմ"
+          />
         </div>
       </div>
     );

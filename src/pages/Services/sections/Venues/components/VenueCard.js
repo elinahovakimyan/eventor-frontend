@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Icon } from 'antd';
 import { withRouter } from 'react-router-dom';
 
 import { ServiceCard } from 'shared/wrappers';
@@ -28,10 +27,10 @@ const VenueCard = React.memo(({
       <p className="service-description">
         {`${service.description.substr(0, 75)}...`}
       </p>
-      <h4 className="short-text">
+      {/* <h4 className="short-text">
         <Icon type="environment" />
         {` Հասցե՝ ${service.address}`}
-      </h4>
+      </h4> */}
       {/* <h4 className="short-text">
         <Icon type="shop" />
         {` Սրահների քանակը՝ ${service.rooms}`}
@@ -51,7 +50,12 @@ const VenueCard = React.memo(({
       >
         {service.id ? getCardContent() : null}
       </ServiceCard>
-      <VenueModal service={service} isModalVisible={isModalVisible} toggleModal={handleModalToggle} />
+      <VenueModal
+        service={service}
+        isModalVisible={isModalVisible}
+        toggleModal={handleModalToggle}
+        toggleService={toggleService}
+      />
     </>
   );
 });

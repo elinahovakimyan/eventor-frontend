@@ -60,7 +60,12 @@ const CartoonHeroCard = React.memo(({
           </ServiceCard>
         ) : null}
 
-      <CartoonHeroModal service={service} isModalVisible={isModalVisible} toggleModal={handleModalToggle} />
+      <CartoonHeroModal
+        service={service}
+        isModalVisible={isModalVisible}
+        toggleModal={handleModalToggle}
+        toggleService={toggleService}
+      />
     </React.Fragment>
   );
 });
