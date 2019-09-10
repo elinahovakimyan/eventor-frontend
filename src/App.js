@@ -24,7 +24,7 @@ class App extends React.PureComponent {
   }
 
   render() {
-    // const message = 'Հետաքրքիր ծնու՞նդ է անհրաժեշտ։ Ճիշտ տեղո՜ւմ եք։ Դիմեք մեզ այստեղ :)';
+    const message = 'Հետաքրքիր ծնու՞նդ է անհրաժեշտ։ Ճիշտ տեղո՜ւմ եք։ Դիմեք մեզ այստեղ :)';
 
     return (
       <div>
@@ -35,9 +35,10 @@ class App extends React.PureComponent {
           attribution="setup_tool"
           page_id="340948546707923"
           size="standard"
+          greeting_dialog_display="hide"
           // theme_color="#ff5900""
-          // logged_in_greeting={message}
-          // logged_out_greeting={message}
+          logged_in_greeting={message}
+          logged_out_greeting={message}
         />
 
         <BrowserRouter>
