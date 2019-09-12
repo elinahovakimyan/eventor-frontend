@@ -24,6 +24,7 @@
     height: 80%;
     overflow-y: scroll;
     pointer-events: auto;
+    max-width: 950px;
 
     @media (max-width: 500px) {
       width: 95%;
