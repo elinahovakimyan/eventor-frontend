@@ -40,15 +40,9 @@ const cartoonHeroes = [
     priceRange: '֏֏',
   },
   {
-    id: 5,
-    title: 'Սպիտակաձյունիկ',
+    id: 10,
+    title: 'Սպիտակ Արջ',
     duration: 1,
-<<<<<<< HEAD
-    mainImage: 'https://scontent.fevn1-4.fna.fbcdn.net/v/t1.0-9/59064477_2273114792902876_4846146182877020160_n.jpg?_nc_cat=107&_nc_ht=scontent.fevn1-4.fna&oh=202e57d3757f1ab85a4ed5c5cbdd998f&oe=5D634E44',
-    price: 6000,
-    carouselImgs: [
-      'https://scontent.fevn1-4.fna.fbcdn.net/v/t1.0-9/59064477_2273114792902876_4846146182877020160_n.jpg?_nc_cat=107&_nc_ht=scontent.fevn1-4.fna&oh=202e57d3757f1ab85a4ed5c5cbdd998f&oe=5D634E44',
-=======
     price: 40000,
     providerName: 'Gayluk.am',
     priceRange: '֏֏',
@@ -81,10 +75,7 @@ const cartoonHeroes = [
       'https://eventor-services.s3.eu-west-2.amazonaws.com/kria_1.jpg',
       'https://eventor-services.s3.eu-west-2.amazonaws.com/kria_2.jpg',
       'https://eventor-services.s3.eu-west-2.amazonaws.com/kria_3.jpg',
->>>>>>> refs/remotes/origin/master
     ],
-    providerName: 'Gayluk.am',
-    priceRange: '֏֏',
   },
   {
     id: 6,
@@ -99,10 +90,6 @@ const cartoonHeroes = [
     priceRange: '֏֏',
   },
   {
-<<<<<<< HEAD
-    id: 7,
-    title: 'Միկի Մաուս',
-=======
     id: 16,
     title: 'Մինիոն',
     duration: 1,
@@ -116,7 +103,6 @@ const cartoonHeroes = [
   {
     id: 18,
     title: 'Խաղավար Շուշան',
->>>>>>> refs/remotes/origin/master
     duration: 1,
     price: 7000,
     providerName: 'Gayluk.am',
@@ -146,19 +132,6 @@ const cartoonHeroes = [
     carouselImgs: [
       'https://live.staticflickr.com/65535/47978158381_4084ec5eac_b.jpg',
     ],
-<<<<<<< HEAD
-  },
-  {
-    id: 10,
-    title: 'Սպիտակ Արջ',
-    duration: 1,
-    mainImage: 'https://scontent.fevn1-1.fna.fbcdn.net/v/t1.0-9/51489559_2222965434584479_8287626266534739968_n.jpg?_nc_cat=109&_nc_ht=scontent.fevn1-1.fna&oh=825fb4a5428b4a90de588449279fca82&oe=5D5D9D4E',
-    price: 40000,
-    providerName: 'Gayluk.am',
-    priceRange: '֏֏',
-    carouselImgs: [
-      'https://scontent.fevn1-1.fna.fbcdn.net/v/t1.0-9/51489559_2222965434584479_8287626266534739968_n.jpg?_nc_cat=109&_nc_ht=scontent.fevn1-1.fna&oh=825fb4a5428b4a90de588449279fca82&oe=5D5D9D4E',
-=======
     priceRange: '֏֏',
   },
   {
@@ -168,8 +141,9 @@ const cartoonHeroes = [
     price: 6000,
     carouselImgs: [
       'https://eventor-services.s3.eu-west-2.amazonaws.com/spitakadzyunik_1.jpg',
->>>>>>> refs/remotes/origin/master
     ],
+    providerName: 'Gayluk.am',
+    priceRange: '֏֏',
   },
   {
     id: 11,
@@ -205,18 +179,6 @@ const cartoonHeroes = [
     ],
   },
   {
-    id: 14,
-    title: 'Դինո',
-    duration: 1,
-    mainImage: 'https://scontent.fevn1-4.fna.fbcdn.net/v/t1.0-9/42261190_2152560668291623_8172046377317040128_o.jpg?_nc_cat=108&_nc_ht=scontent.fevn1-4.fna&oh=4ea09e552d48490ec1f2e9b71e78ab87&oe=5D94ADCE',
-    price: 6000,
-    providerName: 'Gayluk.am',
-    priceRange: '֏֏',
-    carouselImgs: [
-      'https://scontent.fevn1-4.fna.fbcdn.net/v/t1.0-9/42261190_2152560668291623_8172046377317040128_o.jpg?_nc_cat=108&_nc_ht=scontent.fevn1-4.fna&oh=4ea09e552d48490ec1f2e9b71e78ab87&oe=5D94ADCE',
-    ],
-  },
-  {
     id: 15,
     title: 'Ատամիկ',
     duration: 1,
@@ -228,19 +190,7 @@ const cartoonHeroes = [
     ],
   },
   {
-    id: 16,
-    title: 'Մինիոն',
-    duration: 1,
-    mainImage: 'https://scontent.fevn1-1.fna.fbcdn.net/v/t1.0-9/29594490_2034482650099426_5950582320025073346_n.jpg?_nc_cat=110&_nc_ht=scontent.fevn1-1.fna&oh=cc73b09e5a21ad876d24ddbcd6eda08c&oe=5D8F51F6',
-    price: 6000,
-    providerName: 'Gayluk.am',
-    priceRange: '֏֏',
-    carouselImgs: [
-      'https://scontent.fevn1-1.fna.fbcdn.net/v/t1.0-9/29594490_2034482650099426_5950582320025073346_n.jpg?_nc_cat=110&_nc_ht=scontent.fevn1-1.fna&oh=cc73b09e5a21ad876d24ddbcd6eda08c&oe=5D8F51F6',
-    ],
-  },
-  {
-    id: 95,
+    id: 17,
     title: 'Կարմիր Ռենջեր',
     duration: 1,
     price: 6000,
@@ -248,19 +198,6 @@ const cartoonHeroes = [
     priceRange: '֏֏',
     carouselImgs: [
       'https://live.staticflickr.com/65535/47978109337_e2fe9863a2_b.jpg',
-    ],
-  },
-<<<<<<< HEAD
-  {
-    id: 18,
-    title: 'Խաղավար Շուշան',
-    duration: 1,
-    mainImage: 'https://scontent.fevn1-4.fna.fbcdn.net/v/t1.0-9/56301745_2259782950902727_2981419344577167360_n.jpg?_nc_cat=106&_nc_ht=scontent.fevn1-4.fna&oh=dc683e9f6f453a28051738650122e214&oe=5D5DAF94',
-    price: 7000,
-    providerName: 'Gayluk.am',
-    priceRange: '֏֏',
-    carouselImgs: [
-      'https://scontent.fevn1-4.fna.fbcdn.net/v/t1.0-9/56301745_2259782950902727_2981419344577167360_n.jpg?_nc_cat=106&_nc_ht=scontent.fevn1-4.fna&oh=dc683e9f6f453a28051738650122e214&oe=5D5DAF94',
     ],
   },
   {
@@ -476,8 +413,5 @@ const cartoonHeroes = [
   //   ],
   // },
 ];
-=======
-]
->>>>>>> refs/remotes/origin/master
 
 export default cartoonHeroes;
