@@ -1,30 +1,41 @@
 import React from 'react';
-import { Modal } from 'antd';
 
 import { ImageCarousel } from 'shared/components';
+import Modal from 'shared/components/Modal';
+import GradientButton from 'shared/components/GradientButton';
 
 import './ServiceModal.scss';
 
 class ServiceModal extends React.PureComponent {
   render() {
     const {
-      title, imgs, isModalVisible, toggleModal,
+      imgs, isModalVisible, toggleModal, isImgLocal, toggleService,
     } = this.props;
 
     return (
       <Modal
         centered
-        title={title}
-        visible={isModalVisible}
-        onCancel={() => toggleModal(false)}
-        // onOk={handleSelection}
-        // okText="Ընտրել"
-        cancelText="Փակել"
+        isOpen={!!isModalVisible}
+        onClose={() => toggleModal(false)}
         className="service-modal"
       >
-        <ImageCarousel imgs={imgs} />
+        <ImageCarousel imgs={imgs} isLocal={isImgLocal} />
 
-        {this.props.children}
+        <div className="service-modal-content">
+          {this.props.children}
+        </div>
+
+        <div className="service-modal-footer">
+          <GradientButton
+            text="Հետաքրքրված եմ"
+            iconType="heart"
+            theme="purple"
+            onClick={() => {
+              toggleService(true);
+              toggleModal(false);
+            }}
+          />
+        </div>
       </Modal>
     );
   }

@@ -3,8 +3,14 @@ import ImageGallery from 'react-image-gallery';
 
 import './ImageCarousel.scss';
 
-function ImageCarousel({ imgs }) {
-  const images = imgs && imgs.length ? imgs.map(img => ({ original: img, thumbnail: img })) : [];
+function ImageCarousel({ imgs, isLocal }) {
+  const baseUrl = '../../../assets/services';
+  const images = imgs && imgs.length
+    ? imgs.map(img => {
+      const imgUrl = isLocal ? `${baseUrl}/${img}` : img;
+      return ({ original: imgUrl, thumbnail: imgUrl });
+    })
+    : [];
 
   return (
     <div className="ImageCarousel">

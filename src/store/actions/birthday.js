@@ -13,14 +13,30 @@ export const updateSingleJubileeInfo = (key, jubileeInfo) => ({
   },
 });
 
+// export const selectVenue = (service) => ({
+//   type: constants.SELECT_VENUE,
+//   payload: service,
+// });
+
+// export const deselectVenue = (service) => ({
+//   type: constants.DESELECT_VENUE,
+//   payload: service,
+// });
+
 export const selectVenue = (service) => ({
-  type: constants.SELECT_VENUE,
-  payload: service,
+  type: constants.SELECT_SERVICE,
+  payload: {
+    serviceType: 'venue',
+    service,
+  },
 });
 
 export const deselectVenue = (service) => ({
-  type: constants.DESELECT_VENUE,
-  payload: service,
+  type: constants.DESELECT_SERVICE,
+  payload: {
+    serviceType: 'venue',
+    service,
+  },
 });
 
 export const selectCartoonHero = (service) => ({

@@ -1,5 +1,7 @@
 import React from 'react';
-import { Card, Icon } from 'antd';
+import { Card } from 'antd';
+
+import GradientButton from 'shared/components/GradientButton';
 
 import './ServiceCard.scss';
 
@@ -9,6 +11,16 @@ const { Meta } = Card;
 const ServiceCard = React.memo(({
   service, children, isSelected, onClick, onActionClick,
 }) => {
+
+  const getImageUrl = () => {
+    if (service.carouselImgs) {
+      return service.carouselImgs[0];
+    } if (service.mainImage) {
+      return service.mainImage;
+    }
+
+    return 'https://eventor-services.s3.eu-west-2.amazonaws.com/no-photo-available.png';
+  };
 
   if (Object.keys(service)) {
     return (
@@ -22,7 +34,7 @@ const ServiceCard = React.memo(({
                 backgroundSize: service.backgroundSize,
                 backgroundPositionX: service.backgroundPositionX,
               } : {
-                backgroundImage: `url(${service.mainImage})`,
+                backgroundImage: `url(${getImageUrl()})`,
               }}
           />
           <div className="service-card-content">
@@ -34,12 +46,14 @@ const ServiceCard = React.memo(({
           </div>
         </div>
         <div className="service-card-footer">
-          <button type="button" className="service-card-btn purple-gradient-btn" onClick={onActionClick}>
-            <Icon type="shopping-cart" />
-            {isSelected
-              ? 'Հանել զամբյուղից'
-              : 'Ավելացնել զամբյուղ'}
-          </button>
+          <GradientButton theme="orange" onClick={onClick} iconType="zoom-in" text="Տեսնել Ավելին" />
+          <GradientButton
+            theme="purple"
+            onClick={onActionClick}
+            iconType="heart"
+            iconTheme={isSelected ? 'filled' : 'outlined'}
+            text="Հետաքրքրված եմ"
+          />
         </div>
       </div>
     );

@@ -16,7 +16,7 @@ function ServicesFooter({
       </Button>
       {currentStep !== 4
         ? (
-          <button type="button" onClick={onNext} className="orange-gradient-btn">
+          <button type="button" onClick={onNext} className=" next-btn orange-gradient-btn">
             <span>Հաջորդը</span>
             <Icon type="right" />
           </button>

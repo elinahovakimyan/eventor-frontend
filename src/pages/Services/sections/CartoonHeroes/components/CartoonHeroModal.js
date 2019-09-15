@@ -6,12 +6,19 @@ import { ServiceModal } from 'shared/wrappers';
 
 class CartoonHeroModal extends React.PureComponent {
   render() {
-    const { service, isModalVisible, toggleModal } = this.props;
+    const {
+      service, isModalVisible, toggleModal, toggleService,
+    } = this.props;
     const { title, description } = service;
     const price = service.price ? formatPrice(service.price) : ` սկսած ${formatPrice(service.startingPrice)}`;
 
     return (
-      <ServiceModal imgs={service.carouselImgs} isModalVisible={isModalVisible} toggleModal={toggleModal}>
+      <ServiceModal
+        imgs={service.carouselImgs}
+        isModalVisible={isModalVisible}
+        toggleModal={toggleModal}
+        toggleService={toggleService}
+      >
         <div className="service-content">
 
           <div className="text-center">

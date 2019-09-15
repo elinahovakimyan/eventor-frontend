@@ -7,13 +7,21 @@ import { ServiceModal } from 'shared/wrappers';
 
 class VenueModal extends React.PureComponent {
   render() {
-    const { service, isModalVisible, toggleModal } = this.props;
+    const {
+      service, isModalVisible, toggleModal, toggleService,
+    } = this.props;
     const {
       title, description, minPeople, maxPeople,
     } = service;
 
     return (
-      <ServiceModal imgs={service.carouselImgs} isModalVisible={isModalVisible} toggleModal={toggleModal}>
+      <ServiceModal
+        imgs={service.carouselImgs}
+        isImgLocal={service.imgLocation === 'local'}
+        isModalVisible={isModalVisible}
+        toggleModal={toggleModal}
+        toggleService={toggleService}
+      >
         <div className="service-content">
 
           <div className="text-center">

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { withRouter } from 'react-router-dom';
 
 import { formatPrice } from 'shared/helpers';
 import { ServiceCard } from 'shared/wrappers';
@@ -6,8 +7,21 @@ import { ServiceCard } from 'shared/wrappers';
 import GameShowModal from './GameShowModal';
 
 
-const GameShowCard = React.memo(({ service, isSelected, toggleService }) => {
-  const [isModalVisible, toggleModal] = useState(false);
+const GameShowCard = React.memo(({
+  service, isSelected, toggleService, match, history,
+}) => {
+  const isActiveService = match.params.serviceId ? service.id === Number(match.params.serviceId) : false;
+  const [isModalVisible, toggleModal] = useState(isActiveService);
+
+  const handleModalToggle = () => {
+    if (!isModalVisible) {
+      history.push(`/game_show/service/${service.id}`);
+      toggleModal(true);
+    } else {
+      history.push('/game_show');
+      toggleModal(false);
+    }
+  };
 
   const getCardContent = () => (
     <React.Fragment>
@@ -31,16 +45,21 @@ const GameShowCard = React.memo(({ service, isSelected, toggleService }) => {
     <>
       <ServiceCard
         service={service}
-        onClick={toggleModal}
+        onClick={handleModalToggle}
         onActionClick={() => toggleService(!isSelected)}
         isSelected={isSelected}
       >
         {service.id ? getCardContent() : null}
       </ServiceCard>
 
-      <GameShowModal service={service} isModalVisible={isModalVisible} toggleModal={toggleModal} />
+      <GameShowModal
+        service={service}
+        isModalVisible={isModalVisible}
+        toggleModal={handleModalToggle}
+        toggleService={toggleService}
+      />
     </>
   );
 });
 
-export default GameShowCard;
+export default withRouter(GameShowCard);

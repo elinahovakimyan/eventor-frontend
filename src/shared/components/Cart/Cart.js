@@ -160,7 +160,7 @@ class CartComp extends React.PureComponent {
       <Dropdown overlay={this.getContent()}>
         <Link to="/done" className="card-dropdown-link ant-dropdown-link">
           <Badge count={serviceN}>
-            <Icon type="shopping-cart" />
+            <Icon type="heart" />
           </Badge>
         </Link>
       </Dropdown>

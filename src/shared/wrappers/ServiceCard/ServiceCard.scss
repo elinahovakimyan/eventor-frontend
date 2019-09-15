@@ -42,16 +42,6 @@
 
   .service-card-footer {
     padding: 10px;
-
-    .service-card-btn {
-      margin: 0 auto;
-      display: block;
-      width: 100%;
-
-      i {
-        margin-right: 8px;
-      }
-    }
   }
 
   .price {
@@ -61,6 +51,6 @@
 }
 
 .selected-card {
-  background: #fffaf2 !important;
-  border: 1px solid #631c5f;
+  background: #fafaff !important;
+  border: 1px solid #5d2dbb;
 }
