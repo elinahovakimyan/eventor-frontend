@@ -78,9 +78,22 @@ function Campaign() {
         ? (
           <div>
             <form onSubmit={handleSubmit}>
-              <input required placeholder="Phone number (required)" onChange={(e) => handleChange(e, 'phone')} value={values.phone} />
-              <input placeholder="Your name" onChange={(e) => handleChange(e, 'name')} value={values.name} />
-              <input placeholder="Your child(ren)'s birth dates" onChange={(e) => handleChange(e, 'birthDate')} value={values.birthDate} />
+              <input
+                required
+                placeholder="Phone number (required)"
+                onChange={(e) => handleChange(e, 'phone')}
+                value={values.phone}
+              />
+              <input
+                placeholder="Your name"
+                onChange={(e) => handleChange(e, 'name')}
+                value={values.name}
+              />
+              <input
+                placeholder="Your child(ren)'s birth dates"
+                onChange={(e) => handleChange(e, 'birthDate')}
+                value={values.birthDate}
+              />
 
               <button type="submit">{btnText}</button>
             </form>
