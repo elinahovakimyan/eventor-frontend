@@ -75,11 +75,11 @@ const venues = [
     price: 4000,
     currency: 'AMD',
     carouselImgs: [
-      'https://scontent.fevn1-4.fna.fbcdn.net/v/t1.0-9/64372302_2370841043205539_7378499698492964864_o.jpg?_nc_cat=101&_nc_oc=AQnHYvHFGdaLWjINSHiIc0VpvCbQHJDqPZnXJoQmDyCvrrc3VWzqSr3aTrgUjH0qzgA&_nc_ht=scontent.fevn1-4.fna&oh=7a016968edc41e6763316886c586e50d&oe=5DE43D3F',
-      'https://scontent.fevn1-2.fna.fbcdn.net/v/t1.0-9/67353189_2397851490504494_3829973069720453120_n.jpg?_nc_cat=104&_nc_oc=AQlH4INK39D11SFKVcObKxVqAhVCbcwf6rfzjnTGig5beNybykM5IQFyJHC5VkdSC_Q&_nc_ht=scontent.fevn1-2.fna&oh=c9217debe4e17af88feffe575459920d&oe=5DE56945',
-      'https://scontent.fevn1-2.fna.fbcdn.net/v/t1.0-9/67262292_2397143013908675_241976005030313984_n.jpg?_nc_cat=100&_nc_oc=AQlKZPT3MysIhnoq72FLshA36R3rVc2psqTZNY2hpZ4QPVwHLw4FNsjI84ePBp-zMA4&_nc_ht=scontent.fevn1-2.fna&oh=18d7b8eae37e563ffb1b6c15a861fe9e&oe=5E1379AE',
-      'https://scontent.fevn1-3.fna.fbcdn.net/v/t1.0-9/65834152_2380449912244652_7344126220524584960_o.jpg?_nc_cat=111&_nc_oc=AQndGiTm-8VsS6RD9lXid4JKrg3t2f7Ve6vV3tRvHZD4VqzCA_-pKZ79oqyR9aWv_Fs&_nc_ht=scontent.fevn1-3.fna&oh=3cbcc81ddbed2c64cd9dc7b685ee7e1a&oe=5DCA0E0C',
-      'https://scontent.fevn1-1.fna.fbcdn.net/v/t1.0-9/68466896_2407334586222851_7430176843782684672_n.jpg?_nc_cat=109&_nc_oc=AQn67HVugucGYlhRiR_MVWzrExGIhvOg_lMSl9A1qHxtc_FcJmx_iV32S5QsgkMt4ss&_nc_ht=scontent.fevn1-1.fna&oh=04abbf0e67dcaa8254aa3481ffa26cd8&oe=5DD9FE0C'
+      '/assets/images/services/venues/tangaran_1.jpg',
+      '/assets/images/services/venues/tangaran_2.jpg',
+      '/assets/images/services/venues/tangaran_3.jpg',
+      '/assets/images/services/venues/tangaran_4.jpg',
+      '/assets/images/services/venues/tangaran_5.jpg'
     ],
     entranceFee: null,
     rooms: 1,
@@ -107,12 +107,12 @@ const venues = [
     price: 5000,
     currency: 'AMD',
     carouselImgs: [
-      'http://www.elgarden.am/wp-content/uploads/2017/04/MG_3589.jpg',
-      'http://www.elgarden.am/wp-content/uploads/2017/04/MG_6304.jpg',
-      'http://www.elgarden.am/wp-content/uploads/2017/04/085.jpg',
-      'http://www.elgarden.am/wp-content/uploads/2017/04/MG_3166.jpg',
-      'http://www.elgarden.am/wp-content/uploads/2017/04/MG_3243.jpg',
-      'http://www.elgarden.am/wp-content/uploads/2017/04/MG_3551.jpg'
+      '/assets/images/services/venues/elGarden_1.jpg',
+      '/assets/images/services/venues/elGarden_2.jpg',
+      '/assets/images/services/venues/elGarden_3.jpg',
+      '/assets/images/services/venues/elGarden_4.jpg',
+      '/assets/images/services/venues/elGarden_5.jpg',
+      '/assets/images/services/venues/elGarden_6.jpg'
     ],
     entranceFee: 5000,
     rooms: 1,
@@ -137,11 +137,11 @@ const venues = [
     address: 'Հալաբյան 34/3',
     description: 'Good Time ընտանեկան ժամանցի կենտրոնում Ձեր ընտանիքի յուրաքանչյուր անդամ՝ անկախ տարիքից, այնտեղ կգտնի իրեն հետաքրքիր ժամանցի անկյուն: Կենտրոնում գործում է մանկական սրճարան և մինչև 150 անձի համար նախատեսված միջոցառումների սրահ: Սրահում դուք կարող եք անցկացնել Ձեր և Ձեր փոքրիկի ծննդյան տարեդարձը, կնունքը, ատամհատիկը՝ նշել ցանկացած միջոցառում: Սրահի պարահրապարակում կազմակերպվում են շոու-ծրագրեր, որոնց մասնակցում են կրկեսային արտիստներ, ակրոբատներ, ծաղրածուներ, երգ , պար, բազում ինտերակտիվ խաղեր, որոնց մասնակցում են ինչպես փոքրիկները, այնպես էլ նրանց ծնողները: Կենտրոնը բաղկացած է 5 հարկից, որտեղ տեղակայված են բազմաթիվ խաղեր և ատրակցիոններ ',
     carouselImgs: [
-      'https://live.staticflickr.com/65535/47977212776_718bf82331_k.jpg',
-      'https://live.staticflickr.com/65535/47977214071_378fba9ab4_k.jpg',
-      'https://live.staticflickr.com/65535/47977215426_5a1ff91889_k.jpg',
-      'https://live.staticflickr.com/65535/47977167758_2969f5086c_k.jpg',
-      'https://live.staticflickr.com/65535/47977172353_ec6d68fd3f_k.jpg'
+      '/assets/images/services/venues/goodTime_1.jpg',
+      '/assets/images/services/venues/goodTime_2.jpg',
+      '/assets/images/services/venues/goodTime_3.jpg',
+      '/assets/images/services/venues/goodTime_4.jpg',
+      '/assets/images/services/venues/goodTime_5.jpg'
     ],
     priceRange: '֏֏',
     price: 4000,

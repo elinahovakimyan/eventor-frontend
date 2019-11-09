@@ -121,7 +121,7 @@ const cartoonHeroes = [
     price: 6000,
     providerName: 'Gayluk.am',
     carouselImgs: [
-      'https://scontent.fevn1-1.fna.fbcdn.net/v/t1.0-9/57077638_2264295157118173_9006002698327162880_n.jpg?_nc_cat=109&_nc_ht=scontent.fevn1-1.fna&oh=f66fc2ce1e2e3088dcb081795d810dca&oe=5D9248FA',
+      '/assets/images/services/cartoon_heroes/miki_mouse_1.jpg',
     ],
     priceRange: '֏֏',
   },
@@ -155,7 +155,7 @@ const cartoonHeroes = [
     providerName: 'Gayluk',
     priceRange: '֏֏',
     carouselImgs: [
-      'https://scontent.fevn1-2.fna.fbcdn.net/v/t1.0-9/27973087_2016102531937438_949893962218463143_n.jpg?_nc_cat=100&_nc_ht=scontent.fevn1-2.fna&oh=f37d9a111b68159cb28d0c846da8144c&oe=5D90F398',
+      '/assets/images/services/cartoon_heroes/parek_shunik_1.jpg',
     ],
   },
   {
@@ -166,7 +166,8 @@ const cartoonHeroes = [
     providerName: 'Gayluk․am',
     priceRange: '֏֏',
     carouselImgs: [
-      'https://scontent.fevn1-3.fna.fbcdn.net/v/t31.0-8/28699106_2024951114385913_3106791073345730684_o.jpg?_nc_cat=111&_nc_ht=scontent.fevn1-3.fna&oh=d42ccdd0a83cbf4a2add9fba2aab0f96&oe=5D897160',
+      '/assets/images/services/cartoon_heroes/sard_mard_1.jpg',
+      '/assets/images/services/cartoon_heroes/sard_mard_2.jpg',
     ],
   },
   {
