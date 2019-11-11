@@ -34,23 +34,23 @@ export const categories = [
     type: DECORATION,
     label: 'Ձևավորում',
   },
-  // {
-  //   key: 5,
-  //   type: CAKE,
-  //   label: 'Թխվածք',
-  // },
-  // {
-  //   key: 6,
-  //   type: PHOTOGRAPHER,
-  //   label: 'Լուսանկարիչ',
-  // },
+  {
+    key: 5,
+    type: CAKE,
+    label: 'Թխվածք',
+  },
+  {
+    key: 6,
+    type: PHOTOGRAPHER,
+    label: 'Լուսանկարիչ',
+  },
 ];
 
 
 export const categorySteps = [
   ...categories,
   {
-    key: 4,
+    key: 7,
     type: DONE,
     label: 'Հաստատել',
   },
