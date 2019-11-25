@@ -1,6 +1,40 @@
 /* eslint-disable */
 const venues = [
   {
+    id: 1,
+    title: 'BeeForce VR Cafe',
+    address: 'Արամի 4/3',
+    description: 'Վիրտուալ իրականության նոր հասցե`սուր զգացողությունների և ակտիվ ժամանցի սիրահարների համար։ Այստեղ կարող եք խաղալ բազում հետաքրքիր խաղեր՝ զգալով վիրտուալ աշխարհի հզորությունը։ BeeForce VR Cafe-ն աշխատանքային ժամերն են 10:00-00:00։ Գինը որոշվում է ըստ խաղի ժամանակի. 15րոպե - 2000դրամ, 30րոպե - 3000դրամ, 1ժամ - 5000դրամ։',
+    priceRange: '֏֏',
+    price: null,
+    currency: 'AMD',
+    carouselImgs: [
+      '/assets/images/services/venues/beeforce_1.jpg',      
+      '/assets/images/services/venues/beeforce_2.jpg',      
+      '/assets/images/services/venues/beeforce_3.jpg',      
+      '/assets/images/services/venues/beeforce_4.jpg',      
+      '/assets/images/services/venues/beeforce_5.jpg',      
+      '/assets/images/services/venues/beeforce_6.jpg',      
+      '/assets/images/services/venues/beeforce_7.jpg',      
+      '/assets/images/services/venues/beeforce_8.jpg',      
+    ],
+    rooms: 1,
+    minPeople: 1,
+    maxPeople: 15,
+    details: {
+      wifi: true,
+      vegetarian: true,
+      parking: false,
+      danceMusic: true,
+      creditCard: true,
+      DJ: false,
+      gamingMachines: false,
+      VIProom: true,
+      indoor: true,
+      outdoor: false,
+    }
+  },
+  {
     id: 3,
     title: '4teen Cafe and Restaurant',
     address: 'Չարենց 22',
@@ -308,7 +342,7 @@ const venues = [
     ]
   },
   {
-    id: 1,
+    id: 11,
     title: 'Փոքրիկ Էյնշտեյն',
     address: 'Կոմիտաս 40/2',
     description: 'Փոքրիկ Էյնշտեյն գիտության թանգարանը Ձեր երեխայի ծննդյան տոնը յուրօրինակ, բովանդակային ու հետաքրքիր նշելու հիանալի տարբերակ է։\n' +
