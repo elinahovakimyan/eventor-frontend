@@ -6,7 +6,7 @@ import './Campaign.scss';
 
 function Campaign() {
   const [isFormOpen, toggleOpen] = useState(false);
-  const [backers, updateBackers] = useState(21);
+  const [backers, updateBackers] = useState(54);
   const [values, updateValues] = useState({});
   const [btnText, changeBtnText] = useState('Submit');
 
