@@ -9,14 +9,14 @@ const venues = [
     price: null,
     currency: 'AMD',
     carouselImgs: [
-      '/assets/images/services/venues/beeforce_1.jpg',      
-      '/assets/images/services/venues/beeforce_2.jpg',      
-      '/assets/images/services/venues/beeforce_3.jpg',      
-      '/assets/images/services/venues/beeforce_4.jpg',      
-      '/assets/images/services/venues/beeforce_5.jpg',      
-      '/assets/images/services/venues/beeforce_6.jpg',      
-      '/assets/images/services/venues/beeforce_7.jpg',      
-      '/assets/images/services/venues/beeforce_8.jpg',      
+      '/assets/images/services/venues/beeforce_1.jpg',
+      '/assets/images/services/venues/beeforce_2.jpg',
+      '/assets/images/services/venues/beeforce_3.jpg',
+      '/assets/images/services/venues/beeforce_4.jpg',
+      '/assets/images/services/venues/beeforce_5.jpg',
+      '/assets/images/services/venues/beeforce_6.jpg',
+      '/assets/images/services/venues/beeforce_7.jpg',
+      '/assets/images/services/venues/beeforce_8.jpg',
     ],
     rooms: 1,
     minPeople: 1,
@@ -35,6 +35,101 @@ const venues = [
     }
   },
   {
+    id: 10,
+    title: 'CITYZEN',
+    address: 'Աճառյան 35',
+    description: 'CITYZEN-ը մասնագիտությունների մանկական քաղաք է, ուր կան փողոցներ, շենքեր, հրապարակ, ինչպես նաև բոլոր քաղաքներին բնորոշ ենթակառուցվածքներ՝ հիվանդանոց, գեղեցկության սրահ եւ հրշեջ կայան։ CITYZEN-ում երեխաները ինքնուրույն են որոշում, թե ինչ հաստատություն այցելել, ինչ մասնագիտությամբ աշխատել, ինչպես վաստակել կամ ծախսել գումար։ CITYZEN-ն անվտանգ կրթական և խաղային միջավայր է, որտեղ երեխան ստանում է նոր գիտելիքներ, փորձ, վառ տպավորություններ և ինքնուրույն լինելու հնարավորություն։',
+    priceRange: '֏֏֏',
+    entranceFee: '6000-10000',
+    price: 6000,
+    currency: 'AMD',
+    carouselImgs: [
+      '/assets/images/services/venues/cityzen_1.jpg',
+      '/assets/images/services/venues/cityzen_2.jpg',
+      '/assets/images/services/venues/cityzen_3.jpg',
+      '/assets/images/services/venues/cityzen_4.jpg',
+      '/assets/images/services/venues/cityzen_5.jpg',
+      '/assets/images/services/venues/cityzen_6.jpg',
+      '/assets/images/services/venues/cityzen_7.jpg',
+      '/assets/images/services/venues/cityzen_8.jpg',
+    ],
+    rooms: 3,
+    minPeople: 20,
+    maxPeople: 80,
+    details: {
+      wifi: true,
+      vegetarian: true,
+      parking: true,
+      danceMusic: true,
+      creditCard: true,
+      DJ: true,
+      gamingMachines: false,
+      VIProom: true,
+      indoor: true,
+      outdoor: false,
+    }
+  },
+  {
+    id: 12,
+    title: 'Charlisa',
+    address: 'Աբովյան 7/4',
+    description: 'Այստեղ փոքրիկները ունեն իրենց համար հարմարավետ մանկական անկյուն՝ տարատեսակ մանկական խաղերով և գույնզգույն խաղալիքներով: Շառլիզայում կա սնվելու համար համեղ մանկական մենյու, ինչպես նաև բարեհամբույր դայակ, ով իր հոգատարությամբ և ջերմությամբ բալիկների հետ անցկացնում է ժամանակ:',
+    priceRange: '֏֏',
+    price: 5000,
+    currency: 'AMD',
+    carouselImgs: [
+      '/assets/images/services/venues/charlisa_1.jpg',
+      '/assets/images/services/venues/charlisa_2.jpg',
+      '/assets/images/services/venues/charlisa_3.JPG',
+      '/assets/images/services/venues/charlisa_4.png'
+    ],
+    rooms: 1,
+    minPeople: 1,
+    maxPeople: 70,
+    details: {
+      wifi: true,
+      vegetarian: true,
+      parking: true,
+      danceMusic: false,
+      creditCard: true,
+      DJ: false,
+      gamingMachines: false,
+      VIProom: false,
+      indoor: true,
+      outdoor: false,
+    }
+  },
+  {
+    id: 13,
+    title: 'Terracotta Studio',
+    address: 'Սարյան 23, Տերյան 62, Հակոբյան 1',
+    description: 'Terracotta Studio-ն մի վայր է, որտեղ դուք կարող եք սովորել արվեստագործություն և արհեստագործություն: Երեխաները և մեծահասակները մասնակցում են տարբեր ծրագրերի: Terracotta Studio-ն կազմակերպում է մաստեր կլասեր, ցուցադրություններ և ցուցահանդեսներ:',
+    priceRange: '֏֏',
+    price: 1500,
+    currency: 'AMD',
+    carouselImgs: [
+      '/assets/images/services/venues/terracota_1.JPG',
+      '/assets/images/services/venues/terracota_2.JPG',
+      '/assets/images/services/venues/terracota_3.JPG',
+      '/assets/images/services/venues/terracota_4.JPG'
+    ],
+    rooms: 3,
+    minPeople: 1,
+    maxPeople: 30,
+    details: {
+      wifi: false,
+      vegetarian: true,
+      parking: true,
+      danceMusic: true,
+      creditCard: false,
+      DJ: true,
+      gamingMachines: false,
+      VIProom: true,
+      indoor: true,
+      outdoor: false,
+    }
+  },
+  {
     id: 3,
     title: '4teen Cafe and Restaurant',
     address: 'Չարենց 22',
@@ -43,14 +138,14 @@ const venues = [
     price: 10000,
     currency: 'AMD',
     carouselImgs: [
-      '/assets/images/services/venues/4teen_1.jpg',      
-      '/assets/images/services/venues/4teen_2.jpg',      
-      '/assets/images/services/venues/4teen_3.jpg',      
-      '/assets/images/services/venues/4teen_4.jpg',      
-      '/assets/images/services/venues/4teen_5.jpg',      
-      '/assets/images/services/venues/4teen_6.jpg',      
-      '/assets/images/services/venues/4teen_7.jpg',      
-      '/assets/images/services/venues/4teen_8.jpg',      
+      '/assets/images/services/venues/4teen_1.jpg',
+      '/assets/images/services/venues/4teen_2.jpg',
+      '/assets/images/services/venues/4teen_3.jpg',
+      '/assets/images/services/venues/4teen_4.jpg',
+      '/assets/images/services/venues/4teen_5.jpg',
+      '/assets/images/services/venues/4teen_6.jpg',
+      '/assets/images/services/venues/4teen_7.jpg',
+      '/assets/images/services/venues/4teen_8.jpg',
     ],
     entranceFee: 5000,
     rooms: 2,
@@ -78,10 +173,10 @@ const venues = [
     price: null,
     currency: 'AMD',
     carouselImgs: [
-      '/assets/images/services/venues/draxt_1.jpg',      
-      '/assets/images/services/venues/draxt_2.jpg',      
-      '/assets/images/services/venues/draxt_3.jpg',      
-      '/assets/images/services/venues/draxt_4.jpg',      
+      '/assets/images/services/venues/draxt_1.jpg',
+      '/assets/images/services/venues/draxt_2.jpg',
+      '/assets/images/services/venues/draxt_3.jpg',
+      '/assets/images/services/venues/draxt_4.jpg',
     ],
     entranceFee: null,
     rooms: 7,
@@ -131,12 +226,12 @@ const venues = [
       indoor: false,
       outdoor: true,
     }
-   },
-   {
+  },
+  {
     id: 7,
     title: 'El Garden Kids Zone',
     address: 'Ծիծեռնակաբերդի 8, Երևան, Հայաստան',
-    description: 'Եթե սիրում եք բնությունը և նախընտրում եք բնության գրկում վայելել համեղ ճաշատեսակներ ու խմիչքներ, ապա EL Garden-ը Ձեր ցանկացած վայրն է:' + '&#10;' + 'Կանաչապատ տարածք, թափանցիկ վրաններ,ծառերից կախված ճոճանակներ, սրճարանի ողջ տարածքով ազատ շրջող բադեր ու նապաստակներ,բարեհամբույր սպասարկում, հարուստ ճաշացանկ և, իհարկե, մաքուր օդ։ Ահա այն հակիրճ ցանկը, որը կարող է բնութագրել EL Garden-ը։ Անվանումն արդեն հուշում է իր գաղափարի մասին, սակայն հաճելիորեն կզարմանաք, երբ ինքներդ մոտենաք այգուն։ Այն գեղեցիկ է տարվա բոլոր եղանակներին։ Հատուկ երեխաների համար առանձնացված Kids Zone֊ում կա փոքրիկ ֆերմա և խաղահրապարակ, որտեղ կարող եք կազմակերպել Ձեր երեխայի ամենակարևոր միջոցառումները։ Kids Zone-ում Ժամը 7֊ից սկսվում է ակտիվ և ուրախ շոու ծրագիրը։ 1.5 ժամ տևողությամբ շոու ծրագիրը իր մեջ ներառում է կարաոկե, ամենաընկերասեր և պրոֆեսիոնալ խաղավարների հետ պարային և թիմային խաղեր, ինչպես նաև թեժ դիսկո որակյալ և ժամանակակից երաժշտության ներքո։ Մինչև 3 տարեկան երեխաներին հոգ կտանեն տարածքում աշխատող հոգատար դայակները, ովքեր կզբոսնեն տարածքում և կհետևեն Ձեր երեխային։ Այս ծառայության մեկ ժամի արժեքը 1000 դրամ է։' + '&#10;' + 'EL Garden-ը այլընտրանքային ժամանցի վայր է Երևանում, որը գտնվում է Համալիրի ետնամասում։ Եթե զբոսնելու ցանկություն ունեք, ապա կարող եք բարձրանալ ոտքով, իսկ եթե նախընտրում եք մեքենայով բարձրանալ, ապա մոտեցեք Ծիծեռնակաբերդի խճուղու կողմից:' + '&#10;' +'EL Garden-ն ունի բավական մեծ ավտոկայանատեղի, ինչի շնորհիվ Դուք կարող եք չմտահոգվել Ձեր մեքենայի անվտանգության համար:',
+    description: 'Եթե սիրում եք բնությունը և նախընտրում եք բնության գրկում վայելել համեղ ճաշատեսակներ ու խմիչքներ, ապա EL Garden-ը Ձեր ցանկացած վայրն է:' + '&#10;' + 'Կանաչապատ տարածք, թափանցիկ վրաններ,ծառերից կախված ճոճանակներ, սրճարանի ողջ տարածքով ազատ շրջող բադեր ու նապաստակներ,բարեհամբույր սպասարկում, հարուստ ճաշացանկ և, իհարկե, մաքուր օդ։ Ահա այն հակիրճ ցանկը, որը կարող է բնութագրել EL Garden-ը։ Անվանումն արդեն հուշում է իր գաղափարի մասին, սակայն հաճելիորեն կզարմանաք, երբ ինքներդ մոտենաք այգուն։ Այն գեղեցիկ է տարվա բոլոր եղանակներին։ Հատուկ երեխաների համար առանձնացված Kids Zone֊ում կա փոքրիկ ֆերմա և խաղահրապարակ, որտեղ կարող եք կազմակերպել Ձեր երեխայի ամենակարևոր միջոցառումները։ Kids Zone-ում Ժամը 7֊ից սկսվում է ակտիվ և ուրախ շոու ծրագիրը։ 1.5 ժամ տևողությամբ շոու ծրագիրը իր մեջ ներառում է կարաոկե, ամենաընկերասեր և պրոֆեսիոնալ խաղավարների հետ պարային և թիմային խաղեր, ինչպես նաև թեժ դիսկո որակյալ և ժամանակակից երաժշտության ներքո։ Մինչև 3 տարեկան երեխաներին հոգ կտանեն տարածքում աշխատող հոգատար դայակները, ովքեր կզբոսնեն տարածքում և կհետևեն Ձեր երեխային։ Այս ծառայության մեկ ժամի արժեքը 1000 դրամ է։' + '&#10;' + 'EL Garden-ը այլընտրանքային ժամանցի վայր է Երևանում, որը գտնվում է Համալիրի ետնամասում։ Եթե զբոսնելու ցանկություն ունեք, ապա կարող եք բարձրանալ ոտքով, իսկ եթե նախընտրում եք մեքենայով բարձրանալ, ապա մոտեցեք Ծիծեռնակաբերդի խճուղու կողմից:' + '&#10;' + 'EL Garden-ն ունի բավական մեծ ավտոկայանատեղի, ինչի շնորհիվ Դուք կարող եք չմտահոգվել Ձեր մեքենայի անվտանգության համար:',
     priceRange: '֏֏Դ',
     price: 5000,
     currency: 'AMD',
@@ -346,15 +441,15 @@ const venues = [
     title: 'Փոքրիկ Էյնշտեյն',
     address: 'Կոմիտաս 40/2',
     description: 'Փոքրիկ Էյնշտեյն գիտության թանգարանը Ձեր երեխայի ծննդյան տոնը յուրօրինակ, բովանդակային ու հետաքրքիր նշելու հիանալի տարբերակ է։\n' +
-        'Թանգանարում ցուցադրված են ավելի քան 35 ցուցանմուշ ֆիզիկայի տարբեր բնագավառներից, որոնց հետ կապված անցկացվում է էքսկուրսիա, բացատրվում հիմքում ընկած գիտությունը՝ տարիքային խմբին համապատասխան, ստեղծվում ենք կապ, թե տվյալ երևույթը մեր կյանքում որտեղ է հանդիպում, ինչպես ենք կիրառում: \n' +
-        'Նախապես ստանալով գիդի ցուցումները՝ էքսկուրսիայից հետո այցելուները անձամբ փորձարկում են բոլոր ցուցանմուշները:\n' +
-        '\n' +
-        'Ծննդյան տոնի տևողությունը կազմում է 2 ժամից մինչև 3-3.5 ժամ, որն իր մեջ ներառում է.\n' +
-        '\n' +
-        '1. Ինտերակտիվ գիտության թանգարանի ծառայությունը։\n' +
-        '2. Սնունդ\n' +
-        '3. Տորթի արարողություն​\n' +
-        '4. Շոու ծրագիր\n',
+      'Թանգանարում ցուցադրված են ավելի քան 35 ցուցանմուշ ֆիզիկայի տարբեր բնագավառներից, որոնց հետ կապված անցկացվում է էքսկուրսիա, բացատրվում հիմքում ընկած գիտությունը՝ տարիքային խմբին համապատասխան, ստեղծվում ենք կապ, թե տվյալ երևույթը մեր կյանքում որտեղ է հանդիպում, ինչպես ենք կիրառում: \n' +
+      'Նախապես ստանալով գիդի ցուցումները՝ էքսկուրսիայից հետո այցելուները անձամբ փորձարկում են բոլոր ցուցանմուշները:\n' +
+      '\n' +
+      'Ծննդյան տոնի տևողությունը կազմում է 2 ժամից մինչև 3-3.5 ժամ, որն իր մեջ ներառում է.\n' +
+      '\n' +
+      '1. Ինտերակտիվ գիտության թանգարանի ծառայությունը։\n' +
+      '2. Սնունդ\n' +
+      '3. Տորթի արարողություն​\n' +
+      '4. Շոու ծրագիր\n',
     priceRange: '֏֏',
     price: null,
     currency: 'AMD',
@@ -793,37 +888,37 @@ const venues = [
   //     outdoor: true,
   //   }
   // },
-  {
-    id: 6,
-    title: 'Lady Sunbathe Zone',
-    address: 'Տիգրան Մեծ 16',
-    description: 'Lady Sunbath Zone-ը միայն կանանց ու երեխաների համար նախատեսված ամառային ժամանցի վայր է, որտեղ կարելի է երեխաների հետ լավ ժամանակ անցկացնել, լողալ, արևայրուք ընդունել, օգտվել կից սրճարանից և իհարկե նշել ձեր երեխայի ծնունդը ամենաամառային և տարբերվող պայմաններում։ Տարածքում չկան սուր ծայրերով առարկաներ, մաքսիմալ փակ է ամբողջ տարածքը: Մի խոսքով այստեղ մաքսիմալ ապահովված է երեխաների անվտանգությունը։ Ավելին՝ Lady sunbathe zone-ում կա նաև դայակ, ով հետևում է երեխաներին։',
-    priceRange: '֏֏',
-    price: 4000,
-    currency: 'AMD',
-    carouselImgs: [
-      '/assets/images/services/venues/sunbathe_3.jpg',
-      '/assets/images/services/venues/sunbathe_2.jpg',
-      '/assets/images/services/venues/sunbathe_4.jpg',
-      '/assets/images/services/venues/sunbathe_5.jpg',
-    ],
-    entranceFee: null,
-    rooms: 1,
-    minPeople: 1,
-    maxPeople: 100,
-    details: {
-      wifi: true,
-      vegetarian: true,
-      parking: true,
-      danceMusic: true,
-      creditCard: false,
-      DJ: false,
-      gamingMachines: false,
-      VIProom: false,
-      indoor: false,
-      outdoor: true,
-    }
-  },
+  // {
+  //   id: 6,
+  //   title: 'Lady Sunbathe Zone',
+  //   address: 'Տիգրան Մեծ 16',
+  //   description: 'Lady Sunbath Zone-ը միայն կանանց ու երեխաների համար նախատեսված ամառային ժամանցի վայր է, որտեղ կարելի է երեխաների հետ լավ ժամանակ անցկացնել, լողալ, արևայրուք ընդունել, օգտվել կից սրճարանից և իհարկե նշել ձեր երեխայի ծնունդը ամենաամառային և տարբերվող պայմաններում։ Տարածքում չկան սուր ծայրերով առարկաներ, մաքսիմալ փակ է ամբողջ տարածքը: Մի խոսքով այստեղ մաքսիմալ ապահովված է երեխաների անվտանգությունը։ Ավելին՝ Lady sunbathe zone-ում կա նաև դայակ, ով հետևում է երեխաներին։',
+  //   priceRange: '֏֏',
+  //   price: 4000,
+  //   currency: 'AMD',
+  //   carouselImgs: [
+  //     '/assets/images/services/venues/sunbathe_3.jpg',
+  //     '/assets/images/services/venues/sunbathe_2.jpg',
+  //     '/assets/images/services/venues/sunbathe_4.jpg',
+  //     '/assets/images/services/venues/sunbathe_5.jpg',
+  //   ],
+  //   entranceFee: null,
+  //   rooms: 1,
+  //   minPeople: 1,
+  //   maxPeople: 100,
+  //   details: {
+  //     wifi: true,
+  //     vegetarian: true,
+  //     parking: true,
+  //     danceMusic: true,
+  //     creditCard: false,
+  //     DJ: false,
+  //     gamingMachines: false,
+  //     VIProom: false,
+  //     indoor: false,
+  //     outdoor: true,
+  //   }
+  // },
   {
     id: 4,
     title: 'Pioneer Brazilian Restaurant',

@@ -15,7 +15,6 @@ import {
 } from 'store/getters';
 
 import './Cart.scss';
-import { selectPhotography } from '../../../store/actions';
 
 
 class CartComp extends React.PureComponent {

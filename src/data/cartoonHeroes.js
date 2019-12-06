@@ -1,6 +1,59 @@
 /* eslint-disable */
 const cartoonHeroes = [
   {
+    id: 37,
+    title: 'Ձմեռ Պապիկ',
+    duration: 0.5,
+    startingPrice: 15000,
+    carouselImgs: [
+      '/assets/images/services/cartoon_heroes/gayluk_santa_1.jpg',
+      '/assets/images/services/cartoon_heroes/gayluk_santa_2.jpg',
+      '/assets/images/services/cartoon_heroes/gayluk_santa_3.jpg',
+    ],
+    description: 'Մինչև դեկտեմբերի 31֊ը այցելությունն արժե 20,000 դրամ։ Դեկտեմբերի 31֊ի գնացուցակ՝ մինչ 17։00 ֊ 15,000 դրամ, 18։00֊20։00՝ 20,000 դրամ, 22։00֊23։00՝ 30000 դրամ, ուղիղ 0։00֊ին՝ 50,000 դրամ և դրանից հետո նորից 30,000 դրամ։',
+    providerName: 'Gayluk.am',
+    priceRange: '֏֏',
+  },
+  {
+    id: 38,
+    title: 'Ձմեռ Պապիկ',
+    duration: 0.4,
+    startingPrice: 20000,
+    carouselImgs: [
+      '/assets/images/services/cartoon_heroes/erazanq_santa_1.jpg',
+      '/assets/images/services/cartoon_heroes/erazanq_santa_2.jpg'
+    ],
+    description: 'Մինչև դեկտեմբերի 31-ին ժամը 22։30 այցելության արժեքը 20,000 դրամ է։ Դեկտեմբերի 31-ին 22։30-1։30 այցելության արժեքը 40,000 դրամ է։ Այցելության տևողությունը՝ 25 րոպե։ ',
+    providerName: 'Երազանք թատերախումբ',
+    priceRange: '֏֏',
+  },
+  {
+    id: 39,
+    title: 'Ձմեռ Պապիկ',
+    duration: 0.5,
+    startingPrice: 20000,
+    carouselImgs: [
+      '/assets/images/services/cartoon_heroes/adventurebus_santa_1.jpg'
+    ],
+    description: 'Զրույց և խաղեր Ձմեռ Պապիկի և Էլֆի հետ։ Մինչև դեկտեմբերի 31-ը այցելության տևողությունը՝ 30 րոպե, արժեքը՝ 20․000 դրամ։ Դեկտեմբերի 31֊ի գնացուցակ՝ մինչև 18։00՝ 25․000 դրամ, 18։00-20։00՝ 30․000 դրամ, 20։00-22։00՝ 35․000 դրամ, 22։00-ից հետո՝ 50․000 դրամ։',
+    providerName: 'Adventure Bus',
+    priceRange: '֏֏',
+  },
+  {
+    id: 40,
+    title: 'էլֆ',
+    duration: 1.5,
+    price: 15000,
+    carouselImgs: [
+      '/assets/images/services/cartoon_heroes/adventurebus_elf_2.jpg',
+      '/assets/images/services/cartoon_heroes/adventurebus_elf_3.jpg',
+      '/assets/images/services/cartoon_heroes/adventurebus_elf_1.jpg'
+    ],
+    description: 'Ծրագրում ինտելեկտուալ, ժամանցային, տոնական և ամանօրյա խաղեր։',
+    providerName: 'Adventure Bus',
+    priceRange: '֏֏',
+  },
+  {
     id: 1,
     title: 'Տրանսֆորմեր Բամբլբի',
     duration: 0.5,
@@ -227,7 +280,7 @@ const cartoonHeroes = [
     carouselImgs: [
       'https://scontent.fevn1-2.fna.fbcdn.net/v/t45.5328-0/p180x540/69333860_2516195465082712_7864300996917198848_n.jpg?_nc_cat=103&_nc_oc=AQkCPk7oqdqFYWO8qjCGBKYwfIW7HgphYTbRox1WYJBzL-EryURfWO5wTgGlv9jTFuE&_nc_ht=scontent.fevn1-2.fna&oh=ff878a01de0eacd89c4461eec2ece24a&oe=5E0488F3',
       'https://scontent.fevn1-1.fna.fbcdn.net/v/t1.15752-9/69464972_488781621855014_915794960035348480_n.png?_nc_cat=102&_nc_oc=AQm2ETtVZ0P2S8a7Ps5UlCCdfqxtSlNpPUMg4-lclPeERFIAXWAE_xa_4Vu5ETJc2Cs&_nc_ht=scontent.fevn1-1.fna&oh=d4ed3a1ad74b02d5d0fa9ba482d19265&oe=5E095E56',
-      'https://scontent.fevn1-4.fna.fbcdn.net/v/t1.0-0/c0.0.200.200a/p200x200/44250838_1880075858694696_2642858342627672064_n.jpg?_nc_cat=107&_nc_oc=AQk6XvhSTMN6AT0IjSw_4-peKe7E1rd7ngbz1eGLb9StBu_-fVSyDYKjEJ-ty3qLXco&_nc_ht=scontent.fevn1-4.fna&oh=5227cd16363f59e8aa15ccd666e9d317&oe=5DD6D50D',        ],
+      'https://scontent.fevn1-4.fna.fbcdn.net/v/t1.0-0/c0.0.200.200a/p200x200/44250838_1880075858694696_2642858342627672064_n.jpg?_nc_cat=107&_nc_oc=AQk6XvhSTMN6AT0IjSw_4-peKe7E1rd7ngbz1eGLb9StBu_-fVSyDYKjEJ-ty3qLXco&_nc_ht=scontent.fevn1-4.fna&oh=5227cd16363f59e8aa15ccd666e9d317&oe=5DD6D50D',],
   },
   {
     id: 21,
@@ -259,7 +312,7 @@ const cartoonHeroes = [
     providerName: 'Երազանք թատերախումբ',
     priceRange: '֏֏',
     carouselImgs: [
-        'https://scontent.fevn1-3.fna.fbcdn.net/v/t45.5328-0/p180x540/69149285_2922444517782581_6943927941046730752_n.jpg?_nc_cat=111&_nc_oc=AQmGjwANj77lUpauMHJbI6qigP1m4meQF3RW0jILTyASNJBm-BNEO5KehaW7b5kXNQA&_nc_ht=scontent.fevn1-3.fna&oh=0eb7718a796dcce41e2f7a24869d7af8&oe=5DC81744',
+      'https://scontent.fevn1-3.fna.fbcdn.net/v/t45.5328-0/p180x540/69149285_2922444517782581_6943927941046730752_n.jpg?_nc_cat=111&_nc_oc=AQmGjwANj77lUpauMHJbI6qigP1m4meQF3RW0jILTyASNJBm-BNEO5KehaW7b5kXNQA&_nc_ht=scontent.fevn1-3.fna&oh=0eb7718a796dcce41e2f7a24869d7af8&oe=5DC81744',
     ],
   },
   {
@@ -270,8 +323,8 @@ const cartoonHeroes = [
     providerName: 'Երազանք թատերախումբ',
     priceRange: '֏֏',
     carouselImgs: [
-         'https://scontent.fevn1-2.fna.fbcdn.net/v/t45.5328-0/p180x540/68726674_2562508603806503_3840592226035957760_n.jpg?_nc_cat=105&_nc_oc=AQkr1qqn6is_VPdDrNpsFJ3iH9CJYFzzuso8PjyR3KdvhjShQerE51y1EfRWQ5YLimQ&_nc_ht=scontent.fevn1-2.fna&oh=55bb64b121ade273e14fc8d4efecebbb&oe=5E00CA54',
-         'https://scontent.fevn1-3.fna.fbcdn.net/v/t1.0-9/69134996_2330953213606956_7605415039922601984_n.jpg?_nc_cat=111&_nc_oc=AQmQQ2SnHRxMvW1Hu39ta0owKy091cdxMtdRChWSFublGBslt6ECVY_VHevRM_MuiaM&_nc_ht=scontent.fevn1-3.fna&oh=0fad386675b01b989d993c05bb0d5afa&oe=5DC8E53D',
+      'https://scontent.fevn1-2.fna.fbcdn.net/v/t45.5328-0/p180x540/68726674_2562508603806503_3840592226035957760_n.jpg?_nc_cat=105&_nc_oc=AQkr1qqn6is_VPdDrNpsFJ3iH9CJYFzzuso8PjyR3KdvhjShQerE51y1EfRWQ5YLimQ&_nc_ht=scontent.fevn1-2.fna&oh=55bb64b121ade273e14fc8d4efecebbb&oe=5E00CA54',
+      'https://scontent.fevn1-3.fna.fbcdn.net/v/t1.0-9/69134996_2330953213606956_7605415039922601984_n.jpg?_nc_cat=111&_nc_oc=AQmQQ2SnHRxMvW1Hu39ta0owKy091cdxMtdRChWSFublGBslt6ECVY_VHevRM_MuiaM&_nc_ht=scontent.fevn1-3.fna&oh=0fad386675b01b989d993c05bb0d5afa&oe=5DC8E53D',
     ],
   },
   {
@@ -282,7 +335,7 @@ const cartoonHeroes = [
     providerName: 'Երազանք թատերախումբ',
     priceRange: '֏֏',
     carouselImgs: [
-         'https://scontent.fevn1-1.fna.fbcdn.net/v/t45.5328-0/p180x540/69653306_2481438301899215_628720127654756352_n.jpg?_nc_cat=110&_nc_oc=AQmf9QgSnQGezqz5KEz_M4ACzWc1Bl8yby1Dj9mKIr3kaurLENyfEpf4Wfk66njfG58&_nc_ht=scontent.fevn1-1.fna&oh=b5695ecd7d42371ea2eabe20758300ea&oe=5E00FC01',
+      'https://scontent.fevn1-1.fna.fbcdn.net/v/t45.5328-0/p180x540/69653306_2481438301899215_628720127654756352_n.jpg?_nc_cat=110&_nc_oc=AQmf9QgSnQGezqz5KEz_M4ACzWc1Bl8yby1Dj9mKIr3kaurLENyfEpf4Wfk66njfG58&_nc_ht=scontent.fevn1-1.fna&oh=b5695ecd7d42371ea2eabe20758300ea&oe=5E00FC01',
     ],
   },
   {
@@ -293,7 +346,7 @@ const cartoonHeroes = [
     providerName: 'Երազանք թատերախումբ',
     priceRange: '֏֏',
     carouselImgs: [
-          'https://scontent.fevn1-1.fna.fbcdn.net/v/t45.5328-0/p180x540/69590762_2350338348346700_5121106243955458048_n.jpg?_nc_cat=109&_nc_oc=AQlhCGXk0-eFN2cSsotNgKmjIK-DJuaX-SzGGMvdwEOVIvzSrax7zk-7b6vaoabtWrc&_nc_ht=scontent.fevn1-1.fna&oh=d3cd98111705f75b004074e41735ea29&oe=5DD693FF',
+      'https://scontent.fevn1-1.fna.fbcdn.net/v/t45.5328-0/p180x540/69590762_2350338348346700_5121106243955458048_n.jpg?_nc_cat=109&_nc_oc=AQlhCGXk0-eFN2cSsotNgKmjIK-DJuaX-SzGGMvdwEOVIvzSrax7zk-7b6vaoabtWrc&_nc_ht=scontent.fevn1-1.fna&oh=d3cd98111705f75b004074e41735ea29&oe=5DD693FF',
     ],
   },
   {
@@ -304,7 +357,7 @@ const cartoonHeroes = [
     providerName: 'Երազանք թատերախումբ',
     priceRange: '֏֏',
     carouselImgs: [
-          'https://scontent.fevn1-2.fna.fbcdn.net/v/t45.5328-0/p180x540/69599240_3183281428379495_8572214085217681408_n.jpg?_nc_cat=105&_nc_oc=AQmhz0rittrOx58N1Npi_2mZdTaqZvDkTPA9PCp6ZzGWRdXKboUnngdiRI9u6ANZ3Uk&_nc_ht=scontent.fevn1-2.fna&oh=689f3045812360452cf7518c25472227&oe=5DCE2D2F',
+      'https://scontent.fevn1-2.fna.fbcdn.net/v/t45.5328-0/p180x540/69599240_3183281428379495_8572214085217681408_n.jpg?_nc_cat=105&_nc_oc=AQmhz0rittrOx58N1Npi_2mZdTaqZvDkTPA9PCp6ZzGWRdXKboUnngdiRI9u6ANZ3Uk&_nc_ht=scontent.fevn1-2.fna&oh=689f3045812360452cf7518c25472227&oe=5DCE2D2F',
     ],
   },
   {
@@ -315,8 +368,8 @@ const cartoonHeroes = [
     providerName: 'Երազանք թատերախումբ',
     priceRange: '֏֏',
     carouselImgs: [
-         'https://scontent.fevn1-1.fna.fbcdn.net/v/t45.5328-0/p180x540/69654768_2932624590141171_7609432608165855232_n.jpg?_nc_cat=102&_nc_oc=AQlXXhGd4jQ3xOFgXx_U8k9U_D2lMEOtNs51TgYw4tzeQsiyLRHmrYcHPjj-oVAuX5k&_nc_ht=scontent.fevn1-1.fna&oh=e8f0ee1a4a6899bf1770c22d182bef76&oe=5DFF4B4D',
-         'https://scontent.fevn1-2.fna.fbcdn.net/v/t1.0-9/67890256_2321651544537123_7537066854519406592_n.jpg?_nc_cat=103&_nc_oc=AQntqv6KTlzzw29etvinahy5iXBdwfKE0IZyt5cYWLWmBc3QEjMtrW5_1NNVSFRDvQc&_nc_ht=scontent.fevn1-2.fna&oh=0549c9d8db5bbfe9ebdbcdd006d7730c&oe=5DD4F1AC',
+      'https://scontent.fevn1-1.fna.fbcdn.net/v/t45.5328-0/p180x540/69654768_2932624590141171_7609432608165855232_n.jpg?_nc_cat=102&_nc_oc=AQlXXhGd4jQ3xOFgXx_U8k9U_D2lMEOtNs51TgYw4tzeQsiyLRHmrYcHPjj-oVAuX5k&_nc_ht=scontent.fevn1-1.fna&oh=e8f0ee1a4a6899bf1770c22d182bef76&oe=5DFF4B4D',
+      'https://scontent.fevn1-2.fna.fbcdn.net/v/t1.0-9/67890256_2321651544537123_7537066854519406592_n.jpg?_nc_cat=103&_nc_oc=AQntqv6KTlzzw29etvinahy5iXBdwfKE0IZyt5cYWLWmBc3QEjMtrW5_1NNVSFRDvQc&_nc_ht=scontent.fevn1-2.fna&oh=0549c9d8db5bbfe9ebdbcdd006d7730c&oe=5DD4F1AC',
 
     ],
   },
@@ -328,7 +381,7 @@ const cartoonHeroes = [
     providerName: 'Երազանք թատերախումբ',
     priceRange: '֏֏',
     carouselImgs: [
-         'https://scontent.fevn1-4.fna.fbcdn.net/v/t45.5328-0/p180x540/69872212_3017366858278945_1360227824954245120_n.jpg?_nc_cat=108&_nc_oc=AQmgigGnGfE36dh9vjNhBaivbWkXsp-UD-kc9Z-64PHee-0vNsvvnGBTt8REU--LP9o&_nc_ht=scontent.fevn1-4.fna&oh=10a41f5f5db593d8e544ff10c2f8f837&oe=5E0AB684',
+      'https://scontent.fevn1-4.fna.fbcdn.net/v/t45.5328-0/p180x540/69872212_3017366858278945_1360227824954245120_n.jpg?_nc_cat=108&_nc_oc=AQmgigGnGfE36dh9vjNhBaivbWkXsp-UD-kc9Z-64PHee-0vNsvvnGBTt8REU--LP9o&_nc_ht=scontent.fevn1-4.fna&oh=10a41f5f5db593d8e544ff10c2f8f837&oe=5E0AB684',
     ],
   },
   {
@@ -350,7 +403,7 @@ const cartoonHeroes = [
     providerName: 'Երազանք թատերախումբ',
     priceRange: '֏֏',
     carouselImgs: [
-       'https://scontent.fevn1-3.fna.fbcdn.net/v/t45.5328-0/p480x480/68302304_2510038595725041_307398780834021376_n.jpg?_nc_cat=111&_nc_oc=AQk8rBvUqatumqISmmERzZp7GiUz_OdQX5iQgqD_SVc7T81_GZq5nRC4UKL8GppZihM&_nc_ht=scontent.fevn1-3.fna&oh=044ee3203569f2aaa57264fcafc7ff8a&oe=5DCA81D3',
+      'https://scontent.fevn1-3.fna.fbcdn.net/v/t45.5328-0/p480x480/68302304_2510038595725041_307398780834021376_n.jpg?_nc_cat=111&_nc_oc=AQk8rBvUqatumqISmmERzZp7GiUz_OdQX5iQgqD_SVc7T81_GZq5nRC4UKL8GppZihM&_nc_ht=scontent.fevn1-3.fna&oh=044ee3203569f2aaa57264fcafc7ff8a&oe=5DCA81D3',
     ],
   },
   {
@@ -361,7 +414,7 @@ const cartoonHeroes = [
     providerName: 'Երազանք թատերախումբ',
     priceRange: '֏֏',
     carouselImgs: [
-       'https://scontent.fevn1-4.fna.fbcdn.net/v/t45.5328-0/p480x480/67410179_2352730624804998_2794399413194194944_n.jpg?_nc_cat=101&_nc_oc=AQnw3J0kk2kmC2npuV_sBDbj3T5q26ybkrSq27VRWepnYrsCeWG1Wb1wD8bZVwjzY54&_nc_ht=scontent.fevn1-4.fna&oh=46c8bb624eacd39ac36c16f8ff78adf7&oe=5E054C48',
+      'https://scontent.fevn1-4.fna.fbcdn.net/v/t45.5328-0/p480x480/67410179_2352730624804998_2794399413194194944_n.jpg?_nc_cat=101&_nc_oc=AQnw3J0kk2kmC2npuV_sBDbj3T5q26ybkrSq27VRWepnYrsCeWG1Wb1wD8bZVwjzY54&_nc_ht=scontent.fevn1-4.fna&oh=46c8bb624eacd39ac36c16f8ff78adf7&oe=5E054C48',
     ],
   },
   {
@@ -372,8 +425,8 @@ const cartoonHeroes = [
     providerName: 'Երազանք թատերախումբ',
     priceRange: '֏֏',
     carouselImgs: [
-       'https://scontent.fevn1-2.fna.fbcdn.net/v/t45.5328-0/p480x480/67687743_3000978873277475_8846654339289186304_n.jpg?_nc_cat=103&_nc_oc=AQns44WAmht4THW5jwTUXtobXONV3S-KdQ69RvwPgpoO23PcPqY-RBpzpdN9USQ45nw&_nc_ht=scontent.fevn1-2.fna&oh=34b7affe3462a3db641dd186b30017d4&oe=5E120D48',
-       'https://scontent.fevn1-1.fna.fbcdn.net/v/t1.0-9/52922892_2058430670859213_1787645378066120704_n.jpg?_nc_cat=109&_nc_oc=AQmS5LJS9mnRcPejylnBflK3pne3hAIBqnyz361iemwzXeyjriFBWvyt7kO05bukKXA&_nc_ht=scontent.fevn1-1.fna&oh=ac0a92daf2a0f2f6f8eb10ae2c5be73f&oe=5DCABADD',
+      'https://scontent.fevn1-2.fna.fbcdn.net/v/t45.5328-0/p480x480/67687743_3000978873277475_8846654339289186304_n.jpg?_nc_cat=103&_nc_oc=AQns44WAmht4THW5jwTUXtobXONV3S-KdQ69RvwPgpoO23PcPqY-RBpzpdN9USQ45nw&_nc_ht=scontent.fevn1-2.fna&oh=34b7affe3462a3db641dd186b30017d4&oe=5E120D48',
+      'https://scontent.fevn1-1.fna.fbcdn.net/v/t1.0-9/52922892_2058430670859213_1787645378066120704_n.jpg?_nc_cat=109&_nc_oc=AQmS5LJS9mnRcPejylnBflK3pne3hAIBqnyz361iemwzXeyjriFBWvyt7kO05bukKXA&_nc_ht=scontent.fevn1-1.fna&oh=ac0a92daf2a0f2f6f8eb10ae2c5be73f&oe=5DCABADD',
     ],
   },
   // {
