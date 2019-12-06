@@ -5,7 +5,7 @@ export const DECORATION = 'decoration';
 export const CAKE = 'cake';
 export const CARTOON_HERO = 'cartoon_hero';
 export const GAME_SHOW = 'game_show';
-export const PHOTOGRAPHER = 'photographer';
+export const PHOTOGRAPHY = 'photography';
 export const DONE = 'done';
 
 export const categories = [
@@ -41,7 +41,7 @@ export const categories = [
   },
   {
     key: 6,
-    type: PHOTOGRAPHER,
+    type: PHOTOGRAPHY,
     label: 'Լուսանկարիչ',
   },
 ];

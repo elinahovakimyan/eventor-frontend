@@ -7,13 +7,15 @@ import { Link } from 'react-router-dom';
 
 import { formatPrice } from 'shared/helpers';
 import {
-  deselectVenue, deselectGameShow, deselectCartoonHero, deselectDecoration,
+  deselectVenue, deselectGameShow, deselectCartoonHero, deselectDecoration, deselectPhotography,
 } from 'store/actions/birthday';
 import {
-  getSelectedVenue, getSelectedCartoonHeroes, getSelectedDecorations, getSelectedGameShows,
+  getSelectedVenue, getSelectedCartoonHeroes,
+  getSelectedDecorations, getSelectedGameShows, getSelectedPhotography,
 } from 'store/getters';
 
 import './Cart.scss';
+import { selectPhotography } from '../../../store/actions';
 
 
 class CartComp extends React.PureComponent {
@@ -24,11 +26,13 @@ class CartComp extends React.PureComponent {
       selectedCartoonHeroes,
       selectedGameShows,
       selectedDecorations,
+      selectedPhotography,
     } = this.props;
 
     if ((!selectedVenue || !selectedVenue.length)
       && (!selectedCartoonHeroes || !selectedCartoonHeroes.length)
       && (!selectedGameShows || !selectedGameShows.length)
+      && (!selectedPhotography || !selectedPhotography.length)
       && (!selectedDecorations || !selectedDecorations.length)) {
       return (
         <Menu>
@@ -117,6 +121,26 @@ class CartComp extends React.PureComponent {
               </Menu.Item>
             ))
             : null}
+
+          {selectedPhotography && selectedPhotography.length
+            ? selectedPhotography.map(service => (
+
+              <Menu.Item key={`4+${service.id}`} className="cart-row">
+                <div className="service-wrapper">
+                  <img src={require('assets/icons/photo-camera.svg')} alt="cartoon hero" />
+                  <h4>{service.title}</h4>
+                </div>
+                <div className="service-wrapper">
+                  <p>
+                    {service.price
+                      ? formatPrice(service.price)
+                      : `սկսած ${formatPrice(service.startingPrice)}`}
+                  </p>
+                  <Icon type="delete" onClick={() => this.props.deselectPhotography(service)} />
+                </div>
+              </Menu.Item>
+            ))
+            : null}
         </Menu>
 
         <hr />
@@ -132,6 +156,7 @@ class CartComp extends React.PureComponent {
       selectedCartoonHeroes,
       selectedGameShows,
       selectedDecorations,
+      selectedPhotography,
     } = this.props;
 
     let n = 0;
@@ -141,6 +166,9 @@ class CartComp extends React.PureComponent {
     }
     if (selectedCartoonHeroes && selectedCartoonHeroes.length) {
       n += selectedCartoonHeroes.length;
+    }
+    if (selectedPhotography && selectedPhotography.length) {
+      n += selectedPhotography.length;
     }
     if (selectedGameShows && selectedGameShows.length) {
       n += selectedGameShows.length;
@@ -174,6 +202,7 @@ const mapStateToProps = (state) => ({
   selectedCartoonHeroes: getSelectedCartoonHeroes(state),
   selectedGameShows: getSelectedGameShows(state),
   selectedDecorations: getSelectedDecorations(state),
+  selectedPhotography: getSelectedPhotography(state),
 });
 
 const mapDispatchToProps = {
@@ -181,6 +210,7 @@ const mapDispatchToProps = {
   deselectGameShow,
   deselectCartoonHero,
   deselectDecoration,
+  deselectPhotography,
 };
 
 

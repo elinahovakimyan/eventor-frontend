@@ -71,6 +71,22 @@ export const deselectGameShow = (service) => ({
   },
 });
 
+export const selectPhotography = (service) => ({
+  type: constants.SELECT_SERVICE,
+  payload: {
+    serviceType: 'photography',
+    service,
+  },
+});
+
+export const deselectPhotography = (service) => ({
+  type: constants.DESELECT_SERVICE,
+  payload: {
+    serviceType: 'photography',
+    service,
+  },
+});
+
 export const selectDecoration = (service) => ({
   type: constants.SELECT_SERVICE,
   payload: {

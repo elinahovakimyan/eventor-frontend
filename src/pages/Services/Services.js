@@ -10,6 +10,7 @@ import {
   CARTOON_HERO,
   GAME_SHOW,
   DECORATION,
+  PHOTOGRAPHY,
   DONE,
 } from 'shared/constants';
 
@@ -17,6 +18,7 @@ import Venues from './sections/Venues/Venues';
 import CartoonHeroes from './sections/CartoonHeroes/CartoonHeroes';
 import GameShows from './sections/GameShows/GameShows';
 import Decorations from './sections/Decorations/Decorations';
+import Photography from './sections/Photography/Photography';
 import Confirmation from './sections/Confirmation/Confirmation';
 import ServicesFooter from './components/ServicesFooter/ServicesFooter';
 
@@ -53,6 +55,8 @@ function Services({ match, history }) {
         return <CartoonHeroes />;
       case GAME_SHOW:
         return <GameShows />;
+      case PHOTOGRAPHY:
+        return <Photography />;
       case DECORATION:
         return <Decorations />;
       default:

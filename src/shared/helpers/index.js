@@ -7,7 +7,7 @@ import {
   DECORATION,
   GAME_SHOW,
   CARTOON_HERO,
-  PHOTOGRAPHER,
+  PHOTOGRAPHY,
   DONE,
 } from 'shared/constants';
 
@@ -25,7 +25,7 @@ export const getIconNameByType = (type) => {
       return 'donatello';
     case GAME_SHOW:
       return 'laugh';
-    case PHOTOGRAPHER:
+    case PHOTOGRAPHY:
       return 'photo-camera';
     case DONE:
       return 'work-done';
