@@ -15,21 +15,21 @@ const cartoonHeroes = [
     priceRange: '֏֏',
   },
   {
-    id: 38,
-    title: 'Ձմեռ Պապիկ',
-    duration: 0.4,
-    startingPrice: 20000,
+    id: 43,
+    title: 'Սանտա Կլաուս և Միսիս Կլաուս',
+    duration: 0.5,
+    startingPrice: 35000,
     carouselImgs: [
-      '/assets/images/services/cartoon_heroes/erazanq_santa_1.jpg',
-      '/assets/images/services/cartoon_heroes/erazanq_santa_2.jpg'
+      '/assets/images/services/cartoon_heroes/laplandia_santaandmisssanta_1.jpg',
+      '/assets/images/services/cartoon_heroes/laplandia_santaandmisssanta_2.jpg'
     ],
-    description: 'Մինչև դեկտեմբերի 31-ին ժամը 22։30 այցելության արժեքը 20,000 դրամ է։ Դեկտեմբերի 31-ին 22։30-1։30 այցելության արժեքը 40,000 դրամ է։ Այցելության տևողությունը՝ 25 րոպե։ ',
-    providerName: 'Երազանք թատերախումբ',
+    description: 'Մինչ Պապիկը ուրախացնում է երեխաներին, Միսիս Կլաուսը թխվածքաբլիթներ է պատրաստում և բաժանում։ Մինչև դեկտեմբերի 31-ը այցելության արժեքը՝ 35.000 դրամ։ Դեկտեմբերի 31֊ի գնացուցակ՝ մինչև 19։30՝ 40․000 դրամ, 20։00-23:30՝ 50․000 դրամ, 00։00-ին՝ 70․000 դրամ։ Հունվարի 1-ին՝ 00։30 ֊ 02։00՝ 50․000 դրամ, 08։00-12։00՝ 50․000 դրամ, հունվարի 1-ի 12։30-ից հետո՝ 40.000 դրամ:',
+    providerName: 'Laplandia',
     priceRange: '֏֏',
   },
   {
     id: 39,
-    title: 'Ձմեռ Պապիկ',
+    title: 'Ձմեռ Պապիկ և էլֆ',
     duration: 0.5,
     startingPrice: 20000,
     carouselImgs: [
@@ -42,17 +42,79 @@ const cartoonHeroes = [
   {
     id: 40,
     title: 'էլֆ',
-    duration: 1.5,
+    duration: 1,
     price: 15000,
     carouselImgs: [
       '/assets/images/services/cartoon_heroes/adventurebus_elf_2.jpg',
       '/assets/images/services/cartoon_heroes/adventurebus_elf_3.jpg',
       '/assets/images/services/cartoon_heroes/adventurebus_elf_1.jpg'
     ],
-    description: 'Ծրագրում ինտելեկտուալ, ժամանցային, տոնական և ամանօրյա խաղեր։',
+    description: 'Ծրագրում ինտելեկտուալ, ժամանցային, տոնական և ամանօրյա խաղեր։ 2 և ավելի Էլֆ հրավիրելու դեպքում, այցելության տևողությունը 1.5 ժամ է։',
     providerName: 'Adventure Bus',
     priceRange: '֏֏',
   },
+  {
+    id: 38,
+    title: 'Ձմեռ Պապիկ',
+    duration: 0.4,
+    startingPrice: 20000,
+    carouselImgs: [
+      '/assets/images/services/cartoon_heroes/erazanq_santa_1.jpg',
+      '/assets/images/services/cartoon_heroes/erazanq_santa_2.jpg'
+    ],
+    description: 'Մինչև դեկտեմբերի 31-ին ժամը 22։30 այցելության արժեքը 20,000 դրամ է։ Դեկտեմբերի 31-ին 22։30-1։30 այցելության արժեքը 40,000 դրամ է։ Այցելության տևողությունը՝ 25 րոպե։ ',
+    providerName: 'Երազանք թատերախումբ',
+    priceRange: '֏֏',
+  },
+  // {
+  //   id: 41,
+  //   title: 'Ձմեռ Պապիկ',
+  //   duration: 0.5,
+  //   startingPrice: 20000,
+  //   carouselImgs: [
+  //     '/assets/images/services/cartoon_heroes/adventurebus_santa_1.jpg'
+  //   ],
+  //   description: 'Զրույց և խաղեր Ձմեռ Պապիկի և Էլֆի հետ։ Մինչև դեկտեմբերի 31-ը այցելության տևողությունը՝ 30 րոպե, արժեքը՝ 20․000 դրամ։ Դեկտեմբերի 31֊ի գնացուցակ՝ մինչև 18։00՝ 25․000 դրամ, 18։00-20։00՝ 30․000 դրամ, 20։00-22։00՝ 35․000 դրամ, 22։00-ից հետո՝ 50․000 դրամ։',
+  //   providerName: 'Laplandia',
+  //   priceRange: '֏֏',
+  // },
+  // {
+  //   id: 42,
+  //   title: 'Ձմեռ Պապիկ և Ձյունանուշ',
+  //   duration: 0.5,
+  //   startingPrice: 20000,
+  //   carouselImgs: [
+  //     '/assets/images/services/cartoon_heroes/adventurebus_santa_1.jpg'
+  //   ],
+  //   description: 'Զրույց և խաղեր Ձմեռ Պապիկի և Էլֆի հետ։ Մինչև դեկտեմբերի 31-ը այցելության տևողությունը՝ 30 րոպե, արժեքը՝ 20․000 դրամ։ Դեկտեմբերի 31֊ի գնացուցակ՝ մինչև 18։00՝ 25․000 դրամ, 18։00-20։00՝ 30․000 դրամ, 20։00-22։00՝ 35․000 դրամ, 22։00-ից հետո՝ 50․000 դրամ։',
+  //   providerName: 'Laplandia',
+  //   priceRange: '֏֏',
+  // },
+  {
+    id: 45,
+    title: 'Սանտա Կլաուս և Եղնիկ',
+    duration: 0.5,
+    startingPrice: 15000,
+    carouselImgs: [
+      '/assets/images/services/cartoon_heroes/laplandia_santa_1.jpg',
+      '/assets/images/services/cartoon_heroes/laplandia_santa_2.jpg'
+    ],
+    description: 'Սանտա Կլաուսը եղնիկի հետ, միակը Հայաստանում։ Մինչև դեկտեմբերի 31-ը այցելության արժեքը՝ 15.000 դրամ։ Դեկտեմբերի 31֊ի գնացուցակ՝ մինչև 18։00՝ 15․000 դրամ, 18։00-22։00՝ 20․000 դրամ, 22:30-23:30` 30.000 դրամ, 00։00-ին՝ 40․000 դրամ։ Հունվարի 1-ին՝ 00։30 ֊ 02։00՝ 30․000 դրամ, 08։00-12։00՝ 25․000 դրամ, 12։30-14։00՝ 20․000 դրամ, հունվարի 1-ի 14։30-ից հետո՝ 15.000 դրամ:' ,
+    providerName: 'Laplandia',
+    priceRange: '֏֏',
+  },
+  // {
+  //   id: 44,
+  //   title: 'Ձյունանուշ',
+  //   duration: 0.5,
+  //   startingPrice: 20000,
+  //   carouselImgs: [
+  //     '/assets/images/services/cartoon_heroes/adventurebus_santa_1.jpg'
+  //   ],
+  //   description: 'Զրույց և խաղեր Ձմեռ Պապիկի և Էլֆի հետ։ Մինչև դեկտեմբերի 31-ը այցելության տևողությունը՝ 30 րոպե, արժեքը՝ 20․000 դրամ։ Դեկտեմբերի 31֊ի գնացուցակ՝ մինչև 18։00՝ 25․000 դրամ, 18։00-20։00՝ 30․000 դրամ, 20։00-22։00՝ 35․000 դրամ, 22։00-ից հետո՝ 50․000 դրամ։',
+  //   providerName: 'Laplandia',
+  //   priceRange: '֏֏',
+  // },
   {
     id: 1,
     title: 'Տրանսֆորմեր Բամբլբի',
