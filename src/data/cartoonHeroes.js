@@ -17,11 +17,12 @@ const cartoonHeroes = [
   {
     id: 43,
     title: 'Սանտա Կլաուս և Միսիս Կլաուս',
-    duration: 0.5,
+    duration: 0.3,
     startingPrice: 35000,
     carouselImgs: [
       '/assets/images/services/cartoon_heroes/laplandia_santaandmisssanta_1.jpg',
-      '/assets/images/services/cartoon_heroes/laplandia_santaandmisssanta_2.jpg'
+      '/assets/images/services/cartoon_heroes/laplandia_santaandmisssanta_2.jpg',
+      '/assets/images/services/cartoon_heroes/laplandia_santaandmisssanta_3.jpg'
     ],
     description: 'Մինչ Պապիկը ուրախացնում է երեխաներին, Միսիս Կլաուսը թխվածքաբլիթներ է պատրաստում և բաժանում։ Մինչև դեկտեմբերի 31-ը այցելության արժեքը՝ 35.000 դրամ։ Դեկտեմբերի 31֊ի գնացուցակ՝ մինչև 19։30՝ 40․000 դրամ, 20։00-23:30՝ 50․000 դրամ, 00։00-ին՝ 70․000 դրամ։ Հունվարի 1-ին՝ 00։30 ֊ 02։00՝ 50․000 դրամ, 08։00-12։00՝ 50․000 դրամ, հունվարի 1-ի 12։30-ից հետո՝ 40.000 դրամ:',
     providerName: 'Laplandia',
@@ -78,43 +79,53 @@ const cartoonHeroes = [
   //   providerName: 'Laplandia',
   //   priceRange: '֏֏',
   // },
-  // {
-  //   id: 42,
-  //   title: 'Ձմեռ Պապիկ և Ձյունանուշ',
-  //   duration: 0.5,
-  //   startingPrice: 20000,
-  //   carouselImgs: [
-  //     '/assets/images/services/cartoon_heroes/adventurebus_santa_1.jpg'
-  //   ],
-  //   description: 'Զրույց և խաղեր Ձմեռ Պապիկի և Էլֆի հետ։ Մինչև դեկտեմբերի 31-ը այցելության տևողությունը՝ 30 րոպե, արժեքը՝ 20․000 դրամ։ Դեկտեմբերի 31֊ի գնացուցակ՝ մինչև 18։00՝ 25․000 դրամ, 18։00-20։00՝ 30․000 դրամ, 20։00-22։00՝ 35․000 դրամ, 22։00-ից հետո՝ 50․000 դրամ։',
-  //   providerName: 'Laplandia',
-  //   priceRange: '֏֏',
-  // },
+  {
+    id: 42,
+    title: 'Ձմեռ Պապիկ և Ձյունանուշ',
+    duration: 0.3,
+    startingPrice: 25000,
+    carouselImgs: [
+      '/assets/images/services/cartoon_heroes/laplandia_santaandsnowgirl_1.jpg',
+      '/assets/images/services/cartoon_heroes/laplandia_santaandsnowgirl_2.jpg',
+      '/assets/images/services/cartoon_heroes/laplandia_santaandsnowgirl_3.jpg',
+      '/assets/images/services/cartoon_heroes/laplandia_santaandsnowgirl_4.jpg',
+    ],
+    description: 'Լավագույն Ձմեռ պապն ու Ձյունանուշը՝ ժամանած Լապլանդիայից։ Մենք խոստանում ենք Ձեզ պարգևել Լապլանդիայի շունչը, և մեզ հետ միասին տանել Լապլանդիա։ Անգամ մեծերը հավատում են այս զույգին։ Վստահեք 1 անգամ և մինչև խոր ծերություն կհիշեք նրանց։ Արժեքը՝ նախատոնական և հետտոնական օրերի համար - 25.000 դրամ՝ այց դեպի տուն, 35.000֊50.000 դրամ՝ մանկապարտեզներ, դպրոցներ և կորպորատիվներ և այլ հաստատություններ։ Գնային տատանումը կախված է հյուրերի քանակից։ Դեկտեմբերի 31֊ ի գները՝ մինչև 20։00 ֊ 35.000 դրամ, 20։00-22։30՝ 50.000 դրամ, 23։00՝ 100․000 դրամ, 23։30՝ 100.000 դրամ, 00։00՝ 200.000 դրամ, 00։30՝ 150.000 դրամ, 01։00՝ 100.000, 01։30֊ից՝ 50.000 դրամ։ Հունվարի 1֊ին ժամը 14։00֊ից 35.000 դրամ։',
+    providerName: 'Laplandia',
+    priceRange: '֏֏֏',
+  },
   {
     id: 45,
     title: 'Սանտա Կլաուս և Եղնիկ',
-    duration: 0.5,
+    duration: 0.3,
     startingPrice: 15000,
     carouselImgs: [
       '/assets/images/services/cartoon_heroes/laplandia_santa_1.jpg',
       '/assets/images/services/cartoon_heroes/laplandia_santa_2.jpg'
     ],
-    description: 'Սանտա Կլաուսը եղնիկի հետ, միակը Հայաստանում։ Մինչև դեկտեմբերի 31-ը այցելության արժեքը՝ 15.000 դրամ։ Դեկտեմբերի 31֊ի գնացուցակ՝ մինչև 18։00՝ 15․000 դրամ, 18։00-22։00՝ 20․000 դրամ, 22:30-23:30` 30.000 դրամ, 00։00-ին՝ 40․000 դրամ։ Հունվարի 1-ին՝ 00։30 ֊ 02։00՝ 30․000 դրամ, 08։00-12։00՝ 25․000 դրամ, 12։30-14։00՝ 20․000 դրամ, հունվարի 1-ի 14։30-ից հետո՝ 15.000 դրամ:' ,
+    description: 'Խոսացող եղնիկն ու Սանտա Կլաուսը անմոռանալի տպավորություն են թողնում թե՛ մեծերին, և  թե՛ փոքրերին։ Մինչև դեկտեմբերի 31-ը այցելության արժեքը՝ 15.000 դրամ։ Դեկտեմբերի 31֊ի գնացուցակ՝ մինչև 18։00՝ 15․000 դրամ, 18։00-22։00՝ 20․000 դրամ, 22:30-23:30` 30.000 դրամ, 00։00-ին՝ 40․000 դրամ։ Հունվարի 1-ին՝ 00։30 ֊ 02։00՝ 30․000 դրամ, 08։00-12։00՝ 25․000 դրամ, 12։30-14։00՝ 20․000 դրամ, հունվարի 1-ի 14։30-ից հետո՝ 15.000 դրամ:' ,
     providerName: 'Laplandia',
     priceRange: '֏֏',
   },
-  // {
-  //   id: 44,
-  //   title: 'Ձյունանուշ',
-  //   duration: 0.5,
-  //   startingPrice: 20000,
-  //   carouselImgs: [
-  //     '/assets/images/services/cartoon_heroes/adventurebus_santa_1.jpg'
-  //   ],
-  //   description: 'Զրույց և խաղեր Ձմեռ Պապիկի և Էլֆի հետ։ Մինչև դեկտեմբերի 31-ը այցելության տևողությունը՝ 30 րոպե, արժեքը՝ 20․000 դրամ։ Դեկտեմբերի 31֊ի գնացուցակ՝ մինչև 18։00՝ 25․000 դրամ, 18։00-20։00՝ 30․000 դրամ, 20։00-22։00՝ 35․000 դրամ, 22։00-ից հետո՝ 50․000 դրամ։',
-  //   providerName: 'Laplandia',
-  //   priceRange: '֏֏',
-  // },
+  {
+    id: 44,
+    title: 'Ձյունանուշ',
+    duration: 0.3,
+    startingPrice: 25000,
+    carouselImgs: [
+      '/assets/images/services/cartoon_heroes/laplandia_snowgirl_2.jpg',
+      '/assets/images/services/cartoon_heroes/laplandia_snowgirl_1.jpg',
+      '/assets/images/services/cartoon_heroes/laplandia_snowgirl_3.jpg',
+      '/assets/images/services/cartoon_heroes/laplandia_snowgirl_4.jpg',
+      '/assets/images/services/cartoon_heroes/laplandia_snowgirl_5.jpg',
+      '/assets/images/services/cartoon_heroes/laplandia_snowgirl_6.jpg',
+      '/assets/images/services/cartoon_heroes/laplandia_snowgirl_7.jpg',
+      '/assets/images/services/cartoon_heroes/laplandia_snowgirl_8.jpg',
+    ],
+    description: 'Երբ երեխաները վախենում են Ձմեռ պապիկներից, սակայն դուք ցանկանում եք օրն անմոռանալի դարձնել, առաջարկում ենք հրավիրել փորձառու Ձյունանուշիկին։ Ամենաօրիգինալ լուծումը՝ վախերի դեմ։ Մենք խոստանում ենք, որ երեխաները Ձյունանուշի գրկից չեն իջնի։ Ի դեպ Ձյունանուշը մասնագիտությամբ դերասան է։ Արժեքը՝ նախատոնական և հետտոնական օրերի համար - 25.000 դրամ՝ այց դեպի տուն, 35.000֊50.000 դրամ՝ մանկապարտեզներ, դպրոցներ և կորպորատիվներ և այլ հաստատություններ։ Գնային տատանումը կախված է հյուրերի քանակից։ Դեկտեմբերի 31֊ ի գները՝ մինչև 20։00 ֊ 35.000 դրամ, 20։00-22։30՝ 50.000 դրամ, 23։00՝ 100․000 դրամ, 23։30՝ 100.000 դրամ, 00։00՝ 200.000 դրամ, 00։30՝ 150.000 դրամ, 01։00՝ 100.000, 01։30֊ից՝ 50.000 դրամ։ Հունվարի 1֊ին ժամը 14։00֊ից 35.000 դրամ։',
+    providerName: 'Laplandia',
+    priceRange: '֏֏֏',
+  },
   {
     id: 1,
     title: 'Տրանսֆորմեր Բամբլբի',
