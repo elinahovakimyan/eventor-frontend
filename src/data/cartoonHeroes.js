@@ -178,6 +178,46 @@ const cartoonHeroes = [
     ],
   },
   {
+    id: 46,
+    title: 'LOL տիկնիկ "Golden LOL"',
+    duration: 1,
+    price: 15000,
+    carouselImgs: [
+      '/assets/images/services/cartoon_heroes/caramella_lol_1.jpg',
+      '/assets/images/services/cartoon_heroes/caramella_lol_2.jpg'
+    ],
+    providerName: 'Caramella Show',
+    priceRange: '֏֏',
+  },
+  {
+    id: 47,
+    title: 'LOL տիկնիկ "Angel LOL"',
+    duration: 1,
+    price: 15000,
+    carouselImgs: [
+      '/assets/images/services/cartoon_heroes/caramella_lol_4.jpg',
+      '/assets/images/services/cartoon_heroes/caramella_lol_3.jpg',
+      '/assets/images/services/cartoon_heroes/caramella_lol_2.jpg'
+    ],
+    providerName: 'Caramella Show',
+    priceRange: '֏֏',
+  },
+  {
+    id: 48,
+    title: 'LOL խաղավար',
+    duration: 1,
+    price: 15000,
+    carouselImgs: [
+      '/assets/images/services/cartoon_heroes/caramella_lol_5.jpg',
+      '/assets/images/services/cartoon_heroes/caramella_lol_8.jpg',
+      '/assets/images/services/cartoon_heroes/caramella_lol_6.jpg',
+      '/assets/images/services/cartoon_heroes/caramella_lol_7.jpg',
+      '/assets/images/services/cartoon_heroes/caramella_lol_2.jpg'
+    ],
+    providerName: 'Caramella Show',
+    priceRange: '֏֏',
+  },
+  {
     id: 14,
     title: 'Դինո',
     duration: 1,
