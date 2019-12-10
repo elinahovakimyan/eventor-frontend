@@ -379,8 +379,8 @@ const cartoonHeroes = [
     providerName: 'Երազանք թատերախումբ',
     priceRange: '֏֏',
     carouselImgs: [
-      'https://scontent.fevn1-4.fna.fbcdn.net/v/t45.5328-0/p180x540/68747272_2806823289329694_6286352286067195904_n.jpg?_nc_cat=108&_nc_oc=AQlp0hTRrXpRHY_JTfu73xY7plcI0fd_n1gh_vhnj97_9e5wKQggfbUx6CFHtNa8g1I&_nc_ht=scontent.fevn1-4.fna&oh=668a271238c3dd4afadc3998327bfae5&oe=5DD58054',
-      'https://scontent.fevn1-4.fna.fbcdn.net/v/t1.0-9/69735313_2360076600694617_4328368676840407040_n.jpg?_nc_cat=108&_nc_oc=AQl7e1dTB0TimIBO6kXFTuNF5L6ZZBV9MGi6uSian4PD6GfLR6hVhW1lPYstA49rAss&_nc_ht=scontent.fevn1-4.fna&oh=b117aab2e334146183f6082ed1926066&oe=5DCA16FE',
+      '/assets/images/services/cartoon_heroes/mrcarshavord_1.jpg',
+      '/assets/images/services/cartoon_heroes/mrcarshavord_2.jpg',
     ],
   },
   {
@@ -403,7 +403,7 @@ const cartoonHeroes = [
     providerName: 'Երազանք թատերախումբ',
     priceRange: '֏֏',
     carouselImgs: [
-      'https://scontent.fevn1-2.fna.fbcdn.net/v/t45.5328-0/p180x540/69149285_2509252975762447_52873199192375296_n.jpg?_nc_cat=105&_nc_oc=AQk9XaEKedoMrTykKFWa5fgKFMxMnAQbJ6uhw4CLlBuLIUXrsIO6A7HwvdTvW4j1ieI&_nc_ht=scontent.fevn1-2.fna&oh=eee251f190cf4d4da78f1c3dbfeca187&oe=5DD1F6A5',
+      '/assets/images/services/cartoon_heroes/rokki_1.jpg',
     ],
   },
   {
@@ -425,7 +425,7 @@ const cartoonHeroes = [
     providerName: 'Երազանք թատերախումբ',
     priceRange: '֏֏',
     carouselImgs: [
-      'https://scontent.fevn1-3.fna.fbcdn.net/v/t45.5328-0/p180x540/69149285_2922444517782581_6943927941046730752_n.jpg?_nc_cat=111&_nc_oc=AQmGjwANj77lUpauMHJbI6qigP1m4meQF3RW0jILTyASNJBm-BNEO5KehaW7b5kXNQA&_nc_ht=scontent.fevn1-3.fna&oh=0eb7718a796dcce41e2f7a24869d7af8&oe=5DC81744',
+      '/assets/images/services/cartoon_heroes/zikRayder_1.jpg'
     ],
   },
   {
@@ -459,7 +459,7 @@ const cartoonHeroes = [
     providerName: 'Երազանք թատերախումբ',
     priceRange: '֏֏',
     carouselImgs: [
-      'https://scontent.fevn1-1.fna.fbcdn.net/v/t45.5328-0/p180x540/69590762_2350338348346700_5121106243955458048_n.jpg?_nc_cat=109&_nc_oc=AQlhCGXk0-eFN2cSsotNgKmjIK-DJuaX-SzGGMvdwEOVIvzSrax7zk-7b6vaoabtWrc&_nc_ht=scontent.fevn1-1.fna&oh=d3cd98111705f75b004074e41735ea29&oe=5DD693FF',
+      '/assets/images/services/cartoon_heroes/payloxTaguhi_1.jpg'
     ],
   },
   {
@@ -470,7 +470,7 @@ const cartoonHeroes = [
     providerName: 'Երազանք թատերախումբ',
     priceRange: '֏֏',
     carouselImgs: [
-      'https://scontent.fevn1-2.fna.fbcdn.net/v/t45.5328-0/p180x540/69599240_3183281428379495_8572214085217681408_n.jpg?_nc_cat=105&_nc_oc=AQmhz0rittrOx58N1Npi_2mZdTaqZvDkTPA9PCp6ZzGWRdXKboUnngdiRI9u6ANZ3Uk&_nc_ht=scontent.fevn1-2.fna&oh=689f3045812360452cf7518c25472227&oe=5DCE2D2F',
+      '/assets/images/services/cartoon_heroes/gazovPuchik_1.jpg'
     ],
   },
   {
@@ -505,7 +505,7 @@ const cartoonHeroes = [
     providerName: 'Երազանք թատերախումբ',
     priceRange: '֏֏',
     carouselImgs: [
-      'https://scontent.fevn1-2.fna.fbcdn.net/v/t45.5328-0/p480x480/67411735_2214979271946523_2748690816452001792_n.jpg?_nc_cat=105&_nc_oc=AQlIgTSfCGxBs0brKFUTvcVRaY7PrU_nqKevbBNTR-Yl70Hn_j3ySMcEIo06rQarpcU&_nc_ht=scontent.fevn1-2.fna&oh=9e29ac0269fb0d1a19e140e1f18c4197&oe=5DCC97E8',
+      '/assets/images/services/cartoon_heroes/hripsime_1.jpg'
     ],
   },
   {
@@ -516,7 +516,7 @@ const cartoonHeroes = [
     providerName: 'Երազանք թատերախումբ',
     priceRange: '֏֏',
     carouselImgs: [
-      'https://scontent.fevn1-3.fna.fbcdn.net/v/t45.5328-0/p480x480/68302304_2510038595725041_307398780834021376_n.jpg?_nc_cat=111&_nc_oc=AQk8rBvUqatumqISmmERzZp7GiUz_OdQX5iQgqD_SVc7T81_GZq5nRC4UKL8GppZihM&_nc_ht=scontent.fevn1-3.fna&oh=044ee3203569f2aaa57264fcafc7ff8a&oe=5DCA81D3',
+      '/assets/images/services/cartoon_heroes/ani_1.jpg'
     ],
   },
   {
