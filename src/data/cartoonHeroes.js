@@ -362,13 +362,13 @@ const cartoonHeroes = [
   },
   {
     id: 17,
-    title: 'Կարմիր Ռենջեր',
+    title: 'Կարմիր Ռենջեր + Խաղավար',
     duration: 1,
-    price: 6000,
-    providerName: 'Gayluk.am',
+    price: 12000,
+    providerName: 'Երազանք թատերախումբ',
     priceRange: '֏֏',
     carouselImgs: [
-      'https://live.staticflickr.com/65535/47978109337_e2fe9863a2_b.jpg',
+      '/assets/images/services/cartoon_heroes/erazanq_red_ranger.jpg',
     ],
   },
   {
