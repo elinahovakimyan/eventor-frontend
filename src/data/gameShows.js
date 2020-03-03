@@ -9,8 +9,8 @@ const gameShows = [
     duration: 1,
     providerName: 'Gayluk.am',
     carouselImgs: [
-      '/assets/images/services/game_shows/paper_show_3.jpg',      
-      '/assets/images/services/game_shows/paper_show_4.jpg',      
+      '/assets/images/services/game_shows/paper_show_3.jpg',
+      '/assets/images/services/game_shows/paper_show_4.jpg',
     ],
     description: 'Այսօր թղթե շոուն ամենահետաքրքիր և ամենավառ թրենդներից է, որը տոն կդարձնի ցանկացած  առիթ կամ միջոցառում։ Թղթե շոուն սիրում են թե՛ մեծերը, թե՛ փոքրերը, որովհետև այն չափազանց ուրախ է։ Մեծերը մի պահ դառնում են երեխաներ և զվարճանում են ինչքան կարող են, իսկ երեխաները հիացմունքով գլորվում են թղթե հսկա զանգվածների մեջ և դրանք վեր ու վար նետում:',
   },
@@ -19,9 +19,9 @@ const gameShows = [
     title: 'Խորանարդիկներով Շոու',
     priceRange: '֏֏',
     carouselImgs: [
-      '/assets/images/services/game_shows/cubes_show_1.jpg',      
-      '/assets/images/services/game_shows/cubes_show_2.jpg',      
-      '/assets/images/services/game_shows/cubes_show_3.jpg',      
+      '/assets/images/services/game_shows/cubes_show_1.jpg',
+      '/assets/images/services/game_shows/cubes_show_2.jpg',
+      '/assets/images/services/game_shows/cubes_show_3.jpg',
     ],
     price: 20000,
     duration: 1,
@@ -101,7 +101,11 @@ const gameShows = [
     duration: 1,
     providerName: 'Gayluk.am',
     carouselImgs: [
-      '/assets/images/services/game_shows/chemical_1.jpg', //? 2 hat ka, 2rdy ~287 tox
+      '/assets/images/services/game_shows/gayluk_chemical_show_4.jpg',
+      '/assets/images/services/game_shows/gayluk_chemical_show_2.jpg',
+      '/assets/images/services/game_shows/gayluk_chemical_show_3.jpg',
+      '/assets/images/services/game_shows/gayluk_chemical_show_1.jpg',
+      '/assets/images/services/game_shows/gayluk_chemical_show_5.jpg',
     ],
     description: 'Սմայլուկն ու Գայլուկը երեխաների հետ սկսում եմ պարզ խաղերից, այնուհետև տալիս են կախարդական ուժ և բաժանում գոգնոցներ։ Կատարում եմ աճպարարական հնարքներ՝ փոքրերի և մեծերի օգնությամբ։ Ֆոկուսներից հետո անցնում եմ քիմիական նյութերով շոուին՝ * Տարբեր նյութեր խառնելով լուծույթի գույնը փոխել * Պղպջակ ստանալ * Պատրաստել Փղի ատամի մածուկ և ուղարկել Հնդկաստան * Ներքին այրման շարժիչ պատրաստել տնային պայմաններում * Բոլորի ձեռքին չցավեցնող կրակ ստանալ։ Վերջում բոլորով անում ենք ֆլեշմոբ և հրավառություն:'
   },
