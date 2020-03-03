@@ -1,59 +1,6 @@
 /* eslint-disable */
 const cartoonHeroes = [
   {
-    id: 37,
-    title: 'Ձմեռ Պապիկ',
-    duration: 0.5,
-    startingPrice: 15000,
-    carouselImgs: [
-      '/assets/images/services/cartoon_heroes/gayluk_santa_1.jpg',
-      '/assets/images/services/cartoon_heroes/gayluk_santa_2.jpg',
-      '/assets/images/services/cartoon_heroes/gayluk_santa_3.jpg',
-    ],
-    description: 'Մինչև դեկտեմբերի 31֊ը այցելությունն արժե 20,000 դրամ։ Դեկտեմբերի 31֊ի գնացուցակ՝ մինչ 17։00 ֊ 15,000 դրամ, 18։00֊20։00՝ 20,000 դրամ, 22։00֊23։00՝ 30000 դրամ, ուղիղ 0։00֊ին՝ 50,000 դրամ և դրանից հետո նորից 30,000 դրամ։',
-    providerName: 'Gayluk.am',
-    priceRange: '֏֏',
-  },
-  {
-    id: 38,
-    title: 'Ձմեռ Պապիկ',
-    duration: 0.4,
-    startingPrice: 20000,
-    carouselImgs: [
-      '/assets/images/services/cartoon_heroes/erazanq_santa_1.jpg',
-      '/assets/images/services/cartoon_heroes/erazanq_santa_2.jpg'
-    ],
-    description: 'Մինչև դեկտեմբերի 31-ին ժամը 22։30 այցելության արժեքը 20,000 դրամ է։ Դեկտեմբերի 31-ին 22։30-1։30 այցելության արժեքը 40,000 դրամ է։ Այցելության տևողությունը՝ 25 րոպե։ ',
-    providerName: 'Երազանք թատերախումբ',
-    priceRange: '֏֏',
-  },
-  {
-    id: 39,
-    title: 'Ձմեռ Պապիկ',
-    duration: 0.5,
-    startingPrice: 20000,
-    carouselImgs: [
-      '/assets/images/services/cartoon_heroes/adventurebus_santa_1.jpg'
-    ],
-    description: 'Զրույց և խաղեր Ձմեռ Պապիկի և Էլֆի հետ։ Մինչև դեկտեմբերի 31-ը այցելության տևողությունը՝ 30 րոպե, արժեքը՝ 20․000 դրամ։ Դեկտեմբերի 31֊ի գնացուցակ՝ մինչև 18։00՝ 25․000 դրամ, 18։00-20։00՝ 30․000 դրամ, 20։00-22։00՝ 35․000 դրամ, 22։00-ից հետո՝ 50․000 դրամ։',
-    providerName: 'Adventure Bus',
-    priceRange: '֏֏',
-  },
-  {
-    id: 40,
-    title: 'էլֆ',
-    duration: 1.5,
-    price: 15000,
-    carouselImgs: [
-      '/assets/images/services/cartoon_heroes/adventurebus_elf_2.jpg',
-      '/assets/images/services/cartoon_heroes/adventurebus_elf_3.jpg',
-      '/assets/images/services/cartoon_heroes/adventurebus_elf_1.jpg'
-    ],
-    description: 'Ծրագրում ինտելեկտուալ, ժամանցային, տոնական և ամանօրյա խաղեր։',
-    providerName: 'Adventure Bus',
-    priceRange: '֏֏',
-  },
-  {
     id: 1,
     title: 'Տրանսֆորմեր Բամբլբի',
     duration: 0.5,
@@ -453,6 +400,59 @@ const cartoonHeroes = [
   //      'https://scontent.fevn1-4.fna.fbcdn.net/v/t1.0-0/c51.0.200.200a/p200x200/68773610_2327208130648131_8278216487110443008_n.jpg?_nc_cat=101&_nc_oc=AQl3mK7EMjsjMqwsyvIu8Gf54z71f--QbGkvffFhw5BkXAS-KNUfyv26DSVHDXJKmH0&_nc_ht=scontent.fevn1-4.fna&oh=181ac434384ecb3f2985e79123f4b9d7&oe=5DD0DA47',
   //   ],
   // },
+  {
+    id: 37,
+    title: 'Ձմեռ Պապիկ',
+    duration: 0.5,
+    startingPrice: 15000,
+    carouselImgs: [
+      '/assets/images/services/cartoon_heroes/gayluk_santa_1.jpg',
+      '/assets/images/services/cartoon_heroes/gayluk_santa_2.jpg',
+      '/assets/images/services/cartoon_heroes/gayluk_santa_3.jpg',
+    ],
+    description: 'Մինչև դեկտեմբերի 31֊ը այցելությունն արժե 20,000 դրամ։ Դեկտեմբերի 31֊ի գնացուցակ՝ մինչ 17։00 ֊ 15,000 դրամ, 18։00֊20։00՝ 20,000 դրամ, 22։00֊23։00՝ 30000 դրամ, ուղիղ 0։00֊ին՝ 50,000 դրամ և դրանից հետո նորից 30,000 դրամ։',
+    providerName: 'Gayluk.am',
+    priceRange: '֏֏',
+  },
+  {
+    id: 38,
+    title: 'Ձմեռ Պապիկ',
+    duration: 0.4,
+    startingPrice: 20000,
+    carouselImgs: [
+      '/assets/images/services/cartoon_heroes/erazanq_santa_1.jpg',
+      '/assets/images/services/cartoon_heroes/erazanq_santa_2.jpg'
+    ],
+    description: 'Մինչև դեկտեմբերի 31-ին ժամը 22։30 այցելության արժեքը 20,000 դրամ է։ Դեկտեմբերի 31-ին 22։30-1։30 այցելության արժեքը 40,000 դրամ է։ Այցելության տևողությունը՝ 25 րոպե։ ',
+    providerName: 'Երազանք թատերախումբ',
+    priceRange: '֏֏',
+  },
+  {
+    id: 39,
+    title: 'Ձմեռ Պապիկ',
+    duration: 0.5,
+    startingPrice: 20000,
+    carouselImgs: [
+      '/assets/images/services/cartoon_heroes/adventurebus_santa_1.jpg'
+    ],
+    description: 'Զրույց և խաղեր Ձմեռ Պապիկի և Էլֆի հետ։ Մինչև դեկտեմբերի 31-ը այցելության տևողությունը՝ 30 րոպե, արժեքը՝ 20․000 դրամ։ Դեկտեմբերի 31֊ի գնացուցակ՝ մինչև 18։00՝ 25․000 դրամ, 18։00-20։00՝ 30․000 դրամ, 20։00-22։00՝ 35․000 դրամ, 22։00-ից հետո՝ 50․000 դրամ։',
+    providerName: 'Adventure Bus',
+    priceRange: '֏֏',
+  },
+  {
+    id: 40,
+    title: 'էլֆ',
+    duration: 1.5,
+    price: 15000,
+    carouselImgs: [
+      '/assets/images/services/cartoon_heroes/adventurebus_elf_2.jpg',
+      '/assets/images/services/cartoon_heroes/adventurebus_elf_3.jpg',
+      '/assets/images/services/cartoon_heroes/adventurebus_elf_1.jpg'
+    ],
+    description: 'Ծրագրում ինտելեկտուալ, ժամանցային, տոնական և ամանօրյա խաղեր։',
+    providerName: 'Adventure Bus',
+    priceRange: '֏֏',
+  },
 ];
 
 export default cartoonHeroes;
