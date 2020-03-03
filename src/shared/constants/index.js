@@ -34,11 +34,11 @@ export const categories = [
     type: DECORATION,
     label: 'Ձևավորում',
   },
-  {
-    key: 5,
-    type: CAKE,
-    label: 'Թխվածք',
-  },
+  // {
+  //   key: 5,
+  //   type: CAKE,
+  //   label: 'Թխվածք',
+  // },
   {
     key: 6,
     type: PHOTOGRAPHY,
